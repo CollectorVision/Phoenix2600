@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A2601/src/A2601Core.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A2601/src/A2601NoFlash.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A2601/src/DeltaSigma.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A2601/src/pacman_dblscan.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A6500/src/A6507.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A6500/src/cpu65xx_e.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A6500/src/cpu65xx_fast.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/A6532/src/A6532.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/CtrlModule/RTL/spi.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/CtrlModule/ZPUFlex/RTL/zpupkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/TIA/src/Common.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/TIA/src/NTSCLookups.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/TIA/src/TIA.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/TIA/src/VGAColorTable.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/pepino/ipcore_dir/DualPortRAM_Block.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/pepino/pepino_toplevel.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/epieh/Dropbox/Omat/trunk/coleco/2600/test2/pepino/sram_controller.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

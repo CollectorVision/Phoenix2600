@@ -1,0 +1,24 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+ERROR:sim - Unable to find
+ERROR:sim -   
+   E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\pacman2600_4k_pal.bin
+ERROR:sim -    .coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\pacman2600_4k_pal.bin
+ERROR:sim -    .coe
+ERROR:sim - Unable to find
+ERROR:sim -   
+   E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\pacman2600_4k_pal.bin
+ERROR:sim -    .coe
+ERROR:sim -    Coregen is looking for
+ERROR:sim -   
+   E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\pacman2600_4k_pal.bin
+ERROR:sim -    .coe
+ERROR:sim - An invalid core configuration has been detected during
+ERROR:sim -    Customization. Core parameters will be reset to their default
+   values.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'pacman_rom'.
