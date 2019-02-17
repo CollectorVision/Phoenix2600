@@ -75,6 +75,8 @@ entity A2601NoFlash is
 
 			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
+			
+			show_ph0 : out std_logic;
 
 			size : in std_logic_vector(15 downto 0)
 			);
@@ -224,6 +226,8 @@ begin
 
 	a2600_cpu_addr_o <= a;
 	d <= a2600_cpu_data_i ;
+	
+	show_ph0 <= ph0;
 	
 --  Ram_CART: entity work.ramcart 
 --  port map(

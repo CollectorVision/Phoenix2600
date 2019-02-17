@@ -46,9 +46,11 @@ entity CtrlModule is
 		host_select : out std_logic;
 		host_start : out std_logic;
 		
+		host_mux	  : out std_logic := '0';	-- data from internal ROM or ext sram
+		host_debug_arm : out std_logic := '0';
 		-- Memory read port
 		host_bootread_data 	: in std_logic_vector(31 downto 0);
-		host_bootread_addr 	: out std_logic_vector(15 downto 0);
+		host_bootread_addr 	: out std_logic_vector(20 downto 0);
 		host_bootread_req 	: out std_logic;
 		host_bootread_ack 	: in std_logic := '0';
 		
@@ -313,6 +315,15 @@ begin
 							spi_trigger<='1';
 							host_to_spi<=mem_write(7 downto 0);
 							spi_active<='1';
+							
+						when X"E0" => -- host mux
+							host_mux <= mem_write(0);
+							host_debug_arm <= mem_write(1);
+							mem_busy <= '0';
+							
+						when X"E4" => -- host boot address register.
+							host_bootread_addr <= mem_write(20 downto 0);
+							mem_busy <= '0';
 
 						when X"E8" => -- Host boot data
 							-- Note that we don't clear mem_busy here; it's set instead when the ack signal comes in.
@@ -348,7 +359,8 @@ begin
 			case mem_addr(maxAddrBit)&mem_addr(10 downto 8) is
 					-- 1010
 				when X"A" =>	-- boot data read port 0xFFFFFA00
-					host_bootread_addr <= x"00" & mem_addr(7 downto 0);
+					-- host_bootread_addr <= x"00" & mem_addr(7 downto 0);
+					-- address set above with a write cycle
 					host_bootread_req <= '1';
 					-- mem_busy remains
 

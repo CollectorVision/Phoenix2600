@@ -7,7 +7,9 @@
 /* SPI registers */
 
 /* Host Boot Data register */
+#define REG_HOST_MUXCTRL  0x00
 #define REG_HOST_BOOTDATA 0x08
+#define REG_HOST_BOOTADDR 0x04
 
 /* Host control register */
 #define REG_HOST_CONTROL 0x0C

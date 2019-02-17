@@ -203,7 +203,7 @@ architecture rtl of toplevel is
   signal host_bootdata_ack : std_logic;
   
   signal host_bootread_data 	: std_logic_vector(31 downto 0);
-  signal host_bootread_addr 	: std_logic_vector(15 downto 0);
+  signal host_bootread_addr 	: std_logic_vector(20 downto 0);
   signal host_bootread_req 	: std_logic;
   signal host_bootread_ack 	: std_logic := '0';  
   
@@ -227,6 +227,17 @@ architecture rtl of toplevel is
 	signal pacman_rom_byte  : std_logic_vector(7 downto 0);
 	signal extram_rom_byte  : std_logic_vector(7 downto 0);
 	signal rom_loaded			: std_logic;
+	
+	signal host_mux : std_logic;
+	signal host_debug_arm : std_logic;
+	signal top_ph0 : std_logic;
+	
+	type debug_type is array(natural range 0 to 15) of std_logic_vector(31 downto 0);
+	signal debug_mem : debug_type;
+	signal capt_i : integer range 0 to 15 := 0;
+	signal last_6502_addr : std_logic_vector(14 downto 0);
+	signal armed : boolean := true;
+	signal last_ph0 : std_logic;
 
 begin
 
@@ -319,6 +330,9 @@ MyCtrlModule : entity work.CtrlModule
 		host_start => host_start,
       host_select => host_select,
 		
+		host_mux => host_mux,
+		host_debug_arm => host_debug_arm,
+		
 		-- Boot data read signals (verification)
 		host_bootread_data =>  host_bootread_data,
 		host_bootread_addr =>  host_bootread_addr,
@@ -372,7 +386,7 @@ overlay : entity work.OSD_Overlay
 
 	-- a2600_romdata <= pacman_rom_byte; -- BUGBUG 
 	-- EP 2019-02-16 running again with pacman_rom to test things out.
-   a2600_romdata <= extram_rom_byte when rom_loaded = '1' else pacman_rom_byte;
+   a2600_romdata <= extram_rom_byte when host_mux = '1' else pacman_rom_byte;
 
 -- -----------------------------------------------------------------------
 -- External SRAM controller
@@ -391,7 +405,7 @@ overlay : entity work.OSD_Overlay
 			host_bootdata_req => host_bootdata_req,
 			host_bootdata_ack => host_bootdata_ack,
 			
-			host_bootread_data =>  host_bootread_data,
+			host_bootread_data =>  open, -- bugbug host_bootread_data,
 			host_bootread_addr =>  host_bootread_addr,
 			host_bootread_req  =>  host_bootread_req,
 			host_bootread_ack  =>  host_bootread_ack,			
@@ -443,6 +457,7 @@ overlay : entity work.OSD_Overlay
 --      bootdata => host_bootdata,
 --      bootdata_req => host_bootdata_req,
 --      bootdata_ack => host_bootdata_ack,
+		show_ph0 => top_ph0,
 		size => size
     );
 
@@ -469,5 +484,48 @@ overlay : entity work.OSD_Overlay
       CLK_OUT1 => vid_clk,
 		CLK_OUT2 => ctrl_clk
     );
+
+
+---- debug stuff ----
+	process(vid_clk)
+	variable t : std_logic_vector(31 downto 0);
+	begin
+		if host_reset_n = '0' then
+			last_6502_addr <= (others => '0');
+			capt_i <= 0;
+			armed  <= false;
+			if host_debug_arm = '1' then	-- if during reset host_debug_arm is set we arm.
+				armed <= true;
+			end if;
+			last_ph0 <= '0';
+		elsif rising_edge(vid_clk) then
+			last_ph0 <= top_ph0;
+			if armed and last_ph0='0' and top_ph0='1' then
+				debug_mem(capt_i) <= a2600_romdata & x"00" & '0' & a2600_addr;
+				if last_6502_addr /= a2600_addr then
+					last_6502_addr <= a2600_addr;
+					capt_i <= capt_i + 1;
+					if capt_i = 15 then
+						armed <= false;
+					end if;
+				end if;
+			else
+				-- not armed
+				t := debug_mem(to_integer(unsigned(host_bootread_addr(5 downto 2))));
+				case host_bootread_addr(1 downto 0) is
+					when "00" =>
+						host_bootread_data(7 downto 0) <= t(7 downto 0);
+					when "01" =>
+						host_bootread_data(7 downto 0) <= t(15 downto 8);
+					when "10" =>
+						host_bootread_data(7 downto 0) <= t(23 downto 16);
+					when "11" =>
+						host_bootread_data(7 downto 0) <= t(31 downto 24);
+					when others =>
+						host_bootread_data(7 downto 0) <= t(7 downto 0);
+				end case;
+			end if;
+		end if;
+	end process;
 
 end architecture;
