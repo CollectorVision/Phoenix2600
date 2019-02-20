@@ -139,7 +139,9 @@ architecture rtl of toplevel is
 
 -- System clocks
   signal vid_clk: std_logic := '0';
-  signal ctrl_clk: std_logic := '0';
+  signal vid_clk_25M : std_logic;
+  signal vid_clk_125M_p : std_logic;
+  signal vid_clk_125M_n : std_logic;
 
 -- A2601
   signal audio: std_logic := '0';
@@ -185,6 +187,12 @@ architecture rtl of toplevel is
   signal vga_green_i : std_logic_vector(7 downto 0) := (others => '0');
   signal vga_blue_i	: std_logic_vector(7 downto 0) := (others => '0');
   
+  -- internal video signals between VGA and HDMI
+  signal red8   : std_logic_vector(7 downto 0);
+  signal green8 : std_logic_vector(7 downto 0);
+  signal blue8  : std_logic_vector(7 downto 0);
+  signal vga_blank_s : std_logic;
+  
   signal osd_window : std_logic;
   signal osd_pixel : std_logic;
  
@@ -221,6 +229,8 @@ architecture rtl of toplevel is
 	signal tdms_r_s			: std_logic_vector( 9 downto 0) := (others => '0');
 	signal tdms_g_s			: std_logic_vector( 9 downto 0) := (others => '0');
 	signal tdms_b_s			: std_logic_vector( 9 downto 0) := (others => '0');
+	
+	signal sound_hdmi_s		: std_logic_vector(15 downto 0) := (others => '0');
 	
 	signal a2600_addr			: std_logic_vector(14 downto 0);
 	signal a2600_romdata		: std_logic_vector(7 downto 0);
@@ -264,9 +274,13 @@ begin
 	
 -- HDMI not used. A completely non-functional piece of code to keep synthesis process happy.
 --		by using actual IO drivers.
-	clock_vga_s <= vid_clk;
-	clock_hdmi_s <= vid_clk;
-	clock_hdmi_n_s <= not vid_clk;
+
+-- hmm. let's try to make this work. vid_clk should be 25MHz clock.
+-- clock_hdmi_s should be 5x that clock, and clock_tdms_n_i also 5x but inverted.
+
+	clock_vga_s 	<= vid_clk_25M;
+	clock_hdmi_s 	<= vid_clk_125M_p;
+	clock_hdmi_n_s <= vid_clk_125M_n;
 	
 	hdmio: entity work.hdmi_out_xilinx
 	port map (
@@ -293,7 +307,7 @@ begin
 
 MyCtrlModule : entity work.CtrlModule
 	port map (
-		clk => ctrl_clk,
+		clk => vid_clk,
 		reset_n => '1',
 
 		-- Video signals for OSD
@@ -345,25 +359,26 @@ MyCtrlModule : entity work.CtrlModule
 		host_bootdata_ack => host_bootdata_ack
 	);
 
+	vga_r_o <= red8(7 downto 4);
+	vga_g_o <= green8(7 downto 4);
+	vga_b_o <= blue8(7 downto 4);
+
 overlay : entity work.OSD_Overlay
 	port map
 	(
-		clk => ctrl_clk,
-		red_in => vga_red_i,
-		green_in => vga_green_i,
-		blue_in => vga_blue_i,
-		window_in => '1',
-		osd_window_in => osd_window,
-		osd_pixel_in => osd_pixel,
-		hsync_in => vga_hsync_i,
-		red_out(7 downto 4) => vga_r_o,
-		red_out(3 downto 0) => open,
-		green_out(7 downto 4) => vga_g_o,
-		green_out(3 downto 0) => open,
-		blue_out(7 downto 4) => vga_b_o,
-		blue_out(3 downto 0) => open,
-		window_out => open,
-		scanline_ena => scanlines
+		clk 				=> vid_clk,
+		red_in 			=> vga_red_i,
+		green_in 		=> vga_green_i,
+		blue_in 			=> vga_blue_i,
+		window_in 		=> '1',
+		osd_window_in 	=> osd_window,
+		osd_pixel_in 	=> osd_pixel,
+		hsync_in 		=> vga_hsync_i,
+		red_out 			=> red8,
+		green_out 		=> green8,
+		blue_out 		=> blue8,
+		window_out 		=> open,
+		scanline_ena 	=> scanlines
 	);
 
   -- SRAM_nWE <= '1'; -- disable ram
@@ -393,7 +408,7 @@ overlay : entity work.OSD_Overlay
 -- -----------------------------------------------------------------------	
 	extSRAM : entity work.sram_controller 
 		port map (
-			clk_i => ctrl_clk,
+			clk_i => vid_clk,
 			reset_i => not(host_reset_n),
 
 			sram_addr_o	 => sram_addr_o,
@@ -422,7 +437,6 @@ overlay : entity work.OSD_Overlay
   a2601Instance : entity work.A2601NoFlash
     port map (
       vid_clk => vid_clk,
-		ram_clk => ctrl_clk,
       audio => audio,
       O_VSYNC => vga_vsync_i,
       O_HSYNC => vga_hsync_i,
@@ -481,8 +495,10 @@ overlay : entity work.OSD_Overlay
   pllInstance : entity work.pll
     port map (
       CLK_IN1 => CLOCK_50_i,
-      CLK_OUT1 => vid_clk,
-		CLK_OUT2 => ctrl_clk
+      CLK_OUT1 => vid_clk,			-- 57.5MHz
+		CLK_OUT2 => vid_clk_25M,	-- 25 MHz
+		CLK_OUT3 => vid_clk_125M_p, -- 125 MHz
+		CLK_OUT4 => vid_clk_125M_n  -- 125 MHz with 180 degree phase shift
     );
 
 
@@ -527,5 +543,32 @@ overlay : entity work.OSD_Overlay
 			end if;
 		end if;
 	end process;
+	
+	vga_blank_s <= '0';	-- BUGBUG - this is stupid, but now blanking is never on.
+	
+	hdmi: entity work.hdmi
+	generic map (
+		FREQ	=> 25200000,	-- pixel clock frequency 
+		FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
+		CTS	=> 25200,		-- CTS = Freq(pixclk) * N / (128 * Fs)
+		N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
+	)
+	port map (
+		I_CLK_PIXEL		=> clock_vga_s,
+		I_R				=> red8,
+		I_G				=> green8,
+		I_B				=> blue8,
+		I_BLANK			=> vga_blank_s,
+		I_HSYNC			=> vga_hsync_i, -- vga_hsync_n_s, 
+		I_VSYNC			=> vga_vsync_i, -- vga_vsync_n_s,
+		-- PCM audio
+		I_AUDIO_ENABLE	=> '1',
+		I_AUDIO_PCM_L 	=> sound_hdmi_s,
+		I_AUDIO_PCM_R	=> sound_hdmi_s,
+		-- TMDS parallel pixel synchronous outputs (serialize LSB first)
+		O_RED				=> tdms_r_s,
+		O_GREEN			=> tdms_g_s,
+		O_BLUE			=> tdms_b_s
+	);
 
 end architecture;

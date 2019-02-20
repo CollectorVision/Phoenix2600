@@ -92,24 +92,24 @@ begin
 	-- but modifed heavily since the use case with external SRAM is very different.
 	-- State machine to receive and stash boot data in SRAM
 	
-	-- a2600_data_o <= a2600_databyte;
-	a2600_data_o <= dp_databyte;
+	a2600_data_o <= a2600_databyte;
 	rom_loaded_o <= rom_loaded;
 	host_bootread_data <= host_read_buf;
-	web(0) <= host_bootdata_req;
-	
-	test8k: dualport8k port map(
-		clka 	=> clk_i,
-		wea 	=> "0",
-		addra => a2600_addr_i(12 downto 0),
-		dina  => x"00",
-		douta => dp_databyte,
-		clkb  => clk_i,
-		web   => web,
-		addrb => host_bootread_addr(12 downto 0),
-		dinb  => host_bootdata(7 downto 0),
-		doutb => host_read_buf(7 downto 0)
-		);
+
+--	web(0) <= host_bootdata_req;
+--	a2600_data_o <= dp_databyte;
+--	test8k: dualport8k port map(
+--		clka 	=> clk_i,
+--		wea 	=> "0",
+--		addra => a2600_addr_i(12 downto 0),
+--		dina  => x"00",
+--		douta => dp_databyte,
+--		clkb  => clk_i,
+--		web   => web,
+--		addrb => host_bootread_addr(12 downto 0),
+--		dinb  => host_bootdata(7 downto 0),
+--		doutb => host_read_buf(7 downto 0)
+--		);
 	
 	process(clk_i)
 	begin
@@ -168,7 +168,8 @@ begin
 						boot_state 		<= return_state;
 						
 					when read_host_byte0 =>
-						-- BUGBUG host_read_buf(7 downto 0) <= sram_data_io;
+						-- comment out the next line if not working with external RAM
+						host_read_buf(7 downto 0) <= sram_data_io;
 						sram_oe_n_o <= '1';
 						boot_state <= idle;
 						host_bootread_ack <= '1';
