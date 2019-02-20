@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\cvAtari2600\impact.xsl
-OUTFILE=E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\cvAtari2600\impact.xsl
+INFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\impact.xsl
+OUTFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=E:\Dropbox\Omat\trunk\coleco\2600\test2\collectorvision\cvAtari2600
+WORKINGDIR=C:\vmshare\coleco_2600\collectorvision\cvAtari2600
 LICENSE=iMPACT
 USER_INFO=iMPACT
