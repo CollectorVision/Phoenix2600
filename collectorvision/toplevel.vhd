@@ -26,6 +26,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
 
+library unisim;
+use unisim.vcomponents.all;
+
 -- -----------------------------------------------------------------------
 
 entity toplevel is
@@ -75,10 +78,10 @@ entity toplevel is
 		joy1_p6_i			: in    std_logic;
 		joy1_p7_i			: in    std_logic;
 		joy1_p9_i			: in    std_logic;
-		joy2_p1_i			: in    std_logic;
+		joy2_p1_i			: out    std_logic;
 		joy2_p2_i			: in    std_logic;
 		joy2_p3_i			: in    std_logic;
-		joy2_p4_i			: in    std_logic;
+		joy2_p4_i			: out    std_logic;
 		joy2_p6_i			: in    std_logic;
 		joy2_p7_i			: in    std_logic;
 		joy2_p9_i			: in    std_logic;
@@ -89,8 +92,8 @@ entity toplevel is
       dac_r_o : out std_logic;
 		
 -- PS2
-      ps2_clk_io : inout std_logic;
-      ps2_data_io : inout std_logic;
+      ps2_clk_io : in std_logic;
+      ps2_data_io : in std_logic;
 
 -- Serial Flash
 		flash_cs_n_o : out std_logic;
@@ -138,8 +141,9 @@ end entity;
 architecture rtl of toplevel is
 
 -- System clocks
-  signal vid_clk: std_logic := '0';
-  signal vid_clk_25M : std_logic;
+  signal clk_50_buffered: std_logic;
+  signal vid_clk        : std_logic := '0';
+  signal vid_clk_25M    : std_logic;
   signal vid_clk_125M_p : std_logic;
   signal vid_clk_125M_n : std_logic;
 
@@ -175,9 +179,7 @@ architecture rtl of toplevel is
 --  signal ps2_scancode : std_logic_vector(7 downto 0);
   
   signal ps2k_clk_in : std_logic;
-  signal ps2k_clk_out : std_logic;
   signal ps2k_dat_in : std_logic;
-  signal ps2k_dat_out : std_logic;
 
 --CtrlModule--
 -- Internal video signals:  
@@ -248,17 +250,26 @@ architecture rtl of toplevel is
 	signal last_6502_addr : std_logic_vector(14 downto 0);
 	signal armed : boolean := true;
 	signal last_ph0 : std_logic;
-
+	
 begin
 
+-- input buffer for 50MHz clock
+   IBUFG_inst : IBUFG
+   generic map (
+      IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
+      IOSTANDARD => "DEFAULT")
+   port map (
+      O => clk_50_buffered, -- Clock buffer output
+      I => CLOCK_50_i  -- Clock buffer input (connect directly to top-level port)
+   );
+
+-- logic
 	ps2k_dat_in <= ps2_data_io;
-	ps2_data_io <= '0' when ps2k_dat_out='0' else 'Z';
 	ps2k_clk_in <= ps2_clk_io;
-	ps2_clk_io  <= '0' when ps2k_clk_out='0' else 'Z';
-
-	ps2k_clk_out <= '1';
-	ps2k_dat_out <= '1';
-
+	
+	joy2_p1_i <= ps2_clk_io;
+	joy2_p4_i <= ps2_data_io;
+	
 -- Serial flash - not used right now
 	flash_cs_n_o <= '1';
 	flash_sclk_o <= '0';
@@ -492,13 +503,18 @@ overlay : entity work.OSD_Overlay
 -- -----------------------------------------------------------------------
 -- Clocks and PLL
 -- -----------------------------------------------------------------------
-  pllInstance : entity work.pll
+  pll_575_instance : entity work.pll
     port map (
-      CLK_IN1 => CLOCK_50_i,
-      CLK_OUT1 => vid_clk,			-- 57.5MHz
-		CLK_OUT2 => vid_clk_25M,	-- 25 MHz
-		CLK_OUT3 => vid_clk_125M_p, -- 125 MHz
-		CLK_OUT4 => vid_clk_125M_n  -- 125 MHz with 180 degree phase shift
+      CLK_IN1 => clk_50_buffered,
+      CLK_OUT1 => vid_clk			-- 57.5 MHz
+		); 
+			
+	pll_hdmi_instance: entity work.pll_hdmi
+	  port map (
+	   CLK_IN1  => clk_50_buffered,
+		CLK_25   => vid_clk_25M,	 -- 25 MHz
+		CLK_125P => vid_clk_125M_p, -- 125 MHz
+		CLK_125M => vid_clk_125M_n  -- 125 MHz with 180 degree phase shift
     );
 
 
@@ -548,7 +564,8 @@ overlay : entity work.OSD_Overlay
 	
 	hdmi: entity work.hdmi
 	generic map (
-		FREQ	=> 25200000,	-- pixel clock frequency 
+		FREQ	=> 25000000,	-- pixel clock frequency 
+		-- FREQ	=> 25200000,	-- pixel clock frequency 
 		FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
 		CTS	=> 25200,		-- CTS = Freq(pixclk) * N / (128 * Fs)
 		N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)

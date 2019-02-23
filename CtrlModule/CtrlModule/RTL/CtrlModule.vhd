@@ -197,7 +197,7 @@ port map(
 mykeyboard : entity work.io_ps2_com
 generic map (
 	clockFilter => 15,
-	ticksPerUsec => sysclk_frequency/10
+	ticksPerUsec => sysclk_frequency/57
 )
 port map (
 	clk => clk,

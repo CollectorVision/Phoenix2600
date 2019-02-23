@@ -1,53 +1,53 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-WARNING:sim - A core named 'pll' already exists in the project. Output products
-   for this core may be overwritten.
-Resolving generics for 'pll'...
-WARNING:sim - A core named 'pll' already exists in the project. Output products
-   for this core may be overwritten.
-Applying external generics to 'pll'...
-Delivering associated files for 'pll'...
+WARNING:sim - A core named 'pll_hdmi' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'pll_hdmi'...
+WARNING:sim - A core named 'pll_hdmi' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'pll_hdmi'...
+Delivering associated files for 'pll_hdmi'...
 WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for VHDL
    synthesis
-Delivering EJava files for 'pll'...
+Delivering EJava files for 'pll_hdmi'...
 Delivered 3 files into directory
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi
 Delivered 1 file into directory
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi
 Generating ASY schematic symbol...
 Loading device for application Rf_Device from file '6slx16.nph' in environment
 C:\Xilinx\14.7\ISE_DS\ISE\.
 INFO:sim:949 - Finished generation of ASY schematic symbol.
-Generating SYM schematic symbol for 'pll'...
+Generating SYM schematic symbol for 'pll_hdmi'...
 Generating ISE project...
-XCO file found: pll.xco
-XMDF file found: pll_xmdf.tcl
+XCO file found: pll_hdmi.xco
+XMDF file found: pll_hdmi_xmdf.tcl
 Adding
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll.asy
--view all -origin_type imported
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi.a
+sy -view all -origin_type imported
 Adding
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll.ucf
--view all -origin_type created
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi.u
+cf -view all -origin_type created
 Adding
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll.vhd
--view all -origin_type created
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi.v
+hd -view all -origin_type created
 INFO:HDLCompiler:1061 - Parsing VHDL file
-   "C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll.vh
-   d" into library work
+   "C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hd
+   mi.vhd" into library work
 INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
 Adding
-C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll.vho
--view all -origin_type imported
+C:/vmshare/coleco_2600/collectorvision/cvAtari2600/ipcore_dir/tmp/_cg/pll_hdmi.v
+ho -view all -origin_type imported
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
    To re-calculate the new top automatically, set the "Auto Implementation Top"
    property to true.
-Top level has been set to "/pll"
+Top level has been set to "/pll_hdmi"
 Generating README file...
 Generating FLIST file...
 INFO:sim:948 - Finished FLIST file generation.
 Launching README viewer...
 Moving files to output directory...
 Finished moving files to output directory
-Wrote CGP file for project 'pll'.
+Wrote CGP file for project 'pll_hdmi'.

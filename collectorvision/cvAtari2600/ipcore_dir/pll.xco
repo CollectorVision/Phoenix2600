@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Wed Feb 20 13:52:56 2019
+# Date: Sat Feb 23 13:20:30 2019
 #
 ##############################################################
 #
@@ -76,17 +76,17 @@ CSET clkout2_drives=BUFG
 CSET clkout2_requested_duty_cycle=50.000
 CSET clkout2_requested_out_freq=25
 CSET clkout2_requested_phase=0.000
-CSET clkout2_used=true
+CSET clkout2_used=false
 CSET clkout3_drives=BUFG
 CSET clkout3_requested_duty_cycle=50.000
 CSET clkout3_requested_out_freq=125.000
 CSET clkout3_requested_phase=0.000
-CSET clkout3_used=true
+CSET clkout3_used=false
 CSET clkout4_drives=BUFG
 CSET clkout4_requested_duty_cycle=50.000
 CSET clkout4_requested_out_freq=125.000
 CSET clkout4_requested_phase=180.000
-CSET clkout4_used=true
+CSET clkout4_used=false
 CSET clkout5_drives=BUFG
 CSET clkout5_requested_duty_cycle=50.000
 CSET clkout5_requested_out_freq=100.000
@@ -106,7 +106,7 @@ CSET clock_mgr_type=AUTO
 CSET component_name=pll
 CSET daddr_port=DADDR
 CSET dclk_port=DCLK
-CSET dcm_clk_feedback=2X
+CSET dcm_clk_feedback=1X
 CSET dcm_clk_out1_port=CLKFX
 CSET dcm_clk_out2_port=CLKFX
 CSET dcm_clk_out3_port=CLK2X
@@ -189,7 +189,7 @@ CSET mmcm_notes=None
 CSET mmcm_ref_jitter1=0.010
 CSET mmcm_ref_jitter2=0.010
 CSET mmcm_startup_wait=false
-CSET num_out_clks=4
+CSET num_out_clks=1
 CSET override_dcm=false
 CSET override_dcm_clkgen=false
 CSET override_mmcm=false
@@ -225,7 +225,7 @@ CSET pll_ref_jitter=0.010
 CSET power_down_port=POWER_DOWN
 CSET prim_in_freq=50
 CSET prim_in_jitter=0.010
-CSET prim_source=Single_ended_clock_capable_pin
+CSET prim_source=No_buffer
 CSET primary_port=CLK_IN1
 CSET primitive=MMCM
 CSET primtype_sel=PLL_BASE
@@ -251,7 +251,7 @@ CSET use_freeze=false
 CSET use_freq_synth=true
 CSET use_inclk_stopped=false
 CSET use_inclk_switchover=false
-CSET use_locked=true
+CSET use_locked=false
 CSET use_max_i_jitter=false
 CSET use_min_o_jitter=false
 CSET use_min_power=false
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC: 90a0fdb7
+# CRC: fa42f5aa
