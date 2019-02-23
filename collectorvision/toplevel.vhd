@@ -194,6 +194,12 @@ architecture rtl of toplevel is
   signal green8 : std_logic_vector(7 downto 0);
   signal blue8  : std_logic_vector(7 downto 0);
   signal vga_blank_s : std_logic;
+  -- yet more internal signals used for VGA timing generator for HDMI
+  signal vga_hsync_n_s : std_logic;
+  signal vga_vsync_n_s : std_logic;
+  signal vga_color_out : std_logic_vector(3 downto 0);
+ 
+  
   
   signal osd_window : std_logic;
   signal osd_pixel : std_logic;
@@ -560,8 +566,21 @@ overlay : entity work.OSD_Overlay
 		end if;
 	end process;
 	
-	vga_blank_s <= '0';	-- BUGBUG - this is stupid, but now blanking is never on.
 	
+	-- Use a second VGA block to provide timing for HDMI.
+	vga_timing_gen : entity work.vga 
+		port map (
+	--		I_CLK			: in  std_logic;
+			I_CLK_VGA	=> clock_vga_s,
+			I_COLOR	   => "0000",
+			I_HCNT		=> "000000000",
+			I_VCNT		=> x"00",
+			O_HSYNC		=> vga_hsync_n_s, 
+			O_VSYNC		=> vga_vsync_n_s, 
+			O_COLOR		=> vga_color_out,
+			O_BLANK	   => vga_blank_s
+		);
+
 	hdmi: entity work.hdmi
 	generic map (
 		FREQ	=> 25000000,	-- pixel clock frequency 
@@ -576,8 +595,8 @@ overlay : entity work.OSD_Overlay
 		I_G				=> green8,
 		I_B				=> blue8,
 		I_BLANK			=> vga_blank_s,
-		I_HSYNC			=> vga_hsync_i, -- vga_hsync_n_s, 
-		I_VSYNC			=> vga_vsync_i, -- vga_vsync_n_s,
+		I_HSYNC			=> vga_hsync_n_s, 
+		I_VSYNC			=> vga_vsync_n_s,
 		-- PCM audio
 		I_AUDIO_ENABLE	=> '1',
 		I_AUDIO_PCM_L 	=> sound_hdmi_s,
