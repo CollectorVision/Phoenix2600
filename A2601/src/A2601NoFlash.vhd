@@ -38,7 +38,12 @@ entity A2601NoFlash is
          O_HSYNC: out std_logic;
          O_VIDEO_R: out std_logic_vector(5 downto 0);
          O_VIDEO_G: out std_logic_vector(5 downto 0);
-         O_VIDEO_B: out std_logic_vector(5 downto 0);			
+         O_VIDEO_B: out std_logic_vector(5 downto 0);	
+			-- EP added outputs before VGA scandoubler
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			-- EP end addition
          res: in std_logic;
          p_l: in std_logic;
          p_r: in std_logic;
@@ -103,6 +108,11 @@ architecture arch of A2601NoFlash is
          vsyn: out std_logic;
          hsyn: out std_logic;
          rgbx2: out std_logic_vector(23 downto 0);
+			-- EP added outputs before VGA scandoubler
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			-- EP end addition
          cv: out std_logic_vector(7 downto 0);
          au0: out std_logic;
          au1: out std_logic;
@@ -231,7 +241,9 @@ begin
 	ms_A2601: A2601
         port map(vid_clk, rst, cpu_d, cpu_a, cpu_r,pa, pb, 
 				paddle_0, paddle_1, paddle_2, paddle_3, paddle_ena, 
-				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, cv, 
+				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, 
+				pre_hsyn, pre_vsyn, pre_colu,
+				cv, 
 				au0, au1, av0, av1, ph0, ph1, pal);
 	
 	dac_inst: dac 

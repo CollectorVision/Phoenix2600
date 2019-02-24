@@ -613,6 +613,12 @@ entity TIA is
          csyn: out std_logic;
          hsyn: out std_logic;
          vsyn: out std_logic;
+			-- EP: Also provide the sync signals and color output of the TIA BEFORE 
+			-- going to the VGA scandoubler block.
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			
          rgbx2: out std_logic_vector(23 downto 0);
          cv: out std_logic_vector(7 downto 0) := "00000000";
          rdy: out std_logic;
@@ -1404,6 +1410,10 @@ begin
 		CLK => clk,
 		CLK_X2 => clkx2
 	);	
+	
+	pre_hsyn <= hsync;
+	pre_vsyn <= vsync;
+	pre_colu <= int_colu;
 	
 	Inst_VGAColorTable: VGAColorTable PORT MAP(
 		clk => clkx2,

@@ -40,6 +40,11 @@ entity A2601 is
          vsyn: out std_logic;
          hsyn: out std_logic;
 			rgbx2: out std_logic_vector(23 downto 0);
+			-- EP added outputs before VGA scandoubler
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			-- EP end addition
          cv: out std_logic_vector(7 downto 0);
          au0: out std_logic;
          au1: out std_logic;
@@ -88,6 +93,11 @@ architecture arch of A2601 is
              csyn: out std_logic;
              vsyn: out std_logic;
              hsyn: out std_logic;
+				 -- EP added outputs before VGA scandoubler
+				 pre_hsyn : out std_logic;
+				 pre_vsyn : out std_logic;
+				 pre_colu : out std_logic_vector(6 downto 0);
+				 -- EP end addition
              rgbx2: out std_logic_vector(23 downto 0);
              cv: out std_logic_vector(7 downto 0);
              rdy: out std_logic;
@@ -135,7 +145,9 @@ begin
 
     tia_inst: TIA
         port map(vid_clk, tia_cs, read, tia_a, d,
-            colu, csyn, vsyn, hsyn, rgbx2, cv, rdy, ph0, ph1,
+            colu, csyn, vsyn, hsyn, 
+				pre_hsyn, pre_vsyn, pre_colu,
+				rgbx2, cv, rdy, ph0, ph1,
             au0, au1, av0, av1, paddle_0, paddle_1, paddle_2, paddle_3,
 				paddle_ena, inpt4, inpt5, pal);
 

@@ -197,9 +197,11 @@ architecture rtl of toplevel is
   -- yet more internal signals used for VGA timing generator for HDMI
   signal vga_hsync_n_s : std_logic;
   signal vga_vsync_n_s : std_logic;
-  signal vga_color_out : std_logic_vector(3 downto 0);
- 
-  
+  signal vga_color_out : std_logic_vector(6 downto 0);
+  -- sync and color signals before entering the VGA scandoubler inside the TIA block
+  signal pre_hsyn : std_logic;
+  signal	pre_vsyn : std_logic;
+  signal	pre_colu : std_logic_vector(6 downto 0);
   
   signal osd_window : std_logic;
   signal osd_pixel : std_logic;
@@ -257,6 +259,24 @@ architecture rtl of toplevel is
 	signal armed : boolean := true;
 	signal last_ph0 : std_logic;
 	
+	signal last_hsync : std_logic := '0';
+	signal last_vsync : std_logic := '0';
+	signal tia_hcnt : unsigned(7 downto 0);
+	signal tia_vcnt : unsigned(7 downto 0);
+	signal tia_divider : unsigned(3 downto 0) := "0000";
+	signal rgb_color : std_logic_vector(23 downto 0);
+	
+	component VGAColorTable is
+	port (
+		clk : in std_logic; -- Clock input	
+		lum : in std_logic_vector(3 downto 0); -- luminance
+		hue : in std_logic_vector(3 downto 0); -- hue
+		mode : in std_logic_vector(1 downto 0); -- Mode (0 = NTSC, 1 = PAL, 2 = SECAM)
+		outColor : out std_logic_vector(23 downto 0) -- 24 bit color output
+		);
+	end component;
+	
+	
 begin
 
 -- input buffer for 50MHz clock
@@ -273,8 +293,8 @@ begin
 	ps2k_dat_in <= ps2_data_io;
 	ps2k_clk_in <= ps2_clk_io;
 	
-	joy2_p1_i <= ps2_clk_io;
-	joy2_p4_i <= ps2_data_io;
+	joy2_p1_i <= pre_hsyn; -- pre_hsyn; -- ps2_clk_io;
+	joy2_p4_i <= tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
 	
 -- Serial flash - not used right now
 	flash_cs_n_o <= '1';
@@ -489,6 +509,11 @@ overlay : entity work.OSD_Overlay
 --      bootdata_req => host_bootdata_req,
 --      bootdata_ack => host_bootdata_ack,
 		show_ph0 => top_ph0,
+		-- EP added outputs before VGA scandoubler
+		pre_hsyn => pre_hsyn,
+		pre_vsyn => pre_vsyn,
+		pre_colu => pre_colu,
+		-- EP end addition
 		size => size
     );
 
@@ -566,20 +591,58 @@ overlay : entity work.OSD_Overlay
 		end if;
 	end process;
 	
+	process(vid_clk)
+	begin 
+		if rising_edge(vid_clk) then
+			tia_divider <= tia_divider + 1;
+			if tia_divider = 15 then
+				last_hsync <= pre_hsyn;
+				last_vsync <= pre_vsyn;
+				if tia_hcnt < 160+48 then -- sync this with below
+					tia_hcnt <= tia_hcnt + 1;
+				end if;
+				if pre_hsyn = '1' and last_hsync = '0' then
+					tia_hcnt <= (others => '0');
+					-- increment vcount on rising edge of hsync.
+					-- max 205 lines can be captured into 32K framebuffer
+					if tia_vcnt < 205+37 then 	-- sync the offset 37 with below, 20
+						tia_vcnt <= tia_vcnt + 1;
+					end if;
+				end if;
+				
+				-- not sure if this is correct, but we reset vertical counter when vsync ends
+				if last_vsync = '1' and pre_vsyn='0' then
+					tia_vcnt <= (others => '0');
+				end if;
+			end if;
+		end if;
+	end process;
 	
 	-- Use a second VGA block to provide timing for HDMI.
 	vga_timing_gen : entity work.vga 
+		generic map (
+			v_input_offset	=> 37,
+			h_input_offset	=> 48
+		)
 		port map (
-	--		I_CLK			: in  std_logic;
 			I_CLK_VGA	=> clock_vga_s,
-			I_COLOR	   => "0000",
-			I_HCNT		=> "000000000",
-			I_VCNT		=> x"00",
+			I_COLOR	   => pre_colu,
+			I_HCNT		=> tia_hcnt,
+			I_VCNT		=> tia_vcnt,
 			O_HSYNC		=> vga_hsync_n_s, 
 			O_VSYNC		=> vga_vsync_n_s, 
 			O_COLOR		=> vga_color_out,
 			O_BLANK	   => vga_blank_s
 		);
+		
+	-- Secondary colortable for outputting to HDMI
+	Inst_HDMI_ColorTable: VGAColorTable PORT MAP(
+		clk => clock_vga_s,
+		lum => '0' & vga_color_out(2 downto 0),
+		hue => vga_color_out(6 downto 3),
+		mode => '0' & p_pal,	-- 00 = NTSC, 01 = PAL		-- EP BUGBUG is p_pal high when in PAL?
+		outColor => rgb_color
+	);			
 
 	hdmi: entity work.hdmi
 	generic map (
@@ -591,9 +654,9 @@ overlay : entity work.OSD_Overlay
 	)
 	port map (
 		I_CLK_PIXEL		=> clock_vga_s,
-		I_R				=> red8,
-		I_G				=> green8,
-		I_B				=> blue8,
+		I_R				=> rgb_color(23 downto 16), -- red8,
+		I_G				=> rgb_color(15 downto 8),  -- green8,
+		I_B				=> rgb_color(7 downto 0),   -- blue8,
 		I_BLANK			=> vga_blank_s,
 		I_HSYNC			=> vga_hsync_n_s, 
 		I_VSYNC			=> vga_vsync_n_s,
