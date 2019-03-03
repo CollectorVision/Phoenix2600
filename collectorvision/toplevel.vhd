@@ -1,9 +1,12 @@
 --
--- ZXUNO_A2601.vhd
+-- toplevel.vhd
+-- 	formerly ZXUNO_A2601.vhd
 --
 -- Atari VCS 2600 toplevel for the Collectorvision
 --
 -- Modified from ZXUNO version 2016 DistWave
+-- Extensively modifed for the Collectorvision Phoenix by Erik Piehl 2018-2019
+--		support for external SRAM
 --
 -- Based on the MiST port from https://github.com/wsoltys/tca2601
 -- Copyright (c) 2014 W. Soltys <wsoltys@gmail.com>
@@ -193,11 +196,11 @@ architecture rtl of toplevel is
   signal red8   : std_logic_vector(7 downto 0);
   signal green8 : std_logic_vector(7 downto 0);
   signal blue8  : std_logic_vector(7 downto 0);
-  signal vga_blank_s : std_logic;
+  signal hdmi_vga_blank_s : std_logic;
   -- yet more internal signals used for VGA timing generator for HDMI
-  signal vga_hsync_n_s : std_logic;
-  signal vga_vsync_n_s : std_logic;
-  signal vga_color_out : std_logic_vector(6 downto 0);
+  signal hdmi_vga_hsync_n_s : std_logic;
+  signal hdmi_vga_vsync_n_s : std_logic;
+  signal hdmi_vga_lum_hue_color_out : std_logic_vector(6 downto 0);	-- 7 bit color from A2600 core
   -- sync and color signals before entering the VGA scandoubler inside the TIA block
   signal pre_hsyn : std_logic;
   signal	pre_vsyn : std_logic;
@@ -226,12 +229,12 @@ architecture rtl of toplevel is
   signal host_bootread_ack 	: std_logic := '0';  
   
 -- EP support for Colecovision controller
-	signal P_L: std_logic;
-	signal P_R: std_logic;
-	signal P_A: std_logic;
-	signal P_U: std_logic;
-	signal P_D: std_logic;
--- EP fake HDMI output, not functional
+	signal P_L: std_logic := '1';
+	signal P_R: std_logic := '1';
+	signal P_A: std_logic := '1';
+	signal P_U: std_logic := '1';
+	signal P_D: std_logic := '1';
+	-- EP HDMI signals
 	signal clock_vga_s		: std_logic;
 	signal clock_hdmi_s		: std_logic;
 	signal clock_hdmi_n_s	: std_logic;
@@ -265,6 +268,9 @@ architecture rtl of toplevel is
 	signal tia_vcnt : unsigned(7 downto 0);
 	signal tia_divider : unsigned(3 downto 0) := "0000";
 	signal rgb_color : std_logic_vector(23 downto 0);
+	
+	signal numpad_0 : std_logic_vector(11 downto 0) := (others => '1');
+	signal scan_state : unsigned(7 downto 0) := x"00";
 	
 	component VGAColorTable is
 	port (
@@ -303,18 +309,7 @@ begin
 	flash_wp_o   <= '0';
 	flash_hold_o <= '0';
 		
--- SRAM - not used	
---	sram_oe_n_o	<= '1';
---	sram_we_n_o <= '1';
---	sram_data_io <= "ZZZZZZZZ";
---	sram_addr_o <= (others => '0');
-	
--- HDMI not used. A completely non-functional piece of code to keep synthesis process happy.
---		by using actual IO drivers.
-
--- hmm. let's try to make this work. vid_clk should be 25MHz clock.
--- clock_hdmi_s should be 5x that clock, and clock_tdms_n_i also 5x but inverted.
-
+	-- HDMI clocks
 	clock_vga_s 	<= vid_clk_25M;
 	clock_hdmi_s 	<= vid_clk_125M_p;
 	clock_hdmi_n_s <= vid_clk_125M_n;
@@ -332,14 +327,46 @@ begin
 	);
 	
 -- Colecovision gamepad support
-	joy_p8_o <= '0';
-	joy_p5_o <= '0';
+	process(vid_clk_25M)
+	variable sel : std_logic_vector(3 downto 0);
+	begin
+		if rising_edge(vid_clk_25M) then
+			scan_state <= scan_state + 1;
+			if scan_state(6 downto 0) = "0000000" then
+				joy_p8_o <= scan_state(7);
+				joy_p5_o <= not scan_state(7);
+			else
+				if scan_state(7) = '0' then
+					-- read directions and fire
+					P_L	<= joy1_p3_i;
+					P_R	<= joy1_p4_i;
+					P_A 	<= joy1_p6_i;	-- left fire
+					P_U 	<= joy1_p1_i;
+					P_D 	<= joy1_p2_i;
+				else
+					-- read number pad
+					numpad_0 <= (others => '1'); -- assume all not pressed
+					sel := joy1_p4_i & joy1_p3_i & joy1_p2_i & joy1_p1_i; 
+					case sel is
+						when "1110" => numpad_0(0) <= '0';	-- key 1
+						when "1101" => numpad_0(1) <= '0';	-- key 2
+						when "0110" => numpad_0(2) <= '0';  -- key 3
+						when "0001" => numpad_0(3) <= '0';	-- key 4
+						when "1001" => numpad_0(4) <= '0';	-- key 5
+						when "0111" => numpad_0(5) <= '0';	-- key 6
+						when "1100" => numpad_0(6) <= '0';	-- key 7
+						when "1000" => numpad_0(7) <= '0';	-- key 8
+						when "1011" => numpad_0(8) <= '0';	-- key 9
+						when "1010" => numpad_0(9) <= '0';	-- key *
+						when "0011" => numpad_0(10)<= '0';	-- key 0
+						when "0101" => numpad_0(11)<= '0';	-- key #
+						when others =>
+					end case;
+				end if;
+			end if;
+		end if;
+	end process;
 	
-	P_L	<= joy1_p3_i;
-	P_R	<= joy1_p4_i;
-	P_A 	<= joy1_p6_i;
-	P_U 	<= joy1_p1_i;
-   P_D 	<= joy1_p2_i;
 -- Control module
 
 MyCtrlModule : entity work.CtrlModule
@@ -348,8 +375,8 @@ MyCtrlModule : entity work.CtrlModule
 		reset_n => '1',
 
 		-- Video signals for OSD
-		vga_hsync => vga_hsync_i,
-		vga_vsync => vga_vsync_i,
+		vga_hsync => hdmi_vga_hsync_n_s, -- vga_hsync_i,
+		vga_vsync => hdmi_vga_vsync_n_s, -- vga_vsync_i,
 		osd_window => osd_window,
 		osd_pixel => osd_pixel,
 
@@ -358,10 +385,10 @@ MyCtrlModule : entity work.CtrlModule
 		ps2k_dat_in => ps2k_dat_in,
 		
 		-- SD card signals
-		spi_clk => sd_sclk_o,
+		spi_clk  => sd_sclk_o,
 		spi_mosi => sd_mosi_o,
 		spi_miso => sd_miso_i,
-		spi_cs => sd_cs_n_o,
+		spi_cs   => sd_cs_n_o,
 		
 		-- DIP switches
 		dipswitches(15 downto 5) => open,
@@ -396,35 +423,56 @@ MyCtrlModule : entity work.CtrlModule
 		host_bootdata_ack => host_bootdata_ack
 	);
 
+	-- Drive the VGA outputs
+	-- this is the original code, timing determined by the A2600 core.
 	vga_r_o <= red8(7 downto 4);
 	vga_g_o <= green8(7 downto 4);
 	vga_b_o <= blue8(7 downto 4);
+-- vga_hsync_n_o <= vga_hsync_i;
+-- vga_vsync_n_o <= vga_vsync_i;
 
+	-- source secondary timing generator driving HDMI
+--	vga_r_o <= rgb_color(23 downto 20);
+--	vga_g_o <= rgb_color(15 downto 12);
+--	vga_b_o <= rgb_color(7 downto 4);
+   vga_hsync_n_o <= hdmi_vga_hsync_n_s;
+   vga_vsync_n_o <= hdmi_vga_vsync_n_s;
+	
 overlay : entity work.OSD_Overlay
 	port map
 	(
-		clk 				=> vid_clk,
-		red_in 			=> vga_red_i,
-		green_in 		=> vga_green_i,
-		blue_in 			=> vga_blue_i,
+		clk 				=> clock_vga_s, 
+		red_in 			=> rgb_color(23 downto 16), 
+		green_in 		=> rgb_color(15 downto  8),
+		blue_in 			=> rgb_color( 7 downto  0),
 		window_in 		=> '1',
 		osd_window_in 	=> osd_window,
 		osd_pixel_in 	=> osd_pixel,
-		hsync_in 		=> vga_hsync_i,
+		hsync_in 		=> hdmi_vga_hsync_n_s,
 		red_out 			=> red8,
 		green_out 		=> green8,
 		blue_out 		=> blue8,
 		window_out 		=> open,
 		scanline_ena 	=> scanlines
-	);
+	);	
 
-  -- SRAM_nWE <= '1'; -- disable ram
-
-  vga_hsync_n_o <= vga_hsync_i;
-  vga_vsync_n_o <= vga_vsync_i;
- 
---  NTSC <= '0';
---  PAL <= '0';
+--overlay : entity work.OSD_Overlay
+--	port map
+--	(
+--		clk 				=> vid_clk,
+--		red_in 			=> vga_red_i,
+--		green_in 		=> vga_green_i,
+--		blue_in 			=> vga_blue_i,
+--		window_in 		=> '1',
+--		osd_window_in 	=> osd_window,
+--		osd_pixel_in 	=> osd_pixel,
+--		hsync_in 		=> vga_hsync_i,
+--		red_out 			=> red8,
+--		green_out 		=> green8,
+--		blue_out 		=> blue8,
+--		window_out 		=> open,
+--		scanline_ena 	=> scanlines
+--	);
 
 -- -----------------------------------------------------------------------
 -- PACMAN ROM used during bootup
@@ -590,6 +638,7 @@ overlay : entity work.OSD_Overlay
 			end if;
 		end if;
 	end process;
+	-- end of debug stuff
 	
 	process(vid_clk)
 	begin 
@@ -622,25 +671,25 @@ overlay : entity work.OSD_Overlay
 	vga_timing_gen : entity work.vga 
 		generic map (
 			v_input_offset	=> 37,
-			h_input_offset	=> 48
+			h_input_offset	=> 40 -- EP BUGBUG this was 48
 		)
 		port map (
 			I_CLK_VGA	=> clock_vga_s,
 			I_COLOR	   => pre_colu,
 			I_HCNT		=> tia_hcnt,
 			I_VCNT		=> tia_vcnt,
-			O_HSYNC		=> vga_hsync_n_s, 
-			O_VSYNC		=> vga_vsync_n_s, 
-			O_COLOR		=> vga_color_out,
-			O_BLANK	   => vga_blank_s
+			O_HSYNC		=> hdmi_vga_hsync_n_s, 
+			O_VSYNC		=> hdmi_vga_vsync_n_s, 
+			O_COLOR		=> hdmi_vga_lum_hue_color_out,
+			O_BLANK	   => hdmi_vga_blank_s
 		);
 		
 	-- Secondary colortable for outputting to HDMI
 	Inst_HDMI_ColorTable: VGAColorTable PORT MAP(
-		clk => clock_vga_s,
-		lum => '0' & vga_color_out(2 downto 0),
-		hue => vga_color_out(6 downto 3),
-		mode => '0' & p_pal,	-- 00 = NTSC, 01 = PAL		-- EP BUGBUG is p_pal high when in PAL?
+		clk => 	clock_vga_s,
+		lum => 	'0' & hdmi_vga_lum_hue_color_out(2 downto 0),
+		hue => 	hdmi_vga_lum_hue_color_out(6 downto 3),
+		mode => 	'0' & p_pal,	-- 00 = NTSC, 01 = PAL		-- EP BUGBUG is p_pal high when in PAL?
 		outColor => rgb_color
 	);			
 
@@ -654,12 +703,12 @@ overlay : entity work.OSD_Overlay
 	)
 	port map (
 		I_CLK_PIXEL		=> clock_vga_s,
-		I_R				=> rgb_color(23 downto 16), -- red8,
-		I_G				=> rgb_color(15 downto 8),  -- green8,
-		I_B				=> rgb_color(7 downto 0),   -- blue8,
-		I_BLANK			=> vga_blank_s,
-		I_HSYNC			=> vga_hsync_n_s, 
-		I_VSYNC			=> vga_vsync_n_s,
+		I_R				=> red8,		-- rgb_color(23 downto 16), -- red8,
+		I_G				=> green8, 	-- rgb_color(15 downto 8),  -- green8,
+		I_B				=> blue8,	-- rgb_color(7 downto 0),   -- blue8,
+		I_BLANK			=> hdmi_vga_blank_s,
+		I_HSYNC			=> hdmi_vga_hsync_n_s, 
+		I_VSYNC			=> hdmi_vga_vsync_n_s,
 		-- PCM audio
 		I_AUDIO_ENABLE	=> '1',
 		I_AUDIO_PCM_L 	=> sound_hdmi_s,
