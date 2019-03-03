@@ -149,6 +149,7 @@ architecture rtl of toplevel is
   signal vid_clk_25M    : std_logic;
   signal vid_clk_125M_p : std_logic;
   signal vid_clk_125M_n : std_logic;
+  signal vid_clk_50M    : std_logic;
 
 -- A2601
   signal audio: std_logic := '0';
@@ -205,6 +206,7 @@ architecture rtl of toplevel is
   signal pre_hsyn : std_logic;
   signal	pre_vsyn : std_logic;
   signal	pre_colu : std_logic_vector(6 downto 0);
+  signal tia_pixel_clock : std_logic;
   
   signal osd_window : std_logic;
   signal osd_pixel : std_logic;
@@ -300,7 +302,7 @@ begin
 	ps2k_clk_in <= ps2_clk_io;
 	
 	joy2_p1_i <= pre_hsyn; -- pre_hsyn; -- ps2_clk_io;
-	joy2_p4_i <= tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
+	joy2_p4_i <= tia_pixel_clock; -- tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
 	
 -- Serial flash - not used right now
 	flash_cs_n_o <= '1';
@@ -561,6 +563,7 @@ overlay : entity work.OSD_Overlay
 		pre_hsyn => pre_hsyn,
 		pre_vsyn => pre_vsyn,
 		pre_colu => pre_colu,
+		tia_pixel_clock => tia_pixel_clock,
 		-- EP end addition
 		size => size
     );
@@ -593,7 +596,8 @@ overlay : entity work.OSD_Overlay
 	   CLK_IN1  => clk_50_buffered,
 		CLK_25   => vid_clk_25M,	 -- 25 MHz
 		CLK_125P => vid_clk_125M_p, -- 125 MHz
-		CLK_125M => vid_clk_125M_n  -- 125 MHz with 180 degree phase shift
+		CLK_125M => vid_clk_125M_n, -- 125 MHz with 180 degree phase shift
+		CLK_50   => vid_clk_50M		 -- 50 MHz (I guess the same as input)
     );
 
 
@@ -640,11 +644,14 @@ overlay : entity work.OSD_Overlay
 	end process;
 	-- end of debug stuff
 	
-	process(vid_clk)
-	begin 
-		if rising_edge(vid_clk) then
-			tia_divider <= tia_divider + 1;
-			if tia_divider = 15 then
+--	process(vid_clk)
+--	begin 
+--		if rising_edge(vid_clk) then
+--			tia_divider <= tia_divider + 1;
+--			if tia_divider = 15 then
+	process(tia_pixel_clock)
+	begin
+		if tia_pixel_clock'event and tia_pixel_clock='1' then 
 				last_hsync <= pre_hsyn;
 				last_vsync <= pre_vsyn;
 				if tia_hcnt < 160+48 then -- sync this with below
@@ -664,18 +671,20 @@ overlay : entity work.OSD_Overlay
 					tia_vcnt <= (others => '0');
 				end if;
 			end if;
-		end if;
+--		end if;
 	end process;
 	
 	-- Use a second VGA block to provide timing for HDMI.
 	vga_timing_gen : entity work.vga 
 		generic map (
 			v_input_offset	=> 37,
-			h_input_offset	=> 40 -- EP BUGBUG this was 48
+			h_input_offset	=> 48
 		)
 		port map (
 			I_CLK_VGA	=> clock_vga_s,
+			I_CLK_VGA2X => vid_clk_50M,
 			I_COLOR	   => pre_colu,
+			I_PX_CLK    => tia_pixel_clock,
 			I_HCNT		=> tia_hcnt,
 			I_VCNT		=> tia_vcnt,
 			O_HSYNC		=> hdmi_vga_hsync_n_s, 

@@ -615,9 +615,10 @@ entity TIA is
          vsyn: out std_logic;
 			-- EP: Also provide the sync signals and color output of the TIA BEFORE 
 			-- going to the VGA scandoubler block.
-			pre_hsyn : out std_logic;
-			pre_vsyn : out std_logic;
-			pre_colu : out std_logic_vector(6 downto 0);
+			pre_hsyn 		 : out std_logic;
+			pre_vsyn 		 : out std_logic;
+			pre_colu 		 : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
 			
          rgbx2: out std_logic_vector(23 downto 0);
          cv: out std_logic_vector(7 downto 0) := "00000000";
@@ -1399,6 +1400,7 @@ begin
 
     clk <= vid_clk_dvdr(3);
     clkx2 <= vid_clk_dvdr(2);
+	 tia_pixel_clock <= vid_clk_dvdr(3);	-- EP bring out the pixel clock
 	 
 	Inst_VGA_SCANDBL: VGA_SCANDBL PORT MAP(
 		I => int_colu,

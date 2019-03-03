@@ -57,6 +57,7 @@
 -- CLK_OUT1____25.000______0.000______50.0______300.000____150.000
 -- CLK_OUT2___125.000______0.000______50.0______360.000____150.000
 -- CLK_OUT3___125.000____180.000______50.0______360.000____150.000
+-- CLK_OUT4____50.000______0.000______50.0______200.000____150.000
 --
 ------------------------------------------------------------------------------
 -- "Input Clock   Freq (MHz)    Input Jitter (UI)"
@@ -73,7 +74,8 @@ port
   -- Clock out ports
   CLK_25          : out    std_logic;
   CLK_125P          : out    std_logic;
-  CLK_125M          : out    std_logic
+  CLK_125M          : out    std_logic;
+  CLK_50          : out    std_logic
  );
 end component;
 
@@ -88,5 +90,6 @@ your_instance_name : pll_hdmi
     -- Clock out ports
     CLK_25 => CLK_25,
     CLK_125P => CLK_125P,
-    CLK_125M => CLK_125M);
+    CLK_125M => CLK_125M,
+    CLK_50 => CLK_50);
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

@@ -44,6 +44,7 @@ entity A2601 is
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
 			-- EP end addition
          cv: out std_logic_vector(7 downto 0);
          au0: out std_logic;
@@ -97,6 +98,7 @@ architecture arch of A2601 is
 				 pre_hsyn : out std_logic;
 				 pre_vsyn : out std_logic;
 				 pre_colu : out std_logic_vector(6 downto 0);
+				 tia_pixel_clock : out std_logic;
 				 -- EP end addition
              rgbx2: out std_logic_vector(23 downto 0);
              cv: out std_logic_vector(7 downto 0);
@@ -146,7 +148,7 @@ begin
     tia_inst: TIA
         port map(vid_clk, tia_cs, read, tia_a, d,
             colu, csyn, vsyn, hsyn, 
-				pre_hsyn, pre_vsyn, pre_colu,
+				pre_hsyn, pre_vsyn, pre_colu, tia_pixel_clock,
 				rgbx2, cv, rdy, ph0, ph1,
             au0, au1, av0, av1, paddle_0, paddle_1, paddle_2, paddle_3,
 				paddle_ena, inpt4, inpt5, pal);

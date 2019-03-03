@@ -71,9 +71,9 @@ port
   CLK_IN1           : in  std_logic;
   -- Reset that only drives logic in example design
   COUNTER_RESET     : in  std_logic;
-  CLK_OUT           : out std_logic_vector(3 downto 1) ;
+  CLK_OUT           : out std_logic_vector(4 downto 1) ;
   -- High bits of counters driven by clocks
-  COUNT             : out std_logic_vector(3 downto 1)
+  COUNT             : out std_logic_vector(4 downto 1)
  );
 end pll_hdmi_exdes;
 
@@ -85,7 +85,7 @@ architecture xilinx of pll_hdmi_exdes is
   constant C_W        : integer := 16;
 
   -- Number of counters
-  constant NUM_C      : integer := 3;
+  constant NUM_C      : integer := 4;
   -- Array typedef
   type ctrarr is array (1 to NUM_C) of std_logic_vector(C_W-1 downto 0);
 
@@ -113,7 +113,8 @@ port
   -- Clock out ports
   CLK_25          : out    std_logic;
   CLK_125P          : out    std_logic;
-  CLK_125M          : out    std_logic
+  CLK_125M          : out    std_logic;
+  CLK_50          : out    std_logic
  );
 end component;
 
@@ -155,7 +156,8 @@ end generate counters_1;
     -- Clock out ports
     CLK_25           => clk_int(1),
     CLK_125P           => clk_int(2),
-    CLK_125M           => clk_int(3));
+    CLK_125M           => clk_int(3),
+    CLK_50           => clk_int(4));
 
   gen_outclk_oddr: 
   for clk_out_pins in 1 to NUM_C generate 
@@ -178,6 +180,7 @@ end generate counters_1;
   clk(1) <= clk_int(1);
   clk(2) <= clk_int(2);
   clk(3) <= clk_int(3);
+  clk(4) <= clk_int(4);
 
   -- Output clock sampling
   -------------------------------------

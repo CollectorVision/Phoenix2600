@@ -2,7 +2,6 @@
 _xmsgs\pn_parser.xmsgs
 pll_hdmi.asy
 pll_hdmi.gise
-pll_hdmi.sym
 pll_hdmi.ucf
 pll_hdmi.vhd
 pll_hdmi.vho

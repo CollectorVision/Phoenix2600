@@ -43,6 +43,7 @@ entity A2601NoFlash is
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
 			-- EP end addition
          res: in std_logic;
          p_l: in std_logic;
@@ -112,6 +113,7 @@ architecture arch of A2601NoFlash is
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
 			-- EP end addition
          cv: out std_logic_vector(7 downto 0);
          au0: out std_logic;
@@ -242,7 +244,7 @@ begin
         port map(vid_clk, rst, cpu_d, cpu_a, cpu_r,pa, pb, 
 				paddle_0, paddle_1, paddle_2, paddle_3, paddle_ena, 
 				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, 
-				pre_hsyn, pre_vsyn, pre_colu,
+				pre_hsyn, pre_vsyn, pre_colu, tia_pixel_clock,
 				cv, 
 				au0, au1, av0, av1, ph0, ph1, pal);
 	
