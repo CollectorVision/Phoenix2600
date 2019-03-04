@@ -16,8 +16,9 @@ entity CtrlModule is
 		sysclk_frequency : integer := 575  -- Sysclk frequency * 10 
 	);
 	port (
-		clk 			: in std_logic;
-		reset_n 	: in std_logic;
+		clk 			: in std_logic;	-- clock synchronous to A2600
+		clk_video 	: in std_logic;	-- clock synchronous to VGA and HDMI
+		reset_n 	 	: in std_logic;
 
 		-- Video signals for OSD
 		vga_hsync : in std_logic;
@@ -175,8 +176,9 @@ begin
 
 myosd : entity work.OnScreenDisplay
 port map(
-	reset_n => reset_n,
-	clk => clk,
+	reset_n 		=> reset_n,
+	clk 			=> clk,
+	clk_video 	=> clk_video,
 	-- Video
 	hsync_n => vga_hsync,
 	vsync_n => vga_vsync,

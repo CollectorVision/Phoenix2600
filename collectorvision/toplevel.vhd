@@ -373,8 +373,9 @@ begin
 
 MyCtrlModule : entity work.CtrlModule
 	port map (
-		clk => vid_clk,
-		reset_n => '1',
+		clk 			=> vid_clk,
+		clk_video 	=> vid_clk_50M,
+		reset_n 		=> '1',
 
 		-- Video signals for OSD
 		vga_hsync => hdmi_vga_hsync_n_s, -- vga_hsync_i,
