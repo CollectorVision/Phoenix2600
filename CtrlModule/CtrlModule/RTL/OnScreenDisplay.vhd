@@ -19,8 +19,9 @@ use IEEE.numeric_std.ALL;
 
 entity OnScreenDisplay is
 port(
-	reset_n : in std_logic;
-	clk : in std_logic;
+	reset_n 		: in std_logic;
+	clk 			: in std_logic;	-- CPU / A2600 clock
+	clk_video 	: in std_logic;	-- VGA output clock
 	-- Video
 	hsync_n : in std_logic;
 	vsync_n : in std_logic;
@@ -79,8 +80,11 @@ signal charram_wr : std_logic;
 signal char : std_logic_vector(6 downto 0);
 signal charram_rdaddr : std_logic_vector(8 downto 0);
 signal charpixel : std_logic;
+signal charrom_addr : std_logic_vector(12 downto 0);
 
 signal osd_enable : std_logic;
+
+signal xpixelpos_delay : std_logic_vector(2 downto 0);
 
 begin
 
@@ -88,9 +92,9 @@ enabled<=osd_enable;
 
 -- Monitor hsync and count the pulse widths
 
-process(clk,hsync_n)
+process(clk_video)
 begin
-	if rising_edge(clk) then
+	if rising_edge(clk_video) then
 		hsync_p<=hsync_n;
 --		if pix='1' then
 			hcounter<=hcounter+1;
@@ -120,9 +124,9 @@ end process;
 
 -- Monitor newline and count the vsync pulses
 
-process(clk,hsync_n)
+process(clk_video)
 begin
-	if rising_edge(clk) then
+	if rising_edge(clk_video) then
 		newframe<='0';
 		vblank<='0';
 		if newline='1' then
@@ -150,10 +154,10 @@ end process;
 
 -- Increment pixel counter and generate pixel pulse.
 
-process(clk)
+process(clk_video)
 begin
-	if rising_edge(clk) then
-		if pixelcounter=pixelclock then
+	if rising_edge(clk_video) then
+		if pixelcounter=pixelclock or newline='1' then
 			pixelcounter<="0000";
 			pix<='1';
 		else
@@ -163,7 +167,7 @@ begin
 	end if;
 end process;
 
-
+-- The following block uses the CPU clock not video clock
 process(clk,reset_n,addr,data_in,hframe,vframe)
 begin
 
@@ -219,12 +223,12 @@ vactive<='1' when ypixelpos(11 downto 7)="00000" else '0';
 -- Enable hactive for xpixel positions between 0 and 255, inclusive.
 hactive<='1' when xpixelpos(11 downto 8)="0000" else '0';
 
-process(clk,osd_enable,hwindowactive,vwindowactive)
+process(clk_video,osd_enable,hwindowactive,vwindowactive)
 begin
 
 	window<=osd_enable and hwindowactive and vwindowactive;
 
-	if rising_edge(clk) then
+	if rising_edge(clk_video) then
 
 		if pix='1' then
 			if xpixelpos(11 downto 0)=X"FFB" then -- 4 pixel border
@@ -252,6 +256,13 @@ begin
 			ypixelpos<=ypos(11 downto 0);
 		end if;
 
+		if pix='1' then
+			charram_rdaddr <= std_logic_vector(ypixelpos(6 downto 3))&std_logic_vector(xpixelpos(7 downto 3));
+			-- Character ROM defines the fonts.
+			xpixelpos_delay <= std_logic_vector(xpixelpos(2 downto 0));
+			charrom_addr <= char(6 downto 0) & std_logic_vector(ypixelpos(2 downto 0)) & xpixelpos_delay;
+		end if;
+
 	end if;
 end process;
 
@@ -259,11 +270,11 @@ end process;
 
 -- Character RAM
 
-charram_rdaddr <= std_logic_vector(ypixelpos(6 downto 3))&std_logic_vector(xpixelpos(7 downto 3));
+
 
 charram : entity Work.DualPortRAM_Block
 	port map (
-		clka => clk,
+		clka => clk_video,
 		clkb => clk,
 		dina => (others => 'X'),
 		dinb => data_in(6 downto 0),
@@ -283,8 +294,8 @@ charrom: entity Work.CharROM_ROM
 		addrbits => 13
 	)
 	port map (
-	clock => clk,
-	address => char(6 downto 0)&std_logic_vector(ypixelpos(2 downto 0))&std_logic_vector(xpixelpos(2 downto 0)),
+	clock => clk_video,
+	address => charrom_addr,
 	q => charpixel
 );
 

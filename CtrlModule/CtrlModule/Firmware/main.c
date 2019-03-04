@@ -163,6 +163,17 @@ void Start(int row)
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_DIVERT_KEYBOARD;
 }
 
+void Boot(int row) {
+	// Switch databus to loaded ROM, Reset
+	// Value bit 1 below arms debug capture when reset is issued
+	HW_HOST(REG_HOST_MUXCTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0);
+	Reset(0);
+	Delay();
+	// Return to pacman, no capture.
+//	HW_HOST(REG_HOST_MUXCTRL) = 0;
+//	Reset(0);
+}
+
 static struct menu_entry topmenu[]; // Forward declaration.
 /*
 // RGB scaling submenu
@@ -200,6 +211,9 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_TOGGLE,"Color",MENU_ACTION(2)},
 	{MENU_ENTRY_TOGGLE,"Difficulty A",MENU_ACTION(3)},
 	{MENU_ENTRY_TOGGLE,"Difficulty B",MENU_ACTION(4)},
+//	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(5)},	
+	{MENU_ENTRY_TOGGLE,"ROM",MENU_ACTION(6)},	
+	{MENU_ENTRY_CALLBACK,"boot",MENU_ACTION(&Boot)},	
 	{MENU_ENTRY_CALLBACK,"Select",MENU_ACTION(&Select)},
 	{MENU_ENTRY_CALLBACK,"Start",MENU_ACTION(&Start)},
 //	{MENU_ENTRY_CALLBACK,"Animate",MENU_ACTION(&TriggerEffect)},
@@ -249,6 +263,9 @@ static int LoadROM(const char *filename)
 	int result=0;
 	int opened;
   int i;
+	int verify = MENU_TOGGLE_VALUES & (1 << 5);	// If non-zero, we make a verify
+	int err_seen = 0;
+	int addr = 0;
 
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_RESET;
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_DIVERT_SDCARD; // Release reset but take control of the SD card
@@ -273,18 +290,38 @@ static int LoadROM(const char *filename)
 		while(filesize>0)
 		{
 			OSD_ProgressBar(c,bits);
-			if(FileRead(&file,sector_buffer))
-			{
+			if(FileRead(&file,sector_buffer)) {
 				int i;
-				int *p=(int *)&sector_buffer;
-				for(i=0;i<512;i+=4)
-				{
-					unsigned int t=*p++;
-					HW_HOST(REG_HOST_BOOTDATA)=t;
+				unsigned char *p = sector_buffer;
+				if(!verify) {
+					for(i=0;i<512;i++)
+					{
+						unsigned char u = *p++;
+						HW_HOST(REG_HOST_BOOTADDR)=addr++;
+						HW_HOST(REG_HOST_BOOTDATA)=(unsigned)u;
+					}
+				} else {
+					// perform verify
+					for(i=0;i<512;i++)
+					{
+						unsigned char u = *p++;
+						HW_HOST(REG_HOST_BOOTADDR)=addr++;
+						unsigned int k = *((volatile unsigned int *)HOST_READ_BASE);
+						if (u != k && !err_seen) {
+							err_seen = 1;
+							debugp = debug+4;
+							mystrcpy(debug, "ERR ");
+							HexDebugByte(addr-1);
+							HexDebugByte((addr-1) >> 8);
+							DebugChar(' ');
+							HexDebugByte(u);
+							DebugChar(' ');
+							HexDebugByte(k);
+							mystrcpy(debug_title, debug);
+						}
+					}
 				}
-			}
-			else
-			{
+			} else {
 				result=0;
 				filesize=512;
 			}
@@ -294,6 +331,18 @@ static int LoadROM(const char *filename)
 		}
 	}
 	HW_HOST(REG_HOST_ROMSIZE) = file.size;
+
+	if (!err_seen) {
+		// debug[0] = verify ? 'V' : 'L';
+		mystrcpy(debug, "OK ");
+		debugp = debug+3;
+		HexDebugByte(addr >> 8);
+		HexDebugByte(addr);
+		DebugChar(' ');
+		HexDebugByte(file.size >> 8);
+		HexDebugByte(file.size);
+		mystrcpy(debug_title, debug);
+	}
   
 	Reset(0);
 	
@@ -304,25 +353,33 @@ static int LoadROM(const char *filename)
 	return(result);
 }
 
+#define HOST_READ_NUMPAD 0xFFFFFFB4
+
 void Debug(int row) {
   int i;
+  unsigned u;
   debugp = debug;
   *debugp = 0;
   HexDebugByte(debug_counter);
   DebugChar(':');
-  for(i=0; i<2; i++) {
-    unsigned int k = ((volatile unsigned int *)HOST_READ_BASE)[i+debug_counter];
+	
+	// Test code to read numpad
+	u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	HexDebugByte((u >> 24) & 0xFF);
+	HexDebugByte((u >> 16) & 0xFF);
+	HexDebugByte((u >> 8) & 0xFF);
+	HexDebugByte(u & 0xFF);
+/*
+  for(i=0; i<8; i++) {
+		HW_HOST(REG_HOST_BOOTADDR) = debug_counter+i;
+    unsigned int k = *((volatile unsigned int *)HOST_READ_BASE);
     HexDebugByte(k);
-	DebugChar( ' ');
-    HexDebugByte(k >> 8);
-	DebugChar( ' ');
-    HexDebugByte(k >> 16);
-	DebugChar( ' ');
-    HexDebugByte(k >> 24);
+		DebugChar( ' ');
   }
+*/  
   mystrcpy(debug_title, debug);
 	Menu_Set(topmenu);
-  debug_counter++;
+  debug_counter+=4;
 }
 
 void DebugCounterReset(int row)

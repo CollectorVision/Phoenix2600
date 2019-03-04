@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\toplevel.ncd
-OUTFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\toplevel.bit
+INFILE=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600\toplevel.ncd
+OUTFILE=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600\toplevel.bit
 FAMILY=Spartan6
 PART=xc6slx16-2csg324
-WORKINGDIR=C:\vmshare\coleco_2600\collectorvision\cvAtari2600
+WORKINGDIR=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600
 LICENSE=WebPack
 USER_INFO=211059439_0_0_754

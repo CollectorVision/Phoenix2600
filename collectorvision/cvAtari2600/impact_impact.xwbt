@@ -1,8 +1,16 @@
 INTSTYLE=impact
+<<<<<<< HEAD
 INFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\impact.xsl
 OUTFILE=C:\vmshare\coleco_2600\collectorvision\cvAtari2600\impact.xsl
 FAMILY=Single
 PART=Single
 WORKINGDIR=C:\vmshare\coleco_2600\collectorvision\cvAtari2600
+=======
+INFILE=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600\impact.xsl
+OUTFILE=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\vmshare\collectorvision-phoenix-2600\collectorvision\cvAtari2600
+>>>>>>> byte_sram
 LICENSE=iMPACT
 USER_INFO=iMPACT

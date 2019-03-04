@@ -1,0 +1,2 @@
+vhdl work ../../pll_hdmi.vhd
+vhdl work ../example_design/pll_hdmi_exdes.vhd

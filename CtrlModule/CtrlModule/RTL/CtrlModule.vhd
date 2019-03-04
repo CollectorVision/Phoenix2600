@@ -16,8 +16,9 @@ entity CtrlModule is
 		sysclk_frequency : integer := 575  -- Sysclk frequency * 10 
 	);
 	port (
-		clk 			: in std_logic;
-		reset_n 	: in std_logic;
+		clk 			: in std_logic;	-- clock synchronous to A2600
+		clk_video 	: in std_logic;	-- clock synchronous to VGA and HDMI
+		reset_n 	 	: in std_logic;
 
 		-- Video signals for OSD
 		vga_hsync : in std_logic;
@@ -28,6 +29,9 @@ entity CtrlModule is
 		-- PS/2 keyboard
 		ps2k_clk_in : in std_logic := '1';
 		ps2k_dat_in : in std_logic := '1';
+		
+		-- numpad keys
+		numpad_keys : in std_logic_vector(11 downto 0);
 
 		-- SD card interface
 		spi_miso		: in std_logic := '1';
@@ -46,9 +50,11 @@ entity CtrlModule is
 		host_select : out std_logic;
 		host_start : out std_logic;
 		
+		host_mux	  : out std_logic := '0';	-- data from internal ROM or ext sram
+		host_debug_arm : out std_logic := '0';
 		-- Memory read port
 		host_bootread_data 	: in std_logic_vector(31 downto 0);
-		host_bootread_addr 	: out std_logic_vector(15 downto 0);
+		host_bootread_addr 	: out std_logic_vector(20 downto 0);
 		host_bootread_req 	: out std_logic;
 		host_bootread_ack 	: in std_logic := '0';
 		
@@ -173,8 +179,9 @@ begin
 
 myosd : entity work.OnScreenDisplay
 port map(
-	reset_n => reset_n,
-	clk => clk,
+	reset_n 		=> reset_n,
+	clk 			=> clk,
+	clk_video 	=> clk_video,
 	-- Video
 	hsync_n => vga_hsync,
 	vsync_n => vga_vsync,
@@ -195,7 +202,7 @@ port map(
 mykeyboard : entity work.io_ps2_com
 generic map (
 	clockFilter => 15,
-	ticksPerUsec => sysclk_frequency/10
+	ticksPerUsec => sysclk_frequency/57
 )
 port map (
 	clk => clk,
@@ -313,6 +320,15 @@ begin
 							spi_trigger<='1';
 							host_to_spi<=mem_write(7 downto 0);
 							spi_active<='1';
+							
+						when X"E0" => -- host mux
+							host_mux <= mem_write(0);
+							host_debug_arm <= mem_write(1);
+							mem_busy <= '0';
+							
+						when X"E4" => -- host boot address register.
+							host_bootread_addr <= mem_write(20 downto 0);
+							mem_busy <= '0';
 
 						when X"E8" => -- Host boot data
 							-- Note that we don't clear mem_busy here; it's set instead when the ack signal comes in.
@@ -348,7 +364,8 @@ begin
 			case mem_addr(maxAddrBit)&mem_addr(10 downto 8) is
 					-- 1010
 				when X"A" =>	-- boot data read port 0xFFFFFA00
-					host_bootread_addr <= x"00" & mem_addr(7 downto 0);
+					-- host_bootread_addr <= x"00" & mem_addr(7 downto 0);
+					-- address set above with a write cycle
 					host_bootread_req <= '1';
 					-- mem_busy remains
 
@@ -373,6 +390,11 @@ begin
 							mem_read(int_max downto 0)<=int_status;
 							int_ack<='1';
 							mem_busy<='0';
+							
+						when X"B4" => -- Read numpad
+							mem_busy <= '0';
+							mem_read <= (others => 'X');
+							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
 
 						when X"D0" => -- SPI Status
 							mem_read<=(others=>'X');

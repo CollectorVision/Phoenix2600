@@ -33,13 +33,18 @@ use ieee.numeric_std.all;
 
 entity A2601NoFlash is
    port (vid_clk: in std_logic;
-         ram_clk: in std_logic;
          audio: out std_logic;
          O_VSYNC: out std_logic;
          O_HSYNC: out std_logic;
          O_VIDEO_R: out std_logic_vector(5 downto 0);
          O_VIDEO_G: out std_logic_vector(5 downto 0);
-         O_VIDEO_B: out std_logic_vector(5 downto 0);			
+         O_VIDEO_B: out std_logic_vector(5 downto 0);	
+			-- EP added outputs before VGA scandoubler
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
+			-- EP end addition
          res: in std_logic;
          p_l: in std_logic;
          p_r: in std_logic;
@@ -75,6 +80,8 @@ entity A2601NoFlash is
 
 			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
+			
+			show_ph0 : out std_logic;
 
 			size : in std_logic_vector(15 downto 0)
 			);
@@ -102,6 +109,12 @@ architecture arch of A2601NoFlash is
          vsyn: out std_logic;
          hsyn: out std_logic;
          rgbx2: out std_logic_vector(23 downto 0);
+			-- EP added outputs before VGA scandoubler
+			pre_hsyn : out std_logic;
+			pre_vsyn : out std_logic;
+			pre_colu : out std_logic_vector(6 downto 0);
+			tia_pixel_clock : out std_logic;
+			-- EP end addition
          cv: out std_logic_vector(7 downto 0);
          au0: out std_logic;
          au1: out std_logic;
@@ -225,24 +238,14 @@ begin
 	a2600_cpu_addr_o <= a;
 	d <= a2600_cpu_data_i ;
 	
---  Ram_CART: entity work.ramcart 
---  port map(
---	addra	=> a, --"000" & a_ram(11 downto 0),
---	clka => vid_clk,
---	wea(0) => '0',
---	dina => x"FF",
---	douta	=> d, -- d_ram,
---	addrb	=> ram_addr, -- "000" & 
---	clkb => ram_clk,
---	web(0) => ram_wr,
---	dinb => ram_write,
---	doutb	=> open
---  );
+	show_ph0 <= ph0;
 	  
 	ms_A2601: A2601
         port map(vid_clk, rst, cpu_d, cpu_a, cpu_r,pa, pb, 
 				paddle_0, paddle_1, paddle_2, paddle_3, paddle_ena, 
-				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, cv, 
+				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, 
+				pre_hsyn, pre_vsyn, pre_colu, tia_pixel_clock,
+				cv, 
 				au0, au1, av0, av1, ph0, ph1, pal);
 	
 	dac_inst: dac 
@@ -444,37 +447,7 @@ begin
       end if;
     end process;
     
---    data_io_inst: data_io
---        port map(sck, ss2, sdi, downl, size, vid_clk, '0', a_ram, (others=>'0'), d_ram);
 
--- State machine to receive and stash boot data in SRAM
---process(ram_clk, bootdata_req)
---begin
---	if rising_edge(ram_clk) then
---		if RES='1' then
---			ram_addr<= "0000000000000"; -- "0000000000";
---			ram_wr<='0';
---			ram_ack <= '0';
---			bootdata_ack<='0';
---			boot_state<=idle;
---		else
---			bootdata_ack<='0';
---			case boot_state is
---				when idle =>
---					if bootdata_req='1' then
---						ram_write<=bootdata(7 downto 0) & bootdata(15 downto 8) & bootdata(23 downto 16) & bootdata(31 downto 24);
---						ram_wr<='1';
---						boot_state<=ramwait;
---						bootdata_ack<='1';
---					end if;
---				when ramwait =>
---						ram_addr<=std_logic_vector((unsigned(ram_addr)+1));
---						ram_wr<='0';
---						boot_state<=idle;
---			end case;
---		end if;
---	end if;
---end process;
 end arch;
 
 
