@@ -19,6 +19,9 @@
          <ClosedNode>/toplevel - rtl C:|vmshare|coleco_2600|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch/tia_inst - TIA - arch/p0 - player - arch</ClosedNode>
          <ClosedNode>/toplevel - rtl C:|vmshare|coleco_2600|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch/tia_inst - TIA - arch/p1 - player - arch</ClosedNode>
          <ClosedNode>/toplevel - rtl C:|vmshare|coleco_2600|collectorvision|toplevel.vhd/hdmi - hdmi - rtl</ClosedNode>
+         <ClosedNode>/toplevel - rtl C:|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch</ClosedNode>
+         <ClosedNode>/toplevel - rtl C:|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/hdmi - hdmi - rtl</ClosedNode>
+         <ClosedNode>/toplevel - rtl C:|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/vga_timing_gen - vga - rtl</ClosedNode>
          <ClosedNode>/toplevel - rtl E:|Dropbox|Omat|trunk|coleco|2600|test1|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch/cpu_A6507 - A6507 - arch</ClosedNode>
          <ClosedNode>/toplevel - rtl E:|Dropbox|Omat|trunk|coleco|2600|test1|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch/riot_A6532 - A6532 - arch</ClosedNode>
          <ClosedNode>/toplevel - rtl E:|Dropbox|Omat|trunk|coleco|2600|test1|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch/tia_inst - TIA - arch/bl - ball - arch</ClosedNode>
@@ -47,13 +50,13 @@
          <ClosedNode>/toplevel - rtl |home|ise|vmshare|coleco_2600|collectorvision|toplevel.vhd/extSRAM - sram_controller - Behavioral_sram_controller</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>toplevel - rtl (C:/vmshare/coleco_2600/collectorvision/toplevel.vhd)</SelectedItem>
+         <SelectedItem>toplevel - rtl (C:/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f1000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f10000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>toplevel - rtl (C:/vmshare/coleco_2600/collectorvision/toplevel.vhd)</CurrentItem>
+      <CurrentItem>toplevel - rtl (C:/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -104,13 +107,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a9000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001b9000000c101000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

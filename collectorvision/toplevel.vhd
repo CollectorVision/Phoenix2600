@@ -348,7 +348,7 @@ begin
 				else
 					-- read number pad
 					numpad_0 <= (others => '1'); -- assume all not pressed
-					sel := joy1_p4_i & joy1_p3_i & joy1_p2_i & joy1_p1_i; 
+					sel := joy1_p1_i & joy1_p2_i & joy1_p3_i & joy1_p4_i;
 					case sel is
 						when "1110" => numpad_0(0) <= '0';	-- key 1
 						when "1101" => numpad_0(1) <= '0';	-- key 2
@@ -386,6 +386,9 @@ MyCtrlModule : entity work.CtrlModule
 		-- PS2 keyboard
 		ps2k_clk_in => ps2k_clk_in,
 		ps2k_dat_in => ps2k_dat_in,
+		
+		-- coleco controller numeric keypad
+		numpad_keys => numpad_0,
 		
 		-- SD card signals
 		spi_clk  => sd_sclk_o,

@@ -80,8 +80,11 @@ signal charram_wr : std_logic;
 signal char : std_logic_vector(6 downto 0);
 signal charram_rdaddr : std_logic_vector(8 downto 0);
 signal charpixel : std_logic;
+signal charrom_addr : std_logic_vector(12 downto 0);
 
 signal osd_enable : std_logic;
+
+signal xpixelpos_delay : std_logic_vector(2 downto 0);
 
 begin
 
@@ -154,7 +157,7 @@ end process;
 process(clk_video)
 begin
 	if rising_edge(clk_video) then
-		if pixelcounter=pixelclock then
+		if pixelcounter=pixelclock or newline='1' then
 			pixelcounter<="0000";
 			pix<='1';
 		else
@@ -253,6 +256,13 @@ begin
 			ypixelpos<=ypos(11 downto 0);
 		end if;
 
+		if pix='1' then
+			charram_rdaddr <= std_logic_vector(ypixelpos(6 downto 3))&std_logic_vector(xpixelpos(7 downto 3));
+			-- Character ROM defines the fonts.
+			xpixelpos_delay <= std_logic_vector(xpixelpos(2 downto 0));
+			charrom_addr <= char(6 downto 0) & std_logic_vector(ypixelpos(2 downto 0)) & xpixelpos_delay;
+		end if;
+
 	end if;
 end process;
 
@@ -260,7 +270,7 @@ end process;
 
 -- Character RAM
 
-charram_rdaddr <= std_logic_vector(ypixelpos(6 downto 3))&std_logic_vector(xpixelpos(7 downto 3));
+
 
 charram : entity Work.DualPortRAM_Block
 	port map (
@@ -285,7 +295,7 @@ charrom: entity Work.CharROM_ROM
 	)
 	port map (
 	clock => clk_video,
-	address => char(6 downto 0)&std_logic_vector(ypixelpos(2 downto 0))&std_logic_vector(xpixelpos(2 downto 0)),
+	address => charrom_addr,
 	q => charpixel
 );
 

@@ -29,6 +29,9 @@ entity CtrlModule is
 		-- PS/2 keyboard
 		ps2k_clk_in : in std_logic := '1';
 		ps2k_dat_in : in std_logic := '1';
+		
+		-- numpad keys
+		numpad_keys : in std_logic_vector(11 downto 0);
 
 		-- SD card interface
 		spi_miso		: in std_logic := '1';
@@ -387,6 +390,11 @@ begin
 							mem_read(int_max downto 0)<=int_status;
 							int_ack<='1';
 							mem_busy<='0';
+							
+						when X"B4" => -- Read numpad
+							mem_busy <= '0';
+							mem_read <= (others => 'X');
+							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
 
 						when X"D0" => -- SPI Status
 							mem_read<=(others=>'X');

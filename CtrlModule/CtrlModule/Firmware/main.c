@@ -211,7 +211,7 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_TOGGLE,"Color",MENU_ACTION(2)},
 	{MENU_ENTRY_TOGGLE,"Difficulty A",MENU_ACTION(3)},
 	{MENU_ENTRY_TOGGLE,"Difficulty B",MENU_ACTION(4)},
-	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(5)},	
+//	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(5)},	
 	{MENU_ENTRY_TOGGLE,"ROM",MENU_ACTION(6)},	
 	{MENU_ENTRY_CALLBACK,"boot",MENU_ACTION(&Boot)},	
 	{MENU_ENTRY_CALLBACK,"Select",MENU_ACTION(&Select)},
@@ -311,7 +311,7 @@ static int LoadROM(const char *filename)
 							err_seen = 1;
 							debugp = debug+4;
 							mystrcpy(debug, "ERR ");
-					    HexDebugByte(addr-1);
+							HexDebugByte(addr-1);
 							HexDebugByte((addr-1) >> 8);
 							DebugChar(' ');
 							HexDebugByte(u);
@@ -333,13 +333,13 @@ static int LoadROM(const char *filename)
 	HW_HOST(REG_HOST_ROMSIZE) = file.size;
 
 	if (!err_seen) {
-		debug[0] = verify ? 'V' : 'L';
-		mystrcpy(debug+1, "OK ");
+		// debug[0] = verify ? 'V' : 'L';
+		mystrcpy(debug, "OK ");
 		debugp = debug+3;
-    HexDebugByte(addr >> 8);
+		HexDebugByte(addr >> 8);
 		HexDebugByte(addr);
 		DebugChar(' ');
-    HexDebugByte(file.size >> 8);
+		HexDebugByte(file.size >> 8);
 		HexDebugByte(file.size);
 		mystrcpy(debug_title, debug);
 	}
@@ -353,18 +353,30 @@ static int LoadROM(const char *filename)
 	return(result);
 }
 
+#define HOST_READ_NUMPAD 0xFFFFFFB4
+
 void Debug(int row) {
   int i;
+  unsigned u;
   debugp = debug;
   *debugp = 0;
   HexDebugByte(debug_counter);
   DebugChar(':');
+	
+	// Test code to read numpad
+	u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	HexDebugByte((u >> 24) & 0xFF);
+	HexDebugByte((u >> 16) & 0xFF);
+	HexDebugByte((u >> 8) & 0xFF);
+	HexDebugByte(u & 0xFF);
+/*
   for(i=0; i<8; i++) {
 		HW_HOST(REG_HOST_BOOTADDR) = debug_counter+i;
     unsigned int k = *((volatile unsigned int *)HOST_READ_BASE);
     HexDebugByte(k);
 		DebugChar( ' ');
   }
+*/  
   mystrcpy(debug_title, debug);
 	Menu_Set(topmenu);
   debug_counter+=4;
