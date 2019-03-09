@@ -51,8 +51,9 @@ entity toplevel is
 		sd_cd_n_i : in std_logic := '1';
 
 -- LED
-      led_o : out std_logic;
-      led2_o : out std_logic;
+      RLED : out std_logic;
+      GLED : out std_logic;
+		BLED : out std_logic;
 
 -- Video
 --      VGA_R : out std_logic_vector(2 downto 0);
@@ -120,14 +121,14 @@ entity toplevel is
 		hdmi_n_o				: out   std_logic_vector(3 downto 0);
 
 		-- Cartridge
-		cart_addr_o			: out   std_logic_vector(14 downto 0)	:= (others => '0');
+		cart_addr_o			: out   std_logic_vector(12 downto 0)	:= (others => '0');
 		cart_data_i			: in    std_logic_vector( 7 downto 0);
 		cart_dir_o			: out   std_logic								:= '1';
 		cart_oe_n_o			: out   std_logic								:= '1';
-		cart_en_80_n_o		: out   std_logic								:= '1';
-		cart_en_A0_n_o		: out   std_logic								:= '1';
-		cart_en_C0_n_o		: out   std_logic								:= '1';
-		cart_en_E0_n_o		: out   std_logic								:= '1';
+--		cart_en_80_n_o		: out   std_logic								:= '1';
+--		cart_en_A0_n_o		: out   std_logic								:= '1';
+--		cart_en_C0_n_o		: out   std_logic								:= '1';
+--		cart_en_E0_n_o		: out   std_logic								:= '1';
 		
 		
 -- SRAM
@@ -273,6 +274,8 @@ architecture rtl of toplevel is
 	
 	signal numpad_0 : std_logic_vector(11 downto 0) := (others => '1');
 	signal scan_state : unsigned(7 downto 0) := x"00";
+	
+	signal a2600_audio : std_logic_vector(4 downto 0);
 	
 	component VGAColorTable is
 	port (
@@ -568,14 +571,16 @@ overlay : entity work.OSD_Overlay
 		pre_vsyn => pre_vsyn,
 		pre_colu => pre_colu,
 		tia_pixel_clock => tia_pixel_clock,
+		audio_out => a2600_audio,
 		-- EP end addition
 		size => size
     );
 
   dac_l_o <= audio;
   dac_r_o <= audio;
-  led_o 	<= '0';
-  led2_o <= '0';
+  RLED <= '0';
+  GLED <= '0';
+  BLED <= '0';
 
 -- TO-DO: Player 2 controls
   p2_l <= '1';
@@ -648,11 +653,10 @@ overlay : entity work.OSD_Overlay
 	end process;
 	-- end of debug stuff
 	
---	process(vid_clk)
---	begin 
---		if rising_edge(vid_clk) then
---			tia_divider <= tia_divider + 1;
---			if tia_divider = 15 then
+	-- handle audio to HDMI
+	sound_hdmi_s <= "0" & a2600_audio & "00" & x"00";
+	
+	-- video clocking
 	process(tia_pixel_clock)
 	begin
 		if tia_pixel_clock'event and tia_pixel_clock='1' then 

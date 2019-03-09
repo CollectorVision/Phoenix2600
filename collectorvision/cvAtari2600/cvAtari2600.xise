@@ -15,9 +15,6 @@
   <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="../cvuno_pins_rev3.ucf" xil_pn:type="FILE_UCF">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
     <file xil_pn:name="../toplevel.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="34"/>
@@ -178,6 +175,9 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="120"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
+    <file xil_pn:name="../phoenix2600.ucf" xil_pn:type="FILE_UCF">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
     <file xil_pn:name="ipcore_dir/pll.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
@@ -226,7 +226,7 @@
     <property xil_pn:name="Change Device Speed To" xil_pn:value="-2" xil_pn:valueState="default"/>
     <property xil_pn:name="Change Device Speed To Post Trace" xil_pn:value="-2" xil_pn:valueState="default"/>
     <property xil_pn:name="Combinatorial Logic Optimization" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="false" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Compile SIMPRIM (Timing) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile UNISIM (Functional) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile XilinxCoreLib (CORE Generator) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
@@ -384,7 +384,7 @@
     <property xil_pn:name="Overwrite Compiled Libraries" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Pack I/O Registers into IOBs" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Pack I/O Registers/Latches into IOBs" xil_pn:value="Off" xil_pn:valueState="default"/>
-    <property xil_pn:name="Package" xil_pn:value="csg324" xil_pn:valueState="default"/>
+    <property xil_pn:name="Package" xil_pn:value="csg324" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Timing-Driven Packing and Placement" xil_pn:value="false" xil_pn:valueState="default"/>

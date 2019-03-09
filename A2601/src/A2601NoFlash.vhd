@@ -44,6 +44,7 @@ entity A2601NoFlash is
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
 			tia_pixel_clock : out std_logic;
+			audio_out : out std_logic_vector(4 downto 0);
 			-- EP end addition
          res: in std_logic;
          p_l: in std_logic;
@@ -306,6 +307,7 @@ begin
     auv1 <= ("0" & unsigned(av1)) when (au1 = '1') else "00000";
 
     au <= std_logic_vector(auv0 + auv1);
+	 audio_out <= au;
 
     sc_ram128x8: ram128x8
         port map(sc_clk, sc_r, sc_d_in, sc_d_out, sc_a);
