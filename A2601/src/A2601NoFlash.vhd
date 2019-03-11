@@ -75,9 +75,7 @@ entity A2601NoFlash is
 --         ss2: in std_logic;
          pal: in std_logic;
          p_dif: in std_logic_vector(1 downto 0);
---			bootdata : in std_logic_vector(31 downto 0);
---			bootdata_req : in std_logic;
---			bootdata_ack : out std_logic;
+			superchip : in std_logic;	-- superchip presence
 
 			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
@@ -218,8 +216,8 @@ architecture arch of A2601NoFlash is
     constant BANK3F: bss_type := "101";
     constant BANKF4: bss_type := "110";
 
-    signal bss: bss_type := BANK00; 	--bank switching method
-    signal sc: std_logic := '0';		--superchip enabled or not
+    signal bss: bss_type := BANK00; 		-- bank switching method
+    -- signal superchip: std_logic := '0';	-- superchip enabled or not (sc)
   
     signal forceReset : std_logic := '0';
     signal downl : std_logic := '0';
@@ -319,11 +317,11 @@ begin
     sc_a <= cpu_a(6 downto 0);
 
     -- ROM and SC output
-    process(cpu_a, d, sc_d_out, sc)
+    process(cpu_a, d, sc_d_out, superchip)
     begin
-        if (cpu_a(12 downto 7) = "100001" and sc = '1') then
+        if (cpu_a(12 downto 7) = "100001" and superchip = '1') then
             cpu_d <= sc_d_out;
-        elsif (cpu_a(12 downto 7) = "100000" and sc = '1') then
+        elsif (cpu_a(12 downto 7) = "100000" and superchip = '1') then
             cpu_d <= "ZZZZZZZZ";
         elsif (cpu_a(12) = '1') then
             cpu_d <= d;

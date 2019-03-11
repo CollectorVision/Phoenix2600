@@ -10,6 +10,8 @@
          <ClosedNode>/toplevel - rtl C:|Users|epieh|Dropbox|Omat|trunk|coleco|2600|test2|collectorvision|toplevel.vhd/MyCtrlModule - CtrlModule - rtl</ClosedNode>
          <ClosedNode>/toplevel - rtl C:|Users|epieh|Dropbox|Omat|trunk|coleco|2600|test2|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch</ClosedNode>
          <ClosedNode>/toplevel - rtl |home|ise|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/a2601Instance - A2601NoFlash - arch/ms_A2601 - A2601 - arch</ClosedNode>
+         <ClosedNode>/toplevel - rtl |home|ise|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/hdmi - hdmi - rtl</ClosedNode>
+         <ClosedNode>/toplevel - rtl |home|ise|vmshare|collectorvision-phoenix-2600|collectorvision|toplevel.vhd/vga_timing_gen - vga - rtl</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>toplevel - rtl (/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd)</SelectedItem>
@@ -44,7 +46,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000950000000100000000000000d70000000100000000000000660000000100000000000000d10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003f1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000950000000100000000000000d700000001000000000000006600000001000000000000021f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>A2601Core.vhd</CurrentItem>
    </ItemView>
@@ -68,13 +70,41 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
    </ItemView>
 </Project>
 <?xml version="1.0" encoding="utf-8"?>

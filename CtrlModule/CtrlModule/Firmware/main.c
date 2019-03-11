@@ -211,8 +211,9 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_TOGGLE,"Color",MENU_ACTION(2)},
 	{MENU_ENTRY_TOGGLE,"Difficulty A",MENU_ACTION(3)},
 	{MENU_ENTRY_TOGGLE,"Difficulty B",MENU_ACTION(4)},
-//	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(5)},	
+	{MENU_ENTRY_TOGGLE,"Superchip in cartridge",MENU_ACTION(5)},	
 	{MENU_ENTRY_TOGGLE,"ROM",MENU_ACTION(6)},	
+//	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(7)},	
 	{MENU_ENTRY_CALLBACK,"boot",MENU_ACTION(&Boot)},	
 	{MENU_ENTRY_CALLBACK,"Select",MENU_ACTION(&Select)},
 	{MENU_ENTRY_CALLBACK,"Start",MENU_ACTION(&Start)},
@@ -263,7 +264,7 @@ static int LoadROM(const char *filename)
 	int result=0;
 	int opened;
   int i;
-	int verify = MENU_TOGGLE_VALUES & (1 << 5);	// If non-zero, we make a verify
+	int verify = MENU_TOGGLE_VALUES & (1 << 7);	// If non-zero, we make a verify
 	int err_seen = 0;
 	int addr = 0;
 
@@ -333,6 +334,8 @@ static int LoadROM(const char *filename)
 	HW_HOST(REG_HOST_ROMSIZE) = file.size;
 
 	if (!err_seen) {
+		mystrcpy(debug_title, filename);
+/*		
 		// debug[0] = verify ? 'V' : 'L';
 		mystrcpy(debug, "OK ");
 		debugp = debug+3;
@@ -342,6 +345,7 @@ static int LoadROM(const char *filename)
 		HexDebugByte(file.size >> 8);
 		HexDebugByte(file.size);
 		mystrcpy(debug_title, debug);
+*/		
 	}
   
 	Reset(0);
@@ -447,6 +451,8 @@ int main(int argc,char **argv)
 			dipsw|=8;	// Add in the Diff A bit
 		if(MENU_TOGGLE_VALUES&16)
 			dipsw|=16;	// Add in the Diff B bit
+		if(MENU_TOGGLE_VALUES & 32)
+			dipsw|=32;	// Superchip is present
 		HW_HOST(REG_HOST_SW)=dipsw;	// Send the new values to the hardware.
 //		HW_HOST(REG_HOST_SCALERED)=MENU_SLIDER_VALUE(&rgbmenu[0]);
 //		HW_HOST(REG_HOST_SCALEGREEN)=MENU_SLIDER_VALUE(&rgbmenu[1]);

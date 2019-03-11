@@ -275,6 +275,8 @@ architecture rtl of toplevel is
 	signal numpad_0 : std_logic_vector(11 downto 0) := (others => '1');
 	signal scan_state : unsigned(7 downto 0) := x"00";
 	
+	signal superchip : std_logic;
+	
 	signal a2600_audio : std_logic_vector(4 downto 0);
 	
 	component VGAColorTable is
@@ -400,7 +402,8 @@ MyCtrlModule : entity work.CtrlModule
 		spi_cs   => sd_cs_n_o,
 		
 		-- DIP switches
-		dipswitches(15 downto 5) => open,
+		dipswitches(15 downto 6) => open,
+		dipswitches(5) => superchip,
 		dipswitches(4) => p_dif(1),
 		dipswitches(3) => p_dif(0),
 		dipswitches(2) => scanlines,
@@ -437,13 +440,8 @@ MyCtrlModule : entity work.CtrlModule
 	vga_r_o <= red8(7 downto 4);
 	vga_g_o <= green8(7 downto 4);
 	vga_b_o <= blue8(7 downto 4);
--- vga_hsync_n_o <= vga_hsync_i;
--- vga_vsync_n_o <= vga_vsync_i;
 
 	-- source secondary timing generator driving HDMI
---	vga_r_o <= rgb_color(23 downto 20);
---	vga_g_o <= rgb_color(15 downto 12);
---	vga_b_o <= rgb_color(7 downto 4);
    vga_hsync_n_o <= hdmi_vga_hsync_n_s;
    vga_vsync_n_o <= hdmi_vga_vsync_n_s;
 	
@@ -464,24 +462,6 @@ overlay : entity work.OSD_Overlay
 		window_out 		=> open,
 		scanline_ena 	=> scanlines
 	);	
-
---overlay : entity work.OSD_Overlay
---	port map
---	(
---		clk 				=> vid_clk,
---		red_in 			=> vga_red_i,
---		green_in 		=> vga_green_i,
---		blue_in 			=> vga_blue_i,
---		window_in 		=> '1',
---		osd_window_in 	=> osd_window,
---		osd_pixel_in 	=> osd_pixel,
---		hsync_in 		=> vga_hsync_i,
---		red_out 			=> red8,
---		green_out 		=> green8,
---		blue_out 		=> blue8,
---		window_out 		=> open,
---		scanline_ena 	=> scanlines
---	);
 
 -- -----------------------------------------------------------------------
 -- PACMAN ROM used during bootup
@@ -560,6 +540,7 @@ overlay : entity work.OSD_Overlay
       p_color => p_color,
       pal => p_pal,
       p_dif => p_dif,
+		superchip => superchip,
 		a2600_cpu_addr_o => a2600_addr,
 		a2600_cpu_data_i => a2600_romdata,
 --      bootdata => host_bootdata,
@@ -654,7 +635,7 @@ overlay : entity work.OSD_Overlay
 	-- end of debug stuff
 	
 	-- handle audio to HDMI
-	sound_hdmi_s <= "0" & a2600_audio & "00" & x"00";
+	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00";
 	
 	-- video clocking
 	process(tia_pixel_clock)
@@ -713,9 +694,8 @@ overlay : entity work.OSD_Overlay
 	hdmi: entity work.hdmi
 	generic map (
 		FREQ	=> 25000000,	-- pixel clock frequency 
-		-- FREQ	=> 25200000,	-- pixel clock frequency 
 		FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
-		CTS	=> 25200,		-- CTS = Freq(pixclk) * N / (128 * Fs)
+		CTS	=> 25000,		-- CTS = Freq(pixclk) * N / (128 * Fs)
 		N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
 	)
 	port map (

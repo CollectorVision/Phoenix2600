@@ -1,6 +1,8 @@
 #BASE	= /home/nestor/Projects/zpu/zpugcc/toolchain/install/bin/zpu-elf
 # EP 2018-10-19 modded the line below
-BASE	= /mnt/e/zpu/linux/bin/zpu-elf
+# BASE	= /mnt/e/zpu/linux/bin/zpu-elf
+# EP 2019-03-11 modified for my new i9900 
+BASE    = /mnt/c/shared/zpu/linux/bin/zpu-elf
 CC      = $(BASE)-gcc
 LD      = $(BASE)-gcc
 AS      = $(BASE)-as
