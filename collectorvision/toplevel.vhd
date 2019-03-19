@@ -289,6 +289,8 @@ architecture rtl of toplevel is
 		);
 	end component;
 	
+	constant tia_capture_h_offset : integer := 48; -- 48
+	constant tia_capture_v_offset : integer := 40; -- 37;
 	
 begin
 
@@ -580,15 +582,27 @@ overlay : entity work.OSD_Overlay
       CLK_IN1 => clk_50_buffered,
       CLK_OUT1 => vid_clk			-- 57.5 MHz
 		); 
-			
-	pll_hdmi_instance: entity work.pll_hdmi
+
+---- 640x480@60Hz			
+--	pll_hdmi_instance: entity work.pll_hdmi
+--	  port map (
+--	   CLK_IN1  => clk_50_buffered,
+--		CLK_25   => vid_clk_25M,	 -- 25 MHz
+--		CLK_125P => vid_clk_125M_p, -- 125 MHz
+--		CLK_125M => vid_clk_125M_n, -- 125 MHz with 180 degree phase shift
+--		CLK_50   => vid_clk_50M		 -- 50 MHz (I guess the same as input)
+--    );
+	 
+-- 640x480@60Hz			
+	pll_hdmi_instance: entity work.pll_27M
 	  port map (
 	   CLK_IN1  => clk_50_buffered,
-		CLK_25   => vid_clk_25M,	 -- 25 MHz
-		CLK_125P => vid_clk_125M_p, -- 125 MHz
-		CLK_125M => vid_clk_125M_n, -- 125 MHz with 180 degree phase shift
+		CLK_27   => vid_clk_25M,	 -- 27.142 MHz
+		CLK_135P => vid_clk_125M_p, -- 135.714 MHz
+		CLK_135M => vid_clk_125M_n, -- 135.714 MHz with 180 degree phase shift
 		CLK_50   => vid_clk_50M		 -- 50 MHz (I guess the same as input)
     );
+	 
 
 
 ---- debug stuff ----
@@ -643,14 +657,14 @@ overlay : entity work.OSD_Overlay
 		if tia_pixel_clock'event and tia_pixel_clock='1' then 
 				last_hsync <= pre_hsyn;
 				last_vsync <= pre_vsyn;
-				if tia_hcnt < 160+48 then -- sync this with below
+				if tia_hcnt < 160+tia_capture_h_offset then -- sync this with below
 					tia_hcnt <= tia_hcnt + 1;
 				end if;
 				if pre_hsyn = '1' and last_hsync = '0' then
 					tia_hcnt <= (others => '0');
 					-- increment vcount on rising edge of hsync.
 					-- max 205 lines can be captured into 32K framebuffer
-					if tia_vcnt < 205+37 then 	-- sync the offset 37 with below, 20
+					if tia_vcnt < 205+tia_capture_v_offset then 	-- sync the offset 37 with below, 20
 						tia_vcnt <= tia_vcnt + 1;
 					end if;
 				end if;
@@ -666,8 +680,8 @@ overlay : entity work.OSD_Overlay
 	-- Use a second VGA block to provide timing for HDMI.
 	vga_timing_gen : entity work.vga 
 		generic map (
-			v_input_offset	=> 37,
-			h_input_offset	=> 48
+			v_input_offset	=> tia_capture_v_offset,
+			h_input_offset	=> tia_capture_h_offset
 		)
 		port map (
 			I_CLK_VGA	=> clock_vga_s,
@@ -692,10 +706,18 @@ overlay : entity work.OSD_Overlay
 	);			
 
 	hdmi: entity work.hdmi
+	-- settings for 640x480@60Hz
+--	generic map (
+--		FREQ	=> 25000000,	-- pixel clock frequency 
+--		FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
+--		CTS	=> 25000,		-- CTS = Freq(pixclk) * N / (128 * Fs)
+--		N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
+--	)
+	-- settings for 720x480@60Hz
 	generic map (
-		FREQ	=> 25000000,	-- pixel clock frequency 
+		FREQ	=> 27000000,	-- pixel clock frequency 
 		FS		=> 48000,		-- audio sample rate - should be 32000, 41000 or 48000 = 48KHz
-		CTS	=> 25000,		-- CTS = Freq(pixclk) * N / (128 * Fs)
+		CTS	=> 27000,		-- CTS = Freq(pixclk) * N / (128 * Fs)
 		N		=> 6144			-- N = 128 * Fs /1000,  128 * Fs /1500 <= N <= 128 * Fs /300 (Check HDMI spec 7.2 for details)
 	)
 	port map (

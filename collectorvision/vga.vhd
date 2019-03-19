@@ -55,21 +55,34 @@ architecture rtl of vga is
 
 -- ModeLine "640x480@60Hz"  25,175  640  656  752  800 480 490 492 525 -HSync -VSync
 	-- Horizontal Timing constants  
-	constant h_pixels_across	: integer := 640 - 1;
-	constant h_sync_on			: integer := 656 - 1;
-	constant h_sync_off			: integer := 752 - 1;
-	constant h_end_count			: integer := 800 - 1;
-	-- Vertical Timing constants
+--	constant h_pixels_across	: integer := 640 - 1;
+--	constant h_sync_on			: integer := 656 - 1;
+--	constant h_sync_off			: integer := 752 - 1;
+--	constant h_end_count			: integer := 800 - 1;
+--	-- Vertical Timing constants
+--	constant v_pixels_down		: integer := 480 - 1;
+--	constant v_sync_on			: integer := 490 - 1;
+--	constant v_sync_off			: integer := 492 - 1;
+--	constant v_end_count			: integer := 525 - 1;
+
+-- Creating 720x480@60Hz mode
+	constant h_pixels_across	: integer := 720      - 1;
+	constant h_sync_on			: integer := 720 + 16 - 1;
+	constant h_sync_off			: integer := 720 + 16 + 62 - 1;
+	constant h_end_count			: integer := 858 - 1;
+--	-- Vertical Timing constants
 	constant v_pixels_down		: integer := 480 - 1;
-	constant v_sync_on			: integer := 490 - 1;
-	constant v_sync_off			: integer := 492 - 1;
+	constant v_sync_on			: integer := 489 - 1;
+	constant v_sync_off			: integer := 495 - 1;
 	constant v_end_count			: integer := 525 - 1;
+
+-----------------------------------------------------
 
 	-- In
 	constant hc_max				: integer := 160;
 	constant vc_max				: integer := 205;
 
-	constant h_start				: integer := 2;	
+	constant h_start				: integer := 40;		-- 2 when 640x480
 	constant h_end					: integer := h_start + (hc_max * 4);	
 	constant v_start				: integer := 22;
 	constant v_end					: integer := v_start + (vc_max * 2);
@@ -118,30 +131,30 @@ architecture rtl of vga is
 		
 begin
 
---	frbuff:  simple_dualport_32k port map (
---    clka 	=> I_CLK_VGA,
---    wea(0)	=> wren, 
---    addra 	=> addr_wr,
---    dina 	=> '0' & I_COLOR,
---    clkb 	=> I_CLK_VGA,
---    addrb 	=> addr_rd,
---	 doutb(7) => open,
---    doutb(6 downto 0) => pixel_out
---	);
-	
-	framebuffer: dualport32k port map ( 
-		clka 		=> I_CLK_VGA2X,
-		wea(0)	=> wren, 
-		addra 	=> addr_wr,
-		dina 		=> '0' & I_COLOR,
-		douta		=> open,
-		clkb 		=> I_CLK_VGA,
-		web(0)	=> '0',
-		addrb 	=> addr_rd,
-		dinb		=> x"00",
-		doutb(7) => open,
-		doutb(6 downto 0) => pixel_out
+	frbuff:  simple_dualport_32k port map (
+    clka 	=> I_CLK_VGA2X,
+    wea(0)	=> wren, 
+    addra 	=> addr_wr,
+    dina 	=> '0' & I_COLOR,
+    clkb 	=> I_CLK_VGA,
+    addrb 	=> addr_rd,
+	 doutb(7) => open,
+    doutb(6 downto 0) => pixel_out
 	);
+	
+--	framebuffer: dualport32k port map ( 
+--		clka 		=> I_CLK_VGA2X,
+--		wea(0)	=> wren, 
+--		addra 	=> addr_wr,
+--		dina 		=> '0' & I_COLOR,
+--		douta		=> open,
+--		clkb 		=> I_CLK_VGA,
+--		web(0)	=> '0',
+--		addrb 	=> addr_rd,
+--		dinb		=> x"00",
+--		doutb(7) => open,
+--		doutb(6 downto 0) => pixel_out
+--	);
 	
 	-- Memory timing runs on VGA2X
 	process(I_CLK_VGA2X)
@@ -198,19 +211,32 @@ begin
 		end if; -- if rising_edge
 	end process;
 
-	process (I_HCNT, I_VCNT, window_hcnt, window_vcnt)
+	process(I_CLK_VGA)
 		variable wr_result_v : std_logic_vector(15 downto 0);
 		variable rd_result_v : std_logic_vector(15 downto 0);
 	begin
-		wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
-		rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
-		addr_wr	<= wr_result_v(14 downto 0);
-		addr_rd	<= rd_result_v(14 downto 0);	
+		if rising_edge(I_CLK_VGA) then 
+			wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
+			rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
+			addr_wr	<= wr_result_v(14 downto 0);
+			addr_rd	<= rd_result_v(14 downto 0);	
+		end if;
 	end process;
+	
+--	process (I_HCNT, I_VCNT, window_hcnt, window_vcnt)
+--		variable wr_result_v : std_logic_vector(15 downto 0);
+--		variable rd_result_v : std_logic_vector(15 downto 0);
+--	begin
+--		wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
+--		rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
+--		addr_wr	<= wr_result_v(14 downto 0);
+--		addr_rd	<= rd_result_v(14 downto 0);	
+--	end process;
 
-	wren		<= '1' when pixel_sample_timer(3 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
-							   and (I_HCNT > h_input_offset) and (I_HCNT < hc_max+h_input_offset) 
-						      and (I_VCNT > v_input_offset) and (I_VCNT < vc_max+v_input_offset)
+--	wren		<= '1' when pixel_sample_timer(3 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
+	wren		<= '1' when pixel_sample_timer(1 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
+							   and (I_HCNT >= h_input_offset) and (I_HCNT < hc_max+h_input_offset) 
+						      and (I_VCNT >= v_input_offset) and (I_VCNT < vc_max+v_input_offset)
 						 else '0';	
 	blank		<= '1' when (hcnt > h_pixels_across) or (vcnt > v_pixels_down) else '0';
 	picture	<= '1' when (blank = '0') and (hcnt >= h_start and hcnt < h_end) and (vcnt >= v_start and vcnt < v_end) else '0';
