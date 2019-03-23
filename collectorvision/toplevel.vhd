@@ -147,10 +147,10 @@ architecture rtl of toplevel is
 -- System clocks
   signal clk_50_buffered: std_logic;
   signal vid_clk        : std_logic := '0';
-  signal vid_clk_25M    : std_logic;
-  signal vid_clk_125M_p : std_logic;
-  signal vid_clk_125M_n : std_logic;
-  signal vid_clk_50M    : std_logic;
+  signal hdmi_clk_25M    : std_logic;
+  signal hdmi_clk_125M_p : std_logic;
+  signal hdmi_clk_125M_n : std_logic;
+  signal hdmi_clk_2_5x   : std_logic;
 
 -- A2601
   signal audio: std_logic := '0';
@@ -319,9 +319,9 @@ begin
 	flash_hold_o <= '0';
 		
 	-- HDMI clocks
-	clock_vga_s 	<= vid_clk_25M;
-	clock_hdmi_s 	<= vid_clk_125M_p;
-	clock_hdmi_n_s <= vid_clk_125M_n;
+	clock_vga_s 	<= hdmi_clk_25M;
+	clock_hdmi_s 	<= hdmi_clk_125M_p;
+	clock_hdmi_n_s <= hdmi_clk_125M_n;
 	
 	hdmio: entity work.hdmi_out_xilinx
 	port map (
@@ -336,10 +336,10 @@ begin
 	);
 	
 -- Colecovision gamepad support
-	process(vid_clk_25M)
+	process(hdmi_clk_25M)
 	variable sel : std_logic_vector(3 downto 0);
 	begin
-		if rising_edge(vid_clk_25M) then
+		if rising_edge(hdmi_clk_25M) then
 			scan_state <= scan_state + 1;
 			if scan_state(6 downto 0) = "0000000" then
 				joy_p8_o <= scan_state(7);
@@ -381,7 +381,7 @@ begin
 MyCtrlModule : entity work.CtrlModule
 	port map (
 		clk 			=> vid_clk,
-		clk_video 	=> vid_clk_50M,
+		clk_video 	=> hdmi_clk_2_5x, -- hdmi_clk_25M, -- used to be the 2x pixel clock
 		reset_n 		=> '1',
 
 		-- Video signals for OSD
@@ -587,20 +587,20 @@ overlay : entity work.OSD_Overlay
 --	pll_hdmi_instance: entity work.pll_hdmi
 --	  port map (
 --	   CLK_IN1  => clk_50_buffered,
---		CLK_25   => vid_clk_25M,	 -- 25 MHz
---		CLK_125P => vid_clk_125M_p, -- 125 MHz
---		CLK_125M => vid_clk_125M_n, -- 125 MHz with 180 degree phase shift
---		CLK_50   => vid_clk_50M		 -- 50 MHz (I guess the same as input)
+--		CLK_25   => hdmi_clk_25M,	 -- 25 MHz
+--		CLK_125P => hdmi_clk_125M_p, -- 125 MHz
+--		CLK_125M => hdmi_clk_125M_n, -- 125 MHz with 180 degree phase shift
+--		CLK_50   => hdmi_clk_50M		 -- 50 MHz (I guess the same as input)
 --    );
 	 
--- 640x480@60Hz			
+-- 720x480@60Hz			
 	pll_hdmi_instance: entity work.pll_27M
 	  port map (
 	   CLK_IN1  => clk_50_buffered,
-		CLK_27   => vid_clk_25M,	 -- 27.142 MHz
-		CLK_135P => vid_clk_125M_p, -- 135.714 MHz
-		CLK_135M => vid_clk_125M_n, -- 135.714 MHz with 180 degree phase shift
-		CLK_50   => vid_clk_50M		 -- 50 MHz (I guess the same as input)
+		CLK_27   => hdmi_clk_25M,	 -- 27.0 MHz
+		CLK_135P => hdmi_clk_125M_p, -- 135.0 MHz
+		CLK_135M => hdmi_clk_125M_n, -- 135.0 MHz with 180 degree phase shift
+		CLK_50   => hdmi_clk_2_5x	  -- 2.5 times CLK_27
     );
 	 
 
@@ -685,7 +685,7 @@ overlay : entity work.OSD_Overlay
 		)
 		port map (
 			I_CLK_VGA	=> clock_vga_s,
-			I_CLK_VGA2X => vid_clk_50M,
+			I_CLK_VGA2X => hdmi_clk_2_5x,
 			I_COLOR	   => pre_colu,
 			I_PX_CLK    => tia_pixel_clock,
 			I_HCNT		=> tia_hcnt,

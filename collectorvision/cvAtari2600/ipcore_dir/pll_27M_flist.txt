@@ -42,6 +42,7 @@ pll_27M/simulation/timing/vcs_session.tcl
 pll_27M/simulation/timing/wave.do
 pll_27M.asy
 pll_27M.gise
+pll_27M.sym
 pll_27M.ucf
 pll_27M.vhd
 pll_27M.vho

@@ -132,7 +132,7 @@ architecture rtl of vga is
 begin
 
 	frbuff:  simple_dualport_32k port map (
-    clka 	=> I_CLK_VGA2X,
+    clka 	=> I_CLK_VGA, -- I_CLK_VGA2X,
     wea(0)	=> wren, 
     addra 	=> addr_wr,
     dina 	=> '0' & I_COLOR,
@@ -157,36 +157,39 @@ begin
 --	);
 	
 	-- Memory timing runs on VGA2X
-	process(I_CLK_VGA2X)
-	begin
-		if rising_edge(I_CLK_VGA2X) then
-			pixel_sample_timer <= pixel_sample_timer(6 downto 0) & I_PX_CLK;
-		   toggler <= not toggler;
-			if toggler = '0' then
-				-- read cycle
-				buf_pixel_outx2 <= pixel_out;
-			end if;
-		end if;
-	end process;
+--	process(I_CLK_VGA2X)
+--	begin
+--		if rising_edge(I_CLK_VGA2X) then
+--			pixel_sample_timer <= pixel_sample_timer(6 downto 0) & I_PX_CLK;
+--		   toggler <= not toggler;
+--			if toggler = '0' then
+--				-- read cycle
+--				buf_pixel_outx2 <= pixel_out;
+--			end if;
+--		end if;
+--	end process;
 
 	process (I_CLK_VGA)
 	begin
 		if rising_edge(I_CLK_VGA) then
-
-			buf_pixel_out <= buf_pixel_outx2;	-- pixels change at the edge of the 25MHz clock
+			pixel_sample_timer <= pixel_sample_timer(6 downto 0) & I_PX_CLK;
+			buf_pixel_out <= pixel_out; -- buf_pixel_outx2;	-- pixels change at the edge of the 25MHz clock
 			
-			if h = h_end_count then
-				h <= (others => '0');
-			else
-				h <= h + 1;
-			end if;
-		
-			if h = 7 then
+--			if h = h_end_count then
+--				h <= (others => '0');
+--			else
+--				h <= h + 1;
+--			end if;
+--		
+--			if h = 7 then
+--				hcnt <= (others => '0');
+--				if h_start = 0 then 
+--					-- reset window counter here if h_start happens to be zero, as we cannot hit against zero below.
+--					window_hcnt <= (others => '0');	
+--				end if;
+--			else
+			if hcnt = h_end_count then
 				hcnt <= (others => '0');
-				if h_start = 0 then 
-					-- reset window counter here if h_start happens to be zero, as we cannot hit against zero below.
-					window_hcnt <= (others => '0');	
-				end if;
 			else
 				hcnt <= hcnt + 1;
 				if h_start /= 0 and hcnt = (h_start-1) then
@@ -211,27 +214,27 @@ begin
 		end if; -- if rising_edge
 	end process;
 
-	process(I_CLK_VGA)
-		variable wr_result_v : std_logic_vector(15 downto 0);
-		variable rd_result_v : std_logic_vector(15 downto 0);
-	begin
-		if rising_edge(I_CLK_VGA) then 
-			wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
-			rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
-			addr_wr	<= wr_result_v(14 downto 0);
-			addr_rd	<= rd_result_v(14 downto 0);	
-		end if;
-	end process;
-	
---	process (I_HCNT, I_VCNT, window_hcnt, window_vcnt)
+--	process(I_CLK_VGA)
 --		variable wr_result_v : std_logic_vector(15 downto 0);
 --		variable rd_result_v : std_logic_vector(15 downto 0);
 --	begin
---		wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
---		rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
---		addr_wr	<= wr_result_v(14 downto 0);
---		addr_rd	<= rd_result_v(14 downto 0);	
+--		if rising_edge(I_CLK_VGA) then 
+--			wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
+--			rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
+--			addr_wr	<= wr_result_v(14 downto 0);
+--			addr_rd	<= rd_result_v(14 downto 0);	
+--		end if;
 --	end process;
+	
+	process (I_HCNT, I_VCNT, window_hcnt, window_vcnt)
+		variable wr_result_v : std_logic_vector(15 downto 0);
+		variable rd_result_v : std_logic_vector(15 downto 0);
+	begin
+		wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
+		rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
+		addr_wr	<= wr_result_v(14 downto 0);
+		addr_rd	<= rd_result_v(14 downto 0);	
+	end process;
 
 --	wren		<= '1' when pixel_sample_timer(3 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
 	wren		<= '1' when pixel_sample_timer(1 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
@@ -239,7 +242,7 @@ begin
 						      and (I_VCNT >= v_input_offset) and (I_VCNT < vc_max+v_input_offset)
 						 else '0';	
 	blank		<= '1' when (hcnt > h_pixels_across) or (vcnt > v_pixels_down) else '0';
-	picture	<= '1' when (blank = '0') and (hcnt >= h_start and hcnt < h_end) and (vcnt >= v_start and vcnt < v_end) else '0';
+	picture	<= '1' when (blank = '0') and (hcnt > h_start and hcnt < h_end) and (vcnt >= v_start and vcnt < v_end) else '0';
 
 	O_HSYNC	<= '1' when (hcnt <= h_sync_on) or (hcnt > h_sync_off) else '0';
 	O_VSYNC	<= '1' when (vcnt <= v_sync_on) or (vcnt > v_sync_off) else '0';
