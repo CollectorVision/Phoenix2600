@@ -357,7 +357,8 @@ static int LoadROM(const char *filename)
 	return(result);
 }
 
-#define HOST_READ_NUMPAD 0xFFFFFFB4
+#define HOST_READ_NUMPAD    0xFFFFFFB4
+#define HOST_READ_SCANLINES 0xFFFFFFB8
 
 void Debug(int row) {
   int i;
@@ -368,7 +369,10 @@ void Debug(int row) {
   DebugChar(':');
 	
 	// Test code to read numpad
-	u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	// u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	// Test code to read scanlines
+	u = *(volatile unsigned *)HOST_READ_SCANLINES;
+
 	HexDebugByte((u >> 24) & 0xFF);
 	HexDebugByte((u >> 16) & 0xFF);
 	HexDebugByte((u >> 8) & 0xFF);

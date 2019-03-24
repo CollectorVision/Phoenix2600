@@ -43,6 +43,9 @@ entity CtrlModule is
 		dipswitches : out std_logic_vector(15 downto 0);
 		size : out std_logic_vector(15 downto 0);
 		
+		-- number of scanlines output by the A2600 core (counted by hardware)
+		last_vcnt 	: in unsigned(8 downto 0);
+		
 		-- Host control signals
 		host_divert_sdcard : out std_logic;
 		host_divert_keyboard : out std_logic;
@@ -395,6 +398,11 @@ begin
 							mem_busy <= '0';
 							mem_read <= (others => 'X');
 							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
+							
+--						when X"B8" => -- read scanlines
+--							mem_busy <= '0';
+--							mem_read <= (others => 'X');
+--							mem_read(last_vcnt'length-1 downto 0) <= std_logic_vector(last_vcnt);
 
 						when X"D0" => -- SPI Status
 							mem_read<=(others=>'X');

@@ -269,6 +269,8 @@ architecture rtl of toplevel is
 	signal last_vsync : std_logic := '0';
 	signal tia_hcnt : unsigned(7 downto 0);
 	signal tia_vcnt : unsigned(7 downto 0);
+	signal total_vcnt : unsigned(8 downto 0) := "000000000";
+	signal last_vcnt : unsigned(8 downto 0)  := "000000000";
 	signal tia_divider : unsigned(3 downto 0) := "0000";
 	signal rgb_color : std_logic_vector(23 downto 0);
 	
@@ -290,7 +292,7 @@ architecture rtl of toplevel is
 	end component;
 	
 	constant tia_capture_h_offset : integer := 48; -- 48
-	constant tia_capture_v_offset : integer := 40; -- 37;
+	constant tia_capture_v_offset : integer := 30; -- 40; -- 37;
 	
 begin
 
@@ -411,6 +413,9 @@ MyCtrlModule : entity work.CtrlModule
 		dipswitches(2) => scanlines,
 		dipswitches(1) => p_pal,
 		dipswitches(0) => p_color,
+		
+		-- number of vertical lines
+		last_vcnt => last_vcnt,
 		
 		--ROM size
 		size => size,
@@ -663,15 +668,22 @@ overlay : entity work.OSD_Overlay
 				if pre_hsyn = '1' and last_hsync = '0' then
 					tia_hcnt <= (others => '0');
 					-- increment vcount on rising edge of hsync.
-					-- max 205 lines can be captured into 32K framebuffer
-					if tia_vcnt < 205+tia_capture_v_offset then 	-- sync the offset 37 with below, 20
+					-- max 205 lines can be captured into 32K framebuffer.
+					-- Now increased framebuffer to 240 scanlines and 38K in size.
+					if tia_vcnt < 240+tia_capture_v_offset then 	
 						tia_vcnt <= tia_vcnt + 1;
 					end if;
+					total_vcnt <= total_vcnt + 1;
 				end if;
 				
 				-- not sure if this is correct, but we reset vertical counter when vsync ends
 				if last_vsync = '1' and pre_vsyn='0' then
 					tia_vcnt <= (others => '0');
+					if total_vcnt > 4 then 
+						-- There may be successive vsync pulses, thus only capture a meaningful height
+						last_vcnt <= total_vcnt;
+					end if;
+					total_vcnt <= (others => '0');
 				end if;
 			end if;
 --		end if;

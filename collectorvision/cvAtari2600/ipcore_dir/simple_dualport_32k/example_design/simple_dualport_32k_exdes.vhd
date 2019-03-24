@@ -90,7 +90,7 @@ ENTITY simple_dualport_32k_exdes IS
       --Inputs - Port A
   
     WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    ADDRA          : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
     DINA           : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
   
@@ -98,7 +98,7 @@ ENTITY simple_dualport_32k_exdes IS
 
   
       --Inputs - Port B
-    ADDRB          : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRB          : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     DOUTB          : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     CLKB           : IN STD_LOGIC
 
@@ -121,7 +121,7 @@ ARCHITECTURE xilinx OF simple_dualport_32k_exdes IS
       --Port A
   
     WEA        : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    ADDRA      : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 
@@ -130,7 +130,7 @@ ARCHITECTURE xilinx OF simple_dualport_32k_exdes IS
 
   
       --Port B
-    ADDRB      : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRB      : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     DOUTB      : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     CLKB       : IN STD_LOGIC
 
