@@ -398,6 +398,7 @@ begin
 							mem_busy <= '0';
 							mem_read <= (others => 'X');
 							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
+							mem_read(last_vcnt'length-1+numpad_keys'length downto numpad_keys'length) <= std_logic_vector(last_vcnt);
 							
 --						when X"B8" => -- read scanlines
 --							mem_busy <= '0';

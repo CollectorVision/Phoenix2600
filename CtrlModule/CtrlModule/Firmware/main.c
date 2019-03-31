@@ -8,10 +8,17 @@
 #include "spi.h"
 #include "fileselector.h"
 
+#define MENUITEM_BOOT 	0
+#define MENUITEM_ROM  	0
+#define MENUITEM_DEBUG  1
+#define MENUITEM_VERIFY 0
+
 fileTYPE file;
 
+#if MENUITEM_DEBUG
 void Debug(int row);
 void DebugCounterReset(int row);
+#endif
 
 int OSD_Puts(char *str)
 {
@@ -197,12 +204,17 @@ static char *testpattern_labels[]=
 };
 */
 // Our toplevel menu
+
+#if MENUITEM_DEBUG
 char debug_title[68];
+#endif
 
 static struct menu_entry topmenu[]=
 {
+#if MENUITEM_DEBUG
   {MENU_ENTRY_CALLBACK,debug_title,MENU_ACTION(&DebugCounterReset)},
   {MENU_ENTRY_CALLBACK,"Debug",MENU_ACTION(&Debug)},
+#endif  
 	{MENU_ENTRY_CALLBACK,"Reset",MENU_ACTION(&Reset)},
 //	{MENU_ENTRY_CYCLE,(char *)testpattern_labels,MENU_ACTION(4)},
 //	{MENU_ENTRY_SUBMENU,"RGB Scaling \x10",MENU_ACTION(rgbmenu)},
@@ -212,9 +224,15 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_TOGGLE,"Difficulty A",MENU_ACTION(3)},
 	{MENU_ENTRY_TOGGLE,"Difficulty B",MENU_ACTION(4)},
 	{MENU_ENTRY_TOGGLE,"Superchip in cartridge",MENU_ACTION(5)},	
+#if MENUITEM_ROM	
 	{MENU_ENTRY_TOGGLE,"ROM",MENU_ACTION(6)},	
-//	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(7)},	
+#endif
+#if MENUITEM_VERIFY	
+	{MENU_ENTRY_TOGGLE,"Verify",MENU_ACTION(7)},	
+#endif	
+#if MENUITEM_BOOT
 	{MENU_ENTRY_CALLBACK,"boot",MENU_ACTION(&Boot)},	
+#endif
 	{MENU_ENTRY_CALLBACK,"Select",MENU_ACTION(&Select)},
 	{MENU_ENTRY_CALLBACK,"Start",MENU_ACTION(&Start)},
 //	{MENU_ENTRY_CALLBACK,"Animate",MENU_ACTION(&TriggerEffect)},
@@ -222,7 +240,6 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_CALLBACK,"Exit",MENU_ACTION(&Menu_Hide)},
 	{MENU_ENTRY_NULL,0,0}
 };
-
 
 // An error message
 static struct menu_entry loadfailed[]=
@@ -302,6 +319,7 @@ static int LoadROM(const char *filename)
 						HW_HOST(REG_HOST_BOOTDATA)=(unsigned)u;
 					}
 				} else {
+#if MENUITEM_VERIFY	&& MENUITEM_DEBUG
 					// perform verify
 					for(i=0;i<512;i++)
 					{
@@ -321,6 +339,7 @@ static int LoadROM(const char *filename)
 							mystrcpy(debug_title, debug);
 						}
 					}
+#endif					
 				}
 			} else {
 				result=0;
@@ -333,6 +352,7 @@ static int LoadROM(const char *filename)
 	}
 	HW_HOST(REG_HOST_ROMSIZE) = file.size;
 
+#if MENUITEM_VERIFY && MENUITEM_DEBUG
 	if (!err_seen) {
 		mystrcpy(debug_title, filename);
 /*		
@@ -347,8 +367,10 @@ static int LoadROM(const char *filename)
 		mystrcpy(debug_title, debug);
 */		
 	}
-  
+#endif  
+	HW_HOST(REG_HOST_MUXCTRL) = 1; // Make sure ROM is enabled and boot
 	Reset(0);
+	Delay();
 	
 	if(result)
 		Menu_Set(topmenu);
@@ -360,6 +382,7 @@ static int LoadROM(const char *filename)
 #define HOST_READ_NUMPAD    0xFFFFFFB4
 #define HOST_READ_SCANLINES 0xFFFFFFB8
 
+#if MENUITEM_DEBUG
 void Debug(int row) {
   int i;
   unsigned u;
@@ -369,9 +392,10 @@ void Debug(int row) {
   DebugChar(':');
 	
 	// Test code to read numpad
-	// u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	u >>= 12; // Leave only the number of scanlines left
 	// Test code to read scanlines
-	u = *(volatile unsigned *)HOST_READ_SCANLINES;
+	// u = *(volatile unsigned *)HOST_READ_SCANLINES;
 
 	HexDebugByte((u >> 24) & 0xFF);
 	HexDebugByte((u >> 16) & 0xFF);
@@ -394,7 +418,7 @@ void DebugCounterReset(int row)
 {
   debug_counter=0;
 }
-
+#endif
 
 int main(int argc,char **argv)
 {
@@ -432,7 +456,9 @@ int main(int argc,char **argv)
 //	LoadROM("PIC1    RAW");
 
 	FileSelector_SetLoadFunction(LoadROM);
-  mystrcpy(debug_title, "CollectorVision");
+#if MENUITEM_DEBUG	
+  	mystrcpy(debug_title, "CollectorVision");
+#endif	  
 	
 	Menu_Set(topmenu);
 	Menu_Show();
