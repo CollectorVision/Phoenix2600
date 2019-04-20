@@ -395,7 +395,7 @@ void Debug(int row) {
 	u = *(volatile unsigned *)HOST_READ_NUMPAD;
 	u >>= 12; // Leave only the number of scanlines left
 	// Test code to read scanlines
-	// u = *(volatile unsigned *)HOST_READ_SCANLINES;
+	u = *(volatile unsigned *)HOST_READ_SCANLINES;
 
 	HexDebugByte((u >> 24) & 0xFF);
 	HexDebugByte((u >> 16) & 0xFF);

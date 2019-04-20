@@ -267,10 +267,10 @@ architecture rtl of toplevel is
 	
 	signal last_hsync : std_logic := '0';
 	signal last_vsync : std_logic := '0';
-	signal tia_hcnt : unsigned(7 downto 0);
-	signal tia_vcnt : unsigned(7 downto 0);
+	signal tia_hcnt   : unsigned(7 downto 0);
+	signal tia_vcnt   : unsigned(8 downto 0);
 	signal total_vcnt : unsigned(8 downto 0) := "000000000";
-	signal last_vcnt : unsigned(8 downto 0)  := "000000000";
+	signal last_vcnt  : unsigned(8 downto 0)  := "000000000";
 	signal tia_divider : unsigned(3 downto 0) := "0000";
 	signal rgb_color : std_logic_vector(23 downto 0);
 	
@@ -702,6 +702,8 @@ overlay : entity work.OSD_Overlay
 			I_PX_CLK    => tia_pixel_clock,
 			I_HCNT		=> tia_hcnt,
 			I_VCNT		=> tia_vcnt,
+			I_VSYNC		=> pre_vsyn,
+			I_LAST_VCNT => last_vcnt,
 			O_HSYNC		=> hdmi_vga_hsync_n_s, 
 			O_VSYNC		=> hdmi_vga_vsync_n_s, 
 			O_COLOR		=> hdmi_vga_lum_hue_color_out,

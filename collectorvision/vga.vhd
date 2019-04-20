@@ -27,6 +27,8 @@ entity vga is
 		I_COLOR		: in  std_logic_vector(6 downto 0);
 		I_HCNT		: in  unsigned(7 downto 0);
 		I_VCNT		: in  unsigned(7 downto 0);
+		I_VSYNC		: in  std_logic;
+		I_LAST_VCNT : in  unsigned(8 downto 0);	-- Last measure height of the screen
 		O_HSYNC		: out std_logic;
 		O_VSYNC		: out std_logic;
 		O_COLOR		: out std_logic_vector(6 downto 0);
@@ -220,7 +222,9 @@ begin
 						      and (I_VCNT >= v_input_offset) and (I_VCNT < vc_max+v_input_offset)
 						 else '0';	
 	blank		<= '1' when (hcnt > h_pixels_across) or (vcnt > v_pixels_down) else '0';
-	picture	<= '1' when (blank = '0') and (hcnt > h_start+1 and hcnt < h_end) and (vcnt >= v_start and vcnt < v_end) else '0';
+	picture	<= '1' when (blank = '0') and (hcnt > h_start+1 and hcnt < h_end) 
+	                                   and (vcnt >= v_start and vcnt < v_end) 
+												  and (unsigned(vcnt(9 downto 1)) < I_LAST_VCNT-70) else '0';
 
 	O_HSYNC	<= '1' when (hcnt <= h_sync_on) or (hcnt > h_sync_off) else '0';
 	O_VSYNC	<= '1' when (vcnt <= v_sync_on) or (vcnt > v_sync_off) else '0';
