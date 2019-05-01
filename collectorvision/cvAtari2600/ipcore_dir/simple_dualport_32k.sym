@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="simple_dualport_32k">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-3-24T18:4:43</timestamp>
+    <timestamp>2019-4-20T8:12:16</timestamp>
     <pin polarity="Input" x="0" y="80" name="addra[15:0]" />
     <pin polarity="Input" x="0" y="112" name="dina[7:0]" />
     <pin polarity="Input" x="0" y="208" name="wea[0:0]" />

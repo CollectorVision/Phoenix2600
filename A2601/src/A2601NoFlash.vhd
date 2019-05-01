@@ -34,16 +34,17 @@ use ieee.numeric_std.all;
 entity A2601NoFlash is
    port (vid_clk: in std_logic;
          audio: out std_logic;
-         O_VSYNC: out std_logic;
-         O_HSYNC: out std_logic;
-         O_VIDEO_R: out std_logic_vector(5 downto 0);
-         O_VIDEO_G: out std_logic_vector(5 downto 0);
-         O_VIDEO_B: out std_logic_vector(5 downto 0);	
+--         O_VSYNC: out std_logic;
+--         O_HSYNC: out std_logic;
+--         O_VIDEO_R: out std_logic_vector(5 downto 0);
+--         O_VIDEO_G: out std_logic_vector(5 downto 0);
+--         O_VIDEO_B: out std_logic_vector(5 downto 0);	
 			-- EP added outputs before VGA scandoubler
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
 			tia_pixel_clock : out std_logic;
+			tia_pixel_clock_ena : out boolean;
 			audio_out : out std_logic_vector(4 downto 0);
 			-- EP end addition
          res: in std_logic;
@@ -105,9 +106,9 @@ architecture arch of A2601NoFlash is
          inpt5: in std_logic;
          colu: out std_logic_vector(6 downto 0);
          csyn: out std_logic;
-         vsyn: out std_logic;
-         hsyn: out std_logic;
-         rgbx2: out std_logic_vector(23 downto 0);
+--         vsyn: out std_logic;
+--         hsyn: out std_logic;
+--         rgbx2: out std_logic_vector(23 downto 0);
 			-- EP added outputs before VGA scandoubler
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
@@ -177,9 +178,9 @@ architecture arch of A2601NoFlash is
     signal ph0: std_logic;
     signal ph1: std_logic;
 	 
-    signal rgbx2: std_logic_vector(23 downto 0);
-    signal hsyn: std_logic;
-    signal vsyn: std_logic;
+--    signal rgbx2: std_logic_vector(23 downto 0);
+--    signal hsyn: std_logic;
+--    signal vsyn: std_logic;
 	 
 	 signal ctrl_cntr: unsigned(3 downto 0);
     signal p_fn: std_logic;
@@ -242,7 +243,7 @@ begin
 	ms_A2601: A2601
         port map(vid_clk, rst, cpu_d, cpu_a, cpu_r,pa, pb, 
 				paddle_0, paddle_1, paddle_2, paddle_3, paddle_ena, 
-				inpt4, inpt5, open, open, vsyn, hsyn, rgbx2, 
+				inpt4, inpt5, open, open, -- vsyn, hsyn, rgbx2, 
 				pre_hsyn, pre_vsyn, pre_colu, tia_pixel_clock,
 				cv, 
 				au0, au1, av0, av1, ph0, ph1, pal);
@@ -250,11 +251,11 @@ begin
 	dac_inst: dac 
 		port map(audio, au, vid_clk, '0');	
 	
-  O_VIDEO_R <= rgbx2(23 downto 18);
-  O_VIDEO_G <= rgbx2(15 downto 10);
-  O_VIDEO_B <= rgbx2(7 downto 2);	
-  O_HSYNC   <= hsyn;
-  O_VSYNC   <= vsyn;
+--  O_VIDEO_R <= rgbx2(23 downto 18);
+--  O_VIDEO_G <= rgbx2(15 downto 10);
+--  O_VIDEO_B <= rgbx2(7 downto 2);	
+--  O_HSYNC   <= hsyn;
+--  O_VSYNC   <= vsyn;
 
  process(ph0)
     begin

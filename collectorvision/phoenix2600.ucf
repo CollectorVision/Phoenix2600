@@ -169,6 +169,9 @@ NET "BLED" LOC="C15" | IOSTANDARD=LVCMOS33 | DRIVE = 16;
 NET "clock_50_i" TNM_NET = clock_50_i;
 TIMESPEC TS_clock_50_i = PERIOD "clock_50_i" 20 ns HIGH 50%;
 
+NET "vid_clk" TNM_NET = clock_vid_clk;
+TIMESPEC TS_clock_vid_clk = PERIOD "vid_clk" 17.3913 ns HIGH 50%;
+
 ###EP NET "clock_master_s" KEEP | TNM_NET = clock_master_s;
 ###EP TIMESPEC TS_clock_master_s = PERIOD "clock_master_s" 46.560 ns HIGH 50%;
 

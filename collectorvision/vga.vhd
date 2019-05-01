@@ -7,6 +7,7 @@
 -- Modified for collectorvision for timing generator for the VGA input for HDMI...
 -- Now uses 32K frambuffer. 
 -- EP 2019-03-24 NOTE: THIS FRAMEBUFFER IS NOW 38K, NOT 32K to support 240 scanlines.
+-- EP 2019-04-20 NOTE: THIS FRAMEBUFFER IS NOW 42K, NOT 38K to support 268 scanlines.
 
 library IEEE; 
 	use IEEE.std_logic_1164.all; 
@@ -15,9 +16,8 @@ library IEEE;
 	
 entity vga is
 	generic (
-		-- Within I_CNT and I_VCNT there is offset. We substract the offsets
+		-- Within I_HCNTthere is offset. We substract the offset
 		-- and write to memory when outside the offsets.
-		v_input_offset		: integer := 37;
 		h_input_offset		: integer := 48 -- 68;
 	);
 	port (
@@ -26,7 +26,7 @@ entity vga is
 		I_PX_CLK    : in  std_logic;
 		I_COLOR		: in  std_logic_vector(6 downto 0);
 		I_HCNT		: in  unsigned(7 downto 0);
-		I_VCNT		: in  unsigned(7 downto 0);
+		I_VCNT		: in  unsigned(8 downto 0);	-- Aciddrop has 272 scanlines.
 		I_VSYNC		: in  std_logic;
 		I_LAST_VCNT : in  unsigned(8 downto 0);	-- Last measure height of the screen
 		O_HSYNC		: out std_logic;
@@ -43,7 +43,7 @@ architecture rtl of vga is
 	signal wren				: std_logic;
 	signal picture			: std_logic;
 	signal window_hcnt	: std_logic_vector( 9 downto 0) := (others => '0');
-	signal window_vcnt	: std_logic_vector( 8 downto 0) := (others => '0');
+	signal window_vcnt	: std_logic_vector( 9 downto 0) := (others => '0');
 	signal hcnt				: std_logic_vector( 9 downto 0) := (others => '0');
 	signal h					: std_logic_vector( 9 downto 0) := (others => '0');
 	signal vcnt				: std_logic_vector( 9 downto 0) := (others => '0');
@@ -55,6 +55,8 @@ architecture rtl of vga is
 	signal buf_pixel_outx2: std_logic_vector( 6 downto 0);
 	signal buf_pixel_out : std_logic_vector( 6 downto 0);
 	signal pixel_sample_timer : std_logic_vector(7 downto 0) := x"00";
+	
+	signal downscale_y 	: boolean := false;	-- set to true if  image needs to be shrunken
 
 -- ModeLine "640x480@60Hz"  25,175  640  656  752  800 480 490 492 525 -HSync -VSync
 	-- Horizontal Timing constants  
@@ -83,7 +85,7 @@ architecture rtl of vga is
 
 	-- In
 	constant hc_max				: integer := 160;
-	constant vc_max				: integer := 240;
+	constant vc_max				: integer := 268;
 
 	constant h_start				: integer := 40;		-- 2 when 640x480
 	constant h_end					: integer := h_start + (hc_max * 4);	
@@ -152,19 +154,6 @@ begin
 			pixel_sample_timer <= pixel_sample_timer(6 downto 0) & I_PX_CLK;
 			buf_pixel_out <= pixel_out; -- buf_pixel_outx2;	-- pixels change at the edge of the 25MHz clock
 			
---			if h = h_end_count then
---				h <= (others => '0');
---			else
---				h <= h + 1;
---			end if;
---		
---			if h = 7 then
---				hcnt <= (others => '0');
---				if h_start = 0 then 
---					-- reset window counter here if h_start happens to be zero, as we cannot hit against zero below.
---					window_hcnt <= (others => '0');	
---				end if;
---			else
 			if hcnt = h_end_count then
 				hcnt <= (others => '0');
 			else
@@ -186,32 +175,26 @@ begin
 					vcnt <= vcnt + 1;
 					if vcnt = (v_start-1) then
 						window_vcnt <= (others => '0');
-					else
-						window_vcnt <= window_vcnt + 1;
+					else 
+						-- test code - advance window_vcnt a little faster - BUGBUG
+						if downscale_y and vcnt(1 downto 0) = "11" then
+							window_vcnt <= window_vcnt + 2;	
+						else
+							window_vcnt <= window_vcnt + 1;
+						end if;
 					end if;
 				end if;
 			end if;
 		end if; -- if rising_edge
 	end process;
 
---	process(I_CLK_VGA)
---		variable wr_result_v : std_logic_vector(15 downto 0);
---		variable rd_result_v : std_logic_vector(15 downto 0);
---	begin
---		if rising_edge(I_CLK_VGA) then 
---			wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
---			rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
---			addr_wr	<= wr_result_v(14 downto 0);
---			addr_rd	<= rd_result_v(14 downto 0);	
---		end if;
---	end process;
-	
+
 	process (I_HCNT, I_VCNT, window_hcnt, window_vcnt)
-		variable wr_result_v : std_logic_vector(15 downto 0);
-		variable rd_result_v : std_logic_vector(15 downto 0);
+		variable wr_result_v : std_logic_vector(17 downto 0);
+		variable rd_result_v : std_logic_vector(17 downto 0);
 	begin
-		wr_result_v := std_logic_vector((I_VCNT - v_input_offset) * 160 + (I_HCNT - h_input_offset));
-		rd_result_v := std_logic_vector((unsigned(window_vcnt(8 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
+		wr_result_v := std_logic_vector(I_VCNT * 160 + (I_HCNT - h_input_offset));
+		rd_result_v := std_logic_vector((unsigned(window_vcnt(9 downto 1)) * 160) + unsigned(window_hcnt(9 downto 2)));
 		addr_wr	<= wr_result_v(15 downto 0);
 		addr_rd	<= rd_result_v(15 downto 0);	
 	end process;
@@ -219,16 +202,22 @@ begin
 --	wren		<= '1' when pixel_sample_timer(3 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
 	wren		<= '1' when pixel_sample_timer(1 downto 0) = "0011" 	-- we've seen the rising edge of pixel clock (3.6MHz) 
 							   and (I_HCNT >= h_input_offset) and (I_HCNT < hc_max+h_input_offset) 
-						      and (I_VCNT >= v_input_offset) and (I_VCNT < vc_max+v_input_offset)
+						      and (I_VCNT < vc_max)
 						 else '0';	
 	blank		<= '1' when (hcnt > h_pixels_across) or (vcnt > v_pixels_down) else '0';
 	picture	<= '1' when (blank = '0') and (hcnt > h_start+1 and hcnt < h_end) 
 	                                   and (vcnt >= v_start and vcnt < v_end) 
-												  and (unsigned(vcnt(9 downto 1)) < I_LAST_VCNT-70) else '0';
+							-- The condition below blanks the pixels after reaching the last scanline. Special cased for Acid drop etc which can have more than 240 scanlines
+							and ((not downscale_y and (unsigned(window_vcnt(9 downto 1)) < I_LAST_VCNT-60)) or (downscale_y and window_vcnt(9 downto 1) < 268))
+						   else '0';
 
 	O_HSYNC	<= '1' when (hcnt <= h_sync_on) or (hcnt > h_sync_off) else '0';
 	O_VSYNC	<= '1' when (vcnt <= v_sync_on) or (vcnt > v_sync_off) else '0';
-	O_COLOR  <= buf_pixel_out when picture = '1' else (others => '0');
+	O_COLOR  <= -- DEBUG: buf_pixel_out xor "1111111" when (window_vcnt=428 or window_vcnt=427) and downscale_y else
+			      buf_pixel_out 					 when picture = '1' else 
+					(others => '0');
 	O_BLANK	<= blank;
+	
+	downscale_y <= I_LAST_VCNT-70 > 244 ;
 
 end rtl;

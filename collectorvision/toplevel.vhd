@@ -151,6 +151,8 @@ architecture rtl of toplevel is
   signal hdmi_clk_125M_p : std_logic;
   signal hdmi_clk_125M_n : std_logic;
   signal hdmi_clk_2_5x   : std_logic;
+  
+  signal px_div : unsigned(3 downto 0) := "0000";	-- my local clock divider
 
 -- A2601
   signal audio: std_logic := '0';
@@ -188,11 +190,11 @@ architecture rtl of toplevel is
 
 --CtrlModule--
 -- Internal video signals:  
-  signal vga_vsync_i : std_logic := '0';
-  signal vga_hsync_i : std_logic := '0';
-  signal vga_red_i : std_logic_vector(7 downto 0) := (others => '0');
-  signal vga_green_i : std_logic_vector(7 downto 0) := (others => '0');
-  signal vga_blue_i	: std_logic_vector(7 downto 0) := (others => '0');
+--  signal vga_vsync_i : std_logic := '0';
+--  signal vga_hsync_i : std_logic := '0';
+--  signal vga_red_i : std_logic_vector(7 downto 0) := (others => '0');
+--  signal vga_green_i : std_logic_vector(7 downto 0) := (others => '0');
+--  signal vga_blue_i	: std_logic_vector(7 downto 0) := (others => '0');
   
   -- internal video signals between VGA and HDMI
   signal red8   : std_logic_vector(7 downto 0);
@@ -208,6 +210,7 @@ architecture rtl of toplevel is
   signal	pre_vsyn : std_logic;
   signal	pre_colu : std_logic_vector(6 downto 0);
   signal tia_pixel_clock : std_logic;
+  signal tia_pixel_clock_ena : boolean;
   
   signal osd_window : std_logic;
   signal osd_pixel : std_logic;
@@ -267,6 +270,7 @@ architecture rtl of toplevel is
 	
 	signal last_hsync : std_logic := '0';
 	signal last_vsync : std_logic := '0';
+	signal tia_vcnt_started : boolean := false;
 	signal tia_hcnt   : unsigned(7 downto 0);
 	signal tia_vcnt   : unsigned(8 downto 0);
 	signal total_vcnt : unsigned(8 downto 0) := "000000000";
@@ -292,7 +296,8 @@ architecture rtl of toplevel is
 	end component;
 	
 	constant tia_capture_h_offset : integer := 48; -- 48
-	constant tia_capture_v_offset : integer := 30; -- 40; -- 37;
+	constant tia_capture_v_offset : integer := 30; -- 40; -- 37; -- 30;
+	constant tia_capture_v_offset2 : integer := 38;	-- acid drop
 	
 begin
 
@@ -311,7 +316,7 @@ begin
 	ps2k_clk_in <= ps2_clk_io;
 	
 	joy2_p1_i <= pre_hsyn; -- pre_hsyn; -- ps2_clk_io;
-	joy2_p4_i <= tia_pixel_clock; -- tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
+	joy2_p4_i <= tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
 	
 -- Serial flash - not used right now
 	flash_cs_n_o <= '1';
@@ -470,19 +475,11 @@ overlay : entity work.OSD_Overlay
 		scanline_ena 	=> scanlines
 	);	
 
--- -----------------------------------------------------------------------
--- PACMAN ROM used during bootup
--- -----------------------------------------------------------------------	
-	pacmanROM : entity work.pacman_rom
-		port map (
-			clka => vid_clk,
-			addra => a2600_addr(11 downto 0),
-			douta => pacman_rom_byte
-		);
 
-	-- a2600_romdata <= pacman_rom_byte; -- BUGBUG 
-	-- EP 2019-02-16 running again with pacman_rom to test things out.
-   a2600_romdata <= extram_rom_byte when host_mux = '1' else pacman_rom_byte;
+	-----------------------------------------------------------------------
+	-- ROM data always coming from external memory
+	-----------------------------------------------------------------------
+   a2600_romdata <= extram_rom_byte;
 
 -- -----------------------------------------------------------------------
 -- External SRAM controller
@@ -519,11 +516,11 @@ overlay : entity work.OSD_Overlay
     port map (
       vid_clk => vid_clk,
       audio => audio,
-      O_VSYNC => vga_vsync_i,
-      O_HSYNC => vga_hsync_i,
-      O_VIDEO_R => vga_red_i(7 downto 2),
-      O_VIDEO_G => vga_green_i(7 downto 2),
-      O_VIDEO_B => vga_blue_i(7 downto 2),
+--      O_VSYNC => vga_vsync_i,
+--      O_HSYNC => vga_hsync_i,
+--      O_VIDEO_R => vga_red_i(7 downto 2),
+--      O_VIDEO_G => vga_green_i(7 downto 2),
+--      O_VIDEO_B => vga_blue_i(7 downto 2),
       res => not(host_reset_n),
       p_l => P_L,
       p_r => P_R,
@@ -559,6 +556,7 @@ overlay : entity work.OSD_Overlay
 		pre_vsyn => pre_vsyn,
 		pre_colu => pre_colu,
 		tia_pixel_clock => tia_pixel_clock,
+		tia_pixel_clock_ena => tia_pixel_clock_ena,
 		audio_out => a2600_audio,
 		-- EP end addition
 		size => size
@@ -611,7 +609,7 @@ overlay : entity work.OSD_Overlay
 
 
 ---- debug stuff ----
-	process(vid_clk)
+	process(vid_clk, host_reset_n)
 	variable t : std_logic_vector(31 downto 0);
 	begin
 		if host_reset_n = '0' then
@@ -657,9 +655,15 @@ overlay : entity work.OSD_Overlay
 	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00";
 	
 	-- video clocking
-	process(tia_pixel_clock)
+	process(vid_clk, tia_pixel_clock_ena, tia_pixel_clock)
 	begin
+		-- if rising_edge(tia_pixel_clock) then
+		-- if rising_edge(vid_clk) and tia_pixel_clock_ena then 
+
 		if tia_pixel_clock'event and tia_pixel_clock='1' then 
+
+--			px_div <= px_div + 1;
+--			if px_div = 8 then 
 				last_hsync <= pre_hsyn;
 				last_vsync <= pre_vsyn;
 				if tia_hcnt < 160+tia_capture_h_offset then -- sync this with below
@@ -670,29 +674,37 @@ overlay : entity work.OSD_Overlay
 					-- increment vcount on rising edge of hsync.
 					-- max 205 lines can be captured into 32K framebuffer.
 					-- Now increased framebuffer to 240 scanlines and 38K in size.
-					if tia_vcnt < 240+tia_capture_v_offset then 	
+					-- And increased it yet again to 42K bytes to accommodate 268 scanlines (aciddrop)
+					if (total_vcnt = tia_capture_v_offset and last_vcnt < 320) or
+						(total_vcnt = tia_capture_v_offset2 and last_vcnt >= 320)
+					then
+						tia_vcnt_started <= true;
+					end if;
+					
+					if tia_vcnt_started and tia_vcnt < 268 then
 						tia_vcnt <= tia_vcnt + 1;
 					end if;
+					
 					total_vcnt <= total_vcnt + 1;
 				end if;
 				
 				-- not sure if this is correct, but we reset vertical counter when vsync ends
 				if last_vsync = '1' and pre_vsyn='0' then
 					tia_vcnt <= (others => '0');
-					if total_vcnt > 4 then 
+					tia_vcnt_started <= false;
+					if total_vcnt > 64 then 
 						-- There may be successive vsync pulses, thus only capture a meaningful height
 						last_vcnt <= total_vcnt;
 					end if;
 					total_vcnt <= (others => '0');
 				end if;
-			end if;
---		end if;
+--			end if; -- px_div
+		end if;
 	end process;
 	
 	-- Use a second VGA block to provide timing for HDMI.
 	vga_timing_gen : entity work.vga 
 		generic map (
-			v_input_offset	=> tia_capture_v_offset,
 			h_input_offset	=> tia_capture_h_offset
 		)
 		port map (

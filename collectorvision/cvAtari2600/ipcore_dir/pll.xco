@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sat Feb 23 13:20:30 2019
+# Date: Mon Apr 22 07:06:56 2019
 #
 ##############################################################
 #
@@ -74,7 +74,7 @@ CSET clkout1_requested_out_freq=57.5
 CSET clkout1_requested_phase=0.000
 CSET clkout2_drives=BUFG
 CSET clkout2_requested_duty_cycle=50.000
-CSET clkout2_requested_out_freq=25
+CSET clkout2_requested_out_freq=7.1875
 CSET clkout2_requested_phase=0.000
 CSET clkout2_used=false
 CSET clkout3_drives=BUFG
@@ -108,7 +108,7 @@ CSET daddr_port=DADDR
 CSET dclk_port=DCLK
 CSET dcm_clk_feedback=1X
 CSET dcm_clk_out1_port=CLKFX
-CSET dcm_clk_out2_port=CLKFX
+CSET dcm_clk_out2_port=CLKDV
 CSET dcm_clk_out3_port=CLK2X
 CSET dcm_clk_out4_port=CLK0
 CSET dcm_clk_out5_port=CLK0
@@ -203,7 +203,7 @@ CSET pll_clkin_period=20.000
 CSET pll_clkout0_divide=10
 CSET pll_clkout0_duty_cycle=0.500
 CSET pll_clkout0_phase=0.000
-CSET pll_clkout1_divide=23
+CSET pll_clkout1_divide=80
 CSET pll_clkout1_duty_cycle=0.500
 CSET pll_clkout1_phase=0.000
 CSET pll_clkout2_divide=5
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC: fa42f5aa
+# CRC: dd1095be
