@@ -10,6 +10,7 @@
 
 #define MENUITEM_BOOT 	0
 #define MENUITEM_ROM  	0
+#define MENUITEM_EBANK  1
 #define MENUITEM_DEBUG  1
 #define MENUITEM_VERIFY 0
 
@@ -223,7 +224,10 @@ static struct menu_entry topmenu[]=
 	{MENU_ENTRY_TOGGLE,"Color",MENU_ACTION(2)},
 	{MENU_ENTRY_TOGGLE,"Difficulty A",MENU_ACTION(3)},
 	{MENU_ENTRY_TOGGLE,"Difficulty B",MENU_ACTION(4)},
-	{MENU_ENTRY_TOGGLE,"Superchip in cartridge",MENU_ACTION(5)},	
+	{MENU_ENTRY_TOGGLE,"*Superchip in cartridge",MENU_ACTION(5)},	
+#if MENUITEM_EBANK
+	{MENU_ENTRY_TOGGLE,"*Bank E0",MENU_ACTION(8)},	
+#endif
 #if MENUITEM_ROM	
 	{MENU_ENTRY_TOGGLE,"ROM",MENU_ACTION(6)},	
 #endif
@@ -483,6 +487,10 @@ int main(int argc,char **argv)
 			dipsw|=16;	// Add in the Diff B bit
 		if(MENU_TOGGLE_VALUES & 32)
 			dipsw|=32;	// Superchip is present
+#if MENUITEM_EBANK			
+		if(MENU_TOGGLE_VALUES & (1 <<8))
+			dipsw|=64;	// Banking scheme E0
+#endif			
 		HW_HOST(REG_HOST_SW)=dipsw;	// Send the new values to the hardware.
 //		HW_HOST(REG_HOST_SCALERED)=MENU_SLIDER_VALUE(&rgbmenu[0]);
 //		HW_HOST(REG_HOST_SCALEGREEN)=MENU_SLIDER_VALUE(&rgbmenu[1]);

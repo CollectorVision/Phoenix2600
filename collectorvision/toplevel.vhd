@@ -282,6 +282,7 @@ architecture rtl of toplevel is
 	signal scan_state : unsigned(7 downto 0) := x"00";
 	
 	signal superchip : std_logic;
+	signal banking_scheme_e0 : std_logic;
 	
 	signal a2600_audio : std_logic_vector(4 downto 0);
 	
@@ -411,7 +412,8 @@ MyCtrlModule : entity work.CtrlModule
 		spi_cs   => sd_cs_n_o,
 		
 		-- DIP switches
-		dipswitches(15 downto 6) => open,
+		dipswitches(15 downto 7) => open,
+		dipswitches(6) => banking_scheme_e0,
 		dipswitches(5) => superchip,
 		dipswitches(4) => p_dif(1),
 		dipswitches(3) => p_dif(0),
@@ -545,6 +547,7 @@ overlay : entity work.OSD_Overlay
       pal => p_pal,
       p_dif => p_dif,
 		superchip => superchip,
+		banking_scheme_e0 => banking_scheme_e0,
 		a2600_cpu_addr_o => a2600_addr,
 		a2600_cpu_data_i => a2600_romdata,
 --      bootdata => host_bootdata,

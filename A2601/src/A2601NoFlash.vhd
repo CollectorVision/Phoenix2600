@@ -77,6 +77,7 @@ entity A2601NoFlash is
          pal: in std_logic;
          p_dif: in std_logic_vector(1 downto 0);
 			superchip : in std_logic;	-- superchip presence
+			banking_scheme_e0 : in std_logic; -- alternate banking scheme for cartridges > 4K
 
 			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
@@ -433,19 +434,25 @@ begin
 --    end process;
 
 	 -- derive banking scheme from cartridge size
-    process(size)
+    process(size, banking_scheme_e0)
     begin
-      if(size <= x"1000") then    -- 4k and less
-        bss <= BANK00;
-      elsif(size <= x"2000") then -- 8k and less
-        bss <= BANKF8;
-      elsif(size <= x"4000") then -- 16k and less
-        bss <= BANKF6;
-      elsif(size <= x"8000") then -- 32k and less
-        bss <= BANKF4;
-      else
-        bss <= BANK00;
-      end if;
+		if(size <= x"1000") then    -- 4k and less
+		  bss <= BANK00;
+		else
+			if banking_scheme_e0 = '1' then
+				bss <= BANKE0;
+			else
+				if(size <= x"2000") then -- 8k and less
+				  bss <= BANKF8;
+				elsif(size <= x"4000") then -- 16k and less
+				  bss <= BANKF6;
+				elsif(size <= x"8000") then -- 32k and less
+				  bss <= BANKF4;
+				else
+				  bss <= BANK00;
+				end if;
+			end if;
+		end if;
     end process;
     
 
