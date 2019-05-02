@@ -34,19 +34,13 @@ use ieee.numeric_std.all;
 entity A2601NoFlash is
    port (vid_clk: in std_logic;
          audio: out std_logic;
---         O_VSYNC: out std_logic;
---         O_HSYNC: out std_logic;
---         O_VIDEO_R: out std_logic_vector(5 downto 0);
---         O_VIDEO_G: out std_logic_vector(5 downto 0);
---         O_VIDEO_B: out std_logic_vector(5 downto 0);	
-			-- EP added outputs before VGA scandoubler
 			pre_hsyn : out std_logic;
 			pre_vsyn : out std_logic;
 			pre_colu : out std_logic_vector(6 downto 0);
 			tia_pixel_clock : out std_logic;
 			tia_pixel_clock_ena : out boolean;
 			audio_out : out std_logic_vector(4 downto 0);
-			-- EP end addition
+
          res: in std_logic;
          p_l: in std_logic;
          p_r: in std_logic;
@@ -71,13 +65,11 @@ entity A2601NoFlash is
          p_select: in std_logic;
          p_color: in std_logic;
 			
---         sdi: in std_logic;
---         sck: in std_logic;
---         ss2: in std_logic;
          pal: in std_logic;
          p_dif: in std_logic_vector(1 downto 0);
 			superchip : in std_logic;	-- superchip presence
 			banking_scheme_e0 : in std_logic; -- alternate banking scheme for cartridges > 4K
+			banking_scheme_e7 : in std_logic; -- alternate banking scheme for cartridges > 4K
 
 			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
@@ -133,12 +125,12 @@ architecture arch of A2601NoFlash is
 			Reset:	in std_logic);
 	 end component;	
 	 
-   component ram128x8 is
+   component ram2048x8 is
         port(clk: in std_logic;
              r: in std_logic;
              d_in: in std_logic_vector(7 downto 0);
              d_out: out std_logic_vector(7 downto 0);
-             a: in std_logic_vector(6 downto 0));
+             a: in std_logic_vector(10 downto 0));
     end component;
 	
 	
@@ -191,7 +183,7 @@ architecture arch of A2601NoFlash is
     signal sc_r: std_logic;
     signal sc_d_in: std_logic_vector(7 downto 0);
     signal sc_d_out: std_logic_vector(7 downto 0);
-    signal sc_a: std_logic_vector(6 downto 0);
+    signal sc_a: std_logic_vector(10 downto 0);
 
     subtype bss_type is std_logic_vector(2 downto 0);
 
@@ -202,6 +194,13 @@ architecture arch of A2601NoFlash is
     signal e0_bank0: std_logic_vector(2 downto 0) := "000";
     signal e0_bank1: std_logic_vector(2 downto 0) := "000";
     signal e0_bank2: std_logic_vector(2 downto 0) := "000";
+	 
+	 -- M-network banking scheme E7 is the most complex cartridge mode
+	 signal e7_rom_bank: std_logic_vector(2 downto 0) := "000";
+	 signal e7_ram_bank: std_logic_vector(1 downto 0) := "00";
+	 signal e7_bank: std_logic_vector(2 downto 0);
+	 signal e7_access_ram_256 : std_logic;
+	 signal e7_access_ram_1k  : std_logic;
 
     signal cpu_a: std_logic_vector(12 downto 0);
     signal cpu_d: std_logic_vector(7 downto 0);
@@ -217,6 +216,7 @@ architecture arch of A2601NoFlash is
     constant BANKE0: bss_type := "100";
     constant BANK3F: bss_type := "101";
     constant BANKF4: bss_type := "110";
+	 constant BANKE7: bss_type := "111";
 
     signal bss: bss_type := BANK00; 		-- bank switching method
     -- signal superchip: std_logic := '0';	-- superchip enabled or not (sc)
@@ -244,7 +244,7 @@ begin
 	ms_A2601: A2601
         port map(vid_clk, rst, cpu_d, cpu_a, cpu_r,pa, pb, 
 				paddle_0, paddle_1, paddle_2, paddle_3, paddle_ena, 
-				inpt4, inpt5, open, open, -- vsyn, hsyn, rgbx2, 
+				inpt4, inpt5, open, open,
 				pre_hsyn, pre_vsyn, pre_colu, tia_pixel_clock,
 				cv, 
 				au0, au1, av0, av1, ph0, ph1, pal);
@@ -252,12 +252,6 @@ begin
 	dac_inst: dac 
 		port map(audio, au, vid_clk, '0');	
 	
---  O_VIDEO_R <= rgbx2(23 downto 18);
---  O_VIDEO_G <= rgbx2(15 downto 10);
---  O_VIDEO_B <= rgbx2(7 downto 2);	
---  O_HSYNC   <= hsyn;
---  O_VSYNC   <= vsyn;
-
  process(ph0)
     begin
         if (ph0'event and ph0 = '1') then
@@ -309,22 +303,38 @@ begin
     au <= std_logic_vector(auv0 + auv1);
 	 audio_out <= au;
 
-    sc_ram128x8: ram128x8
+	 -- A RAM block. This is used in two banking modes:
+	 -- 	Superchip -  128 byte RAM
+	 --   E7 (M-Network) - 2048 byte RAM used through two windows (1K and 256 byte windows)
+    sc_ram2048x8: ram2048x8
         port map(sc_clk, sc_r, sc_d_in, sc_d_out, sc_a);
+		  
+	 e7_access_ram_256 <= '1' when cpu_a(12 downto  9) = "1100" and bss = BANKE7 else '0';
+	 e7_access_ram_1k  <= '1' when cpu_a(12 downto 11) = "10"   and bss = BANKE7 and e7_rom_bank="111" else '0';
 
     -- This clock is phase shifted so that we can use Xilinx synchronous block RAM.
     sc_clk <= not ph1;
-    sc_r <= '0' when cpu_a(12 downto 7) = "100000" else '1';
+    sc_r <= '0' when cpu_a(12 downto 7) = "100000" and superchip='1' else -- write to super chip
+	         '0' when cpu_a(8) = '0' and e7_access_ram_256 = '1' else  -- write to 256 byte window with E7 banking
+				'0' when cpu_a(10)= '0' and e7_access_ram_1k = '1'  else  -- write to 1K RAM with E7 banking
+				'1'; -- read
     sc_d_in <= cpu_d;
-    sc_a <= cpu_a(6 downto 0);
+    sc_a <= "0" & e7_ram_bank & cpu_a(7 downto 0) when e7_access_ram_256 = '1' else -- 1800..19FF
+	         "1" &               cpu_a(9 downto 0) when e7_access_ram_1k  = '1' else -- 1000..17FF when RAM is mapped here
+				"0000" & cpu_a(6 downto 0); --  when superchip = '1' 
+				
 
     -- ROM and SC output
-    process(cpu_a, d, sc_d_out, superchip)
+    process(cpu_a, d, sc_d_out, superchip, bss)
     begin
         if (cpu_a(12 downto 7) = "100001" and superchip = '1') then
             cpu_d <= sc_d_out;
         elsif (cpu_a(12 downto 7) = "100000" and superchip = '1') then
             cpu_d <= "ZZZZZZZZ";
+		  elsif (cpu_a(8)='1' and e7_access_ram_256='1') then
+				cpu_d <= sc_d_out;
+		  elsif (cpu_a(10)='1' and e7_access_ram_1k='1') then
+				cpu_d <= sc_d_out;
         elsif (cpu_a(12) = '1') then
             cpu_d <= d;
         else
@@ -340,6 +350,11 @@ begin
         "---" when others;
 
     tf_bank <= bank(1 downto 0) when (cpu_a(11) = '0') else "11";
+	 
+	 -- M-network E7 mapping mode
+	 -- Addresses 1A00..1FFF are fixed to last 1.5K of ROM. ROM is 16K.
+	 -- In here actually to the last 2K of ROM, since the RAM will override ROM.
+	 e7_bank <= e7_rom_bank when cpu_a(11)='0' else "111";	
 
     with bss select a <=
 		  "000" & cpu_a(11 downto 0) when BANK00,
@@ -349,6 +364,7 @@ begin
 		  "00" & bank(0) & cpu_a(11 downto 0) when BANKFE,
 		  "00" & e0_bank & cpu_a(9 downto 0) when BANKE0,
 		  "00" & tf_bank & cpu_a(10 downto 0) when BANK3F,
+		  '0'  & e7_bank & cpu_a(10 downto 0) when BANKE7,
 		  "---------------" when others;
 
     bankswch: process(ph0)
@@ -359,6 +375,8 @@ begin
                 e0_bank0 <= "000";
                 e0_bank1 <= "000";
                 e0_bank2 <= "000";
+					 e7_rom_bank <= "000";
+					 e7_ram_bank <= "00";
             else
                 case bss is
                     when BANKF8 =>
@@ -413,6 +431,16 @@ begin
                         if (cpu_a = "0" & X"03F") then
                             bank(1 downto 0) <= cpu_d(1 downto 0);
                         end if;
+							when BANKE7 =>
+								-- 1000-17FF is selectable (8 banks: 7 ROM banks and one 1K RAM bank, when bank is "111")
+								-- 1800-19FF is RAM - one of four 256 byte RAM pages
+								-- 1A00-1FFF is fixed to the last 1.5K of ROM
+								if (cpu_a(12 downto 2) = "1" & x"FE" & "10") then	-- 1FE8..1FEB: select one of four 256 byte RAM pages
+									e7_ram_bank <= cpu_a(1 downto 0);
+								end if;
+								if (cpu_a(12 downto 3) = "1" & x"FE" & "0") then -- 1FE0..1FE7: Select 1 of 8 ROM/RAM banks
+									e7_rom_bank <= cpu_a(2 downto 0);
+								end if;
                     when others =>
                         null;
                 end case;
@@ -434,12 +462,14 @@ begin
 --    end process;
 
 	 -- derive banking scheme from cartridge size
-    process(size, banking_scheme_e0)
+    process(size, banking_scheme_e0, banking_scheme_e7)
     begin
 		if(size <= x"1000") then    -- 4k and less
 		  bss <= BANK00;
 		else
-			if banking_scheme_e0 = '1' then
+			if banking_scheme_e7 = '1' then
+				bss <= BANKE7;
+			elsif banking_scheme_e0 = '1' then
 				bss <= BANKE0;
 			else
 				if(size <= x"2000") then -- 8k and less

@@ -189,13 +189,6 @@ architecture rtl of toplevel is
   signal ps2k_dat_in : std_logic;
 
 --CtrlModule--
--- Internal video signals:  
---  signal vga_vsync_i : std_logic := '0';
---  signal vga_hsync_i : std_logic := '0';
---  signal vga_red_i : std_logic_vector(7 downto 0) := (others => '0');
---  signal vga_green_i : std_logic_vector(7 downto 0) := (others => '0');
---  signal vga_blue_i	: std_logic_vector(7 downto 0) := (others => '0');
-  
   -- internal video signals between VGA and HDMI
   signal red8   : std_logic_vector(7 downto 0);
   signal green8 : std_logic_vector(7 downto 0);
@@ -283,6 +276,7 @@ architecture rtl of toplevel is
 	
 	signal superchip : std_logic;
 	signal banking_scheme_e0 : std_logic;
+	signal banking_scheme_e7 : std_logic;
 	
 	signal a2600_audio : std_logic_vector(4 downto 0);
 	
@@ -412,7 +406,8 @@ MyCtrlModule : entity work.CtrlModule
 		spi_cs   => sd_cs_n_o,
 		
 		-- DIP switches
-		dipswitches(15 downto 7) => open,
+		dipswitches(15 downto 8) => open,
+		dipswitches(7) => banking_scheme_e7,
 		dipswitches(6) => banking_scheme_e0,
 		dipswitches(5) => superchip,
 		dipswitches(4) => p_dif(1),
@@ -548,6 +543,7 @@ overlay : entity work.OSD_Overlay
       p_dif => p_dif,
 		superchip => superchip,
 		banking_scheme_e0 => banking_scheme_e0,
+		banking_scheme_e7 => banking_scheme_e7,
 		a2600_cpu_addr_o => a2600_addr,
 		a2600_cpu_data_i => a2600_romdata,
 --      bootdata => host_bootdata,
