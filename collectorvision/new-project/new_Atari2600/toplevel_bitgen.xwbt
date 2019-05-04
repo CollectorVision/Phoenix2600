@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.ncd
+OUTFILE=/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

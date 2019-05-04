@@ -314,7 +314,7 @@ begin
 
     -- This clock is phase shifted so that we can use Xilinx synchronous block RAM.
     sc_clk <= not ph1;
-    sc_r <= '0' when cpu_a(12 downto 7) = "100000" and superchip='1' else -- write to super chip
+    sc_r <= '0' when cpu_a(12 downto 7) = "100000" and superchip='1' and BSS /= BANKE7 else -- write to super chip
 	         '0' when cpu_a(8) = '0' and e7_access_ram_256 = '1' else  -- write to 256 byte window with E7 banking
 				'0' when cpu_a(10)= '0' and e7_access_ram_1k = '1'  else  -- write to 1K RAM with E7 banking
 				'1'; -- read
@@ -324,17 +324,28 @@ begin
 				"0000" & cpu_a(6 downto 0); --  when superchip = '1' 
 				
 
-    -- ROM and SC output
+    -- ROM and SC output.
+	 -- The superchip setting is treated so, that any cartridge containing RAM must have superchip set,
+	 -- including the M-network cartridges since it seems not all of them have RAM.
     process(cpu_a, d, sc_d_out, superchip, bss)
     begin
-        if (cpu_a(12 downto 7) = "100001" and superchip = '1') then
+			-- Superchip, i.e. 128 bytes of RAM with separate read and write addresses
+        if (cpu_a(12 downto 7) = "100001" and superchip = '1' and BSS /= BANKE7) then
             cpu_d <= sc_d_out;
-        elsif (cpu_a(12 downto 7) = "100000" and superchip = '1') then
+        elsif (cpu_a(12 downto 7) = "100000" and superchip = '1' and BSS /= BANKE7) then
             cpu_d <= "ZZZZZZZZ";
-		  elsif (cpu_a(8)='1' and e7_access_ram_256='1') then
-				cpu_d <= sc_d_out;
-		  elsif (cpu_a(10)='1' and e7_access_ram_1k='1') then
-				cpu_d <= sc_d_out;
+		  elsif (e7_access_ram_256='1' and superchip = '1') then
+				if cpu_a(8)='1' then
+					cpu_d <= sc_d_out;
+				else
+					cpu_d <= "ZZZZZZZZ";
+				end if;
+		  elsif (e7_access_ram_1k='1' and superchip = '1') then
+				if cpu_a(10)='1' then
+					cpu_d <= sc_d_out;
+				else
+					cpu_d <= "ZZZZZZZZ";
+				end if;
         elsif (cpu_a(12) = '1') then
             cpu_d <= d;
         else
@@ -353,18 +364,18 @@ begin
 	 
 	 -- M-network E7 mapping mode
 	 -- Addresses 1A00..1FFF are fixed to last 1.5K of ROM. ROM is 16K.
-	 -- In here actually to the last 2K of ROM, since the RAM will override ROM.
+	 -- In here actually to the last 2K of ROM, since the RAM will override ROM (if superchip is set).
 	 e7_bank <= e7_rom_bank when cpu_a(11)='0' else "111";	
 
     with bss select a <=
 		  "000" & cpu_a(11 downto 0) when BANK00,
 		  "00" & bank(0) & cpu_a(11 downto 0) when BANKF8,
-		  '0' & bank(1 downto 0) & cpu_a(11 downto 0) when BANKF6,
+		  "0" & bank(1 downto 0) & cpu_a(11 downto 0) when BANKF6,
       bank(2 downto 0) & cpu_a(11 downto 0) when BANKF4,
 		  "00" & bank(0) & cpu_a(11 downto 0) when BANKFE,
 		  "00" & e0_bank & cpu_a(9 downto 0) when BANKE0,
 		  "00" & tf_bank & cpu_a(10 downto 0) when BANK3F,
-		  '0'  & e7_bank & cpu_a(10 downto 0) when BANKE7,
+		  "0"  & e7_bank & cpu_a(10 downto 0) when BANKE7,
 		  "---------------" when others;
 
     bankswch: process(ph0)
