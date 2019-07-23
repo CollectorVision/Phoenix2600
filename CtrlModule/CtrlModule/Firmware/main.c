@@ -209,13 +209,14 @@ static char *testpattern_labels[]=
 
 #if MENUITEM_DEBUG
 char debug_title[68];
+char debug_title2[68];
 #endif
 
 static struct menu_entry topmenu[]=
 {
 #if MENUITEM_DEBUG
   {MENU_ENTRY_CALLBACK,debug_title,MENU_ACTION(&DebugCounterReset)},
-  {MENU_ENTRY_CALLBACK,"Debug",MENU_ACTION(&Debug)},
+  {MENU_ENTRY_CALLBACK,debug_title2,MENU_ACTION(&Debug)},  // {MENU_ENTRY_CALLBACK,"Debug",MENU_ACTION(&Debug)},
 #endif  
 	{MENU_ENTRY_CALLBACK,"Reset",MENU_ACTION(&Reset)},
 //	{MENU_ENTRY_CYCLE,(char *)testpattern_labels,MENU_ACTION(4)},
@@ -391,6 +392,7 @@ static int LoadROM(const char *filename)
 #define HOST_READ_SCANLINES 0xFFFFFFB8
 
 #if MENUITEM_DEBUG
+extern unsigned numpad_counts[];
 void Debug(int row) {
   int i;
   unsigned u;
@@ -418,7 +420,20 @@ void Debug(int row) {
   }
 */  
   mystrcpy(debug_title, debug);
-	Menu_Set(topmenu);
+  // Display keyup debug counters
+  debugp = debug;
+  *debugp = 0;
+  HexDebugByte(numpad_counts[0]);
+  HexDebugByte(numpad_counts[1]);
+  HexDebugByte(numpad_counts[2]);
+  *debugp++ = ' ';
+  HexDebugByte(numpad_counts[3]);
+  HexDebugByte(numpad_counts[4]);
+  HexDebugByte(numpad_counts[5]);
+  *debugp++ = ' ';  
+  HexDebugByte(numpad_counts[6]);
+  mystrcpy(debug_title2, debug);
+  Menu_Set(topmenu);
   debug_counter+=4;
 }
 
@@ -466,6 +481,7 @@ int main(int argc,char **argv)
 	FileSelector_SetLoadFunction(LoadROM);
 #if MENUITEM_DEBUG	
   	mystrcpy(debug_title, "CollectorVision");
+	mystrcpy(debug_title2, "dbg2");
 #endif	  
 	
 	Menu_Set(topmenu);
@@ -475,7 +491,9 @@ int main(int argc,char **argv)
 	{
 		struct menu_entry *m;
 		int visible;
-		HandlePS2RawCodes();
+		int val = HandlePS2RawCodes();
+		if (val & 1)
+			Start(0);	// Respond directly with Start without going through menus
 		visible=Menu_Run();
 
 		dipsw=MENU_CYCLE_VALUE(&topmenu[1]);	// Take the value of the TestPattern cycle menu entry.

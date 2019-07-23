@@ -233,6 +233,8 @@ architecture rtl of toplevel is
 	signal P_A: std_logic := '1';
 	signal P_U: std_logic := '1';
 	signal P_D: std_logic := '1';
+	signal gamepad_to_ctrl : std_logic_vector(4 downto 0);
+	
 	-- EP HDMI signals
 	signal clock_vga_s		: std_logic;
 	signal clock_hdmi_s		: std_logic;
@@ -312,6 +314,9 @@ begin
 	
 	joy2_p1_i <= pre_hsyn; -- pre_hsyn; -- ps2_clk_io;
 	joy2_p4_i <= tia_hcnt(0); -- pre_vsyn; -- ps2_data_io;
+	
+	-- make the gamepad status available to the control module
+	gamepad_to_ctrl <= P_A & P_L & P_R & P_U & P_D; -- 4=Fire 3=Left 2=Right 1=Up 0=Down
 	
 -- Serial flash - not used right now
 	flash_cs_n_o <= '1';
@@ -398,6 +403,7 @@ MyCtrlModule : entity work.CtrlModule
 		
 		-- coleco controller numeric keypad
 		numpad_keys => numpad_0,
+		gamepad_in  => gamepad_to_ctrl, -- Fire Left Right Up Down
 		
 		-- SD card signals
 		spi_clk  => sd_sclk_o,

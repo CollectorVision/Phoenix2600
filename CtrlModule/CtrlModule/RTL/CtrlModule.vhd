@@ -32,6 +32,8 @@ entity CtrlModule is
 		
 		-- numpad keys
 		numpad_keys : in std_logic_vector(11 downto 0);
+		-- gamepad 1 signals (to enable OSD menu browsing) 4    3    2     1  0 
+		gamepad_in 	: in std_logic_vector(4 downto 0);	-- Fire Left Right Up Down
 
 		-- SD card interface
 		spi_miso		: in std_logic := '1';
@@ -398,7 +400,11 @@ begin
 							mem_busy <= '0';
 							mem_read <= (others => 'X');
 							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
-							mem_read(last_vcnt'length-1+numpad_keys'length downto numpad_keys'length) <= std_logic_vector(last_vcnt);
+							mem_read(gamepad_in'length+numpad_keys'length-1 downto numpad_keys'length) <= gamepad_in;
+							mem_read(last_vcnt'length+numpad_keys'length+gamepad_in'length-1 downto gamepad_in'length+numpad_keys'length) <= std_logic_vector(last_vcnt);
+
+--							mem_read(last_vcnt'length-1+numpad_keys'length downto numpad_keys'length) <= std_logic_vector(last_vcnt);
+--							mem_read(last_vcnt'length+numpad_keys'length+gamepad_in'length-1 downto last_vcnt'length+numpad_keys'length) <= gamepad_in;
 							
 --						when X"B8" => -- read scanlines
 --							mem_busy <= '0';

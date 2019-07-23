@@ -2,28 +2,50 @@
 #include "ps2.h"
 
 
-unsigned numpad = 0xFFF;	// Stored state of 12 buttons
-unsigned sample = 0xFFF;	// Current sample
-int sample_count = 0;
-#define COLECO_DEBOUNCE_COUNT 1000
+#define NBUTTONS 17
+#define HIGHMASK ((1 << NBUTTONS)-1)
+unsigned numpad = HIGHMASK; // Stored state of 12 numeric buttons and 5 gamepad buttons
+
+unsigned state  = HIGHMASK;	// current debounced state of keys
+unsigned sample = HIGHMASK;	// Current sample as read from hw. Think about is as the direction where the key is going.
+// sample_counts below calculate for how long the "sample" above stays stable.
+unsigned short sample_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 };
+unsigned short numpad_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 }; // for debugging only
+#define COLECO_DEBOUNCE_COUNT 500
 #define HOST_READ_NUMPAD    0xFFFFFFB4
 int SampleColecoNumpad() {
 	// Debounce by reading at least 100 times the same value.
-	unsigned u = 0xFFF & *(volatile unsigned *)HOST_READ_NUMPAD;
-	if(u != sample) {
-		sample = u;
-		sample_count = 0;
+	unsigned u = HIGHMASK & *(volatile unsigned *)HOST_READ_NUMPAD;
+	int i;
+	unsigned mask = 1;
+	int ret = 0;
+	for(i=0; i<NBUTTONS;i++) {
+		if((u & mask) != (sample & mask)) {
+			sample_counts[i] = 0;
+			sample = (sample & ~mask) | (u & mask);
+		}
+		if(sample_counts[i] == COLECO_DEBOUNCE_COUNT) {
+			// only increment keycount if state and sample differ for this specific key
+			if ((state & mask) != (sample & mask))
+				ret++;	// we have new key			
+			// move the sample to the official key state
+			state = (state & ~mask) | (sample & mask);
+		} else if(sample_counts[i] < COLECO_DEBOUNCE_COUNT+1) {
+			sample_counts[i]++;
+		}
+		mask <<= 1;
 	}
-	if(sample_count == COLECO_DEBOUNCE_COUNT) {
-		return 1;	// we have new key
-	} else if(sample_count < COLECO_DEBOUNCE_COUNT+1) {
-		sample_count++;
-	}
-	return 0;	// old state remains
+	return ret;	// old state remains
 }
 
-//                             1        2            3          4      5
-unsigned char coleco_map[] = { KEY_ESC, KEY_UPARROW, KEY_ENTER, KEY_A, KEY_DOWNARROW, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A };
+unsigned char coleco_map[NBUTTONS] = { 
+//  1        2            3          4      5
+	KEY_ESC, KEY_UPARROW, KEY_ENTER, KEY_A, KEY_DOWNARROW, 
+//  6      7       8      9      *      0      #
+	KEY_A, KEY_F1, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A,
+// Gamepad buttons - bits in hardware register in this order (MSB to LSB direction): Fire Left Right Up Down
+	KEY_DOWNARROW, KEY_UPARROW, KEY_LEFTARROW, KEY_RIGHTARROW, KEY_ENTER
+};
 
 // We maintain a keytable which records which keys are currently pressed
 // and which keys have been pressed and possibly released since the last test.
@@ -63,22 +85,26 @@ int HandlePS2RawCodes()
 	}
 
 	if (SampleColecoNumpad()) {
-		// Find which key changed
+		// Find which key(s) changed
 		int i;
 		unsigned mask = 1;
-		for(i=0; i<12;i++) {
-			if ((numpad & mask) != (sample & mask)) {
+		for(i=0; i<NBUTTONS;i++) {
+			if ((numpad & mask) != (state & mask)) {
 				// This key changed
-				keyup = sample & mask; // If non-zero this key was released
+				keyup = state & mask; // If non-zero this key was released
 				int keyidx = coleco_map[i];
-				if(keyup)
+				if(keyup) {
 					keytable[keyidx>>4]&=~(1<<((keyidx&15)*2));  // Mask off the "currently pressed" bit.
-				else
+					numpad_counts[i]++;
+				} else
 					keytable[keyidx>>4]|=3<<((keyidx&15)*2);	// Currently pressed and pressed since last test.
+
+				if (keyidx == KEY_F1 && keyup)
+					result = 1;	// Used to trigger Start in menu.c 
 			}
 			mask <<= 1;
 		}
-		numpad = sample;
+		numpad = state;
 	}
 
 	return(result);
