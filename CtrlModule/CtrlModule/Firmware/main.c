@@ -22,6 +22,8 @@ void Debug(int row);
 void DebugCounterReset(int row);
 #endif
 
+int SetDIPSwitches();
+
 int OSD_Puts(char *str)
 {
 	int c;
@@ -377,6 +379,31 @@ static int LoadROM(const char *filename)
 */		
 	}
 #endif  
+
+	// Automatically set banking register properly if a specific file extension 
+	// is provided.
+	{
+		const char *p = filename+8;
+		mystrcpy(debug_title, filename);
+
+		// Check file extension for a few different special characters
+		int flags = 0;
+		if (p[0] != '\0' && p[1] != '\0' && (p[2] == 'S' || p[2] == 's'))
+			flags |= 32;	// Superchip present
+		if (p[0] == 'E' || p[0] == 'e') {
+			if(p[1] == '0') 
+				flags |= (1 << 8);	// E0 banking
+			else if(p[1] == '7')
+				flags |= (1 << 9);	// E7 banking
+		}
+		if (flags) {
+			MENU_TOGGLE_VALUES &= ~0x320;
+			MENU_TOGGLE_VALUES |= flags;
+			// int dipsw = SetDIPSwitches();
+			// HW_HOST(REG_HOST_SW)= (dipsw & ~0xE0) | flags;
+		}
+	}
+
 	HW_HOST(REG_HOST_MUXCTRL) = 1; // Make sure ROM is enabled and boot
 	Reset(0);
 	Delay();
@@ -443,6 +470,32 @@ void DebugCounterReset(int row)
 }
 #endif
 
+int SetDIPSwitches() {
+	int dipsw=MENU_CYCLE_VALUE(&topmenu[1]);	// Take the value of the TestPattern cycle menu entry.
+	if(MENU_TOGGLE_VALUES&1)
+		dipsw|=4;	// Add in the scanlines bit.
+	if(MENU_TOGGLE_VALUES&2)
+		dipsw|=2;	// Add in the PAL bit
+	if(MENU_TOGGLE_VALUES&4)
+		dipsw|=1;	// Add in the Color bit
+	if(MENU_TOGGLE_VALUES&8)
+		dipsw|=8;	// Add in the Diff A bit
+	if(MENU_TOGGLE_VALUES&16)
+		dipsw|=16;	// Add in the Diff B bit
+	if(MENU_TOGGLE_VALUES & 32)
+		dipsw|=32;	// Superchip is present
+#if MENUITEM_BANK_E0			
+	if(MENU_TOGGLE_VALUES & (1 << 8))
+		dipsw|=64;	// Banking scheme E0
+#endif			
+#if MENUITEM_BANK_E7			
+	if(MENU_TOGGLE_VALUES & (1 << 9))
+		dipsw|=128;	// Banking scheme E7
+#endif			
+
+	HW_HOST(REG_HOST_SW)=dipsw;	// Send the new values to the hardware.
+	return dipsw;
+}
 int main(int argc,char **argv)
 {
 	int i;
@@ -496,29 +549,8 @@ int main(int argc,char **argv)
 			Start(0);	// Respond directly with Start without going through menus
 		visible=Menu_Run();
 
-		dipsw=MENU_CYCLE_VALUE(&topmenu[1]);	// Take the value of the TestPattern cycle menu entry.
-		if(MENU_TOGGLE_VALUES&1)
-			dipsw|=4;	// Add in the scanlines bit.
-		if(MENU_TOGGLE_VALUES&2)
-			dipsw|=2;	// Add in the PAL bit
-		if(MENU_TOGGLE_VALUES&4)
-			dipsw|=1;	// Add in the Color bit
-		if(MENU_TOGGLE_VALUES&8)
-			dipsw|=8;	// Add in the Diff A bit
-		if(MENU_TOGGLE_VALUES&16)
-			dipsw|=16;	// Add in the Diff B bit
-		if(MENU_TOGGLE_VALUES & 32)
-			dipsw|=32;	// Superchip is present
-#if MENUITEM_BANK_E0			
-		if(MENU_TOGGLE_VALUES & (1 << 8))
-			dipsw|=64;	// Banking scheme E0
-#endif			
-#if MENUITEM_BANK_E7			
-		if(MENU_TOGGLE_VALUES & (1 << 9))
-			dipsw|=128;	// Banking scheme E7
-#endif			
+		SetDIPSwitches();
 
-		HW_HOST(REG_HOST_SW)=dipsw;	// Send the new values to the hardware.
 //		HW_HOST(REG_HOST_SCALERED)=MENU_SLIDER_VALUE(&rgbmenu[0]);
 //		HW_HOST(REG_HOST_SCALEGREEN)=MENU_SLIDER_VALUE(&rgbmenu[1]);
 //		HW_HOST(REG_HOST_SCALEBLUE)=MENU_SLIDER_VALUE(&rgbmenu[2]);

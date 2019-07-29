@@ -9,10 +9,11 @@ unsigned numpad = HIGHMASK; // Stored state of 12 numeric buttons and 5 gamepad 
 unsigned state  = HIGHMASK;	// current debounced state of keys
 unsigned sample = HIGHMASK;	// Current sample as read from hw. Think about is as the direction where the key is going.
 // sample_counts below calculate for how long the "sample" above stays stable.
-unsigned short sample_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 };
-unsigned short numpad_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 }; // for debugging only
-#define COLECO_DEBOUNCE_COUNT 500
+unsigned short sample_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 };
+unsigned short numpad_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 }; // for debugging only
+#define COLECO_DEBOUNCE_COUNT 100
 #define HOST_READ_NUMPAD    0xFFFFFFB4
+
 int SampleColecoNumpad() {
 	// Debounce by reading at least 100 times the same value.
 	unsigned u = HIGHMASK & *(volatile unsigned *)HOST_READ_NUMPAD;
@@ -40,7 +41,8 @@ int SampleColecoNumpad() {
 
 unsigned char coleco_map[NBUTTONS] = { 
 //  1        2            3          4      5
-	KEY_ESC, KEY_UPARROW, KEY_ENTER, KEY_A, KEY_DOWNARROW, 
+	KEY_ESC, KEY_A,       KEY_A,     KEY_A, KEY_A,
+	///// KEY_ESC, KEY_UPARROW, KEY_ENTER, KEY_A, KEY_DOWNARROW, 
 //  6      7       8      9      *      0      #
 	KEY_A, KEY_F1, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A,
 // Gamepad buttons - bits in hardware register in this order (MSB to LSB direction): Fire Left Right Up Down
@@ -64,7 +66,6 @@ int HandlePS2RawCodes()
 	static int extkey=0;
 	int updateleds=0;
 	int key;
-	int coleco;
 
 	while((key=PS2KeyboardRead())>-1)
 	{
@@ -91,15 +92,16 @@ int HandlePS2RawCodes()
 		for(i=0; i<NBUTTONS;i++) {
 			if ((numpad & mask) != (state & mask)) {
 				// This key changed
-				keyup = state & mask; // If non-zero this key was released
+				int keydown = !(state & mask); // If non-zero this key was pressed
 				int keyidx = coleco_map[i];
-				if(keyup) {
-					keytable[keyidx>>4]&=~(1<<((keyidx&15)*2));  // Mask off the "currently pressed" bit.
+				if(keydown) {	// key depressed
+					keytable[keyidx>>4] |= 3<<((keyidx&15)*2);	// Currently pressed and pressed since last test.
 					numpad_counts[i]++;
-				} else
-					keytable[keyidx>>4]|=3<<((keyidx&15)*2);	// Currently pressed and pressed since last test.
+				} else {
+					keytable[keyidx>>4] &= ~(1<<((keyidx&15)*2));  // Mask off the "currently pressed" bit.
+				}
 
-				if (keyidx == KEY_F1 && keyup)
+				if (keyidx == KEY_F1 && keydown)
 					result = 1;	// Used to trigger Start in menu.c 
 			}
 			mask <<= 1;
