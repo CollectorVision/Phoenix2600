@@ -1,0 +1,2025 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Mon Jul 22 14:30:36 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "joy_p5_o" LOCATE = SITE "A7" LEVEL 1;
+COMP "joy_p8_o" LOCATE = SITE "C8" LEVEL 1;
+COMP "vga_vsync_n_o" LOCATE = SITE "V11" LEVEL 1;
+COMP "BLED" LOCATE = SITE "C15" LEVEL 1;
+COMP "GLED" LOCATE = SITE "A16" LEVEL 1;
+COMP "vga_b_o<0>" LOCATE = SITE "R3" LEVEL 1;
+COMP "vga_b_o<1>" LOCATE = SITE "T3" LEVEL 1;
+COMP "vga_b_o<2>" LOCATE = SITE "F5" LEVEL 1;
+COMP "vga_b_o<3>" LOCATE = SITE "T4" LEVEL 1;
+COMP "RLED" LOCATE = SITE "B16" LEVEL 1;
+COMP "ps2_data_io" LOCATE = SITE "B4" LEVEL 1;
+COMP "hdmi_n_o<0>" LOCATE = SITE "V6" LEVEL 1;
+COMP "hdmi_n_o<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "hdmi_n_o<2>" LOCATE = SITE "V8" LEVEL 1;
+COMP "vga_g_o<0>" LOCATE = SITE "V4" LEVEL 1;
+COMP "hdmi_n_o<3>" LOCATE = SITE "V5" LEVEL 1;
+COMP "vga_g_o<1>" LOCATE = SITE "T5" LEVEL 1;
+COMP "vga_g_o<2>" LOCATE = SITE "R5" LEVEL 1;
+COMP "vga_g_o<3>" LOCATE = SITE "R7" LEVEL 1;
+COMP "hdmi_p_o<0>" LOCATE = SITE "T6" LEVEL 1;
+COMP "hdmi_p_o<1>" LOCATE = SITE "U7" LEVEL 1;
+COMP "hdmi_p_o<2>" LOCATE = SITE "U8" LEVEL 1;
+COMP "hdmi_p_o<3>" LOCATE = SITE "U5" LEVEL 1;
+COMP "vga_r_o<0>" LOCATE = SITE "T7" LEVEL 1;
+COMP "vga_r_o<1>" LOCATE = SITE "T8" LEVEL 1;
+COMP "vga_r_o<2>" LOCATE = SITE "R8" LEVEL 1;
+COMP "vga_r_o<3>" LOCATE = SITE "V9" LEVEL 1;
+COMP "dac_l_o" LOCATE = SITE "P1" LEVEL 1;
+COMP "dac_r_o" LOCATE = SITE "P2" LEVEL 1;
+COMP "CLOCK_50_i" LOCATE = SITE "V10" LEVEL 1;
+COMP "joy1_p1_i" LOCATE = SITE "A15" LEVEL 1;
+COMP "joy1_p2_i" LOCATE = SITE "A14" LEVEL 1;
+COMP "joy1_p3_i" LOCATE = SITE "B12" LEVEL 1;
+COMP "joy1_p4_i" LOCATE = SITE "A12" LEVEL 1;
+COMP "snesjoy_clock_o" LOCATE = SITE "A2" LEVEL 1;
+COMP "joy1_p6_i" LOCATE = SITE "B14" LEVEL 1;
+COMP "joy1_p7_i" LOCATE = SITE "C14" LEVEL 1;
+COMP "joy1_p9_i" LOCATE = SITE "B11" LEVEL 1;
+COMP "joy2_p1_i" LOCATE = SITE "A11" LEVEL 1;
+COMP "joy2_p2_i" LOCATE = SITE "A10" LEVEL 1;
+COMP "joy2_p3_i" LOCATE = SITE "A9" LEVEL 1;
+COMP "joy2_p4_i" LOCATE = SITE "B8" LEVEL 1;
+COMP "joy2_p6_i" LOCATE = SITE "C11" LEVEL 1;
+COMP "joy2_p7_i" LOCATE = SITE "B9" LEVEL 1;
+COMP "joy2_p9_i" LOCATE = SITE "A8" LEVEL 1;
+COMP "cart_dir_o" LOCATE = SITE "N1" LEVEL 1;
+COMP "snesjoy_latch_o" LOCATE = SITE "B3" LEVEL 1;
+COMP "pal_clk_en_o" LOCATE = SITE "H5" LEVEL 1;
+COMP "flash_cs_n_o" LOCATE = SITE "V3" LEVEL 1;
+COMP "sram_addr_o<10>" LOCATE = SITE "J16" LEVEL 1;
+COMP "sram_addr_o<11>" LOCATE = SITE "J18" LEVEL 1;
+COMP "sram_addr_o<12>" LOCATE = SITE "H17" LEVEL 1;
+COMP "sram_addr_o<20>" LOCATE = SITE "C18" LEVEL 1;
+COMP "sram_addr_o<13>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sram_addr_o<14>" LOCATE = SITE "G16" LEVEL 1;
+COMP "sram_addr_o<15>" LOCATE = SITE "E18" LEVEL 1;
+COMP "sram_addr_o<16>" LOCATE = SITE "D17" LEVEL 1;
+COMP "sram_addr_o<17>" LOCATE = SITE "D18" LEVEL 1;
+COMP "sram_addr_o<18>" LOCATE = SITE "C17" LEVEL 1;
+COMP "flash_hold_o" LOCATE = SITE "V14" LEVEL 1;
+COMP "sram_addr_o<19>" LOCATE = SITE "K18" LEVEL 1;
+COMP "flash_miso_i" LOCATE = SITE "R13" LEVEL 1;
+COMP "flash_sclk_o" LOCATE = SITE "R15" LEVEL 1;
+COMP "sd_cd_n_i" LOCATE = SITE "C6" LEVEL 1;
+COMP "flash_mosi_o" LOCATE = SITE "T13" LEVEL 1;
+COMP "sd_cs_n_o" LOCATE = SITE "C5" LEVEL 1;
+COMP "sd_miso_i" LOCATE = SITE "A6" LEVEL 1;
+COMP "sd_sclk_o" LOCATE = SITE "B6" LEVEL 1;
+COMP "sd_mosi_o" LOCATE = SITE "A5" LEVEL 1;
+COMP "ps2_clk_io" LOCATE = SITE "A4" LEVEL 1;
+COMP "btn_reset_n_i" LOCATE = SITE "B2" LEVEL 1;
+COMP "flash_wp_o" LOCATE = SITE "T14" LEVEL 1;
+COMP "sram_data_io<0>" LOCATE = SITE "P18" LEVEL 1;
+COMP "sram_data_io<1>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sram_data_io<2>" LOCATE = SITE "N18" LEVEL 1;
+COMP "sram_data_io<3>" LOCATE = SITE "N17" LEVEL 1;
+COMP "sram_data_io<4>" LOCATE = SITE "G18" LEVEL 1;
+COMP "sram_data_io<5>" LOCATE = SITE "F17" LEVEL 1;
+COMP "sram_data_io<6>" LOCATE = SITE "F18" LEVEL 1;
+COMP "sram_data_io<7>" LOCATE = SITE "E16" LEVEL 1;
+COMP "snesjoy_data_i" LOCATE = SITE "A3" LEVEL 1;
+COMP "stnd_o" LOCATE = SITE "H4" LEVEL 1;
+COMP "cart_addr_o<10>" LOCATE = SITE "H1" LEVEL 1;
+COMP "cart_addr_o<11>" LOCATE = SITE "K3" LEVEL 1;
+COMP "cart_addr_o<12>" LOCATE = SITE "G1" LEVEL 1;
+COMP "sram_addr_o<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "sram_addr_o<1>" LOCATE = SITE "U17" LEVEL 1;
+COMP "sram_addr_o<2>" LOCATE = SITE "T18" LEVEL 1;
+COMP "sram_addr_o<3>" LOCATE = SITE "T17" LEVEL 1;
+COMP "sram_addr_o<4>" LOCATE = SITE "P16" LEVEL 1;
+COMP "sram_addr_o<5>" LOCATE = SITE "M16" LEVEL 1;
+COMP "sram_addr_o<6>" LOCATE = SITE "K16" LEVEL 1;
+COMP "sram_addr_o<7>" LOCATE = SITE "K17" LEVEL 1;
+COMP "sram_addr_o<8>" LOCATE = SITE "L17" LEVEL 1;
+COMP "sram_addr_o<9>" LOCATE = SITE "L18" LEVEL 1;
+COMP "vga_hsync_n_o" LOCATE = SITE "U10" LEVEL 1;
+COMP "sram_oe_n_o" LOCATE = SITE "F16" LEVEL 1;
+COMP "cart_oe_n_o" LOCATE = SITE "N2" LEVEL 1;
+COMP "sram_we_n_o" LOCATE = SITE "M18" LEVEL 1;
+COMP "cart_addr_o<0>" LOCATE = SITE "F1" LEVEL 1;
+COMP "cart_addr_o<1>" LOCATE = SITE "H2" LEVEL 1;
+COMP "cart_addr_o<2>" LOCATE = SITE "H3" LEVEL 1;
+COMP "cart_addr_o<3>" LOCATE = SITE "J1" LEVEL 1;
+COMP "cart_addr_o<4>" LOCATE = SITE "K2" LEVEL 1;
+COMP "cart_addr_o<5>" LOCATE = SITE "L3" LEVEL 1;
+COMP "cart_addr_o<6>" LOCATE = SITE "L1" LEVEL 1;
+COMP "cart_addr_o<7>" LOCATE = SITE "N3" LEVEL 1;
+COMP "cart_addr_o<8>" LOCATE = SITE "M3" LEVEL 1;
+COMP "cart_addr_o<9>" LOCATE = SITE "L2" LEVEL 1;
+COMP "cart_data_i<0>" LOCATE = SITE "F2" LEVEL 1;
+COMP "cart_data_i<1>" LOCATE = SITE "D2" LEVEL 1;
+COMP "cart_data_i<2>" LOCATE = SITE "C2" LEVEL 1;
+COMP "cart_data_i<3>" LOCATE = SITE "E4" LEVEL 1;
+COMP "cart_data_i<4>" LOCATE = SITE "C1" LEVEL 1;
+COMP "cart_data_i<5>" LOCATE = SITE "D1" LEVEL 1;
+COMP "cart_data_i<6>" LOCATE = SITE "E1" LEVEL 1;
+COMP "cart_data_i<7>" LOCATE = SITE "G3" LEVEL 1;
+PIN vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT_pins<92> = BEL
+        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT" PINNAME
+        CLK;
+PIN Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT_pins<9> = BEL
+        "Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT" PINNAME
+        CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>
+        = BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
+        PINNAME CLKB;
+TIMEGRP pll_hdmi_instance_clkout0 = BEL "joy_p5_o" BEL "numpad_0_0" BEL
+        "numpad_0_1" BEL "numpad_0_2" BEL "numpad_0_3" BEL "numpad_0_4" BEL
+        "numpad_0_5" BEL "numpad_0_6" BEL "numpad_0_7" BEL "numpad_0_8" BEL
+        "numpad_0_9" BEL "numpad_0_10" BEL "numpad_0_11" BEL "P_D" BEL "P_U"
+        BEL "P_R" BEL "P_L" BEL "P_A" BEL "joy_p8_o" BEL "scan_state_0" BEL
+        "scan_state_1" BEL "scan_state_2" BEL "scan_state_3" BEL
+        "scan_state_4" BEL "scan_state_5" BEL "scan_state_6" BEL
+        "scan_state_7" BEL "pll_hdmi_instance/clkout1_buf" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_31" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_27" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_26" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_25" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_24" BEL
+        "snespads_b/pads[0].pad_b/buttons_q_14" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_27" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_26" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_25" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_19" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_18" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_17" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_16" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_15" BEL
+        "snespads_b/ctrl_b/state_q_FSM_FFd1" BEL
+        "snespads_b/ctrl_b/state_q_FSM_FFd2" BEL
+        "snespads_b/ctrl_b/num_buttons_read_q_4" BEL
+        "snespads_b/ctrl_b/num_buttons_read_q_3" BEL
+        "snespads_b/ctrl_b/num_buttons_read_q_2" BEL
+        "snespads_b/ctrl_b/num_buttons_read_q_1" BEL
+        "snespads_b/ctrl_b/num_buttons_read_q_0" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_6" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_5" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_7" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_3" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_2" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_4" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_0" BEL
+        "snespads_b/ctrl_b/clocks_per_6us_q_1" BEL
+        "snespads_b/ctrl_b/pad_clk_q" BEL "snespads_b/ctrl_b/pad_latch_q" BEL
+        "overlay/hsync_r" BEL "vga_timing_gen/window_vcnt_9" BEL
+        "vga_timing_gen/window_vcnt_8" BEL "vga_timing_gen/window_vcnt_7" BEL
+        "vga_timing_gen/window_vcnt_6" BEL "vga_timing_gen/window_vcnt_5" BEL
+        "vga_timing_gen/window_vcnt_4" BEL "vga_timing_gen/window_vcnt_3" BEL
+        "vga_timing_gen/window_vcnt_2" BEL "vga_timing_gen/window_vcnt_1" BEL
+        "vga_timing_gen/window_vcnt_0" BEL "vga_timing_gen/vcnt_9" BEL
+        "vga_timing_gen/vcnt_8" BEL "vga_timing_gen/vcnt_7" BEL
+        "vga_timing_gen/vcnt_6" BEL "vga_timing_gen/vcnt_5" BEL
+        "vga_timing_gen/vcnt_4" BEL "vga_timing_gen/vcnt_3" BEL
+        "vga_timing_gen/vcnt_2" BEL "vga_timing_gen/vcnt_1" BEL
+        "vga_timing_gen/vcnt_0" BEL "vga_timing_gen/hcnt_9" BEL
+        "vga_timing_gen/hcnt_8" BEL "vga_timing_gen/hcnt_7" BEL
+        "vga_timing_gen/hcnt_6" BEL "vga_timing_gen/hcnt_5" BEL
+        "vga_timing_gen/hcnt_4" BEL "vga_timing_gen/hcnt_3" BEL
+        "vga_timing_gen/hcnt_2" BEL "vga_timing_gen/hcnt_1" BEL
+        "vga_timing_gen/hcnt_0" BEL "vga_timing_gen/window_hcnt_9" BEL
+        "vga_timing_gen/window_hcnt_8" BEL "vga_timing_gen/window_hcnt_7" BEL
+        "vga_timing_gen/window_hcnt_6" BEL "vga_timing_gen/window_hcnt_5" BEL
+        "vga_timing_gen/window_hcnt_4" BEL "vga_timing_gen/window_hcnt_3" BEL
+        "vga_timing_gen/window_hcnt_2" BEL "vga_timing_gen/window_hcnt_1" BEL
+        "vga_timing_gen/window_hcnt_0" PIN
+        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT_pins<92>"
+        BEL "vga_timing_gen/buf_pixel_out_6" BEL
+        "vga_timing_gen/buf_pixel_out_5" BEL "vga_timing_gen/buf_pixel_out_4"
+        BEL "vga_timing_gen/buf_pixel_out_3" BEL
+        "vga_timing_gen/buf_pixel_out_2" BEL "vga_timing_gen/buf_pixel_out_1"
+        BEL "vga_timing_gen/buf_pixel_out_0" BEL
+        "vga_timing_gen/pixel_sample_timer_1" BEL
+        "vga_timing_gen/pixel_sample_timer_0" BEL "hdmi/ctl2" BEL
+        "hdmi/clockCounter_10" BEL "hdmi/clockCounter_9" BEL
+        "hdmi/clockCounter_8" BEL "hdmi/clockCounter_7" BEL
+        "hdmi/clockCounter_6" BEL "hdmi/clockCounter_5" BEL
+        "hdmi/clockCounter_4" BEL "hdmi/clockCounter_3" BEL
+        "hdmi/clockCounter_2" BEL "hdmi/clockCounter_1" BEL
+        "hdmi/clockCounter_0" BEL "hdmi/ctl0" BEL "hdmi/prevData" BEL
+        "hdmi/prevBlank" BEL "hdmi/dataenc/channelStatusIdx_7" BEL
+        "hdmi/dataenc/channelStatusIdx_6" BEL
+        "hdmi/dataenc/channelStatusIdx_5" BEL
+        "hdmi/dataenc/channelStatusIdx_4" BEL
+        "hdmi/dataenc/channelStatusIdx_3" BEL
+        "hdmi/dataenc/channelStatusIdx_2" BEL
+        "hdmi/dataenc/channelStatusIdx_1" BEL
+        "hdmi/dataenc/channelStatusIdx_0" BEL "hdmi/dataenc/counterX_15" BEL
+        "hdmi/dataenc/counterX_14" BEL "hdmi/dataenc/counterX_13" BEL
+        "hdmi/dataenc/counterX_12" BEL "hdmi/dataenc/counterX_11" BEL
+        "hdmi/dataenc/counterX_10" BEL "hdmi/dataenc/counterX_9" BEL
+        "hdmi/dataenc/counterX_8" BEL "hdmi/dataenc/counterX_7" BEL
+        "hdmi/dataenc/counterX_6" BEL "hdmi/dataenc/counterX_5" BEL
+        "hdmi/dataenc/counterX_4" BEL "hdmi/dataenc/counterX_3" BEL
+        "hdmi/dataenc/counterX_2" BEL "hdmi/dataenc/counterX_1" BEL
+        "hdmi/dataenc/counterX_0" BEL "hdmi/dataenc/dataOffset_4" BEL
+        "hdmi/dataenc/dataOffset_3" BEL "hdmi/dataenc/dataOffset_2" BEL
+        "hdmi/dataenc/dataOffset_1" BEL "hdmi/dataenc/dataOffset_0" BEL
+        "hdmi/dataenc/audioLAvgSum_25" BEL "hdmi/dataenc/audioLAvgSum_24" BEL
+        "hdmi/dataenc/audioLAvgSum_23" BEL "hdmi/dataenc/audioLAvgSum_22" BEL
+        "hdmi/dataenc/audioLAvgSum_21" BEL "hdmi/dataenc/audioLAvgSum_20" BEL
+        "hdmi/dataenc/audioLAvgSum_19" BEL "hdmi/dataenc/audioLAvgSum_18" BEL
+        "hdmi/dataenc/audioLAvgSum_17" BEL "hdmi/dataenc/audioLAvgSum_16" BEL
+        "hdmi/dataenc/audioLAvgSum_15" BEL "hdmi/dataenc/audioLAvgSum_14" BEL
+        "hdmi/dataenc/audioLAvgSum_13" BEL "hdmi/dataenc/audioLAvgSum_12" BEL
+        "hdmi/dataenc/audioLAvgSum_11" BEL "hdmi/dataenc/audioLAvgSum_10" BEL
+        "hdmi/dataenc/audioLAvgSum_9" BEL "hdmi/dataenc/samplesHead_1" BEL
+        "hdmi/dataenc/samplesHead_0" BEL "hdmi/dataenc/dataChannel0_3" BEL
+        "hdmi/dataenc/dataChannel0_2" BEL "hdmi/dataenc/dataChannel0_1" BEL
+        "hdmi/dataenc/dataChannel0_0" BEL "hdmi/dataenc/dataChannel2_3" BEL
+        "hdmi/dataenc/dataChannel2_2" BEL "hdmi/dataenc/dataChannel2_1" BEL
+        "hdmi/dataenc/dataChannel2_0" BEL "hdmi/dataenc/dataChannel1_3" BEL
+        "hdmi/dataenc/dataChannel1_2" BEL "hdmi/dataenc/dataChannel1_1" BEL
+        "hdmi/dataenc/dataChannel1_0" BEL "hdmi/dataenc/ctsTimer_16" BEL
+        "hdmi/dataenc/ctsTimer_15" BEL "hdmi/dataenc/ctsTimer_14" BEL
+        "hdmi/dataenc/ctsTimer_13" BEL "hdmi/dataenc/ctsTimer_12" BEL
+        "hdmi/dataenc/ctsTimer_11" BEL "hdmi/dataenc/ctsTimer_10" BEL
+        "hdmi/dataenc/ctsTimer_9" BEL "hdmi/dataenc/ctsTimer_8" BEL
+        "hdmi/dataenc/ctsTimer_7" BEL "hdmi/dataenc/ctsTimer_6" BEL
+        "hdmi/dataenc/ctsTimer_5" BEL "hdmi/dataenc/ctsTimer_4" BEL
+        "hdmi/dataenc/ctsTimer_3" BEL "hdmi/dataenc/ctsTimer_2" BEL
+        "hdmi/dataenc/ctsTimer_1" BEL "hdmi/dataenc/ctsTimer_0" BEL
+        "hdmi/dataenc/packetHeader_19" BEL "hdmi/dataenc/packetHeader_18" BEL
+        "hdmi/dataenc/packetHeader_17" BEL "hdmi/dataenc/packetHeader_16" BEL
+        "hdmi/dataenc/packetHeader_15" BEL "hdmi/dataenc/packetHeader_14" BEL
+        "hdmi/dataenc/packetHeader_13" BEL "hdmi/dataenc/packetHeader_12" BEL
+        "hdmi/dataenc/packetHeader_11" BEL "hdmi/dataenc/packetHeader_10" BEL
+        "hdmi/dataenc/packetHeader_9" BEL "hdmi/dataenc/packetHeader_8" BEL
+        "hdmi/dataenc/packetHeader_7" BEL "hdmi/dataenc/packetHeader_6" BEL
+        "hdmi/dataenc/packetHeader_5" BEL "hdmi/dataenc/packetHeader_4" BEL
+        "hdmi/dataenc/packetHeader_3" BEL "hdmi/dataenc/packetHeader_2" BEL
+        "hdmi/dataenc/packetHeader_1" BEL "hdmi/dataenc/packetHeader_0" BEL
+        "hdmi/dataenc/audioLAvg_15" BEL "hdmi/dataenc/audioLAvg_14" BEL
+        "hdmi/dataenc/audioLAvg_13" BEL "hdmi/dataenc/audioLAvg_12" BEL
+        "hdmi/dataenc/audioLAvg_11" BEL "hdmi/dataenc/audioLAvg_10" BEL
+        "hdmi/dataenc/audioLAvg_9" BEL "hdmi/dataenc/audioLAvg_8" BEL
+        "hdmi/dataenc/audioLAvg_7" BEL "hdmi/dataenc/audioLAvg_6" BEL
+        "hdmi/dataenc/audioLAvg_5" BEL "hdmi/dataenc/audioLAvg_4" BEL
+        "hdmi/dataenc/audioLAvg_3" BEL "hdmi/dataenc/audioLAvg_2" BEL
+        "hdmi/dataenc/audioLAvg_1" BEL "hdmi/dataenc/audioLAvg_0" BEL
+        "hdmi/dataenc/audioPacketHeader_23" BEL
+        "hdmi/dataenc/audioPacketHeader_22" BEL
+        "hdmi/dataenc/audioPacketHeader_21" BEL
+        "hdmi/dataenc/audioPacketHeader_20" BEL
+        "hdmi/dataenc/audioPacketHeader_19" BEL
+        "hdmi/dataenc/audioPacketHeader_18" BEL
+        "hdmi/dataenc/audioPacketHeader_17" BEL
+        "hdmi/dataenc/audioPacketHeader_16" BEL
+        "hdmi/dataenc/audioPacketHeader_15" BEL
+        "hdmi/dataenc/audioPacketHeader_14" BEL
+        "hdmi/dataenc/audioPacketHeader_13" BEL
+        "hdmi/dataenc/audioPacketHeader_12" BEL
+        "hdmi/dataenc/audioPacketHeader_11" BEL
+        "hdmi/dataenc/audioPacketHeader_10" BEL
+        "hdmi/dataenc/audioPacketHeader_9" BEL
+        "hdmi/dataenc/audioPacketHeader_8" BEL
+        "hdmi/dataenc/audioPacketHeader_7" BEL
+        "hdmi/dataenc/audioPacketHeader_6" BEL
+        "hdmi/dataenc/audioPacketHeader_5" BEL
+        "hdmi/dataenc/audioPacketHeader_4" BEL
+        "hdmi/dataenc/audioPacketHeader_3" BEL
+        "hdmi/dataenc/audioPacketHeader_2" BEL
+        "hdmi/dataenc/audioPacketHeader_1" BEL
+        "hdmi/dataenc/audioPacketHeader_0" BEL "hdmi/dataenc/bchCode_0_31" BEL
+        "hdmi/dataenc/bchCode_0_30" BEL "hdmi/dataenc/bchCode_0_24" BEL
+        "hdmi/dataenc/bchCode_0_23" BEL "hdmi/dataenc/bchCode_0_22" BEL
+        "hdmi/dataenc/bchCode_0_16" BEL "hdmi/dataenc/bchCode_0_15" BEL
+        "hdmi/dataenc/bchCode_0_14" BEL "hdmi/dataenc/bchCode_0_8" BEL
+        "hdmi/dataenc/bchCode_0_7" BEL "hdmi/dataenc/bchCode_0_6" BEL
+        "hdmi/dataenc/bchCode_0_0" BEL "hdmi/dataenc/bchHdr_7" BEL
+        "hdmi/dataenc/bchHdr_6" BEL "hdmi/dataenc/audioTimer_16" BEL
+        "hdmi/dataenc/audioTimer_15" BEL "hdmi/dataenc/audioTimer_14" BEL
+        "hdmi/dataenc/audioTimer_13" BEL "hdmi/dataenc/audioTimer_12" BEL
+        "hdmi/dataenc/audioTimer_11" BEL "hdmi/dataenc/audioTimer_10" BEL
+        "hdmi/dataenc/audioTimer_9" BEL "hdmi/dataenc/audioTimer_8" BEL
+        "hdmi/dataenc/audioTimer_7" BEL "hdmi/dataenc/audioTimer_6" BEL
+        "hdmi/dataenc/audioTimer_5" BEL "hdmi/dataenc/audioTimer_4" BEL
+        "hdmi/dataenc/audioTimer_3" BEL "hdmi/dataenc/audioAvgCnt_10" BEL
+        "hdmi/dataenc/audioAvgCnt_9" BEL "hdmi/dataenc/audioAvgCnt_8" BEL
+        "hdmi/dataenc/audioAvgCnt_7" BEL "hdmi/dataenc/audioAvgCnt_6" BEL
+        "hdmi/dataenc/audioAvgCnt_5" BEL "hdmi/dataenc/audioAvgCnt_4" BEL
+        "hdmi/dataenc/audioAvgCnt_3" BEL "hdmi/dataenc/audioAvgCnt_2" BEL
+        "hdmi/dataenc/audioAvgCnt_1" BEL "hdmi/dataenc/audioAvgCnt_0" BEL
+        "hdmi/dataenc/subpacket_0_186" BEL "hdmi/dataenc/subpacket_0_185" BEL
+        "hdmi/dataenc/subpacket_0_184" BEL "hdmi/dataenc/subpacket_0_183" BEL
+        "hdmi/dataenc/subpacket_0_182" BEL "hdmi/dataenc/subpacket_0_181" BEL
+        "hdmi/dataenc/subpacket_0_180" BEL "hdmi/dataenc/subpacket_0_179" BEL
+        "hdmi/dataenc/subpacket_0_178" BEL "hdmi/dataenc/subpacket_0_177" BEL
+        "hdmi/dataenc/subpacket_0_176" BEL "hdmi/dataenc/subpacket_0_175" BEL
+        "hdmi/dataenc/subpacket_0_174" BEL "hdmi/dataenc/subpacket_0_173" BEL
+        "hdmi/dataenc/subpacket_0_172" BEL "hdmi/dataenc/subpacket_0_171" BEL
+        "hdmi/dataenc/subpacket_0_170" BEL "hdmi/dataenc/subpacket_0_169" BEL
+        "hdmi/dataenc/subpacket_0_168" BEL "hdmi/dataenc/subpacket_0_76" BEL
+        "hdmi/dataenc/subpacket_0_75" BEL "hdmi/dataenc/subpacket_0_43" BEL
+        "hdmi/dataenc/subpacket_0_41" BEL "hdmi/dataenc/subpacket_0_39" BEL
+        "hdmi/dataenc/subpacket_0_37" BEL "hdmi/dataenc/subpacket_0_35" BEL
+        "hdmi/dataenc/subpacket_0_33" BEL "hdmi/dataenc/subpacket_0_31" BEL
+        "hdmi/dataenc/subpacket_0_29" BEL "hdmi/dataenc/subpacket_0_27" BEL
+        "hdmi/dataenc/subpacket_0_25" BEL "hdmi/dataenc/subpacket_0_23" BEL
+        "hdmi/dataenc/subpacket_0_21" BEL "hdmi/dataenc/subpacket_0_20" BEL
+        "hdmi/dataenc/subpacket_0_19" BEL "hdmi/dataenc/subpacket_0_18" BEL
+        "hdmi/dataenc/subpacket_0_17" BEL "hdmi/dataenc/subpacket_0_16" BEL
+        "hdmi/dataenc/subpacket_0_15" BEL "hdmi/dataenc/subpacket_0_14" BEL
+        "hdmi/dataenc/subpacket_0_13" BEL "hdmi/dataenc/subpacket_0_12" BEL
+        "hdmi/dataenc/subpacket_0_11" BEL "hdmi/dataenc/subpacket_0_10" BEL
+        "hdmi/dataenc/subpacket_0_9" BEL "hdmi/dataenc/subpacket_0_8" BEL
+        "hdmi/dataenc/subpacket_0_7" BEL "hdmi/dataenc/subpacket_0_6" BEL
+        "hdmi/dataenc/subpacket_0_5" BEL "hdmi/dataenc/subpacket_0_4" BEL
+        "hdmi/dataenc/subpacket_0_3" BEL "hdmi/dataenc/subpacket_0_2" BEL
+        "hdmi/dataenc/subpacket_0_1" BEL "hdmi/dataenc/subpacket_0_0" BEL
+        "hdmi/dataenc/audioSubPacket_0_223" BEL
+        "hdmi/dataenc/audioSubPacket_0_222" BEL
+        "hdmi/dataenc/audioSubPacket_0_221" BEL
+        "hdmi/dataenc/audioSubPacket_0_220" BEL
+        "hdmi/dataenc/audioSubPacket_0_219" BEL
+        "hdmi/dataenc/audioSubPacket_0_218" BEL
+        "hdmi/dataenc/audioSubPacket_0_217" BEL
+        "hdmi/dataenc/audioSubPacket_0_216" BEL
+        "hdmi/dataenc/audioSubPacket_0_215" BEL
+        "hdmi/dataenc/audioSubPacket_0_214" BEL
+        "hdmi/dataenc/audioSubPacket_0_213" BEL
+        "hdmi/dataenc/audioSubPacket_0_212" BEL
+        "hdmi/dataenc/audioSubPacket_0_211" BEL
+        "hdmi/dataenc/audioSubPacket_0_210" BEL
+        "hdmi/dataenc/audioSubPacket_0_209" BEL
+        "hdmi/dataenc/audioSubPacket_0_208" BEL
+        "hdmi/dataenc/audioSubPacket_0_207" BEL
+        "hdmi/dataenc/audioSubPacket_0_206" BEL
+        "hdmi/dataenc/audioSubPacket_0_205" BEL
+        "hdmi/dataenc/audioSubPacket_0_204" BEL
+        "hdmi/dataenc/audioSubPacket_0_203" BEL
+        "hdmi/dataenc/audioSubPacket_0_202" BEL
+        "hdmi/dataenc/audioSubPacket_0_201" BEL
+        "hdmi/dataenc/audioSubPacket_0_200" BEL
+        "hdmi/dataenc/audioSubPacket_0_199" BEL
+        "hdmi/dataenc/audioSubPacket_0_198" BEL
+        "hdmi/dataenc/audioSubPacket_0_197" BEL
+        "hdmi/dataenc/audioSubPacket_0_196" BEL
+        "hdmi/dataenc/audioSubPacket_0_195" BEL
+        "hdmi/dataenc/audioSubPacket_0_194" BEL
+        "hdmi/dataenc/audioSubPacket_0_193" BEL
+        "hdmi/dataenc/audioSubPacket_0_192" BEL
+        "hdmi/dataenc/audioSubPacket_0_191" BEL
+        "hdmi/dataenc/audioSubPacket_0_190" BEL
+        "hdmi/dataenc/audioSubPacket_0_189" BEL
+        "hdmi/dataenc/audioSubPacket_0_188" BEL
+        "hdmi/dataenc/audioSubPacket_0_187" BEL
+        "hdmi/dataenc/audioSubPacket_0_186" BEL
+        "hdmi/dataenc/audioSubPacket_0_185" BEL
+        "hdmi/dataenc/audioSubPacket_0_184" BEL
+        "hdmi/dataenc/audioSubPacket_0_183" BEL
+        "hdmi/dataenc/audioSubPacket_0_182" BEL
+        "hdmi/dataenc/audioSubPacket_0_181" BEL
+        "hdmi/dataenc/audioSubPacket_0_180" BEL
+        "hdmi/dataenc/audioSubPacket_0_179" BEL
+        "hdmi/dataenc/audioSubPacket_0_178" BEL
+        "hdmi/dataenc/audioSubPacket_0_177" BEL
+        "hdmi/dataenc/audioSubPacket_0_176" BEL
+        "hdmi/dataenc/audioSubPacket_0_175" BEL
+        "hdmi/dataenc/audioSubPacket_0_174" BEL
+        "hdmi/dataenc/audioSubPacket_0_173" BEL
+        "hdmi/dataenc/audioSubPacket_0_172" BEL
+        "hdmi/dataenc/audioSubPacket_0_171" BEL
+        "hdmi/dataenc/audioSubPacket_0_170" BEL
+        "hdmi/dataenc/audioSubPacket_0_169" BEL
+        "hdmi/dataenc/audioSubPacket_0_168" BEL
+        "hdmi/dataenc/audioSubPacket_0_167" BEL
+        "hdmi/dataenc/audioSubPacket_0_166" BEL
+        "hdmi/dataenc/audioSubPacket_0_165" BEL
+        "hdmi/dataenc/audioSubPacket_0_164" BEL
+        "hdmi/dataenc/audioSubPacket_0_163" BEL
+        "hdmi/dataenc/audioSubPacket_0_162" BEL
+        "hdmi/dataenc/audioSubPacket_0_161" BEL
+        "hdmi/dataenc/audioSubPacket_0_160" BEL
+        "hdmi/dataenc/audioSubPacket_0_159" BEL
+        "hdmi/dataenc/audioSubPacket_0_158" BEL
+        "hdmi/dataenc/audioSubPacket_0_157" BEL
+        "hdmi/dataenc/audioSubPacket_0_156" BEL
+        "hdmi/dataenc/audioSubPacket_0_155" BEL
+        "hdmi/dataenc/audioSubPacket_0_154" BEL
+        "hdmi/dataenc/audioSubPacket_0_153" BEL
+        "hdmi/dataenc/audioSubPacket_0_152" BEL
+        "hdmi/dataenc/audioSubPacket_0_151" BEL
+        "hdmi/dataenc/audioSubPacket_0_150" BEL
+        "hdmi/dataenc/audioSubPacket_0_149" BEL
+        "hdmi/dataenc/audioSubPacket_0_148" BEL
+        "hdmi/dataenc/audioSubPacket_0_147" BEL
+        "hdmi/dataenc/audioSubPacket_0_146" BEL
+        "hdmi/dataenc/audioSubPacket_0_145" BEL
+        "hdmi/dataenc/audioSubPacket_0_144" BEL
+        "hdmi/dataenc/audioSubPacket_0_143" BEL
+        "hdmi/dataenc/audioSubPacket_0_142" BEL
+        "hdmi/dataenc/audioSubPacket_0_141" BEL
+        "hdmi/dataenc/audioSubPacket_0_140" BEL
+        "hdmi/dataenc/audioSubPacket_0_139" BEL
+        "hdmi/dataenc/audioSubPacket_0_138" BEL
+        "hdmi/dataenc/audioSubPacket_0_137" BEL
+        "hdmi/dataenc/audioSubPacket_0_136" BEL
+        "hdmi/dataenc/audioSubPacket_0_135" BEL
+        "hdmi/dataenc/audioSubPacket_0_134" BEL
+        "hdmi/dataenc/audioSubPacket_0_133" BEL
+        "hdmi/dataenc/audioSubPacket_0_132" BEL
+        "hdmi/dataenc/audioSubPacket_0_131" BEL
+        "hdmi/dataenc/audioSubPacket_0_130" BEL
+        "hdmi/dataenc/audioSubPacket_0_129" BEL
+        "hdmi/dataenc/audioSubPacket_0_128" BEL
+        "hdmi/dataenc/audioSubPacket_0_127" BEL
+        "hdmi/dataenc/audioSubPacket_0_126" BEL
+        "hdmi/dataenc/audioSubPacket_0_125" BEL
+        "hdmi/dataenc/audioSubPacket_0_124" BEL
+        "hdmi/dataenc/audioSubPacket_0_123" BEL
+        "hdmi/dataenc/audioSubPacket_0_122" BEL
+        "hdmi/dataenc/audioSubPacket_0_121" BEL
+        "hdmi/dataenc/audioSubPacket_0_120" BEL
+        "hdmi/dataenc/audioSubPacket_0_119" BEL
+        "hdmi/dataenc/audioSubPacket_0_118" BEL
+        "hdmi/dataenc/audioSubPacket_0_117" BEL
+        "hdmi/dataenc/audioSubPacket_0_116" BEL
+        "hdmi/dataenc/audioSubPacket_0_115" BEL
+        "hdmi/dataenc/audioSubPacket_0_114" BEL
+        "hdmi/dataenc/audioSubPacket_0_113" BEL
+        "hdmi/dataenc/audioSubPacket_0_112" BEL
+        "hdmi/dataenc/audioSubPacket_0_111" BEL
+        "hdmi/dataenc/audioSubPacket_0_110" BEL
+        "hdmi/dataenc/audioSubPacket_0_109" BEL
+        "hdmi/dataenc/audioSubPacket_0_108" BEL
+        "hdmi/dataenc/audioSubPacket_0_107" BEL
+        "hdmi/dataenc/audioSubPacket_0_106" BEL
+        "hdmi/dataenc/audioSubPacket_0_105" BEL
+        "hdmi/dataenc/audioSubPacket_0_104" BEL
+        "hdmi/dataenc/audioSubPacket_0_103" BEL
+        "hdmi/dataenc/audioSubPacket_0_102" BEL
+        "hdmi/dataenc/audioSubPacket_0_101" BEL
+        "hdmi/dataenc/audioSubPacket_0_100" BEL
+        "hdmi/dataenc/audioSubPacket_0_99" BEL
+        "hdmi/dataenc/audioSubPacket_0_98" BEL
+        "hdmi/dataenc/audioSubPacket_0_97" BEL
+        "hdmi/dataenc/audioSubPacket_0_96" BEL
+        "hdmi/dataenc/audioSubPacket_0_95" BEL
+        "hdmi/dataenc/audioSubPacket_0_94" BEL
+        "hdmi/dataenc/audioSubPacket_0_93" BEL
+        "hdmi/dataenc/audioSubPacket_0_92" BEL
+        "hdmi/dataenc/audioSubPacket_0_91" BEL
+        "hdmi/dataenc/audioSubPacket_0_90" BEL
+        "hdmi/dataenc/audioSubPacket_0_89" BEL
+        "hdmi/dataenc/audioSubPacket_0_88" BEL
+        "hdmi/dataenc/audioSubPacket_0_87" BEL
+        "hdmi/dataenc/audioSubPacket_0_86" BEL
+        "hdmi/dataenc/audioSubPacket_0_85" BEL
+        "hdmi/dataenc/audioSubPacket_0_84" BEL
+        "hdmi/dataenc/audioSubPacket_0_83" BEL
+        "hdmi/dataenc/audioSubPacket_0_82" BEL
+        "hdmi/dataenc/audioSubPacket_0_81" BEL
+        "hdmi/dataenc/audioSubPacket_0_80" BEL
+        "hdmi/dataenc/audioSubPacket_0_79" BEL
+        "hdmi/dataenc/audioSubPacket_0_78" BEL
+        "hdmi/dataenc/audioSubPacket_0_77" BEL
+        "hdmi/dataenc/audioSubPacket_0_76" BEL
+        "hdmi/dataenc/audioSubPacket_0_75" BEL
+        "hdmi/dataenc/audioSubPacket_0_74" BEL
+        "hdmi/dataenc/audioSubPacket_0_73" BEL
+        "hdmi/dataenc/audioSubPacket_0_72" BEL
+        "hdmi/dataenc/audioSubPacket_0_71" BEL
+        "hdmi/dataenc/audioSubPacket_0_70" BEL
+        "hdmi/dataenc/audioSubPacket_0_69" BEL
+        "hdmi/dataenc/audioSubPacket_0_68" BEL
+        "hdmi/dataenc/audioSubPacket_0_67" BEL
+        "hdmi/dataenc/audioSubPacket_0_66" BEL
+        "hdmi/dataenc/audioSubPacket_0_65" BEL
+        "hdmi/dataenc/audioSubPacket_0_64" BEL
+        "hdmi/dataenc/audioSubPacket_0_63" BEL
+        "hdmi/dataenc/audioSubPacket_0_62" BEL
+        "hdmi/dataenc/audioSubPacket_0_61" BEL
+        "hdmi/dataenc/audioSubPacket_0_60" BEL
+        "hdmi/dataenc/audioSubPacket_0_59" BEL
+        "hdmi/dataenc/audioSubPacket_0_58" BEL
+        "hdmi/dataenc/audioSubPacket_0_57" BEL
+        "hdmi/dataenc/audioSubPacket_0_56" BEL
+        "hdmi/dataenc/audioSubPacket_0_55" BEL
+        "hdmi/dataenc/audioSubPacket_0_54" BEL
+        "hdmi/dataenc/audioSubPacket_0_53" BEL
+        "hdmi/dataenc/audioSubPacket_0_52" BEL
+        "hdmi/dataenc/audioSubPacket_0_51" BEL
+        "hdmi/dataenc/audioSubPacket_0_50" BEL
+        "hdmi/dataenc/audioSubPacket_0_49" BEL
+        "hdmi/dataenc/audioSubPacket_0_48" BEL
+        "hdmi/dataenc/audioSubPacket_0_47" BEL
+        "hdmi/dataenc/audioSubPacket_0_46" BEL
+        "hdmi/dataenc/audioSubPacket_0_45" BEL
+        "hdmi/dataenc/audioSubPacket_0_44" BEL
+        "hdmi/dataenc/audioSubPacket_0_43" BEL
+        "hdmi/dataenc/audioSubPacket_0_42" BEL
+        "hdmi/dataenc/audioSubPacket_0_41" BEL
+        "hdmi/dataenc/audioSubPacket_0_40" BEL
+        "hdmi/dataenc/audioSubPacket_0_39" BEL
+        "hdmi/dataenc/audioSubPacket_0_38" BEL
+        "hdmi/dataenc/audioSubPacket_0_37" BEL
+        "hdmi/dataenc/audioSubPacket_0_36" BEL
+        "hdmi/dataenc/audioSubPacket_0_35" BEL
+        "hdmi/dataenc/audioSubPacket_0_34" BEL
+        "hdmi/dataenc/audioSubPacket_0_33" BEL
+        "hdmi/dataenc/audioSubPacket_0_32" BEL
+        "hdmi/dataenc/audioSubPacket_0_31" BEL
+        "hdmi/dataenc/audioSubPacket_0_30" BEL
+        "hdmi/dataenc/audioSubPacket_0_29" BEL
+        "hdmi/dataenc/audioSubPacket_0_28" BEL
+        "hdmi/dataenc/audioSubPacket_0_27" BEL
+        "hdmi/dataenc/audioSubPacket_0_26" BEL
+        "hdmi/dataenc/audioSubPacket_0_25" BEL
+        "hdmi/dataenc/audioSubPacket_0_24" BEL
+        "hdmi/dataenc/audioSubPacket_0_23" BEL
+        "hdmi/dataenc/audioSubPacket_0_22" BEL
+        "hdmi/dataenc/audioSubPacket_0_21" BEL
+        "hdmi/dataenc/audioSubPacket_0_20" BEL
+        "hdmi/dataenc/audioSubPacket_0_19" BEL
+        "hdmi/dataenc/audioSubPacket_0_18" BEL
+        "hdmi/dataenc/audioSubPacket_0_17" BEL
+        "hdmi/dataenc/audioSubPacket_0_16" BEL
+        "hdmi/dataenc/audioSubPacket_0_15" BEL
+        "hdmi/dataenc/audioSubPacket_0_14" BEL
+        "hdmi/dataenc/audioSubPacket_0_13" BEL
+        "hdmi/dataenc/audioSubPacket_0_12" BEL
+        "hdmi/dataenc/audioSubPacket_0_11" BEL
+        "hdmi/dataenc/audioSubPacket_0_10" BEL
+        "hdmi/dataenc/audioSubPacket_0_9" BEL
+        "hdmi/dataenc/audioSubPacket_0_8" BEL
+        "hdmi/dataenc/audioSubPacket_0_7" BEL
+        "hdmi/dataenc/audioSubPacket_0_6" BEL
+        "hdmi/dataenc/audioSubPacket_0_5" BEL
+        "hdmi/dataenc/audioSubPacket_0_4" BEL
+        "hdmi/dataenc/audioSubPacket_0_3" BEL
+        "hdmi/dataenc/audioSubPacket_0_2" BEL
+        "hdmi/dataenc/audioSubPacket_0_1" BEL
+        "hdmi/dataenc/audioSubPacket_0_0" BEL "hdmi/delay_line/q_pipe_0_35"
+        BEL "hdmi/delay_line/q_pipe_0_34" BEL "hdmi/delay_line/q_pipe_0_33"
+        BEL "hdmi/delay_line/q_pipe_0_32" BEL "hdmi/delay_line/q_pipe_0_27"
+        BEL "hdmi/delay_line/q_pipe_0_26" BEL "hdmi/delay_line/q_pipe_0_25"
+        BEL "hdmi/delay_line/q_pipe_0_24" BEL "hdmi/delay_line/q_pipe_0_19"
+        BEL "hdmi/delay_line/q_pipe_0_18" BEL "hdmi/delay_line/q_pipe_0_17"
+        BEL "hdmi/delay_line/q_pipe_0_16" BEL "hdmi/delay_line/q_pipe_0_13"
+        BEL "hdmi/enc2/dc_bias_3" BEL "hdmi/enc2/dc_bias_2" BEL
+        "hdmi/enc2/dc_bias_1" BEL "hdmi/enc2/dc_bias_0" BEL
+        "hdmi/enc2/ENCODED_9" BEL "hdmi/enc2/ENCODED_8" BEL
+        "hdmi/enc2/ENCODED_7" BEL "hdmi/enc2/ENCODED_6" BEL
+        "hdmi/enc2/ENCODED_5" BEL "hdmi/enc2/ENCODED_4" BEL
+        "hdmi/enc2/ENCODED_3" BEL "hdmi/enc2/ENCODED_2" BEL
+        "hdmi/enc2/ENCODED_1" BEL "hdmi/enc2/ENCODED_0" BEL
+        "hdmi/enc1/dc_bias_3" BEL "hdmi/enc1/dc_bias_2" BEL
+        "hdmi/enc1/dc_bias_1" BEL "hdmi/enc1/dc_bias_0" BEL
+        "hdmi/enc1/ENCODED_9" BEL "hdmi/enc1/ENCODED_8" BEL
+        "hdmi/enc1/ENCODED_7" BEL "hdmi/enc1/ENCODED_6" BEL
+        "hdmi/enc1/ENCODED_5" BEL "hdmi/enc1/ENCODED_4" BEL
+        "hdmi/enc1/ENCODED_3" BEL "hdmi/enc1/ENCODED_2" BEL
+        "hdmi/enc1/ENCODED_1" BEL "hdmi/enc1/ENCODED_0" BEL
+        "hdmi/enc0/dc_bias_3" BEL "hdmi/enc0/dc_bias_2" BEL
+        "hdmi/enc0/dc_bias_1" BEL "hdmi/enc0/dc_bias_0" BEL
+        "hdmi/enc0/ENCODED_9" BEL "hdmi/enc0/ENCODED_8" BEL
+        "hdmi/enc0/ENCODED_7" BEL "hdmi/enc0/ENCODED_6" BEL
+        "hdmi/enc0/ENCODED_5" BEL "hdmi/enc0/ENCODED_4" BEL
+        "hdmi/enc0/ENCODED_3" BEL "hdmi/enc0/ENCODED_2" BEL
+        "hdmi/enc0/ENCODED_1" BEL "hdmi/enc0/ENCODED_0" BEL
+        "hdmi/state_FSM_FFd2" BEL "hdmi/state_FSM_FFd3" BEL
+        "hdmi/state_FSM_FFd1" BEL "hdmi/dataenc/firstHSyncChange" BEL
+        "hdmi/dataenc/allowGeneration" BEL "overlay/scanline" BEL
+        "hdmi/dataenc/oddLine" BEL "hdmi/dataenc/tercData" BEL
+        "hdmi/dataenc/audioAvgCnt_0_1" BEL "hdmi/dataenc/audioAvgCnt_2_1" BEL
+        "hdmi/dataenc/audioAvgCnt_1_1" BEL "hdmi/dataenc/audioAvgCnt_3_1" BEL
+        "hdmi/dataenc/audioAvgCnt_4_1" BEL "hdmi/dataenc/audioAvgCnt_9_1" BEL
+        "hdmi/dataenc/audioAvgCnt_5_1" BEL "hdmi/dataenc/audioAvgCnt_8_1" BEL
+        "hdmi/dataenc/audioAvgCnt_6_1" BEL "hdmi/dataenc/audioAvgCnt_7_1" BEL
+        "hdmi/dataenc/audioAvgCnt_10_1" BEL "hdmi/dataenc/audioLAvgSum_23_1"
+        BEL "hdmi/dataenc/audioLAvgSum_22_1" BEL
+        "hdmi/dataenc/audioLAvgSum_21_1" BEL "hdmi/dataenc/audioAvgCnt_3_2"
+        BEL "hdmi/dataenc/audioAvgCnt_4_2" BEL "hdmi/dataenc/audioAvgCnt_2_2"
+        BEL "hdmi/dataenc/audioAvgCnt_9_2" BEL "hdmi/dataenc/audioAvgCnt_6_2"
+        BEL "hdmi/dataenc/audioAvgCnt_8_2" BEL "hdmi/dataenc/audioAvgCnt_5_2"
+        BEL "hdmi/dataenc/audioAvgCnt_10_2" BEL "hdmi/dataenc/audioAvgCnt_0_2"
+        BEL "hdmi/dataenc/audioAvgCnt_0_3" BEL "hdmi/dataenc/audioAvgCnt_1_2"
+        BEL "hdmi/dataenc/audioAvgCnt_7_2" BEL
+        "hdmi/dataenc/audioLAvgSum_21_2" BEL "hdmi/dataenc/audioLAvgSum_22_2"
+        BEL "hdmi/dataenc/audioLAvgSum_23_2" BEL
+        "hdmi/dataenc/audioAvgCnt_2_3" BEL "hdmi/dataenc/audioAvgCnt_5_3" BEL
+        "hdmi/dataenc/audioAvgCnt_0_4" BEL "hdmi/dataenc/audioAvgCnt_3_3" BEL
+        "hdmi/dataenc/audioAvgCnt_1_3" BEL "hdmi/dataenc/audioAvgCnt_6_3" BEL
+        "hdmi/dataenc/audioAvgCnt_10_3" BEL "hdmi/dataenc/audioAvgCnt_7_3" BEL
+        "hdmi/dataenc/audioAvgCnt_9_3" BEL "hdmi/dataenc/audioAvgCnt_8_3" BEL
+        "hdmi/dataenc/audioLAvgSum_23_3" BEL "hdmi/dataenc/audioLAvgSum_21_3"
+        BEL "hdmi/dataenc/audioLAvgSum_22_3" BEL
+        "hdmi/dataenc/audioAvgCnt_1_4" BEL "hdmi/dataenc/audioAvgCnt_0_5" BEL
+        "hdmi/dataenc/audioAvgCnt_3_4" BEL "hdmi/dataenc/audioAvgCnt_8_4" BEL
+        "hdmi/dataenc/audioAvgCnt_2_4" BEL "hdmi/dataenc/audioLAvgSum_21_4"
+        BEL "hdmi/dataenc/audioLAvgSum_23_4" BEL
+        "hdmi/dataenc/audioAvgCnt_9_4" BEL "hdmi/dataenc/audioAvgCnt_0_6" BEL
+        "hdmi/dataenc/audioAvgCnt_10_4" BEL "hdmi/dataenc/audioAvgCnt_1_5" BEL
+        "hdmi/dataenc/audioLAvgSum_23_5" BEL "hdmi/dataenc/audioAvgCnt_5_4"
+        BEL "hdmi/dataenc/audioAvgCnt_6_4" BEL "hdmi/dataenc/audioAvgCnt_1_6"
+        BEL "hdmi/dataenc/audioAvgCnt_8_5" BEL "hdmi/dataenc/audioAvgCnt_7_4"
+        PIN
+        "Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT_pins<9>"
+        BEL "snespads_b/pads[0].pad_b/Mshreg_shift_buttons_q_31" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_29" BEL "hdmi/dataenc/bchCode_0_29" BEL
+        "snespads_b/pads[0].pad_b/Mshreg_shift_buttons_q_24" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_241" BEL
+        "snespads_b/pads[0].pad_b/Mshreg_shift_buttons_q_14" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_141" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_28" BEL "hdmi/dataenc/bchCode_0_28" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_21" BEL "hdmi/dataenc/bchCode_0_21" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_20" BEL "hdmi/dataenc/bchCode_0_20" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_13" BEL "hdmi/dataenc/bchCode_0_13" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_4" BEL "hdmi/dataenc/bchCode_0_4" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_12" BEL "hdmi/dataenc/bchCode_0_12" BEL
+        "hdmi/dataenc/Mshreg_bchCode_0_5" BEL "hdmi/dataenc/bchCode_0_5" BEL
+        "hdmi/dataenc/Mshreg_bchHdr_5" BEL "hdmi/dataenc/bchHdr_5" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_39" BEL
+        "hdmi/delay_line/q_pipe_10_39" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_38" BEL
+        "hdmi/delay_line/q_pipe_10_38" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_37" BEL
+        "hdmi/delay_line/q_pipe_10_37" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_34" BEL
+        "hdmi/delay_line/q_pipe_10_34" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_36" BEL
+        "hdmi/delay_line/q_pipe_10_36" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_35" BEL
+        "hdmi/delay_line/q_pipe_10_35" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_33" BEL
+        "hdmi/delay_line/q_pipe_10_33" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_32" BEL
+        "hdmi/delay_line/q_pipe_10_32" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_31" BEL
+        "hdmi/delay_line/q_pipe_10_31" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_30" BEL
+        "hdmi/delay_line/q_pipe_10_30" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_27" BEL
+        "hdmi/delay_line/q_pipe_10_27" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_29" BEL
+        "hdmi/delay_line/q_pipe_10_29" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_28" BEL
+        "hdmi/delay_line/q_pipe_10_28" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_26" BEL
+        "hdmi/delay_line/q_pipe_10_26" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_25" BEL
+        "hdmi/delay_line/q_pipe_10_25" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_24" BEL
+        "hdmi/delay_line/q_pipe_10_24" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_23" BEL
+        "hdmi/delay_line/q_pipe_10_23" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_20" BEL
+        "hdmi/delay_line/q_pipe_10_20" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_22" BEL
+        "hdmi/delay_line/q_pipe_10_22" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_21" BEL
+        "hdmi/delay_line/q_pipe_10_21" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_19" BEL
+        "hdmi/delay_line/q_pipe_10_19" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_18" BEL
+        "hdmi/delay_line/q_pipe_10_18" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_17" BEL
+        "hdmi/delay_line/q_pipe_10_17" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_16" BEL
+        "hdmi/delay_line/q_pipe_10_16" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_13" BEL
+        "hdmi/delay_line/q_pipe_10_13" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_15" BEL
+        "hdmi/delay_line/q_pipe_10_15" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_14" BEL
+        "hdmi/delay_line/q_pipe_10_14" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_12" BEL
+        "hdmi/delay_line/q_pipe_10_12" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_11" BEL
+        "hdmi/delay_line/q_pipe_10_11" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_10" BEL
+        "hdmi/delay_line/q_pipe_10_10" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_9" BEL "hdmi/delay_line/q_pipe_10_9"
+        BEL "hdmi/delay_line/Mshreg_q_pipe_10_6" BEL
+        "hdmi/delay_line/q_pipe_10_6" BEL "hdmi/delay_line/Mshreg_q_pipe_10_8"
+        BEL "hdmi/delay_line/q_pipe_10_8" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_7" BEL "hdmi/delay_line/q_pipe_10_7"
+        BEL "hdmi/delay_line/Mshreg_q_pipe_10_3" BEL
+        "hdmi/delay_line/q_pipe_10_3" BEL "hdmi/delay_line/Mshreg_q_pipe_10_5"
+        BEL "hdmi/delay_line/q_pipe_10_5" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_4" BEL "hdmi/delay_line/q_pipe_10_4"
+        BEL "hdmi/delay_line/Mshreg_q_pipe_10_0" BEL
+        "hdmi/delay_line/q_pipe_10_0" BEL "hdmi/delay_line/Mshreg_q_pipe_10_2"
+        BEL "hdmi/delay_line/q_pipe_10_2" BEL
+        "hdmi/delay_line/Mshreg_q_pipe_10_1" BEL "hdmi/delay_line/q_pipe_10_1"
+        BEL "host_reset_n_inv_shift1" BEL "host_reset_n_inv_shift2" BEL
+        "host_reset_n_inv_shift3" BEL "host_reset_n_inv_shift4" BEL
+        "host_reset_n_inv_shift5" BEL "host_reset_n_inv_shift6" BEL
+        "host_reset_n_inv_shift7" BEL "host_reset_n_inv_shift8" BEL
+        "host_reset_n_inv_shift9" BEL "host_reset_n_inv_shift10" BEL
+        "host_reset_n_inv_shift11" BEL "host_reset_n_inv_shift12" BEL
+        "host_reset_n_inv_shift13" BEL "host_reset_n_inv_shift14" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_31" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_24" BEL
+        "snespads_b/pads[0].pad_b/shift_buttons_q_14" BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_0"
+        BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_1"
+        BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_2"
+        BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_3"
+        BEL
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_b.B/sel_pipe_4"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>"
+        PIN
+        "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<29>";
+PIN MyCtrlModule/myrom/Mram_ram7_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram7"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram7_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram7"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram6_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram6"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram6_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram6"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram8_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram8"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram8_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram8"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram5_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram5"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram5_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram5"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram4_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram4"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram4_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram4"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram3_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram3"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram3_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram3"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram2_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram2"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram2_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram2"
+        PINNAME CLKB;
+PIN MyCtrlModule/myrom/Mram_ram1_pins<24> = BEL "MyCtrlModule/myrom/Mram_ram1"
+        PINNAME CLKA;
+PIN MyCtrlModule/myrom/Mram_ram1_pins<25> = BEL "MyCtrlModule/myrom/Mram_ram1"
+        PINNAME CLKB;
+PIN
+        MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram_pins<27>
+        = BEL
+        "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram"
+        PINNAME CLKBRDCLK;
+TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_6"
+        BEL "host_bootread_data_5" BEL "host_bootread_data_4" BEL
+        "host_bootread_data_3" BEL "host_bootread_data_0" BEL
+        "host_bootread_data_2" BEL "host_bootread_data_1" BEL
+        "last_6502_addr_0" BEL "last_6502_addr_1" BEL "last_6502_addr_2" BEL
+        "last_6502_addr_3" BEL "last_6502_addr_4" BEL "last_6502_addr_5" BEL
+        "last_6502_addr_6" BEL "last_6502_addr_7" BEL "last_6502_addr_8" BEL
+        "last_6502_addr_9" BEL "last_6502_addr_10" BEL "last_6502_addr_11" BEL
+        "last_6502_addr_12" BEL "last_6502_addr_13" BEL "last_6502_addr_14"
+        BEL "last_ph0" BEL "capt_i_0" BEL "capt_i_1" BEL "capt_i_2" BEL
+        "capt_i_3" BEL "extSRAM/host_bootdata_ack" BEL
+        "extSRAM/host_bootread_ack" BEL "extSRAM/boot_state_3" BEL
+        "extSRAM/boot_state_2" BEL "extSRAM/boot_state_1" BEL
+        "extSRAM/boot_state_0" BEL "extSRAM/sram_data_io_7" BEL
+        "extSRAM/sram_data_io_6" BEL "extSRAM/sram_data_io_5" BEL
+        "extSRAM/sram_data_io_4" BEL "extSRAM/sram_data_io_3" BEL
+        "extSRAM/sram_data_io_2" BEL "extSRAM/sram_data_io_1" BEL
+        "extSRAM/sram_data_io_0" BEL "extSRAM/a2600_databyte_7" BEL
+        "extSRAM/a2600_databyte_6" BEL "extSRAM/a2600_databyte_5" BEL
+        "extSRAM/a2600_databyte_4" BEL "extSRAM/a2600_databyte_3" BEL
+        "extSRAM/a2600_databyte_2" BEL "extSRAM/a2600_databyte_1" BEL
+        "extSRAM/a2600_databyte_0" BEL "extSRAM/sram_addr_o_20" BEL
+        "extSRAM/sram_addr_o_19" BEL "extSRAM/sram_addr_o_18" BEL
+        "extSRAM/sram_addr_o_17" BEL "extSRAM/sram_addr_o_16" BEL
+        "extSRAM/sram_addr_o_15" BEL "extSRAM/sram_addr_o_14" BEL
+        "extSRAM/sram_addr_o_13" BEL "extSRAM/sram_addr_o_12" BEL
+        "extSRAM/sram_addr_o_11" BEL "extSRAM/sram_addr_o_10" BEL
+        "extSRAM/sram_addr_o_9" BEL "extSRAM/sram_addr_o_8" BEL
+        "extSRAM/sram_addr_o_7" BEL "extSRAM/sram_addr_o_6" BEL
+        "extSRAM/sram_addr_o_5" BEL "extSRAM/sram_addr_o_4" BEL
+        "extSRAM/sram_addr_o_3" BEL "extSRAM/sram_addr_o_2" BEL
+        "extSRAM/sram_addr_o_1" BEL "extSRAM/sram_addr_o_0" BEL
+        "MyCtrlModule/spi_tick_8" BEL "MyCtrlModule/spi_tick_7" BEL
+        "MyCtrlModule/spi_tick_6" BEL "MyCtrlModule/spi_tick_5" BEL
+        "MyCtrlModule/spi_tick_4" BEL "MyCtrlModule/spi_tick_3" BEL
+        "MyCtrlModule/spi_tick_2" BEL "MyCtrlModule/spi_tick_1" BEL
+        "MyCtrlModule/spi_tick_0" BEL "MyCtrlModule/osd_wr" BEL
+        "MyCtrlModule/osd_charwr" BEL "MyCtrlModule/size_15" BEL
+        "MyCtrlModule/size_14" BEL "MyCtrlModule/size_13" BEL
+        "MyCtrlModule/size_12" BEL "MyCtrlModule/size_11" BEL
+        "MyCtrlModule/size_10" BEL "MyCtrlModule/size_9" BEL
+        "MyCtrlModule/size_8" BEL "MyCtrlModule/size_7" BEL
+        "MyCtrlModule/size_6" BEL "MyCtrlModule/size_5" BEL
+        "MyCtrlModule/size_4" BEL "MyCtrlModule/size_3" BEL
+        "MyCtrlModule/size_2" BEL "MyCtrlModule/size_1" BEL
+        "MyCtrlModule/size_0" BEL "MyCtrlModule/host_start" BEL
+        "MyCtrlModule/dipswitches_7" BEL "MyCtrlModule/dipswitches_6" BEL
+        "MyCtrlModule/dipswitches_5" BEL "MyCtrlModule/dipswitches_4" BEL
+        "MyCtrlModule/dipswitches_3" BEL "MyCtrlModule/dipswitches_2" BEL
+        "MyCtrlModule/dipswitches_1" BEL "MyCtrlModule/dipswitches_0" BEL
+        "MyCtrlModule/host_select" BEL "MyCtrlModule/host_bootread_addr_20"
+        BEL "MyCtrlModule/host_bootread_addr_19" BEL
+        "MyCtrlModule/host_bootread_addr_18" BEL
+        "MyCtrlModule/host_bootread_addr_17" BEL
+        "MyCtrlModule/host_bootread_addr_16" BEL
+        "MyCtrlModule/host_bootread_addr_15" BEL
+        "MyCtrlModule/host_bootread_addr_14" BEL
+        "MyCtrlModule/host_bootread_addr_13" BEL
+        "MyCtrlModule/host_bootread_addr_12" BEL
+        "MyCtrlModule/host_bootread_addr_11" BEL
+        "MyCtrlModule/host_bootread_addr_10" BEL
+        "MyCtrlModule/host_bootread_addr_9" BEL
+        "MyCtrlModule/host_bootread_addr_8" BEL
+        "MyCtrlModule/host_bootread_addr_7" BEL
+        "MyCtrlModule/host_bootread_addr_6" BEL
+        "MyCtrlModule/host_bootread_addr_5" BEL
+        "MyCtrlModule/host_bootread_addr_4" BEL
+        "MyCtrlModule/host_bootread_addr_3" BEL
+        "MyCtrlModule/host_bootread_addr_2" BEL
+        "MyCtrlModule/host_bootread_addr_1" BEL
+        "MyCtrlModule/host_bootread_addr_0" BEL "MyCtrlModule/host_bootdata_7"
+        BEL "MyCtrlModule/host_bootdata_6" BEL "MyCtrlModule/host_bootdata_5"
+        BEL "MyCtrlModule/host_bootdata_4" BEL "MyCtrlModule/host_bootdata_3"
+        BEL "MyCtrlModule/host_bootdata_2" BEL "MyCtrlModule/host_bootdata_1"
+        BEL "MyCtrlModule/host_bootdata_0" BEL "MyCtrlModule/spi_fast" BEL
+        "MyCtrlModule/mem_read_25" BEL "MyCtrlModule/mem_read_24" BEL
+        "MyCtrlModule/mem_read_23" BEL "MyCtrlModule/mem_read_22" BEL
+        "MyCtrlModule/mem_read_21" BEL "MyCtrlModule/mem_read_20" BEL
+        "MyCtrlModule/mem_read_19" BEL "MyCtrlModule/mem_read_18" BEL
+        "MyCtrlModule/mem_read_17" BEL "MyCtrlModule/mem_read_16" BEL
+        "MyCtrlModule/mem_read_15" BEL "MyCtrlModule/mem_read_14" BEL
+        "MyCtrlModule/mem_read_13" BEL "MyCtrlModule/mem_read_12" BEL
+        "MyCtrlModule/mem_read_11" BEL "MyCtrlModule/mem_read_10" BEL
+        "MyCtrlModule/mem_read_9" BEL "MyCtrlModule/mem_read_8" BEL
+        "MyCtrlModule/mem_read_7" BEL "MyCtrlModule/mem_read_6" BEL
+        "MyCtrlModule/mem_read_5" BEL "MyCtrlModule/mem_read_4" BEL
+        "MyCtrlModule/mem_read_3" BEL "MyCtrlModule/mem_read_2" BEL
+        "MyCtrlModule/mem_read_1" BEL "MyCtrlModule/mem_read_0" BEL
+        "MyCtrlModule/spi_trigger" BEL "MyCtrlModule/spi_cs" BEL
+        "MyCtrlModule/host_to_spi_7" BEL "MyCtrlModule/host_to_spi_6" BEL
+        "MyCtrlModule/host_to_spi_5" BEL "MyCtrlModule/host_to_spi_4" BEL
+        "MyCtrlModule/host_to_spi_3" BEL "MyCtrlModule/host_to_spi_2" BEL
+        "MyCtrlModule/host_to_spi_1" BEL "MyCtrlModule/host_to_spi_0" BEL
+        "MyCtrlModule/host_reset_n" BEL "MyCtrlModule/spiclk_in" BEL
+        "MyCtrlModule/zpu/out_mem_addr_20" BEL
+        "MyCtrlModule/zpu/out_mem_addr_10" BEL
+        "MyCtrlModule/zpu/out_mem_addr_9" BEL
+        "MyCtrlModule/zpu/out_mem_addr_8" BEL
+        "MyCtrlModule/zpu/out_mem_addr_7" BEL
+        "MyCtrlModule/zpu/out_mem_addr_6" BEL
+        "MyCtrlModule/zpu/out_mem_addr_5" BEL
+        "MyCtrlModule/zpu/out_mem_addr_4" BEL
+        "MyCtrlModule/zpu/out_mem_addr_3" BEL
+        "MyCtrlModule/zpu/out_mem_addr_2" BEL
+        "MyCtrlModule/zpu/out_mem_addr_1" BEL
+        "MyCtrlModule/zpu/out_mem_addr_0" BEL
+        "MyCtrlModule/zpu/decodedOpcode_4" BEL
+        "MyCtrlModule/zpu/decodedOpcode_3" BEL
+        "MyCtrlModule/zpu/decodedOpcode_2" BEL
+        "MyCtrlModule/zpu/decodedOpcode_1" BEL
+        "MyCtrlModule/zpu/decodedOpcode_0" BEL
+        "MyCtrlModule/zpu/shift_count_5" BEL "MyCtrlModule/zpu/shift_count_4"
+        BEL "MyCtrlModule/zpu/shift_count_3" BEL
+        "MyCtrlModule/zpu/shift_count_2" BEL "MyCtrlModule/zpu/shift_count_1"
+        BEL "MyCtrlModule/zpu/shift_count_0" BEL
+        "MyCtrlModule/zpu/shift_direction" BEL
+        "MyCtrlModule/zpu/opcode_saved_4" BEL
+        "MyCtrlModule/zpu/opcode_saved_1" BEL
+        "MyCtrlModule/zpu/opcode_saved_0" BEL
+        "MyCtrlModule/zpu/comparison_sign_mod" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_32" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_31" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_30" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_29" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_28" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_27" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_26" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_25" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_24" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_23" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_22" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_21" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_20" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_19" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_18" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_17" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_16" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_15" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_14" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_13" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_12" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_11" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_10" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_9" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_8" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_7" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_6" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_5" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_4" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_3" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_2" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_1" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_0" BEL
+        "MyCtrlModule/zpu/add_low_16" BEL "MyCtrlModule/zpu/add_low_15" BEL
+        "MyCtrlModule/zpu/add_low_14" BEL "MyCtrlModule/zpu/add_low_13" BEL
+        "MyCtrlModule/zpu/add_low_12" BEL "MyCtrlModule/zpu/add_low_11" BEL
+        "MyCtrlModule/zpu/add_low_10" BEL "MyCtrlModule/zpu/add_low_9" BEL
+        "MyCtrlModule/zpu/add_low_8" BEL "MyCtrlModule/zpu/add_low_7" BEL
+        "MyCtrlModule/zpu/add_low_6" BEL "MyCtrlModule/zpu/add_low_5" BEL
+        "MyCtrlModule/zpu/add_low_4" BEL "MyCtrlModule/zpu/add_low_3" BEL
+        "MyCtrlModule/zpu/add_low_2" BEL "MyCtrlModule/zpu/add_low_1" BEL
+        "MyCtrlModule/zpu/add_low_0" BEL "MyCtrlModule/zpu/shift_reg_31" BEL
+        "MyCtrlModule/zpu/shift_reg_30" BEL "MyCtrlModule/zpu/shift_reg_29"
+        BEL "MyCtrlModule/zpu/shift_reg_28" BEL
+        "MyCtrlModule/zpu/shift_reg_27" BEL "MyCtrlModule/zpu/shift_reg_26"
+        BEL "MyCtrlModule/zpu/shift_reg_25" BEL
+        "MyCtrlModule/zpu/shift_reg_24" BEL "MyCtrlModule/zpu/shift_reg_23"
+        BEL "MyCtrlModule/zpu/shift_reg_22" BEL
+        "MyCtrlModule/zpu/shift_reg_21" BEL "MyCtrlModule/zpu/shift_reg_20"
+        BEL "MyCtrlModule/zpu/shift_reg_19" BEL
+        "MyCtrlModule/zpu/shift_reg_18" BEL "MyCtrlModule/zpu/shift_reg_17"
+        BEL "MyCtrlModule/zpu/shift_reg_16" BEL
+        "MyCtrlModule/zpu/shift_reg_15" BEL "MyCtrlModule/zpu/shift_reg_14"
+        BEL "MyCtrlModule/zpu/shift_reg_13" BEL
+        "MyCtrlModule/zpu/shift_reg_12" BEL "MyCtrlModule/zpu/shift_reg_11"
+        BEL "MyCtrlModule/zpu/shift_reg_10" BEL "MyCtrlModule/zpu/shift_reg_9"
+        BEL "MyCtrlModule/zpu/shift_reg_8" BEL "MyCtrlModule/zpu/shift_reg_7"
+        BEL "MyCtrlModule/zpu/shift_reg_6" BEL "MyCtrlModule/zpu/shift_reg_5"
+        BEL "MyCtrlModule/zpu/shift_reg_4" BEL "MyCtrlModule/zpu/shift_reg_3"
+        BEL "MyCtrlModule/zpu/shift_reg_2" BEL "MyCtrlModule/zpu/shift_reg_1"
+        BEL "MyCtrlModule/zpu/shift_reg_0" BEL "MyCtrlModule/zpu/shift_sign"
+        BEL "MyCtrlModule/zpu/opcode_6" BEL "MyCtrlModule/zpu/opcode_5" BEL
+        "MyCtrlModule/zpu/opcode_4" BEL "MyCtrlModule/zpu/opcode_3" BEL
+        "MyCtrlModule/zpu/opcode_2" BEL "MyCtrlModule/zpu/opcode_1" BEL
+        "MyCtrlModule/zpu/opcode_0" BEL
+        "MyCtrlModule/zpu/cachedprogramword_31" BEL
+        "MyCtrlModule/zpu/cachedprogramword_30" BEL
+        "MyCtrlModule/zpu/cachedprogramword_29" BEL
+        "MyCtrlModule/zpu/cachedprogramword_28" BEL
+        "MyCtrlModule/zpu/cachedprogramword_27" BEL
+        "MyCtrlModule/zpu/cachedprogramword_26" BEL
+        "MyCtrlModule/zpu/cachedprogramword_25" BEL
+        "MyCtrlModule/zpu/cachedprogramword_24" BEL
+        "MyCtrlModule/zpu/cachedprogramword_23" BEL
+        "MyCtrlModule/zpu/cachedprogramword_22" BEL
+        "MyCtrlModule/zpu/cachedprogramword_21" BEL
+        "MyCtrlModule/zpu/cachedprogramword_20" BEL
+        "MyCtrlModule/zpu/cachedprogramword_19" BEL
+        "MyCtrlModule/zpu/cachedprogramword_18" BEL
+        "MyCtrlModule/zpu/cachedprogramword_17" BEL
+        "MyCtrlModule/zpu/cachedprogramword_16" BEL
+        "MyCtrlModule/zpu/cachedprogramword_15" BEL
+        "MyCtrlModule/zpu/cachedprogramword_14" BEL
+        "MyCtrlModule/zpu/cachedprogramword_13" BEL
+        "MyCtrlModule/zpu/cachedprogramword_12" BEL
+        "MyCtrlModule/zpu/cachedprogramword_11" BEL
+        "MyCtrlModule/zpu/cachedprogramword_10" BEL
+        "MyCtrlModule/zpu/cachedprogramword_9" BEL
+        "MyCtrlModule/zpu/cachedprogramword_8" BEL
+        "MyCtrlModule/zpu/cachedprogramword_7" BEL
+        "MyCtrlModule/zpu/cachedprogramword_6" BEL
+        "MyCtrlModule/zpu/cachedprogramword_5" BEL
+        "MyCtrlModule/zpu/cachedprogramword_4" BEL
+        "MyCtrlModule/zpu/cachedprogramword_3" BEL
+        "MyCtrlModule/zpu/cachedprogramword_2" BEL
+        "MyCtrlModule/zpu/cachedprogramword_1" BEL
+        "MyCtrlModule/zpu/cachedprogramword_0" BEL
+        "MyCtrlModule/zpu/mem_write_20" BEL "MyCtrlModule/zpu/mem_write_19"
+        BEL "MyCtrlModule/zpu/mem_write_18" BEL
+        "MyCtrlModule/zpu/mem_write_17" BEL "MyCtrlModule/zpu/mem_write_16"
+        BEL "MyCtrlModule/zpu/mem_write_15" BEL
+        "MyCtrlModule/zpu/mem_write_14" BEL "MyCtrlModule/zpu/mem_write_13"
+        BEL "MyCtrlModule/zpu/mem_write_12" BEL
+        "MyCtrlModule/zpu/mem_write_11" BEL "MyCtrlModule/zpu/mem_write_10"
+        BEL "MyCtrlModule/zpu/mem_write_9" BEL "MyCtrlModule/zpu/mem_write_8"
+        BEL "MyCtrlModule/zpu/mem_write_7" BEL "MyCtrlModule/zpu/mem_write_6"
+        BEL "MyCtrlModule/zpu/mem_write_5" BEL "MyCtrlModule/zpu/mem_write_4"
+        BEL "MyCtrlModule/zpu/mem_write_3" BEL "MyCtrlModule/zpu/mem_write_2"
+        BEL "MyCtrlModule/zpu/mem_write_1" BEL "MyCtrlModule/zpu/mem_write_0"
+        BEL "MyCtrlModule/myosd/vsync_pol" BEL
+        "MyCtrlModule/myosd/pixelclock_3" BEL
+        "MyCtrlModule/myosd/pixelclock_2" BEL
+        "MyCtrlModule/myosd/pixelclock_1" BEL
+        "MyCtrlModule/myosd/pixelclock_0" BEL "MyCtrlModule/myosd/osd_enable"
+        BEL "MyCtrlModule/myosd/hsync_pol" BEL "MyCtrlModule/myosd/xpos_11"
+        BEL "MyCtrlModule/myosd/xpos_10" BEL "MyCtrlModule/myosd/xpos_9" BEL
+        "MyCtrlModule/myosd/xpos_8" BEL "MyCtrlModule/myosd/xpos_7" BEL
+        "MyCtrlModule/myosd/xpos_6" BEL "MyCtrlModule/myosd/xpos_5" BEL
+        "MyCtrlModule/myosd/xpos_4" BEL "MyCtrlModule/myosd/xpos_3" BEL
+        "MyCtrlModule/myosd/xpos_2" BEL "MyCtrlModule/myosd/xpos_1" BEL
+        "MyCtrlModule/myosd/xpos_0" BEL "MyCtrlModule/myosd/ypos_11" BEL
+        "MyCtrlModule/myosd/ypos_10" BEL "MyCtrlModule/myosd/ypos_9" BEL
+        "MyCtrlModule/myosd/ypos_8" BEL "MyCtrlModule/myosd/ypos_7" BEL
+        "MyCtrlModule/myosd/ypos_6" BEL "MyCtrlModule/myosd/ypos_5" BEL
+        "MyCtrlModule/myosd/ypos_4" BEL "MyCtrlModule/myosd/ypos_3" BEL
+        "MyCtrlModule/myosd/ypos_2" BEL "MyCtrlModule/myosd/ypos_1" BEL
+        "MyCtrlModule/myosd/ypos_0" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd2" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd3" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd1" BEL
+        "MyCtrlModule/mykeyboard/bitCount_3" BEL
+        "MyCtrlModule/mykeyboard/bitCount_2" BEL
+        "MyCtrlModule/mykeyboard/bitCount_1" BEL
+        "MyCtrlModule/mykeyboard/bitCount_0" BEL
+        "MyCtrlModule/mykeyboard/waitCount_6" BEL
+        "MyCtrlModule/mykeyboard/waitCount_5" BEL
+        "MyCtrlModule/mykeyboard/waitCount_4" BEL
+        "MyCtrlModule/mykeyboard/waitCount_3" BEL
+        "MyCtrlModule/mykeyboard/waitCount_2" BEL
+        "MyCtrlModule/mykeyboard/waitCount_1" BEL
+        "MyCtrlModule/mykeyboard/waitCount_0" BEL
+        "MyCtrlModule/mykeyboard/recvByte_10" BEL
+        "MyCtrlModule/mykeyboard/recvByte_9" BEL
+        "MyCtrlModule/mykeyboard/recvByte_8" BEL
+        "MyCtrlModule/mykeyboard/recvByte_7" BEL
+        "MyCtrlModule/mykeyboard/recvByte_6" BEL
+        "MyCtrlModule/mykeyboard/recvByte_5" BEL
+        "MyCtrlModule/mykeyboard/recvByte_4" BEL
+        "MyCtrlModule/mykeyboard/recvByte_3" BEL
+        "MyCtrlModule/mykeyboard/recvByte_2" BEL
+        "MyCtrlModule/mykeyboard/recvByte_1" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_10" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_9" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_8" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_7" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_6" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_5" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_4" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_3" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_2" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_1" BEL
+        "MyCtrlModule/mykeyboard/clkReg" BEL "MyCtrlModule/spi/shiftcnt_3" BEL
+        "MyCtrlModule/spi/shiftcnt_0" BEL "MyCtrlModule/spi/shiftcnt_1" BEL
+        "MyCtrlModule/spi/sck" BEL "MyCtrlModule/spi/shiftcnt_2" BEL
+        "MyCtrlModule/spi/sd_shift_7" BEL "MyCtrlModule/spi/sd_shift_6" BEL
+        "MyCtrlModule/spi/sd_shift_5" BEL "MyCtrlModule/spi/sd_shift_4" BEL
+        "MyCtrlModule/spi/sd_shift_3" BEL "MyCtrlModule/spi/sd_shift_2" BEL
+        "MyCtrlModule/spi/sd_shift_1" BEL "MyCtrlModule/spi/sd_shift_0" BEL
+        "MyCtrlModule/intcontroller/status_1" BEL
+        "MyCtrlModule/intcontroller/status_0" BEL
+        "MyCtrlModule/intcontroller/pending_3" BEL
+        "MyCtrlModule/intcontroller/pending_1" BEL
+        "MyCtrlModule/intcontroller/pending_0" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_1" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_2" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3" BEL
+        "a2601Instance/dac_inst/SigmaLatch_6" BEL
+        "a2601Instance/dac_inst/SigmaLatch_5" BEL
+        "a2601Instance/dac_inst/SigmaLatch_4" BEL
+        "a2601Instance/dac_inst/SigmaLatch_3" BEL
+        "a2601Instance/dac_inst/SigmaLatch_2" BEL
+        "a2601Instance/dac_inst/SigmaLatch_1" BEL
+        "a2601Instance/dac_inst/SigmaLatch_0" BEL
+        "a2601Instance/dac_inst/DACout" BEL "MyCtrlModule/mem_busy" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_3" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_2" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_1" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "MyCtrlModule/spi_active"
+        BEL "extSRAM/sram_we_n_o" BEL "extSRAM/sram_oe_n_o" BEL
+        "extSRAM/reset_i_clk_i_DFF_361" BEL "extSRAM/return_state_0" BEL
+        "MyCtrlModule/host_debug_arm" BEL "MyCtrlModule/int_ack" BEL
+        "MyCtrlModule/int_enabled" BEL "MyCtrlModule/mykeyboard/recvTrigger"
+        BEL "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
+        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
+        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/intcontroller/int" BEL
+        "armed_P" BEL "MyCtrlModule/zpu/state_FSM_FFd2" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd3" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd1" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd4" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd5" BEL "MyCtrlModule/zpu/memBAddr_13"
+        BEL "MyCtrlModule/zpu/memBAddr_12" BEL "MyCtrlModule/zpu/memBAddr_11"
+        BEL "MyCtrlModule/zpu/memBAddr_10" BEL "MyCtrlModule/zpu/memBAddr_9"
+        BEL "MyCtrlModule/zpu/memBAddr_8" BEL "MyCtrlModule/zpu/memBAddr_7"
+        BEL "MyCtrlModule/zpu/memBAddr_6" BEL "MyCtrlModule/zpu/memBAddr_5"
+        BEL "MyCtrlModule/zpu/memBAddr_4" BEL "MyCtrlModule/zpu/memBAddr_3"
+        BEL "MyCtrlModule/zpu/memBAddr_2" BEL "MyCtrlModule/zpu/memAAddr_13"
+        BEL "MyCtrlModule/zpu/memAAddr_12" BEL "MyCtrlModule/zpu/memAAddr_11"
+        BEL "MyCtrlModule/zpu/memAAddr_10" BEL "MyCtrlModule/zpu/memAAddr_9"
+        BEL "MyCtrlModule/zpu/memAAddr_8" BEL "MyCtrlModule/zpu/memAAddr_7"
+        BEL "MyCtrlModule/zpu/memAAddr_6" BEL "MyCtrlModule/zpu/memAAddr_5"
+        BEL "MyCtrlModule/zpu/memAAddr_4" BEL "MyCtrlModule/zpu/memAAddr_3"
+        BEL "MyCtrlModule/zpu/memAAddr_2" BEL "MyCtrlModule/zpu/memAWrite_31"
+        BEL "MyCtrlModule/zpu/memAWrite_30" BEL
+        "MyCtrlModule/zpu/memAWrite_29" BEL "MyCtrlModule/zpu/memAWrite_28"
+        BEL "MyCtrlModule/zpu/memAWrite_27" BEL
+        "MyCtrlModule/zpu/memAWrite_26" BEL "MyCtrlModule/zpu/memAWrite_25"
+        BEL "MyCtrlModule/zpu/memAWrite_24" BEL
+        "MyCtrlModule/zpu/memAWrite_23" BEL "MyCtrlModule/zpu/memAWrite_22"
+        BEL "MyCtrlModule/zpu/memAWrite_21" BEL
+        "MyCtrlModule/zpu/memAWrite_20" BEL "MyCtrlModule/zpu/memAWrite_19"
+        BEL "MyCtrlModule/zpu/memAWrite_18" BEL
+        "MyCtrlModule/zpu/memAWrite_17" BEL "MyCtrlModule/zpu/memAWrite_16"
+        BEL "MyCtrlModule/zpu/memAWrite_15" BEL
+        "MyCtrlModule/zpu/memAWrite_14" BEL "MyCtrlModule/zpu/memAWrite_13"
+        BEL "MyCtrlModule/zpu/memAWrite_12" BEL
+        "MyCtrlModule/zpu/memAWrite_11" BEL "MyCtrlModule/zpu/memAWrite_10"
+        BEL "MyCtrlModule/zpu/memAWrite_9" BEL "MyCtrlModule/zpu/memAWrite_8"
+        BEL "MyCtrlModule/zpu/memAWrite_7" BEL "MyCtrlModule/zpu/memAWrite_6"
+        BEL "MyCtrlModule/zpu/memAWrite_5" BEL "MyCtrlModule/zpu/memAWrite_4"
+        BEL "MyCtrlModule/zpu/memAWrite_3" BEL "MyCtrlModule/zpu/memAWrite_2"
+        BEL "MyCtrlModule/zpu/memAWrite_1" BEL "MyCtrlModule/zpu/memAWrite_0"
+        BEL "MyCtrlModule/zpu/sp_13" BEL "MyCtrlModule/zpu/sp_12" BEL
+        "MyCtrlModule/zpu/sp_11" BEL "MyCtrlModule/zpu/sp_10" BEL
+        "MyCtrlModule/zpu/sp_9" BEL "MyCtrlModule/zpu/sp_8" BEL
+        "MyCtrlModule/zpu/sp_7" BEL "MyCtrlModule/zpu/sp_6" BEL
+        "MyCtrlModule/zpu/sp_5" BEL "MyCtrlModule/zpu/sp_4" BEL
+        "MyCtrlModule/zpu/sp_3" BEL "MyCtrlModule/zpu/sp_2" BEL
+        "MyCtrlModule/zpu/memAWriteEnable" BEL "MyCtrlModule/zpu/idim_flag"
+        BEL "MyCtrlModule/zpu/out_mem_writeEnable" BEL "MyCtrlModule/zpu/pc_1"
+        BEL "MyCtrlModule/zpu/pc_0" BEL "MyCtrlModule/zpu/pc_5" BEL
+        "MyCtrlModule/zpu/pc_6" BEL "MyCtrlModule/zpu/pc_7" BEL
+        "MyCtrlModule/zpu/pc_8" BEL "MyCtrlModule/zpu/pc_9" BEL
+        "MyCtrlModule/zpu/pc_2" BEL "MyCtrlModule/zpu/pc_3" BEL
+        "MyCtrlModule/zpu/pc_4" BEL "MyCtrlModule/zpu/pc_10" BEL
+        "MyCtrlModule/zpu/pc_11" BEL "MyCtrlModule/zpu/pc_13" BEL
+        "MyCtrlModule/zpu/pc_12" BEL "MyCtrlModule/zpu/out_mem_readEnable" BEL
+        "MyCtrlModule/zpu/memBWriteEnable" BEL "MyCtrlModule/zpu/memBWrite_31"
+        BEL "MyCtrlModule/zpu/memBWrite_30" BEL
+        "MyCtrlModule/zpu/memBWrite_29" BEL "MyCtrlModule/zpu/memBWrite_28"
+        BEL "MyCtrlModule/zpu/memBWrite_27" BEL
+        "MyCtrlModule/zpu/memBWrite_26" BEL "MyCtrlModule/zpu/memBWrite_25"
+        BEL "MyCtrlModule/zpu/memBWrite_24" BEL
+        "MyCtrlModule/zpu/memBWrite_23" BEL "MyCtrlModule/zpu/memBWrite_22"
+        BEL "MyCtrlModule/zpu/memBWrite_21" BEL
+        "MyCtrlModule/zpu/memBWrite_20" BEL "MyCtrlModule/zpu/memBWrite_19"
+        BEL "MyCtrlModule/zpu/memBWrite_18" BEL
+        "MyCtrlModule/zpu/memBWrite_17" BEL "MyCtrlModule/zpu/memBWrite_16"
+        BEL "MyCtrlModule/zpu/memBWrite_15" BEL
+        "MyCtrlModule/zpu/memBWrite_14" BEL "MyCtrlModule/zpu/memBWrite_13"
+        BEL "MyCtrlModule/zpu/memBWrite_12" BEL
+        "MyCtrlModule/zpu/memBWrite_11" BEL "MyCtrlModule/zpu/memBWrite_10"
+        BEL "MyCtrlModule/zpu/memBWrite_9" BEL "MyCtrlModule/zpu/memBWrite_8"
+        BEL "MyCtrlModule/zpu/memBWrite_7" BEL "MyCtrlModule/zpu/memBWrite_6"
+        BEL "MyCtrlModule/zpu/memBWrite_5" BEL "MyCtrlModule/zpu/memBWrite_4"
+        BEL "MyCtrlModule/zpu/memBWrite_3" BEL "MyCtrlModule/zpu/memBWrite_2"
+        BEL "MyCtrlModule/zpu/memBWrite_1" BEL "MyCtrlModule/zpu/memBWrite_0"
+        BEL "MyCtrlModule/zpu/fetchneeded" BEL "MyCtrlModule/zpu/inInterrupt"
+        PIN "MyCtrlModule/myrom/Mram_ram7_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram7_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram6_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram6_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram8_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram8_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram5_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram5_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram4_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram4_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram3_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram3_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram2_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram2_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram1_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram1_pins<25>" PIN
+        "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram_pins<27>"
+        BEL "Mram_debug_mem61/SP" BEL "Mram_debug_mem61/DP" BEL
+        "Mram_debug_mem62/SP" BEL "Mram_debug_mem62/DP" BEL
+        "Mram_debug_mem1_RAMA_D1" BEL "Mram_debug_mem1_RAMA" BEL
+        "Mram_debug_mem1_RAMB_D1" BEL "Mram_debug_mem1_RAMB" BEL
+        "Mram_debug_mem1_RAMC_D1" BEL "Mram_debug_mem1_RAMC" BEL
+        "Mram_debug_mem1_RAMD_D1" BEL "Mram_debug_mem1_RAMD" BEL
+        "Mram_debug_mem2_RAMA_D1" BEL "Mram_debug_mem2_RAMA" BEL
+        "Mram_debug_mem2_RAMB_D1" BEL "Mram_debug_mem2_RAMB" BEL
+        "Mram_debug_mem2_RAMC_D1" BEL "Mram_debug_mem2_RAMC" BEL
+        "Mram_debug_mem2_RAMD_D1" BEL "Mram_debug_mem2_RAMD" BEL
+        "Mram_debug_mem3_RAMA_D1" BEL "Mram_debug_mem3_RAMA" BEL
+        "Mram_debug_mem3_RAMB_D1" BEL "Mram_debug_mem3_RAMB" BEL
+        "Mram_debug_mem3_RAMC_D1" BEL "Mram_debug_mem3_RAMC" BEL
+        "Mram_debug_mem3_RAMD_D1" BEL "Mram_debug_mem3_RAMD" BEL
+        "Mram_debug_mem4_RAMA_D1" BEL "Mram_debug_mem4_RAMA" BEL
+        "Mram_debug_mem4_RAMB_D1" BEL "Mram_debug_mem4_RAMB" BEL
+        "Mram_debug_mem4_RAMC_D1" BEL "Mram_debug_mem4_RAMC" BEL
+        "Mram_debug_mem4_RAMD_D1" BEL "Mram_debug_mem4_RAMD" BEL
+        "Mram_debug_mem5_RAMA_D1" BEL "Mram_debug_mem5_RAMA" BEL
+        "Mram_debug_mem5_RAMB_D1" BEL "Mram_debug_mem5_RAMB" BEL
+        "Mram_debug_mem5_RAMC_D1" BEL "Mram_debug_mem5_RAMC" BEL
+        "Mram_debug_mem5_RAMD_D1" BEL "Mram_debug_mem5_RAMD";
+TIMEGRP pll_575_instance_clkfx = BEL "host_bootread_data_7" BEL
+        "host_bootread_data_6" BEL "host_bootread_data_5" BEL
+        "host_bootread_data_4" BEL "host_bootread_data_3" BEL
+        "host_bootread_data_0" BEL "host_bootread_data_2" BEL
+        "host_bootread_data_1" BEL "last_6502_addr_0" BEL "last_6502_addr_1"
+        BEL "last_6502_addr_2" BEL "last_6502_addr_3" BEL "last_6502_addr_4"
+        BEL "last_6502_addr_5" BEL "last_6502_addr_6" BEL "last_6502_addr_7"
+        BEL "last_6502_addr_8" BEL "last_6502_addr_9" BEL "last_6502_addr_10"
+        BEL "last_6502_addr_11" BEL "last_6502_addr_12" BEL
+        "last_6502_addr_13" BEL "last_6502_addr_14" BEL "last_ph0" BEL
+        "capt_i_0" BEL "capt_i_1" BEL "capt_i_2" BEL "capt_i_3" BEL
+        "pll_575_instance/clkout1_buf" BEL "extSRAM/host_bootdata_ack" BEL
+        "extSRAM/host_bootread_ack" BEL "extSRAM/boot_state_3" BEL
+        "extSRAM/boot_state_2" BEL "extSRAM/boot_state_1" BEL
+        "extSRAM/boot_state_0" BEL "extSRAM/sram_data_io_7" BEL
+        "extSRAM/sram_data_io_6" BEL "extSRAM/sram_data_io_5" BEL
+        "extSRAM/sram_data_io_4" BEL "extSRAM/sram_data_io_3" BEL
+        "extSRAM/sram_data_io_2" BEL "extSRAM/sram_data_io_1" BEL
+        "extSRAM/sram_data_io_0" BEL "extSRAM/a2600_databyte_7" BEL
+        "extSRAM/a2600_databyte_6" BEL "extSRAM/a2600_databyte_5" BEL
+        "extSRAM/a2600_databyte_4" BEL "extSRAM/a2600_databyte_3" BEL
+        "extSRAM/a2600_databyte_2" BEL "extSRAM/a2600_databyte_1" BEL
+        "extSRAM/a2600_databyte_0" BEL "extSRAM/sram_addr_o_20" BEL
+        "extSRAM/sram_addr_o_19" BEL "extSRAM/sram_addr_o_18" BEL
+        "extSRAM/sram_addr_o_17" BEL "extSRAM/sram_addr_o_16" BEL
+        "extSRAM/sram_addr_o_15" BEL "extSRAM/sram_addr_o_14" BEL
+        "extSRAM/sram_addr_o_13" BEL "extSRAM/sram_addr_o_12" BEL
+        "extSRAM/sram_addr_o_11" BEL "extSRAM/sram_addr_o_10" BEL
+        "extSRAM/sram_addr_o_9" BEL "extSRAM/sram_addr_o_8" BEL
+        "extSRAM/sram_addr_o_7" BEL "extSRAM/sram_addr_o_6" BEL
+        "extSRAM/sram_addr_o_5" BEL "extSRAM/sram_addr_o_4" BEL
+        "extSRAM/sram_addr_o_3" BEL "extSRAM/sram_addr_o_2" BEL
+        "extSRAM/sram_addr_o_1" BEL "extSRAM/sram_addr_o_0" BEL
+        "MyCtrlModule/spi_tick_8" BEL "MyCtrlModule/spi_tick_7" BEL
+        "MyCtrlModule/spi_tick_6" BEL "MyCtrlModule/spi_tick_5" BEL
+        "MyCtrlModule/spi_tick_4" BEL "MyCtrlModule/spi_tick_3" BEL
+        "MyCtrlModule/spi_tick_2" BEL "MyCtrlModule/spi_tick_1" BEL
+        "MyCtrlModule/spi_tick_0" BEL "MyCtrlModule/osd_wr" BEL
+        "MyCtrlModule/osd_charwr" BEL "MyCtrlModule/size_15" BEL
+        "MyCtrlModule/size_14" BEL "MyCtrlModule/size_13" BEL
+        "MyCtrlModule/size_12" BEL "MyCtrlModule/size_11" BEL
+        "MyCtrlModule/size_10" BEL "MyCtrlModule/size_9" BEL
+        "MyCtrlModule/size_8" BEL "MyCtrlModule/size_7" BEL
+        "MyCtrlModule/size_6" BEL "MyCtrlModule/size_5" BEL
+        "MyCtrlModule/size_4" BEL "MyCtrlModule/size_3" BEL
+        "MyCtrlModule/size_2" BEL "MyCtrlModule/size_1" BEL
+        "MyCtrlModule/size_0" BEL "MyCtrlModule/host_start" BEL
+        "MyCtrlModule/dipswitches_7" BEL "MyCtrlModule/dipswitches_6" BEL
+        "MyCtrlModule/dipswitches_5" BEL "MyCtrlModule/dipswitches_4" BEL
+        "MyCtrlModule/dipswitches_3" BEL "MyCtrlModule/dipswitches_2" BEL
+        "MyCtrlModule/dipswitches_1" BEL "MyCtrlModule/dipswitches_0" BEL
+        "MyCtrlModule/host_select" BEL "MyCtrlModule/host_bootread_addr_20"
+        BEL "MyCtrlModule/host_bootread_addr_19" BEL
+        "MyCtrlModule/host_bootread_addr_18" BEL
+        "MyCtrlModule/host_bootread_addr_17" BEL
+        "MyCtrlModule/host_bootread_addr_16" BEL
+        "MyCtrlModule/host_bootread_addr_15" BEL
+        "MyCtrlModule/host_bootread_addr_14" BEL
+        "MyCtrlModule/host_bootread_addr_13" BEL
+        "MyCtrlModule/host_bootread_addr_12" BEL
+        "MyCtrlModule/host_bootread_addr_11" BEL
+        "MyCtrlModule/host_bootread_addr_10" BEL
+        "MyCtrlModule/host_bootread_addr_9" BEL
+        "MyCtrlModule/host_bootread_addr_8" BEL
+        "MyCtrlModule/host_bootread_addr_7" BEL
+        "MyCtrlModule/host_bootread_addr_6" BEL
+        "MyCtrlModule/host_bootread_addr_5" BEL
+        "MyCtrlModule/host_bootread_addr_4" BEL
+        "MyCtrlModule/host_bootread_addr_3" BEL
+        "MyCtrlModule/host_bootread_addr_2" BEL
+        "MyCtrlModule/host_bootread_addr_1" BEL
+        "MyCtrlModule/host_bootread_addr_0" BEL "MyCtrlModule/host_bootdata_7"
+        BEL "MyCtrlModule/host_bootdata_6" BEL "MyCtrlModule/host_bootdata_5"
+        BEL "MyCtrlModule/host_bootdata_4" BEL "MyCtrlModule/host_bootdata_3"
+        BEL "MyCtrlModule/host_bootdata_2" BEL "MyCtrlModule/host_bootdata_1"
+        BEL "MyCtrlModule/host_bootdata_0" BEL "MyCtrlModule/spi_fast" BEL
+        "MyCtrlModule/mem_read_25" BEL "MyCtrlModule/mem_read_24" BEL
+        "MyCtrlModule/mem_read_23" BEL "MyCtrlModule/mem_read_22" BEL
+        "MyCtrlModule/mem_read_21" BEL "MyCtrlModule/mem_read_20" BEL
+        "MyCtrlModule/mem_read_19" BEL "MyCtrlModule/mem_read_18" BEL
+        "MyCtrlModule/mem_read_17" BEL "MyCtrlModule/mem_read_16" BEL
+        "MyCtrlModule/mem_read_15" BEL "MyCtrlModule/mem_read_14" BEL
+        "MyCtrlModule/mem_read_13" BEL "MyCtrlModule/mem_read_12" BEL
+        "MyCtrlModule/mem_read_11" BEL "MyCtrlModule/mem_read_10" BEL
+        "MyCtrlModule/mem_read_9" BEL "MyCtrlModule/mem_read_8" BEL
+        "MyCtrlModule/mem_read_7" BEL "MyCtrlModule/mem_read_6" BEL
+        "MyCtrlModule/mem_read_5" BEL "MyCtrlModule/mem_read_4" BEL
+        "MyCtrlModule/mem_read_3" BEL "MyCtrlModule/mem_read_2" BEL
+        "MyCtrlModule/mem_read_1" BEL "MyCtrlModule/mem_read_0" BEL
+        "MyCtrlModule/spi_trigger" BEL "MyCtrlModule/spi_cs" BEL
+        "MyCtrlModule/host_to_spi_7" BEL "MyCtrlModule/host_to_spi_6" BEL
+        "MyCtrlModule/host_to_spi_5" BEL "MyCtrlModule/host_to_spi_4" BEL
+        "MyCtrlModule/host_to_spi_3" BEL "MyCtrlModule/host_to_spi_2" BEL
+        "MyCtrlModule/host_to_spi_1" BEL "MyCtrlModule/host_to_spi_0" BEL
+        "MyCtrlModule/host_reset_n" BEL "MyCtrlModule/spiclk_in" BEL
+        "MyCtrlModule/zpu/out_mem_addr_20" BEL
+        "MyCtrlModule/zpu/out_mem_addr_10" BEL
+        "MyCtrlModule/zpu/out_mem_addr_9" BEL
+        "MyCtrlModule/zpu/out_mem_addr_8" BEL
+        "MyCtrlModule/zpu/out_mem_addr_7" BEL
+        "MyCtrlModule/zpu/out_mem_addr_6" BEL
+        "MyCtrlModule/zpu/out_mem_addr_5" BEL
+        "MyCtrlModule/zpu/out_mem_addr_4" BEL
+        "MyCtrlModule/zpu/out_mem_addr_3" BEL
+        "MyCtrlModule/zpu/out_mem_addr_2" BEL
+        "MyCtrlModule/zpu/out_mem_addr_1" BEL
+        "MyCtrlModule/zpu/out_mem_addr_0" BEL
+        "MyCtrlModule/zpu/decodedOpcode_4" BEL
+        "MyCtrlModule/zpu/decodedOpcode_3" BEL
+        "MyCtrlModule/zpu/decodedOpcode_2" BEL
+        "MyCtrlModule/zpu/decodedOpcode_1" BEL
+        "MyCtrlModule/zpu/decodedOpcode_0" BEL
+        "MyCtrlModule/zpu/shift_count_5" BEL "MyCtrlModule/zpu/shift_count_4"
+        BEL "MyCtrlModule/zpu/shift_count_3" BEL
+        "MyCtrlModule/zpu/shift_count_2" BEL "MyCtrlModule/zpu/shift_count_1"
+        BEL "MyCtrlModule/zpu/shift_count_0" BEL
+        "MyCtrlModule/zpu/shift_direction" BEL
+        "MyCtrlModule/zpu/opcode_saved_4" BEL
+        "MyCtrlModule/zpu/opcode_saved_1" BEL
+        "MyCtrlModule/zpu/opcode_saved_0" BEL
+        "MyCtrlModule/zpu/comparison_sign_mod" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_32" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_31" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_30" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_29" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_28" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_27" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_26" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_25" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_24" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_23" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_22" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_21" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_20" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_19" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_18" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_17" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_16" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_15" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_14" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_13" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_12" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_11" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_10" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_9" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_8" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_7" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_6" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_5" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_4" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_3" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_2" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_1" BEL
+        "MyCtrlModule/zpu/comparison_sub_result_0" BEL
+        "MyCtrlModule/zpu/add_low_16" BEL "MyCtrlModule/zpu/add_low_15" BEL
+        "MyCtrlModule/zpu/add_low_14" BEL "MyCtrlModule/zpu/add_low_13" BEL
+        "MyCtrlModule/zpu/add_low_12" BEL "MyCtrlModule/zpu/add_low_11" BEL
+        "MyCtrlModule/zpu/add_low_10" BEL "MyCtrlModule/zpu/add_low_9" BEL
+        "MyCtrlModule/zpu/add_low_8" BEL "MyCtrlModule/zpu/add_low_7" BEL
+        "MyCtrlModule/zpu/add_low_6" BEL "MyCtrlModule/zpu/add_low_5" BEL
+        "MyCtrlModule/zpu/add_low_4" BEL "MyCtrlModule/zpu/add_low_3" BEL
+        "MyCtrlModule/zpu/add_low_2" BEL "MyCtrlModule/zpu/add_low_1" BEL
+        "MyCtrlModule/zpu/add_low_0" BEL "MyCtrlModule/zpu/shift_reg_31" BEL
+        "MyCtrlModule/zpu/shift_reg_30" BEL "MyCtrlModule/zpu/shift_reg_29"
+        BEL "MyCtrlModule/zpu/shift_reg_28" BEL
+        "MyCtrlModule/zpu/shift_reg_27" BEL "MyCtrlModule/zpu/shift_reg_26"
+        BEL "MyCtrlModule/zpu/shift_reg_25" BEL
+        "MyCtrlModule/zpu/shift_reg_24" BEL "MyCtrlModule/zpu/shift_reg_23"
+        BEL "MyCtrlModule/zpu/shift_reg_22" BEL
+        "MyCtrlModule/zpu/shift_reg_21" BEL "MyCtrlModule/zpu/shift_reg_20"
+        BEL "MyCtrlModule/zpu/shift_reg_19" BEL
+        "MyCtrlModule/zpu/shift_reg_18" BEL "MyCtrlModule/zpu/shift_reg_17"
+        BEL "MyCtrlModule/zpu/shift_reg_16" BEL
+        "MyCtrlModule/zpu/shift_reg_15" BEL "MyCtrlModule/zpu/shift_reg_14"
+        BEL "MyCtrlModule/zpu/shift_reg_13" BEL
+        "MyCtrlModule/zpu/shift_reg_12" BEL "MyCtrlModule/zpu/shift_reg_11"
+        BEL "MyCtrlModule/zpu/shift_reg_10" BEL "MyCtrlModule/zpu/shift_reg_9"
+        BEL "MyCtrlModule/zpu/shift_reg_8" BEL "MyCtrlModule/zpu/shift_reg_7"
+        BEL "MyCtrlModule/zpu/shift_reg_6" BEL "MyCtrlModule/zpu/shift_reg_5"
+        BEL "MyCtrlModule/zpu/shift_reg_4" BEL "MyCtrlModule/zpu/shift_reg_3"
+        BEL "MyCtrlModule/zpu/shift_reg_2" BEL "MyCtrlModule/zpu/shift_reg_1"
+        BEL "MyCtrlModule/zpu/shift_reg_0" BEL "MyCtrlModule/zpu/shift_sign"
+        BEL "MyCtrlModule/zpu/opcode_6" BEL "MyCtrlModule/zpu/opcode_5" BEL
+        "MyCtrlModule/zpu/opcode_4" BEL "MyCtrlModule/zpu/opcode_3" BEL
+        "MyCtrlModule/zpu/opcode_2" BEL "MyCtrlModule/zpu/opcode_1" BEL
+        "MyCtrlModule/zpu/opcode_0" BEL
+        "MyCtrlModule/zpu/cachedprogramword_31" BEL
+        "MyCtrlModule/zpu/cachedprogramword_30" BEL
+        "MyCtrlModule/zpu/cachedprogramword_29" BEL
+        "MyCtrlModule/zpu/cachedprogramword_28" BEL
+        "MyCtrlModule/zpu/cachedprogramword_27" BEL
+        "MyCtrlModule/zpu/cachedprogramword_26" BEL
+        "MyCtrlModule/zpu/cachedprogramword_25" BEL
+        "MyCtrlModule/zpu/cachedprogramword_24" BEL
+        "MyCtrlModule/zpu/cachedprogramword_23" BEL
+        "MyCtrlModule/zpu/cachedprogramword_22" BEL
+        "MyCtrlModule/zpu/cachedprogramword_21" BEL
+        "MyCtrlModule/zpu/cachedprogramword_20" BEL
+        "MyCtrlModule/zpu/cachedprogramword_19" BEL
+        "MyCtrlModule/zpu/cachedprogramword_18" BEL
+        "MyCtrlModule/zpu/cachedprogramword_17" BEL
+        "MyCtrlModule/zpu/cachedprogramword_16" BEL
+        "MyCtrlModule/zpu/cachedprogramword_15" BEL
+        "MyCtrlModule/zpu/cachedprogramword_14" BEL
+        "MyCtrlModule/zpu/cachedprogramword_13" BEL
+        "MyCtrlModule/zpu/cachedprogramword_12" BEL
+        "MyCtrlModule/zpu/cachedprogramword_11" BEL
+        "MyCtrlModule/zpu/cachedprogramword_10" BEL
+        "MyCtrlModule/zpu/cachedprogramword_9" BEL
+        "MyCtrlModule/zpu/cachedprogramword_8" BEL
+        "MyCtrlModule/zpu/cachedprogramword_7" BEL
+        "MyCtrlModule/zpu/cachedprogramword_6" BEL
+        "MyCtrlModule/zpu/cachedprogramword_5" BEL
+        "MyCtrlModule/zpu/cachedprogramword_4" BEL
+        "MyCtrlModule/zpu/cachedprogramword_3" BEL
+        "MyCtrlModule/zpu/cachedprogramword_2" BEL
+        "MyCtrlModule/zpu/cachedprogramword_1" BEL
+        "MyCtrlModule/zpu/cachedprogramword_0" BEL
+        "MyCtrlModule/zpu/mem_write_20" BEL "MyCtrlModule/zpu/mem_write_19"
+        BEL "MyCtrlModule/zpu/mem_write_18" BEL
+        "MyCtrlModule/zpu/mem_write_17" BEL "MyCtrlModule/zpu/mem_write_16"
+        BEL "MyCtrlModule/zpu/mem_write_15" BEL
+        "MyCtrlModule/zpu/mem_write_14" BEL "MyCtrlModule/zpu/mem_write_13"
+        BEL "MyCtrlModule/zpu/mem_write_12" BEL
+        "MyCtrlModule/zpu/mem_write_11" BEL "MyCtrlModule/zpu/mem_write_10"
+        BEL "MyCtrlModule/zpu/mem_write_9" BEL "MyCtrlModule/zpu/mem_write_8"
+        BEL "MyCtrlModule/zpu/mem_write_7" BEL "MyCtrlModule/zpu/mem_write_6"
+        BEL "MyCtrlModule/zpu/mem_write_5" BEL "MyCtrlModule/zpu/mem_write_4"
+        BEL "MyCtrlModule/zpu/mem_write_3" BEL "MyCtrlModule/zpu/mem_write_2"
+        BEL "MyCtrlModule/zpu/mem_write_1" BEL "MyCtrlModule/zpu/mem_write_0"
+        BEL "MyCtrlModule/myosd/vsync_pol" BEL
+        "MyCtrlModule/myosd/pixelclock_3" BEL
+        "MyCtrlModule/myosd/pixelclock_2" BEL
+        "MyCtrlModule/myosd/pixelclock_1" BEL
+        "MyCtrlModule/myosd/pixelclock_0" BEL "MyCtrlModule/myosd/osd_enable"
+        BEL "MyCtrlModule/myosd/hsync_pol" BEL "MyCtrlModule/myosd/xpos_11"
+        BEL "MyCtrlModule/myosd/xpos_10" BEL "MyCtrlModule/myosd/xpos_9" BEL
+        "MyCtrlModule/myosd/xpos_8" BEL "MyCtrlModule/myosd/xpos_7" BEL
+        "MyCtrlModule/myosd/xpos_6" BEL "MyCtrlModule/myosd/xpos_5" BEL
+        "MyCtrlModule/myosd/xpos_4" BEL "MyCtrlModule/myosd/xpos_3" BEL
+        "MyCtrlModule/myosd/xpos_2" BEL "MyCtrlModule/myosd/xpos_1" BEL
+        "MyCtrlModule/myosd/xpos_0" BEL "MyCtrlModule/myosd/ypos_11" BEL
+        "MyCtrlModule/myosd/ypos_10" BEL "MyCtrlModule/myosd/ypos_9" BEL
+        "MyCtrlModule/myosd/ypos_8" BEL "MyCtrlModule/myosd/ypos_7" BEL
+        "MyCtrlModule/myosd/ypos_6" BEL "MyCtrlModule/myosd/ypos_5" BEL
+        "MyCtrlModule/myosd/ypos_4" BEL "MyCtrlModule/myosd/ypos_3" BEL
+        "MyCtrlModule/myosd/ypos_2" BEL "MyCtrlModule/myosd/ypos_1" BEL
+        "MyCtrlModule/myosd/ypos_0" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd2" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd3" BEL
+        "MyCtrlModule/mykeyboard/comState_FSM_FFd1" BEL
+        "MyCtrlModule/mykeyboard/bitCount_3" BEL
+        "MyCtrlModule/mykeyboard/bitCount_2" BEL
+        "MyCtrlModule/mykeyboard/bitCount_1" BEL
+        "MyCtrlModule/mykeyboard/bitCount_0" BEL
+        "MyCtrlModule/mykeyboard/waitCount_6" BEL
+        "MyCtrlModule/mykeyboard/waitCount_5" BEL
+        "MyCtrlModule/mykeyboard/waitCount_4" BEL
+        "MyCtrlModule/mykeyboard/waitCount_3" BEL
+        "MyCtrlModule/mykeyboard/waitCount_2" BEL
+        "MyCtrlModule/mykeyboard/waitCount_1" BEL
+        "MyCtrlModule/mykeyboard/waitCount_0" BEL
+        "MyCtrlModule/mykeyboard/recvByte_10" BEL
+        "MyCtrlModule/mykeyboard/recvByte_9" BEL
+        "MyCtrlModule/mykeyboard/recvByte_8" BEL
+        "MyCtrlModule/mykeyboard/recvByte_7" BEL
+        "MyCtrlModule/mykeyboard/recvByte_6" BEL
+        "MyCtrlModule/mykeyboard/recvByte_5" BEL
+        "MyCtrlModule/mykeyboard/recvByte_4" BEL
+        "MyCtrlModule/mykeyboard/recvByte_3" BEL
+        "MyCtrlModule/mykeyboard/recvByte_2" BEL
+        "MyCtrlModule/mykeyboard/recvByte_1" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_10" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_9" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_8" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_7" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_6" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_5" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_4" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_3" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_2" BEL
+        "MyCtrlModule/mykeyboard/recvByteLoc_1" BEL
+        "MyCtrlModule/mykeyboard/clkReg" BEL "MyCtrlModule/spi/shiftcnt_3" BEL
+        "MyCtrlModule/spi/shiftcnt_0" BEL "MyCtrlModule/spi/shiftcnt_1" BEL
+        "MyCtrlModule/spi/sck" BEL "MyCtrlModule/spi/shiftcnt_2" BEL
+        "MyCtrlModule/spi/sd_shift_7" BEL "MyCtrlModule/spi/sd_shift_6" BEL
+        "MyCtrlModule/spi/sd_shift_5" BEL "MyCtrlModule/spi/sd_shift_4" BEL
+        "MyCtrlModule/spi/sd_shift_3" BEL "MyCtrlModule/spi/sd_shift_2" BEL
+        "MyCtrlModule/spi/sd_shift_1" BEL "MyCtrlModule/spi/sd_shift_0" BEL
+        "MyCtrlModule/intcontroller/status_1" BEL
+        "MyCtrlModule/intcontroller/status_0" BEL
+        "MyCtrlModule/intcontroller/pending_3" BEL
+        "MyCtrlModule/intcontroller/pending_1" BEL
+        "MyCtrlModule/intcontroller/pending_0" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_1" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_2" BEL
+        "a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3" BEL
+        "a2601Instance/dac_inst/SigmaLatch_6" BEL
+        "a2601Instance/dac_inst/SigmaLatch_5" BEL
+        "a2601Instance/dac_inst/SigmaLatch_4" BEL
+        "a2601Instance/dac_inst/SigmaLatch_3" BEL
+        "a2601Instance/dac_inst/SigmaLatch_2" BEL
+        "a2601Instance/dac_inst/SigmaLatch_1" BEL
+        "a2601Instance/dac_inst/SigmaLatch_0" BEL
+        "a2601Instance/dac_inst/DACout" BEL "MyCtrlModule/mem_busy" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_3" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_2" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_1" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "MyCtrlModule/spi_active"
+        BEL "extSRAM/sram_we_n_o" BEL "extSRAM/sram_oe_n_o" BEL
+        "extSRAM/reset_i_clk_i_DFF_361" BEL "extSRAM/return_state_0" BEL
+        "MyCtrlModule/host_debug_arm" BEL "MyCtrlModule/int_ack" BEL
+        "MyCtrlModule/int_enabled" BEL "MyCtrlModule/mykeyboard/recvTrigger"
+        BEL "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
+        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
+        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/intcontroller/int" BEL
+        "armed_P" BEL "MyCtrlModule/zpu/state_FSM_FFd2" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd3" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd1" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd4" BEL
+        "MyCtrlModule/zpu/state_FSM_FFd5" BEL "MyCtrlModule/zpu/memBAddr_13"
+        BEL "MyCtrlModule/zpu/memBAddr_12" BEL "MyCtrlModule/zpu/memBAddr_11"
+        BEL "MyCtrlModule/zpu/memBAddr_10" BEL "MyCtrlModule/zpu/memBAddr_9"
+        BEL "MyCtrlModule/zpu/memBAddr_8" BEL "MyCtrlModule/zpu/memBAddr_7"
+        BEL "MyCtrlModule/zpu/memBAddr_6" BEL "MyCtrlModule/zpu/memBAddr_5"
+        BEL "MyCtrlModule/zpu/memBAddr_4" BEL "MyCtrlModule/zpu/memBAddr_3"
+        BEL "MyCtrlModule/zpu/memBAddr_2" BEL "MyCtrlModule/zpu/memAAddr_13"
+        BEL "MyCtrlModule/zpu/memAAddr_12" BEL "MyCtrlModule/zpu/memAAddr_11"
+        BEL "MyCtrlModule/zpu/memAAddr_10" BEL "MyCtrlModule/zpu/memAAddr_9"
+        BEL "MyCtrlModule/zpu/memAAddr_8" BEL "MyCtrlModule/zpu/memAAddr_7"
+        BEL "MyCtrlModule/zpu/memAAddr_6" BEL "MyCtrlModule/zpu/memAAddr_5"
+        BEL "MyCtrlModule/zpu/memAAddr_4" BEL "MyCtrlModule/zpu/memAAddr_3"
+        BEL "MyCtrlModule/zpu/memAAddr_2" BEL "MyCtrlModule/zpu/memAWrite_31"
+        BEL "MyCtrlModule/zpu/memAWrite_30" BEL
+        "MyCtrlModule/zpu/memAWrite_29" BEL "MyCtrlModule/zpu/memAWrite_28"
+        BEL "MyCtrlModule/zpu/memAWrite_27" BEL
+        "MyCtrlModule/zpu/memAWrite_26" BEL "MyCtrlModule/zpu/memAWrite_25"
+        BEL "MyCtrlModule/zpu/memAWrite_24" BEL
+        "MyCtrlModule/zpu/memAWrite_23" BEL "MyCtrlModule/zpu/memAWrite_22"
+        BEL "MyCtrlModule/zpu/memAWrite_21" BEL
+        "MyCtrlModule/zpu/memAWrite_20" BEL "MyCtrlModule/zpu/memAWrite_19"
+        BEL "MyCtrlModule/zpu/memAWrite_18" BEL
+        "MyCtrlModule/zpu/memAWrite_17" BEL "MyCtrlModule/zpu/memAWrite_16"
+        BEL "MyCtrlModule/zpu/memAWrite_15" BEL
+        "MyCtrlModule/zpu/memAWrite_14" BEL "MyCtrlModule/zpu/memAWrite_13"
+        BEL "MyCtrlModule/zpu/memAWrite_12" BEL
+        "MyCtrlModule/zpu/memAWrite_11" BEL "MyCtrlModule/zpu/memAWrite_10"
+        BEL "MyCtrlModule/zpu/memAWrite_9" BEL "MyCtrlModule/zpu/memAWrite_8"
+        BEL "MyCtrlModule/zpu/memAWrite_7" BEL "MyCtrlModule/zpu/memAWrite_6"
+        BEL "MyCtrlModule/zpu/memAWrite_5" BEL "MyCtrlModule/zpu/memAWrite_4"
+        BEL "MyCtrlModule/zpu/memAWrite_3" BEL "MyCtrlModule/zpu/memAWrite_2"
+        BEL "MyCtrlModule/zpu/memAWrite_1" BEL "MyCtrlModule/zpu/memAWrite_0"
+        BEL "MyCtrlModule/zpu/sp_13" BEL "MyCtrlModule/zpu/sp_12" BEL
+        "MyCtrlModule/zpu/sp_11" BEL "MyCtrlModule/zpu/sp_10" BEL
+        "MyCtrlModule/zpu/sp_9" BEL "MyCtrlModule/zpu/sp_8" BEL
+        "MyCtrlModule/zpu/sp_7" BEL "MyCtrlModule/zpu/sp_6" BEL
+        "MyCtrlModule/zpu/sp_5" BEL "MyCtrlModule/zpu/sp_4" BEL
+        "MyCtrlModule/zpu/sp_3" BEL "MyCtrlModule/zpu/sp_2" BEL
+        "MyCtrlModule/zpu/memAWriteEnable" BEL "MyCtrlModule/zpu/idim_flag"
+        BEL "MyCtrlModule/zpu/out_mem_writeEnable" BEL "MyCtrlModule/zpu/pc_1"
+        BEL "MyCtrlModule/zpu/pc_0" BEL "MyCtrlModule/zpu/pc_5" BEL
+        "MyCtrlModule/zpu/pc_6" BEL "MyCtrlModule/zpu/pc_7" BEL
+        "MyCtrlModule/zpu/pc_8" BEL "MyCtrlModule/zpu/pc_9" BEL
+        "MyCtrlModule/zpu/pc_2" BEL "MyCtrlModule/zpu/pc_3" BEL
+        "MyCtrlModule/zpu/pc_4" BEL "MyCtrlModule/zpu/pc_10" BEL
+        "MyCtrlModule/zpu/pc_11" BEL "MyCtrlModule/zpu/pc_13" BEL
+        "MyCtrlModule/zpu/pc_12" BEL "MyCtrlModule/zpu/out_mem_readEnable" BEL
+        "MyCtrlModule/zpu/memBWriteEnable" BEL "MyCtrlModule/zpu/memBWrite_31"
+        BEL "MyCtrlModule/zpu/memBWrite_30" BEL
+        "MyCtrlModule/zpu/memBWrite_29" BEL "MyCtrlModule/zpu/memBWrite_28"
+        BEL "MyCtrlModule/zpu/memBWrite_27" BEL
+        "MyCtrlModule/zpu/memBWrite_26" BEL "MyCtrlModule/zpu/memBWrite_25"
+        BEL "MyCtrlModule/zpu/memBWrite_24" BEL
+        "MyCtrlModule/zpu/memBWrite_23" BEL "MyCtrlModule/zpu/memBWrite_22"
+        BEL "MyCtrlModule/zpu/memBWrite_21" BEL
+        "MyCtrlModule/zpu/memBWrite_20" BEL "MyCtrlModule/zpu/memBWrite_19"
+        BEL "MyCtrlModule/zpu/memBWrite_18" BEL
+        "MyCtrlModule/zpu/memBWrite_17" BEL "MyCtrlModule/zpu/memBWrite_16"
+        BEL "MyCtrlModule/zpu/memBWrite_15" BEL
+        "MyCtrlModule/zpu/memBWrite_14" BEL "MyCtrlModule/zpu/memBWrite_13"
+        BEL "MyCtrlModule/zpu/memBWrite_12" BEL
+        "MyCtrlModule/zpu/memBWrite_11" BEL "MyCtrlModule/zpu/memBWrite_10"
+        BEL "MyCtrlModule/zpu/memBWrite_9" BEL "MyCtrlModule/zpu/memBWrite_8"
+        BEL "MyCtrlModule/zpu/memBWrite_7" BEL "MyCtrlModule/zpu/memBWrite_6"
+        BEL "MyCtrlModule/zpu/memBWrite_5" BEL "MyCtrlModule/zpu/memBWrite_4"
+        BEL "MyCtrlModule/zpu/memBWrite_3" BEL "MyCtrlModule/zpu/memBWrite_2"
+        BEL "MyCtrlModule/zpu/memBWrite_1" BEL "MyCtrlModule/zpu/memBWrite_0"
+        BEL "MyCtrlModule/zpu/fetchneeded" BEL "MyCtrlModule/zpu/inInterrupt"
+        PIN "MyCtrlModule/myrom/Mram_ram7_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram7_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram6_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram6_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram8_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram8_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram5_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram5_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram4_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram4_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram3_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram3_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram2_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram2_pins<25>" PIN
+        "MyCtrlModule/myrom/Mram_ram1_pins<24>" PIN
+        "MyCtrlModule/myrom/Mram_ram1_pins<25>" PIN
+        "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram_pins<27>"
+        BEL "Mram_debug_mem61/SP" BEL "Mram_debug_mem61/DP" BEL
+        "Mram_debug_mem62/SP" BEL "Mram_debug_mem62/DP" BEL
+        "Mram_debug_mem1_RAMA_D1" BEL "Mram_debug_mem1_RAMA" BEL
+        "Mram_debug_mem1_RAMB_D1" BEL "Mram_debug_mem1_RAMB" BEL
+        "Mram_debug_mem1_RAMC_D1" BEL "Mram_debug_mem1_RAMC" BEL
+        "Mram_debug_mem1_RAMD_D1" BEL "Mram_debug_mem1_RAMD" BEL
+        "Mram_debug_mem2_RAMA_D1" BEL "Mram_debug_mem2_RAMA" BEL
+        "Mram_debug_mem2_RAMB_D1" BEL "Mram_debug_mem2_RAMB" BEL
+        "Mram_debug_mem2_RAMC_D1" BEL "Mram_debug_mem2_RAMC" BEL
+        "Mram_debug_mem2_RAMD_D1" BEL "Mram_debug_mem2_RAMD" BEL
+        "Mram_debug_mem3_RAMA_D1" BEL "Mram_debug_mem3_RAMA" BEL
+        "Mram_debug_mem3_RAMB_D1" BEL "Mram_debug_mem3_RAMB" BEL
+        "Mram_debug_mem3_RAMC_D1" BEL "Mram_debug_mem3_RAMC" BEL
+        "Mram_debug_mem3_RAMD_D1" BEL "Mram_debug_mem3_RAMD" BEL
+        "Mram_debug_mem4_RAMA_D1" BEL "Mram_debug_mem4_RAMA" BEL
+        "Mram_debug_mem4_RAMB_D1" BEL "Mram_debug_mem4_RAMB" BEL
+        "Mram_debug_mem4_RAMC_D1" BEL "Mram_debug_mem4_RAMC" BEL
+        "Mram_debug_mem4_RAMD_D1" BEL "Mram_debug_mem4_RAMD" BEL
+        "Mram_debug_mem5_RAMA_D1" BEL "Mram_debug_mem5_RAMA" BEL
+        "Mram_debug_mem5_RAMB_D1" BEL "Mram_debug_mem5_RAMB" BEL
+        "Mram_debug_mem5_RAMC_D1" BEL "Mram_debug_mem5_RAMC" BEL
+        "Mram_debug_mem5_RAMD_D1" BEL "Mram_debug_mem5_RAMD";
+PIN
+        MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram_pins<26>
+        = BEL
+        "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram"
+        PINNAME CLKAWRCLK;
+TIMEGRP pll_hdmi_instance_clkout3 = BEL "pll_hdmi_instance/clkout4_buf" BEL
+        "MyCtrlModule/myosd/vcounter_10" BEL "MyCtrlModule/myosd/vcounter_9"
+        BEL "MyCtrlModule/myosd/vcounter_8" BEL
+        "MyCtrlModule/myosd/vcounter_7" BEL "MyCtrlModule/myosd/vcounter_6"
+        BEL "MyCtrlModule/myosd/vcounter_5" BEL
+        "MyCtrlModule/myosd/vcounter_4" BEL "MyCtrlModule/myosd/vcounter_3"
+        BEL "MyCtrlModule/myosd/vcounter_2" BEL
+        "MyCtrlModule/myosd/vcounter_1" BEL "MyCtrlModule/myosd/vcounter_0"
+        BEL "MyCtrlModule/myosd/pixelcounter_3" BEL
+        "MyCtrlModule/myosd/pixelcounter_2" BEL
+        "MyCtrlModule/myosd/pixelcounter_1" BEL
+        "MyCtrlModule/myosd/pixelcounter_0" BEL
+        "MyCtrlModule/myosd/hcounter_13" BEL "MyCtrlModule/myosd/hcounter_12"
+        BEL "MyCtrlModule/myosd/hcounter_11" BEL
+        "MyCtrlModule/myosd/hcounter_10" BEL "MyCtrlModule/myosd/hcounter_9"
+        BEL "MyCtrlModule/myosd/hcounter_8" BEL
+        "MyCtrlModule/myosd/hcounter_7" BEL "MyCtrlModule/myosd/hcounter_6"
+        BEL "MyCtrlModule/myosd/hcounter_5" BEL
+        "MyCtrlModule/myosd/hcounter_4" BEL "MyCtrlModule/myosd/hcounter_3"
+        BEL "MyCtrlModule/myosd/hcounter_2" BEL
+        "MyCtrlModule/myosd/hcounter_1" BEL "MyCtrlModule/myosd/hcounter_0"
+        BEL "MyCtrlModule/myosd/ypixelpos_11" BEL
+        "MyCtrlModule/myosd/ypixelpos_10" BEL "MyCtrlModule/myosd/ypixelpos_9"
+        BEL "MyCtrlModule/myosd/ypixelpos_8" BEL
+        "MyCtrlModule/myosd/ypixelpos_7" BEL "MyCtrlModule/myosd/ypixelpos_6"
+        BEL "MyCtrlModule/myosd/ypixelpos_5" BEL
+        "MyCtrlModule/myosd/ypixelpos_4" BEL "MyCtrlModule/myosd/ypixelpos_3"
+        BEL "MyCtrlModule/myosd/ypixelpos_2" BEL
+        "MyCtrlModule/myosd/ypixelpos_1" BEL "MyCtrlModule/myosd/ypixelpos_0"
+        BEL "MyCtrlModule/myosd/xpixelpos_11" BEL
+        "MyCtrlModule/myosd/xpixelpos_10" BEL "MyCtrlModule/myosd/xpixelpos_9"
+        BEL "MyCtrlModule/myosd/xpixelpos_8" BEL
+        "MyCtrlModule/myosd/xpixelpos_7" BEL "MyCtrlModule/myosd/xpixelpos_6"
+        BEL "MyCtrlModule/myosd/xpixelpos_5" BEL
+        "MyCtrlModule/myosd/xpixelpos_4" BEL "MyCtrlModule/myosd/xpixelpos_3"
+        BEL "MyCtrlModule/myosd/xpixelpos_2" BEL
+        "MyCtrlModule/myosd/xpixelpos_1" BEL "MyCtrlModule/myosd/xpixelpos_0"
+        BEL "MyCtrlModule/myosd/charrom/q" BEL
+        "MyCtrlModule/myosd/charrom_addr_12" BEL
+        "MyCtrlModule/myosd/charrom_addr_11" BEL
+        "MyCtrlModule/myosd/charrom_addr_10" BEL
+        "MyCtrlModule/myosd/charrom_addr_9" BEL
+        "MyCtrlModule/myosd/charrom_addr_8" BEL
+        "MyCtrlModule/myosd/charrom_addr_7" BEL
+        "MyCtrlModule/myosd/charrom_addr_6" BEL
+        "MyCtrlModule/myosd/charrom_addr_5" BEL
+        "MyCtrlModule/myosd/charrom_addr_4" BEL
+        "MyCtrlModule/myosd/charrom_addr_3" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_8" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_7" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_6" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_5" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_4" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_3" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_2" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_1" BEL
+        "MyCtrlModule/myosd/charram_rdaddr_0" BEL
+        "MyCtrlModule/myosd/vframe_15" BEL "MyCtrlModule/myosd/vframe_14" BEL
+        "MyCtrlModule/myosd/vframe_13" BEL "MyCtrlModule/myosd/vframe_12" BEL
+        "MyCtrlModule/myosd/vframe_11" BEL "MyCtrlModule/myosd/vframe_10" BEL
+        "MyCtrlModule/myosd/vframe_9" BEL "MyCtrlModule/myosd/vframe_8" BEL
+        "MyCtrlModule/myosd/vframe_7" BEL "MyCtrlModule/myosd/vframe_6" BEL
+        "MyCtrlModule/myosd/vframe_5" BEL "MyCtrlModule/myosd/vframe_4" BEL
+        "MyCtrlModule/myosd/vframe_3" BEL "MyCtrlModule/myosd/vframe_2" BEL
+        "MyCtrlModule/myosd/vframe_1" BEL "MyCtrlModule/myosd/vframe_0" BEL
+        "MyCtrlModule/myosd/vblank" BEL "MyCtrlModule/myosd/newframe" BEL
+        "MyCtrlModule/myosd/hframe_15" BEL "MyCtrlModule/myosd/hframe_14" BEL
+        "MyCtrlModule/myosd/hframe_13" BEL "MyCtrlModule/myosd/hframe_12" BEL
+        "MyCtrlModule/myosd/hframe_11" BEL "MyCtrlModule/myosd/hframe_10" BEL
+        "MyCtrlModule/myosd/hframe_9" BEL "MyCtrlModule/myosd/hframe_8" BEL
+        "MyCtrlModule/myosd/hframe_7" BEL "MyCtrlModule/myosd/hframe_6" BEL
+        "MyCtrlModule/myosd/hframe_5" BEL "MyCtrlModule/myosd/hframe_4" BEL
+        "MyCtrlModule/myosd/hframe_3" BEL "MyCtrlModule/myosd/hframe_2" BEL
+        "MyCtrlModule/myosd/hframe_1" BEL "MyCtrlModule/myosd/hframe_0" BEL
+        "MyCtrlModule/myosd/vsync_p" BEL "MyCtrlModule/myosd/hsync_p" BEL
+        "MyCtrlModule/myosd/pix" BEL "MyCtrlModule/myosd/newline" BEL
+        "MyCtrlModule/myosd/vwindowactive" BEL
+        "MyCtrlModule/myosd/hwindowactive" BEL
+        "MyCtrlModule/myosd/Mshreg_charrom_addr_2" BEL
+        "MyCtrlModule/myosd/charrom_addr_2" BEL
+        "MyCtrlModule/myosd/Mshreg_charrom_addr_1" BEL
+        "MyCtrlModule/myosd/charrom_addr_1" BEL
+        "MyCtrlModule/myosd/Mshreg_charrom_addr_0" BEL
+        "MyCtrlModule/myosd/charrom_addr_0" PIN
+        "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram_pins<26>";
+PIN hdmio/g1[0].to_serial_pins<2> = BEL "hdmio/g1[0].to_serial" PINNAME CK1;
+PIN hdmio/g1[1].to_serial_pins<2> = BEL "hdmio/g1[1].to_serial" PINNAME CK1;
+PIN hdmio/g1[2].to_serial_pins<2> = BEL "hdmio/g1[2].to_serial" PINNAME CK1;
+PIN hdmio/g1[3].to_serial_pins<2> = BEL "hdmio/g1[3].to_serial" PINNAME CK1;
+TIMEGRP pll_hdmi_instance_clkout2 = BEL "pll_hdmi_instance/clkout3_buf" PIN
+        "hdmio/g1[0].to_serial_pins<2>" PIN "hdmio/g1[1].to_serial_pins<2>"
+        PIN "hdmio/g1[2].to_serial_pins<2>" PIN
+        "hdmio/g1[3].to_serial_pins<2>";
+PIN hdmio/g1[0].to_serial_pins<1> = BEL "hdmio/g1[0].to_serial" PINNAME CK0;
+PIN hdmio/g1[1].to_serial_pins<1> = BEL "hdmio/g1[1].to_serial" PINNAME CK0;
+PIN hdmio/g1[2].to_serial_pins<1> = BEL "hdmio/g1[2].to_serial" PINNAME CK0;
+PIN hdmio/g1[3].to_serial_pins<1> = BEL "hdmio/g1[3].to_serial" PINNAME CK0;
+TIMEGRP pll_hdmi_instance_clkout1 = BEL "pll_hdmi_instance/clkout2_buf" BEL
+        "hdmio/mod5_2" BEL "hdmio/mod5_1" BEL "hdmio/mod5_0" BEL
+        "hdmio/shift_clk_3" BEL "hdmio/shift_clk_1" BEL "hdmio/shift_clk_0"
+        BEL "hdmio/shift_b_9" BEL "hdmio/shift_b_8" BEL "hdmio/shift_b_7" BEL
+        "hdmio/shift_b_6" BEL "hdmio/shift_b_5" BEL "hdmio/shift_b_4" BEL
+        "hdmio/shift_b_3" BEL "hdmio/shift_b_2" BEL "hdmio/shift_b_1" BEL
+        "hdmio/shift_b_0" BEL "hdmio/shift_g_9" BEL "hdmio/shift_g_8" BEL
+        "hdmio/shift_g_7" BEL "hdmio/shift_g_6" BEL "hdmio/shift_g_5" BEL
+        "hdmio/shift_g_4" BEL "hdmio/shift_g_3" BEL "hdmio/shift_g_2" BEL
+        "hdmio/shift_g_1" BEL "hdmio/shift_g_0" BEL "hdmio/shift_r_9" BEL
+        "hdmio/shift_r_8" BEL "hdmio/shift_r_7" BEL "hdmio/shift_r_6" BEL
+        "hdmio/shift_r_5" BEL "hdmio/shift_r_4" BEL "hdmio/shift_r_3" BEL
+        "hdmio/shift_r_2" BEL "hdmio/shift_r_1" BEL "hdmio/shift_r_0" PIN
+        "hdmio/g1[0].to_serial_pins<1>" PIN "hdmio/g1[1].to_serial_pins<1>"
+        PIN "hdmio/g1[2].to_serial_pins<1>" PIN
+        "hdmio/g1[3].to_serial_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN pll_575_instance/dcm_sp_inst_pins<3> = BEL "pll_575_instance/dcm_sp_inst"
+        PINNAME CLKIN;
+PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1_pins<0> = BEL
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1" PINNAME DIVCLK;
+PIN pll_hdmi_instance/pll_base_inst/PLL_ADV_pins<2> = BEL
+        "pll_hdmi_instance/pll_base_inst/PLL_ADV" PINNAME CLKIN1;
+TIMEGRP clock_50_i = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "pll_575_instance/dcm_sp_inst_pins<3>" PIN
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_1_pins<0>" PIN
+        "pll_hdmi_instance/pll_base_inst/PLL_ADV_pins<2>";
+TS_clock_50_i = PERIOD TIMEGRP "clock_50_i" 20 ns HIGH 50%;
+TS_pll_575_instance_clkfx = PERIOD TIMEGRP "pll_575_instance_clkfx"
+        TS_clock_50_i / 1.15 HIGH 50%;
+TS_pll_hdmi_instance_clkout3 = PERIOD TIMEGRP "pll_hdmi_instance_clkout3"
+        TS_clock_50_i / 1.35 HIGH 50%;
+TS_pll_hdmi_instance_clkout1 = PERIOD TIMEGRP "pll_hdmi_instance_clkout1"
+        TS_clock_50_i / 2.7 HIGH 50%;
+TS_pll_hdmi_instance_clkout0 = PERIOD TIMEGRP "pll_hdmi_instance_clkout0"
+        TS_clock_50_i / 0.54 HIGH 50%;
+TS_pll_hdmi_instance_clkout2 = PERIOD TIMEGRP "pll_hdmi_instance_clkout2"
+        TS_clock_50_i / 2.7 PHASE 3.7037037 ns HIGH 50%;
+SCHEMATIC END;
+

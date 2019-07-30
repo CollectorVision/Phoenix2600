@@ -98,9 +98,9 @@ NET "ps2_clk_io"        LOC="A4"  | IOSTANDARD = LVCMOS33 | PULLUP | DRIVE = 8;
 NET "ps2_data_io"       LOC="B4"  | IOSTANDARD = LVCMOS33 | PULLUP | DRIVE = 8;
 
 #SNES
-#NET "snesjoy_clock_o"   LOC="A2"  | IOSTANDARD = LVCMOS33;
-#NET "snesjoy_latch_o"   LOC="B3"  | IOSTANDARD = LVCMOS33;
-#NET "snesjoy_data_i"    LOC="A3"  | IOSTANDARD = LVCMOS33 | PULLUP;
+NET "snesjoy_clock_o"   LOC="A2"  | IOSTANDARD = LVCMOS33;
+NET "snesjoy_latch_o"   LOC="B3"  | IOSTANDARD = LVCMOS33;
+NET "snesjoy_data_i"    LOC="A3"  | IOSTANDARD = LVCMOS33 | PULLUP;
 
 # Joystick
 NET "joy_p5_o"          LOC="A7"  | IOSTANDARD = LVCMOS33;

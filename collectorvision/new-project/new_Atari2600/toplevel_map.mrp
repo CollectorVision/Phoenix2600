@@ -1,0 +1,503 @@
+Release 14.7 Map P.20160913 (lin64)
+Xilinx Mapping Report File for Design 'toplevel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jul 22 14:28:10 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   12
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,095 out of  18,224   11%
+    Number used as Flip Flops:               2,077
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               17
+  Number of Slice LUTs:                      4,178 out of   9,112   45%
+    Number used as logic:                    4,060 out of   9,112   44%
+      Number using O6 output only:           3,139
+      Number using O5 output only:             216
+      Number using O5 and O6:                  705
+      Number used as ROM:                        0
+    Number used as Memory:                      76 out of   2,176    3%
+      Number used as Dual Port RAM:             24
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                 20
+      Number used as Single Port RAM:           16
+        Number using O6 output only:            16
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:            36
+        Number using O6 output only:            17
+        Number using O5 output only:             0
+        Number using O5 and O6:                 19
+    Number used exclusively as route-thrus:     42
+      Number with same-slice register load:     19
+      Number with same-slice carry load:        23
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,382 out of   2,278   60%
+  Number of MUXCYs used:                     1,020 out of   4,556   22%
+  Number of LUT Flip Flop pairs used:        4,463
+    Number with an unused Flip Flop:         2,517 out of   4,463   56%
+    Number with an unused LUT:                 285 out of   4,463    6%
+    Number of fully used LUT-FF pairs:       1,661 out of   4,463   37%
+    Number of unique control sets:             162
+    Number of slice register sites lost
+      to control set restrictions:             559 out of  18,224    3%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       117 out of     232   50%
+    Number of LOCed IOBs:                      117 out of     117  100%
+    IOB Flip Flops:                              4
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        29 out of      32   90%
+  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 2 out of      32    6%
+    Number used as BUFIO2s:                      2
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             2 out of      32    6%
+    Number used as BUFIO2FBs:                    2
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       8 out of      16   50%
+    Number used as BUFGs:                        8
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   4 out of     248    1%
+    Number used as OLOGIC2s:                     4
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            5 out of      32   15%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.31
+
+Peak Memory Usage:  871 MB
+Total REAL time to MAP completion:  2 mins 29 secs 
+Total CPU time to MAP completion:   2 mins 23 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:Pack:1653 - At least one timing constraint is impossible to meet because component delays alone exceed the constraint. A timing
+   constraint summary below shows the failing constraints (preceded with an Asterisk (*)). Please use the Timing Analyzer (GUI) or TRCE
+   (command line) with the Mapped NCD and PCF files to identify which constraints and paths are failing because of the component delays
+   alone. If the failing path(s) is mapped to Xilinx components as expected, consider relaxing the constraint. If it is not mapped to
+   components as expected, re-evaluate your HDL and how synthesis is optimizing the path. To allow the tools to bypass this error, set the
+   environment variable XIL_TIMING_ALLOW_IMPOSSIBLE to 1.
+
+
+   For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
+   consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   a2601Instance/ms_A2601/tia_inst/phi0 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr<3> is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   host_reset_n_host_debug_arm_AND_1927_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   joy2_p1_i_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   joy2_p4_i_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx16' is a WebPack part.
+INFO:LIT:243 - Logical network cart_data_i<7>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 20 more times for the
+   following (max. 5 shown):
+   cart_data_i<6>_IBUF,
+   cart_data_i<5>_IBUF,
+   cart_data_i<4>_IBUF,
+   cart_data_i<3>_IBUF,
+   cart_data_i<2>_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   pll_575_instance/dcm_sp_inst, consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   6 block(s) removed
+   6 block(s) optimized away
+   7 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "MyCtrlModule/zpu/Madd_memARead[31]_GND_25_o_add_179_OUT15" (ROM)
+removed.
+The signal "vga_timing_gen/frbuff/doutb<7>" is sourceless and has been removed.
+The signal "vga_timing_gen/frbuff/N0" is sourceless and has been removed.
+The signal
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[18].ram.ram_doutb<1>" is sourceless and has been removed.
+ Sourceless block
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/has_mux_b.B/Mmux_dout_mux81" (ROM) removed.
+  The signal
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/has_mux_b.B/Mmux_dout_mux8" is sourceless and has been removed.
+   Sourceless block
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/has_mux_b.B/Mmux_dout_mux82" (ROM) removed.
+The signal
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[3].ram.ram_doutb<7>" is sourceless and has been removed.
+The signal
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[20].ram.ram_doutb" is sourceless and has been removed.
+The signal
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[19].ram.ram_doutb" is sourceless and has been removed.
+Unused block "cart_dir_o_PULLUP" (PULLUP) removed.
+Unused block
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[19].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block
+"vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
+lid.cstr/ramloop[20].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		MyCtrlModule/myosd/charram/XST_GND
+VCC 		MyCtrlModule/myosd/charram/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		vga_timing_gen/frbuff/XST_GND
+VCC 		vga_timing_gen/frbuff/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 11 - Timing Report
+--------------------------
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_pll_575_instance_clkfx = PERIOD TIMEGR | SETUP       |    -1.786ns|   113.851ns|      31|       36221
+  P "pll_575_instance_clkfx" TS_clock_50_i  | HOLD        |    -0.097ns|            |      80|        7680
+  / 1.15 HIGH 50%                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_pll_hdmi_instance_clkout3 = PERIOD TIM | SETUP       |    -0.826ns|    33.814ns|     102|       44652
+  EGRP "pll_hdmi_instance_clkout3" TS_clock | HOLD        |     0.013ns|            |       0|           0
+  _50_i / 1.35 HIGH 50%                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_pll_hdmi_instance_clkout0 = PERIOD TIM | SETUP       |    -0.794ns|   128.364ns|      86|       63880
+  EGRP "pll_hdmi_instance_clkout0" TS_clock | HOLD        |     0.098ns|            |       0|           0
+  _50_i / 0.54 HIGH 50%                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_pll_hdmi_instance_clkout1 = PERIOD TIM | SETUP       |     5.826ns|     1.581ns|       0|           0
+  EGRP "pll_hdmi_instance_clkout1" TS_clock | HOLD        |     0.060ns|            |       0|           0
+  _50_i / 2.7 HIGH 50%                      | MINPERIOD   |     4.741ns|     2.666ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_pll_hdmi_instance_clkout2 = PERIOD TIM | MINPERIOD   |     4.741ns|     2.666ns|       0|           0
+  EGRP "pll_hdmi_instance_clkout2" TS_clock |             |            |            |        |            
+  _50_i / 2.7 PHASE 3.7037037 ns HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clock_50_i = PERIOD TIMEGRP "clock_50_ | MINLOWPULSE |    12.000ns|     8.000ns|       0|           0
+  i" 20 ns HIGH 50%                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clock_50_i
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clock_50_i                  |     20.000ns|      8.000ns|    130.929ns|            0|          299|            0|3097506564524317175557412377906380800|
+| TS_pll_575_instance_clkfx     |     17.391ns|    113.851ns|          N/A|          111|            0|      1439713|            0|
+| TS_pll_hdmi_instance_clkout3  |     14.815ns|     33.814ns|          N/A|          102|            0|         2555|            0|
+| TS_pll_hdmi_instance_clkout1  |      7.407ns|      2.666ns|          N/A|            0|            0|          236|            0|
+| TS_pll_hdmi_instance_clkout0  |     37.037ns|    128.364ns|          N/A|           86|            0|3097506564524317175557412377906380800|            0|
+| TS_pll_hdmi_instance_clkout2  |      7.407ns|      2.666ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+3 constraints not met.
+
+
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BLED                               | IOB              | OUTPUT    | LVCMOS33             |       | 16       | SLOW |              |          |          |
+| CLOCK_50_i                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| GLED                               | IOB              | OUTPUT    | LVCMOS33             |       | 16       | SLOW |              |          |          |
+| RLED                               | IOB              | OUTPUT    | LVCMOS33             |       | 16       | SLOW |              |          |          |
+| btn_reset_n_i                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| cart_addr_o<0>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<1>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<2>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<8>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<9>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<10>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<11>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_addr_o<12>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_data_i<0>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<1>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<2>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<3>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<4>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<5>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<6>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_data_i<7>                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| cart_dir_o                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cart_oe_n_o                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dac_l_o                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| dac_r_o                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| flash_cs_n_o                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| flash_hold_o                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| flash_miso_i                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| flash_mosi_o                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| flash_sclk_o                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| flash_wp_o                         | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| hdmi_n_o<0>                        | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmi_n_o<1>                        | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmi_n_o<2>                        | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmi_n_o<3>                        | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmi_p_o<0>                        | IOBM             | OUTPUT    | TMDS_33              |       |          |      | ODDR         |          |          |
+| hdmi_p_o<1>                        | IOBM             | OUTPUT    | TMDS_33              |       |          |      | ODDR         |          |          |
+| hdmi_p_o<2>                        | IOBM             | OUTPUT    | TMDS_33              |       |          |      | ODDR         |          |          |
+| hdmi_p_o<3>                        | IOBM             | OUTPUT    | TMDS_33              |       |          |      | ODDR         |          |          |
+| joy1_p1_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p2_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p3_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p4_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p6_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p7_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy1_p9_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy2_p1_i                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| joy2_p2_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy2_p3_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy2_p4_i                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| joy2_p6_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy2_p7_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy2_p9_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| joy_p5_o                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| joy_p8_o                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| pal_clk_en_o                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ps2_clk_io                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ps2_data_io                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sd_cd_n_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sd_cs_n_o                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| sd_miso_i                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sd_mosi_o                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| sd_sclk_o                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| snesjoy_clock_o                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| snesjoy_data_i                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| snesjoy_latch_o                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<0>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<1>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<2>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<8>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<9>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<10>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<11>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<12>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<13>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<14>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<15>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<16>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<17>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<18>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<19>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_addr_o<20>                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<0>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<1>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<2>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<3>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<4>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<5>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<6>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_data_io<7>                    | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_oe_n_o                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sram_we_n_o                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| stnd_o                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_b_o<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_b_o<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_b_o<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_b_o<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_g_o<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_g_o<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_g_o<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_g_o<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_hsync_n_o                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_r_o<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_r_o<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_r_o<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_r_o<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vga_vsync_n_o                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
