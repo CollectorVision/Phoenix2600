@@ -99,6 +99,11 @@ entity toplevel is
       ps2_clk_io : in std_logic;
       ps2_data_io : in std_logic;
 
+-- SNES controller
+      snesjoy_clock_o   : out    std_logic := '1';
+      snesjoy_latch_o   : out    std_logic := '1';
+      snesjoy_data_i    : in     std_logic;
+		
 -- Serial Flash
 		flash_cs_n_o : out std_logic;
 		flash_sclk_o : out std_logic;
@@ -235,7 +240,36 @@ architecture rtl of toplevel is
 	signal P_D: std_logic := '1';
 	signal gamepad_to_ctrl : std_logic_vector(4 downto 0);
 	
-	-- EP HDMI signals
+-- SNES
+   signal but_a_s          : std_logic_vector( 0 downto 0);
+   signal but_b_s          : std_logic_vector( 0 downto 0);
+   signal but_x_s          : std_logic_vector( 0 downto 0);
+   signal but_y_s          : std_logic_vector( 0 downto 0);
+   signal but_start_s      : std_logic_vector( 0 downto 0);
+   signal but_sel_s        : std_logic_vector( 0 downto 0);
+   signal but_tl_s         : std_logic_vector( 0 downto 0);
+   signal but_tr_s         : std_logic_vector( 0 downto 0);
+   signal but_up_s         : std_logic_vector( 0 downto 0);
+   signal but_down_s       : std_logic_vector( 0 downto 0);
+   signal but_left_s       : std_logic_vector( 0 downto 0);
+   signal but_right_s      : std_logic_vector( 0 downto 0);
+   signal but_0_s          : std_logic_vector( 0 downto 0);
+   signal but_1_s          : std_logic_vector( 0 downto 0);
+   signal but_2_s          : std_logic_vector( 0 downto 0);
+   signal but_3_s          : std_logic_vector( 0 downto 0);
+   signal but_4_s          : std_logic_vector( 0 downto 0);
+   signal but_5_s          : std_logic_vector( 0 downto 0);
+   signal but_6_s          : std_logic_vector( 0 downto 0);
+   signal but_7_s          : std_logic_vector( 0 downto 0);
+   signal but_8_s          : std_logic_vector( 0 downto 0);
+   signal but_9_s          : std_logic_vector( 0 downto 0);
+   signal but_star_s       : std_logic_vector( 0 downto 0);
+   signal but_num_s        : std_logic_vector( 0 downto 0);
+   signal but_dot_s        : std_logic_vector( 0 downto 0);
+   signal but_clear_s      : std_logic_vector( 0 downto 0);
+   signal but_equal_s      : std_logic_vector( 0 downto 0);
+
+-- EP HDMI signals
 	signal clock_vga_s		: std_logic;
 	signal clock_hdmi_s		: std_logic;
 	signal clock_hdmi_n_s	: std_logic;
@@ -342,8 +376,57 @@ begin
 		tmds_out_n			=> hdmi_n_o
 	);
 	
+   --
+   -- SNES Gamepad 
+   --
+   snespads_b : entity work.snespad
+   generic map (
+      num_pads_g        => 1,
+      reset_level_g     => 0,
+      button_level_g    => 0,
+      clocks_per_6us_g  => 128               -- 6us = 128 ciclos de 21.477MHz
+   )
+   port map (
+      clk_i             => hdmi_clk_25M,
+      reset_i           => host_reset_n,          -- Active low
+      pad_clk_o         => snesjoy_clock_o,
+      pad_latch_o       => snesjoy_latch_o,
+      pad_data_i(0)     => snesjoy_data_i,
+      but_a_o           => but_a_s,
+      but_b_o           => but_b_s,
+      but_x_o           => but_x_s,
+      but_y_o           => but_y_s,
+      but_start_o       => but_start_s,
+      but_sel_o         => but_sel_s,
+      but_tl_o          => but_tl_s,
+      but_tr_o          => but_tr_s,
+      but_up_o          => but_up_s,
+      but_down_o        => but_down_s,
+      but_left_o        => but_left_s,
+      but_right_o       => but_right_s,
+      but_0_o           => but_0_s,
+      but_1_o           => but_1_s,
+      but_2_o           => but_2_s,
+      but_3_o           => but_3_s,
+      but_4_o           => but_4_s,
+      but_5_o           => but_5_s,
+      but_6_o           => but_6_s,
+      but_7_o           => but_7_s,
+      but_8_o           => but_8_s,
+      but_9_o           => but_9_s,
+      but_star_o        => but_star_s,
+      but_num_o         => but_num_s,
+      but_dot_o         => but_dot_s,
+      but_clear_o       => but_clear_s,
+      but_equal_o       => but_equal_s
+   );
+	
+
 -- Colecovision gamepad support
-	process(hdmi_clk_25M)
+	process(hdmi_clk_25M, but_a_s, but_b_s, but_up_s, but_down_s, but_left_s, but_right_s,
+      but_x_s, but_y_s, but_sel_s, but_start_s, but_tl_s, but_tr_s, but_0_s,
+      but_1_s, but_2_s, but_3_s, but_4_s, but_5_s, but_6_s, but_7_s, but_8_s,
+      but_9_s, but_star_s, but_num_s, but_dot_s, but_clear_s, but_equal_s)
 	variable sel : std_logic_vector(3 downto 0);
 	begin
 		if rising_edge(hdmi_clk_25M) then
@@ -354,11 +437,11 @@ begin
 			else
 				if scan_state(7) = '0' then
 					-- read directions and fire
-					P_L	<= joy1_p3_i;
-					P_R	<= joy1_p4_i;
-					P_A 	<= joy1_p6_i;	-- left fire
-					P_U 	<= joy1_p1_i;
-					P_D 	<= joy1_p2_i;
+					P_L	<= joy1_p3_i and but_left_s(0);
+					P_R	<= joy1_p4_i and but_right_s(0);
+					P_A 	<= joy1_p6_i and but_b_s(0);	-- left fire
+					P_U 	<= joy1_p1_i and but_up_s(0);
+					P_D 	<= joy1_p2_i and but_down_s(0);
 				else
 					-- read number pad
 					numpad_0 <= (others => '1'); -- assume all not pressed
@@ -378,6 +461,9 @@ begin
 						when "0101" => numpad_0(11)<= '0';	-- key #
 						when others =>
 					end case;
+					if (but_1_s(0)='0') then
+						numpad_0(0) <= '0';
+					end if;
 				end if;
 			end if;
 		end if;

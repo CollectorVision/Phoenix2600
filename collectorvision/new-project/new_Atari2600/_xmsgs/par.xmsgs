@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy1_p7_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy1_p9_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy2_p2_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy2_p3_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy2_p6_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy2_p7_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">joy2_p9_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">flash_miso_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">sd_cd_n_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">btn_reset_n_i_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;0&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;1&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;2&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;3&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;4&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;5&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;6&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">cart_data_i&lt;7&gt;_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem3_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem5_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem4_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem2_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem1_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Route" num="441" delta="new" >The router has detected a very high timing score (<arg fmt="%.0f" index="1">3176646</arg>) for this design. It is extremely unlikely the router will be able to meet your timing requirements. To prevent excessive run time the router will change strategy. The router will now work to completely route this design but not to improve timing. This behavior will allow you to use the Static Timing Report and FPGA Editor to isolate the paths with timing problems. The cause of this behavior is either overly difficult constraints, or issues with the implementation or synthesis of logic in the critical timing path. If you would prefer the router continue trying to meet timing and you are willing to accept a long run time set the option &quot;-xe c&quot; to override the present behavior.
+</msg>
+
+<msg type="warning" file="Route" num="562" delta="new" >
+ Par  has gone into non timing driven mode hence it will not fix hold errors.
+To bypass this,  please run Par in -xe mode.</msg>
+
+<msg type="warning" file="Par" num="468" delta="old" >Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+Review the timing report using Timing Analyzer (In ISE select &quot;Post-Place &amp;
+Route Static Timing Report&quot;). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+Try the Design Goal and Strategies for Timing Performance(In ISE select Project -&gt; Design Goals &amp; Strategies) to ensure the best options are set in the tools for timing closure.
+
+</msg>
+
+<msg type="warning" file="ParHelpers" num="361" delta="old" >There are <arg fmt="%d" index="1">23</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+<msg type="warning" file="Par" num="283" delta="old" >There are <arg fmt="%d" index="1">23</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+</messages>
+

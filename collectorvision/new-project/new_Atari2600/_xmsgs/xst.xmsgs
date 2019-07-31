@@ -1,0 +1,2031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" Line 69: Actual for formal port <arg fmt="%s" index="1">enable</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 168: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 214: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/vga.vhd" Line 143: Actual for formal port <arg fmt="%s" index="1">dina</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/vga.vhd" Line 146: Partially associated formal <arg fmt="%s" index="1">doutb</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 501: Partially associated formal <arg fmt="%s" index="1">dipswitches</arg> cannot have actual OPEN
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 579: Actual for formal port <arg fmt="%s" index="1">reset_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 597: Actual for formal port <arg fmt="%s" index="1">a2600_addr_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 613: Actual for formal port <arg fmt="%s" index="1">res</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 631: Actual for formal port <arg fmt="%s" index="1">p_start</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 632: Actual for formal port <arg fmt="%s" index="1">p_select</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 819: Actual for formal port <arg fmt="%s" index="1">lum</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 821: Actual for formal port <arg fmt="%s" index="1">mode</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: <arg fmt="%s" index="1">comparison_sub_result</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: <arg fmt="%s" index="1">shift_count</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: <arg fmt="%s" index="1">membread</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to <arg fmt="%s" index="1">begin_inst</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to <arg fmt="%s" index="1">last_a2600_addr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 224: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">forcereset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd" Line 133: Assignment to <arg fmt="%s" index="1">pa_reg</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 484: <arg fmt="%s" index="1">value</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 907: Assignment to <arg fmt="%s" index="1">hh1</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1063: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1064: <arg fmt="%s" index="1">inpt0</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1070: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1071: <arg fmt="%s" index="1">inpt1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1077: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1078: <arg fmt="%s" index="1">inpt2</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1084: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1085: <arg fmt="%s" index="1">inpt3</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1039: Assignment to <arg fmt="%s" index="1">pf_score</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd" Line 129: Net &lt;<arg fmt="%s" index="1">riot_pa7</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/DeltaSigma.vhd" Line 42: <arg fmt="%s" index="1">reset</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 267: Assignment to <arg fmt="%s" index="1">p_fn</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 337: <arg fmt="%s" index="1">e7_access_ram_256</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 343: <arg fmt="%s" index="1">e7_access_ram_1k</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 710: <arg fmt="%s" index="1">host_debug_arm</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of <arg fmt="%d" index="1">12</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 183: Net &lt;<arg fmt="%s" index="1">joy_a_0[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 184: Net &lt;<arg fmt="%s" index="1">joy_a_1[15]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 230: Net &lt;<arg fmt="%s" index="1">host_bootread_data[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cart_data_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btn_reset_n_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sd_cd_n_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy1_p7_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy1_p9_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy2_p2_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy2_p3_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy2_p6_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy2_p7_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">joy2_p9_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flash_miso_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_a_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_x_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_y_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_start_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_tl_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_tr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_0_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_2_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_3_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_4_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_5_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_6_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_7_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_8_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_9_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_star_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_num_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_dot_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_clear_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_equal_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">474</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_sdcard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">474</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_keyboard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">474</arg>: Output port &lt;<arg fmt="%s" index="3">host_mux</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">549</arg>: Output port &lt;<arg fmt="%s" index="3">window_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">overlay</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">576</arg>: Output port &lt;<arg fmt="%s" index="3">host_bootread_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">576</arg>: Output port &lt;<arg fmt="%s" index="3">rom_loaded_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">a2601Instance</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">691</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_hdmi_instance</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_addr_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">joy_a_0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">joy_a_1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">host_bootread_data&lt;31:8&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">stnd_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">pal_clk_en_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_dir_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_oe_n_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clock_pixel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_bEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_hEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">break</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">185</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myosd</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_dat_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">inIdle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">sendBusy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">sendDone</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">from_zpu_memAAddr&lt;15:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">from_zpu_memBAddr&lt;15:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">areset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">enable</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">to_rom_memAAddr&lt;15:14&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">to_rom_memBAddr&lt;15:14&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_storetostack</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_or</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_and</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_xor</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_load</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_readiodone</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_storeanddecode</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">state_interrupt</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="old" >Signal &apos;<arg fmt="%s" index="1">rom</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">CharROM_ROM</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">host_bootdata&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">colu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">rgbx2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">cv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">csyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">vsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">hsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">tia_pixel_clock_ena</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">A2601NoFlash</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">cpu_d&lt;7&gt;</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">145</arg>: Output port &lt;<arg fmt="%s" index="3">irq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">riot_A6532</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tia_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rgbx2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">vsyn</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">hsyn</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">tia_pixel_clock_ena</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">A2601</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">riot_pa7</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugOpcode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugPc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugX</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">895</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle0</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">896</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle1</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">897</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle2</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">898</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle3</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">pal</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">I_CLK_VGA2X</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">I_VSYNC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">lum&lt;3:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_361</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">extSRAM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_362&gt; &lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_368&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">return_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">extSRAM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;return_state_2&gt; &lt;return_state_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmio</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;shift_clk_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_54</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataenc</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_55&gt; &lt;subpacket_0_110&gt; &lt;subpacket_0_111&gt; &lt;subpacket_0_166&gt; &lt;subpacket_0_167&gt; &lt;subpacket_0_222&gt; &lt;subpacket_0_223&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">return_state_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">extSRAM</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_102</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_103</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_104</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_105</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_106</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_107</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_108</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_109</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_157</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_158</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_159</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_160</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_161</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_162</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_163</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_164</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_165</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_213</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_214</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_215</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_216</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_217</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_218</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_219</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_220</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_221</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">edge_intr_lo</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">riot_A6532</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">edge_intr_hi</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">riot_A6532</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">inpt5_l</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tia_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">processIrq</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">inpt5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">a2601Instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pa_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">a2601Instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pa_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">a2601Instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pa_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">a2601Instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pa_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">a2601Instance</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">return_state_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">extSRAM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_45</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_46</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_47</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_48</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_49</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_50</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_51</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_52</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_53</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_54</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_101</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dataenc</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">irqActive</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mem_write_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_mem_addr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">myosd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">recvByteLoc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mykeyboard</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">recvByte_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mykeyboard</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">host_bootdata_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">dipswitches_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MyCtrlModule</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pads[0].pad_b</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">theOpcode_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">theOpcode_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">theOpcode_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">theOpcode_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">theOpcode_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_timing_gen</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_timing_gen</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_timing_gen</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_timing_gen</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_timing_gen</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">riot_A6532/ram/Mram_ram</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_35_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_33_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">charrom/Mram_rom</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_lum_lu</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_col_lu</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_GND_155_o_GND_155_o_select_385_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Mram_nextOpcInfo</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_channelStatusIdx[7]_X_133_o_Mux_18_o</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n0416</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_debug_mem</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_joy1_p1_i_PWR_5_o_wide_mux_3_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n1473</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">opcode_saved_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ypos_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">xpos_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">snespad_pad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">snespad_pad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">snespad_pad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">snespad_pad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">buttons_q_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">snespad_pad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/theOpcode_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/theOpcode_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/theOpcode_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/theOpcode_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/theOpcode_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">pixel_sample_timer_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">riot_A6532/edge_intr_hi</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2601</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">riot_A6532/edge_intr_lo</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2601</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/processIrq</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2601</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cpu_A6507/cpu/irqActive</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2601</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">return_state_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">sram_controller</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">return_state_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">return_state_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">return_state_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmi_out_xilinx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmi_out_xilinx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmi_out_xilinx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmi_out_xilinx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmi_out_xilinx</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_157</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_158</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_159</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_160</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_161</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_162</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_163</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_164</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_165</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_166</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_167</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_213</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_214</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_215</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_216</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_217</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_218</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_219</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_220</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_221</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_222</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_223</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_45</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_46</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_47</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_48</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_49</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_50</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_51</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_52</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_53</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_54</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_55</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_101</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_102</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_103</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_104</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_105</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_106</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_107</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_108</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_109</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_110</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_111</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_361</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">sram_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_362&gt; &lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_368&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmi_out_xilinx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;shift_clk_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmi_out_xilinx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;shift_clk_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_43</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_44&gt; &lt;subpacket_0_99&gt; &lt;subpacket_0_100&gt; &lt;subpacket_0_155&gt; &lt;subpacket_0_156&gt; &lt;subpacket_0_211&gt; &lt;subpacket_0_212&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">inpt5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pa_0&gt; &lt;pa_1&gt; &lt;pa_2&gt; &lt;pa_3&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">break</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">zpu_core_flex</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">inpt5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">A2601NoFlash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_41</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_42&gt; &lt;subpacket_0_97&gt; &lt;subpacket_0_98&gt; &lt;subpacket_0_153&gt; &lt;subpacket_0_154&gt; &lt;subpacket_0_209&gt; &lt;subpacket_0_210&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_39</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_40&gt; &lt;subpacket_0_95&gt; &lt;subpacket_0_96&gt; &lt;subpacket_0_151&gt; &lt;subpacket_0_152&gt; &lt;subpacket_0_207&gt; &lt;subpacket_0_208&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2146" delta="old" >In block &lt;<arg fmt="%s" index="1">hdmidataencoder</arg>&gt;, <arg fmt="%s" index="2">Accumulator</arg> &lt;<arg fmt="%s" index="3">audioLAvgSum</arg>&gt; </msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_n03723</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">zpu_core_flex</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">add_low_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">zpu_core_flex</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">hcounter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">hcounter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vcounter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vcounter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vcounter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vcounter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">vcounter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OnScreenDisplay</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">parity</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">io_ps2_com</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pending_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupt_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">status_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">interrupt_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">bank_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">riot_A6532/edge_pol</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">host_read_buf_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sram_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">packetHeader_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audioTimer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audioTimer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audioTimer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">pll_hdmi_instance/pll_base_inst</arg> in unit <arg fmt="%s" index="2">pll_hdmi_instance/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_37</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_38&gt; &lt;subpacket_0_93&gt; &lt;subpacket_0_94&gt; &lt;subpacket_0_149&gt; &lt;subpacket_0_150&gt; &lt;subpacket_0_205&gt; &lt;subpacket_0_206&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">hdmidataencoder</arg>&gt;: instances &lt;<arg fmt="%s" index="2">audioLAvgSum[25]_audioAvgCnt[10]_div_49</arg>&gt;, &lt;<arg fmt="%s" index="3">audioRAvgSum[25]_audioAvgCnt[10]_div_50</arg>&gt; of unit &lt;<arg fmt="%s" index="4">div_26u_11u</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">packetHeader_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">packetHeader_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">packetHeader_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/host_read_buf_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">extSRAM/rom_loaded</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_35</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_36&gt; &lt;subpacket_0_91&gt; &lt;subpacket_0_92&gt; &lt;subpacket_0_147&gt; &lt;subpacket_0_148&gt; &lt;subpacket_0_203&gt; &lt;subpacket_0_204&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">audioLAvg_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;audioRAvg_15&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">A2601NoFlash</arg>: <arg fmt="%d" index="2">8</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">A2601</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">A2601</arg>: <arg fmt="%d" index="2">8</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">TIA</arg>: <arg fmt="%d" index="2">8</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/inpt5_l</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">A2601NoFlash</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cv_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ms_A2601/tia_inst/cburst</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">A2601NoFlash</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mem_read_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mem_read_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">waitCount_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">io_ps2_com</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">waitCount_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">io_ps2_com</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">waitCount_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">io_ps2_com</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_33</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_34&gt; &lt;subpacket_0_89&gt; &lt;subpacket_0_90&gt; &lt;subpacket_0_145&gt; &lt;subpacket_0_146&gt; &lt;subpacket_0_201&gt; &lt;subpacket_0_202&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_32&gt; &lt;subpacket_0_87&gt; &lt;subpacket_0_88&gt; &lt;subpacket_0_143&gt; &lt;subpacket_0_144&gt; &lt;subpacket_0_199&gt; &lt;subpacket_0_200&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_30&gt; &lt;subpacket_0_85&gt; &lt;subpacket_0_86&gt; &lt;subpacket_0_141&gt; &lt;subpacket_0_142&gt; &lt;subpacket_0_197&gt; &lt;subpacket_0_198&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_28&gt; &lt;subpacket_0_83&gt; &lt;subpacket_0_84&gt; &lt;subpacket_0_139&gt; &lt;subpacket_0_140&gt; &lt;subpacket_0_195&gt; &lt;subpacket_0_196&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_26&gt; &lt;subpacket_0_81&gt; &lt;subpacket_0_82&gt; &lt;subpacket_0_137&gt; &lt;subpacket_0_138&gt; &lt;subpacket_0_193&gt; &lt;subpacket_0_194&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_24&gt; &lt;subpacket_0_79&gt; &lt;subpacket_0_80&gt; &lt;subpacket_0_135&gt; &lt;subpacket_0_136&gt; &lt;subpacket_0_191&gt; &lt;subpacket_0_192&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_22&gt; &lt;subpacket_0_77&gt; &lt;subpacket_0_78&gt; &lt;subpacket_0_133&gt; &lt;subpacket_0_134&gt; &lt;subpacket_0_189&gt; &lt;subpacket_0_190&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_32&gt; &lt;subpacket_0_87&gt; &lt;subpacket_0_88&gt; &lt;subpacket_0_143&gt; &lt;subpacket_0_144&gt; &lt;subpacket_0_199&gt; &lt;subpacket_0_200&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_30&gt; &lt;subpacket_0_85&gt; &lt;subpacket_0_86&gt; &lt;subpacket_0_141&gt; &lt;subpacket_0_142&gt; &lt;subpacket_0_197&gt; &lt;subpacket_0_198&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_28&gt; &lt;subpacket_0_83&gt; &lt;subpacket_0_84&gt; &lt;subpacket_0_139&gt; &lt;subpacket_0_140&gt; &lt;subpacket_0_195&gt; &lt;subpacket_0_196&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_26&gt; &lt;subpacket_0_81&gt; &lt;subpacket_0_82&gt; &lt;subpacket_0_137&gt; &lt;subpacket_0_138&gt; &lt;subpacket_0_193&gt; &lt;subpacket_0_194&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_24&gt; &lt;subpacket_0_79&gt; &lt;subpacket_0_80&gt; &lt;subpacket_0_135&gt; &lt;subpacket_0_136&gt; &lt;subpacket_0_191&gt; &lt;subpacket_0_192&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_22&gt; &lt;subpacket_0_77&gt; &lt;subpacket_0_78&gt; &lt;subpacket_0_133&gt; &lt;subpacket_0_134&gt; &lt;subpacket_0_189&gt; &lt;subpacket_0_190&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_75</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_131&gt; &lt;subpacket_0_187&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_76</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;subpacket_0_132&gt; &lt;subpacket_0_188&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/dipswitches_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_divert_sdcard</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_divert_keyboard</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_mux</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_hEnable</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_bEnable</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_addr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/mem_write_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/ps2_dat_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/currentBit</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/ps2_clk_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/recvByte_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/sendDone</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/recvByteLoc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/ena</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">overlay/hsync_r</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/prevHSync&gt; &lt;hdmi/delay_line/q_pipe_0_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/prevBlank</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/prevBlank&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/prevData</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/delay_line/q_pipe_0_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_170</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_114&gt; &lt;hdmi/dataenc/subpacket_0_58&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_171</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_115&gt; &lt;hdmi/dataenc/subpacket_0_59&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_172</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_116&gt; &lt;hdmi/dataenc/subpacket_0_60&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_173</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_117&gt; &lt;hdmi/dataenc/subpacket_0_61&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_168</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_112&gt; &lt;hdmi/dataenc/subpacket_0_56&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_174</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_118&gt; &lt;hdmi/dataenc/subpacket_0_62&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_169</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_113&gt; &lt;hdmi/dataenc/subpacket_0_57&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_180</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_124&gt; &lt;hdmi/dataenc/subpacket_0_68&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_175</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_119&gt; &lt;hdmi/dataenc/subpacket_0_63&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_181</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_125&gt; &lt;hdmi/dataenc/subpacket_0_69&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_176</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_120&gt; &lt;hdmi/dataenc/subpacket_0_64&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_182</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_126&gt; &lt;hdmi/dataenc/subpacket_0_70&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_177</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_121&gt; &lt;hdmi/dataenc/subpacket_0_65&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_183</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_127&gt; &lt;hdmi/dataenc/subpacket_0_71&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_178</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_122&gt; &lt;hdmi/dataenc/subpacket_0_66&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_184</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_128&gt; &lt;hdmi/dataenc/subpacket_0_72&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_179</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_123&gt; &lt;hdmi/dataenc/subpacket_0_67&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_185</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_129&gt; &lt;hdmi/dataenc/subpacket_0_73&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/subpacket_0_186</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmi/dataenc/subpacket_0_130&gt; &lt;hdmi/dataenc/subpacket_0_74&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
