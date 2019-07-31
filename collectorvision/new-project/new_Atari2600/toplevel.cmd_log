@@ -21,3 +21,15 @@ map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off toplevel_map.ncd toplevel.ncd toplevel.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
 bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+xst -intstyle ise -ifn "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.xst" -ofn "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../cvAtari2600/ipcore_dir -nt timestamp -uc /home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/phoenix2600.ucf -p xc6slx16-csg324-2 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -mt off toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+xst -intstyle ise -ifn "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.xst" -ofn "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/toplevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../cvAtari2600/ipcore_dir -nt timestamp -uc /home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/phoenix2600.ucf -p xc6slx16-csg324-2 toplevel.ngc toplevel.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o toplevel_map.ncd toplevel.ngd toplevel.pcf 
+par -w -intstyle ise -ol high -mt off toplevel_map.ncd toplevel.ncd toplevel.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf 
+bitgen -intstyle ise -f toplevel.ut toplevel.ncd 

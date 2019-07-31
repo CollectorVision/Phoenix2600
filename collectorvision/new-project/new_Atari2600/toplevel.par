@@ -1,7 +1,7 @@
 Release 14.7 par P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Mon Jul 22 14:30:43 2019
+localhost.localdomain::  Wed Jul 31 18:51:07 2019
 
 par -w -intstyle ise -ol high -mt off toplevel_map.ncd toplevel.ncd
 toplevel.pcf 
@@ -117,8 +117,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 13 secs 
-Finished initial Timing Analysis.  REAL time: 13 secs 
+Starting initial Timing Analysis.  REAL time: 10 secs 
+Finished initial Timing Analysis.  REAL time: 10 secs 
 
 WARNING:Par:288 - The signal joy1_p7_i_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal joy1_p9_i_IBUF has no load.  PAR will not attempt to route this signal.
@@ -146,13 +146,13 @@ WARNING:Par:288 - The signal Mram_debug_mem1_RAMD_D1_O has no load.  PAR will no
 Starting Router
 
 
-Phase  1  : 27034 unrouted;      REAL time: 14 secs 
+Phase  1  : 27034 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 23035 unrouted;      REAL time: 17 secs 
+Phase  2  : 23035 unrouted;      REAL time: 14 secs 
 
-Phase  3  : 9478 unrouted;      REAL time: 39 secs 
+Phase  3  : 9478 unrouted;      REAL time: 32 secs 
 
-Phase  4  : 10892 unrouted; (Setup:3176646, Hold:86, Component Switching Limit:0)     REAL time: 55 secs 
+Phase  4  : 10892 unrouted; (Setup:3176646, Hold:86, Component Switching Limit:0)     REAL time: 45 secs 
 WARNING:Route:441 - The router has detected a very high timing score (3176646) for this design. It is extremely unlikely the router will be
    able to meet your timing requirements. To prevent excessive run time the router will change strategy. The router will now work to
    completely route this design but not to improve timing. This behavior will allow you to use the Static Timing Report and FPGA Editor to
@@ -164,9 +164,9 @@ Updating file: toplevel.ncd with current fully routed design.
 WARNING:Route:562 - 
     Par  has gone into non timing driven mode hence it will not fix hold errors.
    To bypass this,  please run Par in -xe mode.
-Phase  5  : 0 unrouted; (Setup:5304741, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 21 secs 
-Total REAL time to Router completion: 1 mins 21 secs 
-Total CPU time to Router completion: 1 mins 18 secs 
+Phase  5  : 0 unrouted; (Setup:5304741, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 7 secs 
+Total REAL time to Router completion: 1 mins 7 secs 
+Total CPU time to Router completion: 1 mins 5 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -299,10 +299,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 23 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 27 secs 
-Total CPU time to PAR completion: 1 mins 23 secs 
+Total REAL time to PAR completion: 1 mins 12 secs 
+Total CPU time to PAR completion: 1 mins 9 secs 
 
-Peak Memory Usage:  711 MB
+Peak Memory Usage:  712 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

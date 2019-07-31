@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: toplevel.prj
@@ -111,31 +111,31 @@ Cores Search Directories           : {"../../cvAtari2600/ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" into library work
+Analyzing Verilog file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" into library work
 Parsing module <hdmidataencoder>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/simple_dualport_32k.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/simple_dualport_32k.vhd" into library work
 Parsing entity <simple_dualport_32k>.
 Parsing architecture <simple_dualport_32k_a> of entity <simple_dualport_32k>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/DualPortRAM_Block.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/DualPortRAM_Block.vhd" into library work
 Parsing entity <DualPortRAM_Block>.
 Parsing architecture <DualPortRAM_Block_a> of entity <dualportram_block>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd" into library work
 Parsing entity <pll_27M>.
 Parsing architecture <xilinx> of entity <pll_27m>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/pll.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll.vhd" into library work
 Parsing entity <pll>.
 Parsing architecture <xilinx> of entity <pll>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A6500/src/cpu65xx_e.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_e.vhd" into library work
 Parsing entity <cpu65xx>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/TIA/src/NTSCLookups.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/NTSCLookups.vhd" into library work
 Parsing package <TIA_NTSCLookups>.
 Parsing package body <TIA_NTSCLookups>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/TIA/src/Common.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/Common.vhd" into library work
 Parsing package <TIA_common>.
 Parsing package body <TIA_common>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A6500/src/cpu65xx_fast.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_fast.vhd" into library work
 Parsing architecture <fast> of entity <cpu65xx>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" into library work
 Parsing entity <lfsr6>.
 Parsing architecture <arch> of entity <lfsr6>.
 Parsing entity <cntr2>.
@@ -156,106 +156,106 @@ Parsing entity <mux20>.
 Parsing architecture <arch> of entity <mux20>.
 Parsing entity <TIA>.
 Parsing architecture <arch> of entity <tia>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpupkg.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpupkg.vhd" into library work
 Parsing package <zpupkg>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd" into library work
 Parsing entity <CharROM_ROM>.
 Parsing architecture <arch> of entity <charrom_rom>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" into library work
 Parsing package <snespad_pack>.
 Parsing package body <snespad_pack>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" into library work
 Parsing entity <ram128x8>.
 Parsing architecture <arch> of entity <ram128x8>.
 Parsing entity <A6532>.
 Parsing architecture <arch> of entity <a6532>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" into library work
 Parsing entity <A6507>.
 Parsing architecture <arch> of entity <a6507>.
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" Line 69: Actual for formal port enable is neither a static name nor a globally static expression
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" Line 69: Actual for formal port enable is neither a static name nor a globally static expression
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" into library work
 Parsing entity <zpu_core_flex>.
 Parsing architecture <behave> of entity <zpu_core_flex>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/spi.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd" into library work
 Parsing entity <spi_interface>.
-INFO:HDLCompiler:1676 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/spi.vhd" Line 22. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd" Line 22. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
 Parsing architecture <rtl> of entity <spi_interface>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd" into library work
 Parsing entity <OnScreenDisplay>.
 Parsing architecture <rtl> of entity <onscreendisplay>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd" into library work
 Parsing entity <io_ps2_com>.
 Parsing architecture <rtl> of entity <io_ps2_com>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" into library work
 Parsing entity <interrupt_controller>.
-INFO:HDLCompiler:1676 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" Line 20. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" Line 20. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
 Parsing architecture <rtl> of entity <interrupt_controller>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd" into library work
 Parsing entity <CtrlROM_ROM>.
 Parsing architecture <arch> of entity <ctrlrom_rom>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pad.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pad.vhd" into library work
 Parsing entity <snespad_pad>.
 Parsing architecture <rtl> of entity <snespad_pad>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_ctrl.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd" into library work
 Parsing entity <snespad_ctrl>.
 Parsing architecture <rtl> of entity <snespad_ctrl>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/ram2048x8.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/ram2048x8.vhd" into library work
 Parsing entity <ram2048x8>.
 Parsing architecture <arch> of entity <ram2048x8>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidelay.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidelay.vhd" into library work
 Parsing entity <hdmi_delay_line>.
 Parsing architecture <rtl> of entity <hdmi_delay_line>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/HDMI/encoder.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/encoder.vhd" into library work
 Parsing entity <encoder>.
 Parsing architecture <rtl> of entity <encoder>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A2601/src/DeltaSigma.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd" into library work
 Parsing entity <dac>.
 Parsing architecture <rtl> of entity <dac>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" into library work
 Parsing entity <A2601>.
 Parsing architecture <arch> of entity <a2601>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/TIA/src/VGAColorTable.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/VGAColorTable.vhd" into library work
 Parsing entity <VGAColorTable>.
 Parsing architecture <rtl> of entity <vgacolortable>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd" into library work
 Parsing entity <OSD_Overlay>.
 Parsing architecture <RTL> of entity <osd_overlay>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" into library work
 Parsing entity <CtrlModule>.
 Parsing architecture <rtl> of entity <ctrlmodule>.
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 168: Actual for formal port reset is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 214: Actual for formal port reset is neither a static name nor a globally static expression
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/vga.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 168: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 214: Actual for formal port reset is neither a static name nor a globally static expression
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" into library work
 Parsing entity <vga>.
 Parsing architecture <rtl> of entity <vga>.
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/vga.vhd" Line 143: Actual for formal port dina is neither a static name nor a globally static expression
-WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600new/collectorvision/vga.vhd" Line 146: Partially associated formal doutb cannot have actual OPEN
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 143: Actual for formal port dina is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 146: Partially associated formal doutb cannot have actual OPEN
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad.vhd" into library work
 Parsing entity <snespad>.
 Parsing architecture <struct> of entity <snespad>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmi_out_xilinx.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi_out_xilinx.vhd" into library work
 Parsing entity <hdmi_out_xilinx>.
 Parsing architecture <Behavioral> of entity <hdmi_out_xilinx>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmi.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi.vhd" into library work
 Parsing entity <hdmi>.
 Parsing architecture <rtl> of entity <hdmi>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/sram_controller.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd" into library work
 Parsing entity <sram_controller>.
 Parsing architecture <Behavioral_sram_controller> of entity <sram_controller>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" into library work
 Parsing entity <A2601NoFlash>.
 Parsing architecture <arch> of entity <a2601noflash>.
-Parsing VHDL file "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" into library work
+Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" into library work
 Parsing entity <toplevel>.
 Parsing architecture <rtl> of entity <toplevel>.
-WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 501: Partially associated formal dipswitches cannot have actual OPEN
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 579: Actual for formal port reset_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 597: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 613: Actual for formal port res is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 631: Actual for formal port p_start is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 632: Actual for formal port p_select is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 819: Actual for formal port lum is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 821: Actual for formal port mode is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 501: Partially associated formal dipswitches cannot have actual OPEN
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 579: Actual for formal port reset_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 597: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 613: Actual for formal port res is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 631: Actual for formal port p_start is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 632: Actual for formal port p_select is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 819: Actual for formal port lum is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 821: Actual for formal port mode is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -268,30 +268,30 @@ Elaborating entity <hdmi_out_xilinx> (architecture <Behavioral>) from library <w
 Elaborating entity <snespad> (architecture <struct>) with generics from library <work>.
 
 Elaborating entity <snespad_ctrl> (architecture <rtl>) with generics from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_ctrl.vhd" Line 196. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd" Line 196. Case statement is complete. others clause is never selected
 
 Elaborating entity <snespad_pad> (architecture <rtl>) with generics from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
 
 Elaborating entity <CtrlModule> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <CtrlROM_ROM> (architecture <arch>) with generics from library <work>.
 
 Elaborating entity <zpu_core_flex> (architecture <behave>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: cachedprogramword should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 326. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: comparison_sub_result should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: shift_count should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: membread should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to begin_inst ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: cachedprogramword should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 326. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: comparison_sub_result should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: shift_count should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: membread should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to begin_inst ignored, since the identifier is never used
 
 Elaborating entity <OnScreenDisplay> (architecture <rtl>) from library <work>.
 
@@ -308,10 +308,10 @@ Elaborating entity <interrupt_controller> (architecture <rtl>) with generics fro
 Elaborating entity <OSD_Overlay> (architecture <RTL>) from library <work>.
 
 Elaborating entity <sram_controller> (architecture <Behavioral_sram_controller>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to last_a2600_addr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to last_a2600_addr ignored, since the identifier is never used
 
 Elaborating entity <A2601NoFlash> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:871 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 224: Using initial value '0' for forcereset since it is never assigned
+WARNING:HDLCompiler:871 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 224: Using initial value '0' for forcereset since it is never assigned
 
 Elaborating entity <A2601> (architecture <arch>) from library <work>.
 
@@ -322,22 +322,22 @@ Elaborating entity <cpu65xx> (architecture <fast>) with generics from library <w
 Elaborating entity <A6532> (architecture <arch>) from library <work>.
 
 Elaborating entity <ram128x8> (architecture <arch>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd" Line 150. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd" Line 174. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd" Line 133: Assignment to pa_reg ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 150. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 174. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 133: Assignment to pa_reg ignored, since the identifier is never used
 
 Elaborating entity <TIA> (architecture <arch>) from library <work>.
 
 Elaborating entity <paddle> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 484: value should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 484: value should be on the sensitivity list of the process
 
 Elaborating entity <cntr2> (architecture <arch>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 102. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 102. Case statement is complete. others clause is never selected
 
 Elaborating entity <lfsr6> (architecture <arch>) from library <work>.
 
 Elaborating entity <mux20> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 907: Assignment to hh1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 907: Assignment to hh1 ignored, since the identifier is never used
 
 Elaborating entity <audio> (architecture <arch>) from library <work>.
 
@@ -348,30 +348,30 @@ Elaborating entity <cntr3> (architecture <arch>) from library <work>.
 Elaborating entity <missile> (architecture <arch>) from library <work>.
 
 Elaborating entity <ball> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1063: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1064: inpt0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1070: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1071: inpt1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1077: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1078: inpt2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1084: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1085: inpt3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" Line 1039: Assignment to pf_score ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd" Line 129: Net <riot_pa7> does not have a driver.
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1063: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1064: inpt0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1070: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1071: inpt1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1077: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1078: inpt2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1084: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1085: inpt3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1039: Assignment to pf_score ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" Line 129: Net <riot_pa7> does not have a driver.
 
 Elaborating entity <dac> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/A2601/src/DeltaSigma.vhd" Line 42: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 267: Assignment to p_fn ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd" Line 42: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 267: Assignment to p_fn ignored, since the identifier is never used
 
 Elaborating entity <ram2048x8> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 337: e7_access_ram_256 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" Line 343: e7_access_ram_1k should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 337: e7_access_ram_256 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 343: e7_access_ram_1k should be on the sensitivity list of the process
 
 Elaborating entity <pll> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <pll_27M> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 710: host_debug_arm should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 737. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 710: host_debug_arm should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 737. Case statement is complete. others clause is never selected
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <work>.
 
@@ -385,30 +385,30 @@ Elaborating entity <hdmi_delay_line> (architecture <rtl>) with generics from lib
 Going to verilog side to elaborate module hdmidataencoder
 
 Elaborating module <hdmidataencoder(FREQ=27000000,FS=48000,CTS=27000,N=6144)>.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of 26-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of 26-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of 12-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of 26-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of 26-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of 17-bit expression is truncated to fit in 16-bit target.
 Back to vhdl to continue elaboration
 
 Elaborating entity <encoder> (architecture <rtl>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 183: Net <joy_a_0[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 184: Net <joy_a_1[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" Line 230: Net <host_bootread_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 183: Net <joy_a_0[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 184: Net <joy_a_1[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 230: Net <host_bootread_data[31]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <toplevel>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd".
 WARNING:Xst:647 - Input <cart_data_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <btn_reset_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <sd_cd_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -420,35 +420,35 @@ WARNING:Xst:647 - Input <joy2_p6_i> is never used. This port will be preserved a
 WARNING:Xst:647 - Input <joy2_p7_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy2_p9_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <flash_miso_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 382: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 474: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 474: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 474: Output port <host_mux> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 549: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 576: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 576: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 604: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/collectorvision/toplevel.vhd" line 691: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_mux> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 549: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 604: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 691: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'cart_addr_o', unconnected in block 'toplevel', is tied to its initial value (0000000000000).
 WARNING:Xst:653 - Signal <joy_a_0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <joy_a_1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -514,7 +514,7 @@ WARNING:Xst:2935 - Signal 'cart_oe_n_o', unconnected in block 'toplevel', is tie
 Unit <toplevel> synthesized.
 
 Synthesizing Unit <hdmi_out_xilinx>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmi_out_xilinx.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi_out_xilinx.vhd".
 WARNING:Xst:647 - Input <clock_pixel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 10-bit register for signal <shift_r>.
     Found 10-bit register for signal <shift_g>.
@@ -529,7 +529,7 @@ WARNING:Xst:647 - Input <clock_pixel_i> is never used. This port will be preserv
 Unit <hdmi_out_xilinx> synthesized.
 
 Synthesizing Unit <snespad>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad.vhd".
         num_pads_g = 1
         reset_level_g = 0
         button_level_g = 0
@@ -539,7 +539,7 @@ Synthesizing Unit <snespad>.
 Unit <snespad> synthesized.
 
 Synthesizing Unit <snespad_ctrl>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_ctrl.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd".
         reset_level_g = 0
         clocks_per_6us_g = 128
     Found 1-bit register for signal <pad_clk_q>.
@@ -571,7 +571,7 @@ Synthesizing Unit <snespad_ctrl>.
 Unit <snespad_ctrl> synthesized.
 
 Synthesizing Unit <snespad_pad>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/snespad/snespad_pad.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pad.vhd".
         reset_level_g = 0
         button_level_g = 0
     Found 32-bit register for signal <shift_buttons_q>.
@@ -582,17 +582,17 @@ Synthesizing Unit <snespad_pad>.
 Unit <snespad_pad> synthesized.
 
 Synthesizing Unit <CtrlModule>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd".
         sysclk_frequency = 575
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_bEnable> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_hEnable> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <break> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 185: Output port <enabled> of the instance <myosd> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_clk_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_dat_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <inIdle> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendBusy> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendDone> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_bEnable> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_hEnable> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <break> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 185: Output port <enabled> of the instance <myosd> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_clk_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_dat_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <inIdle> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendBusy> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendDone> of the instance <mykeyboard> is unconnected or connected to loadless signal.
     Found 9-bit register for signal <spi_tick>.
     Found 1-bit register for signal <int_enabled>.
     Found 1-bit register for signal <kbdrecvreg>.
@@ -631,7 +631,7 @@ INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/CtrlMo
 Unit <CtrlModule> synthesized.
 
 Synthesizing Unit <CtrlROM_ROM>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd".
         maxAddrBitBRAM = 13
 WARNING:Xst:647 - Input <from_zpu_memAAddr<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <from_zpu_memBAddr<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -646,7 +646,7 @@ WARNING:Xst:647 - Input <areset> is never used. This port will be preserved and 
 Unit <CtrlROM_ROM> synthesized.
 
 Synthesizing Unit <zpu_core_flex>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd".
         IMPL_MULTIPLY = true
         IMPL_COMPARISON_SUB = true
         IMPL_EQBRANCH = true
@@ -755,7 +755,7 @@ INFO:Xst:1799 - State state_interrupt is never reached in FSM <state>.
 Unit <zpu_core_flex> synthesized.
 
 Synthesizing Unit <OnScreenDisplay>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd".
     Found 16-bit register for signal <hcounter>.
     Found 1-bit register for signal <newline>.
     Found 16-bit register for signal <hframe>.
@@ -794,7 +794,7 @@ Synthesizing Unit <OnScreenDisplay>.
 Unit <OnScreenDisplay> synthesized.
 
 Synthesizing Unit <CharROM_ROM>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd".
         addrbits = 13
 WARNING:Xst:2999 - Signal 'rom', unconnected in block 'CharROM_ROM', is tied to its initial value.
     Found 8192x1-bit single-port Read Only RAM <Mram_rom> for signal <rom>.
@@ -805,7 +805,7 @@ WARNING:Xst:2999 - Signal 'rom', unconnected in block 'CharROM_ROM', is tied to 
 Unit <CharROM_ROM> synthesized.
 
 Synthesizing Unit <io_ps2_com>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd".
         clockFilter = 15
         ticksPerUsec = 10
     Found 1-bit register for signal <clkReg>.
@@ -848,7 +848,7 @@ Synthesizing Unit <io_ps2_com>.
 Unit <io_ps2_com> synthesized.
 
 Synthesizing Unit <spi_interface>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/spi.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd".
     Found 1-bit register for signal <shiftcnt<3>>.
     Found 1-bit register for signal <shiftcnt<2>>.
     Found 1-bit register for signal <shiftcnt<1>>.
@@ -864,7 +864,7 @@ Synthesizing Unit <spi_interface>.
 Unit <spi_interface> synthesized.
 
 Synthesizing Unit <interrupt_controller>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd".
         max_int = 2
 WARNING:Xst:647 - Input <reset_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <status>.
@@ -876,7 +876,7 @@ WARNING:Xst:647 - Input <reset_n> is never used. This port will be preserved and
 Unit <interrupt_controller> synthesized.
 
 Synthesizing Unit <OSD_Overlay>.
-    Related source file is "/home/ise/xilinx_share/2600new/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd".
     Found 1-bit register for signal <scanline>.
     Found 1-bit register for signal <hsync_r>.
     Summary:
@@ -885,7 +885,7 @@ Synthesizing Unit <OSD_Overlay>.
 Unit <OSD_Overlay> synthesized.
 
 Synthesizing Unit <sram_controller>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/sram_controller.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd".
 WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <boot_state>.
     Found 8-bit register for signal <boot_state[3]_dff_41_OUT>.
@@ -923,15 +923,15 @@ WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be p
 Unit <sram_controller> synthesized.
 
 Synthesizing Unit <A2601NoFlash>.
-    Related source file is "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd".
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <colu> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <rgbx2> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <cv> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <r> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <csyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <vsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <hsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601NoFlash.vhd" line 244: Output port <tia_pixel_clock_ena> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd".
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <colu> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <rgbx2> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <cv> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <r> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <csyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <vsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <hsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <tia_pixel_clock_ena> of the instance <ms_A2601> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'tia_pixel_clock_ena', unconnected in block 'A2601NoFlash', is tied to its initial value (0).
     Found 4-bit register for signal <ctrl_cntr>.
     Found 1-bit register for signal <pb<1>>.
@@ -974,9 +974,9 @@ INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal cpu_d<7> may hind
 Unit <A2601NoFlash> synthesized.
 
 Synthesizing Unit <A2601>.
-    Related source file is "/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd".
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd" line 145: Output port <irq> of the instance <riot_A6532> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A2601/src/A2601Core.vhd" line 149: Output port <tia_pixel_clock_ena> of the instance <tia_inst> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd".
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" line 145: Output port <irq> of the instance <riot_A6532> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" line 149: Output port <tia_pixel_clock_ena> of the instance <tia_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <rgbx2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <vsyn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <hsyn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -987,13 +987,13 @@ WARNING:Xst:653 - Signal <riot_pa7> is used but never assigned. This sourceless 
 Unit <A2601> synthesized.
 
 Synthesizing Unit <A6507>.
-    Related source file is "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd".
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugOpcode> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugPc> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugA> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugX> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugY> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Output port <debugS> of the instance <cpu> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd".
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugOpcode> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugPc> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugA> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugX> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugY> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugS> of the instance <cpu> is unconnected or connected to loadless signal.
     Found 1-bit tristate buffer for signal <cpuDi<7>> created at line 57
     Found 1-bit tristate buffer for signal <cpuDi<6>> created at line 57
     Found 1-bit tristate buffer for signal <cpuDi<5>> created at line 57
@@ -1015,7 +1015,7 @@ INFO:Xst:3210 - "/home/ise/xilinx_share/2600new/A6500/src/A6507.vhd" line 60: Ou
 Unit <A6507> synthesized.
 
 Synthesizing Unit <cpu65xx>.
-    Related source file is "/home/ise/xilinx_share/2600new/A6500/src/cpu65xx_e.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_e.vhd".
         pipelineOpcode = false
         pipelineAluMux = false
         pipelineAluOut = false
@@ -1097,7 +1097,7 @@ Synthesizing Unit <cpu65xx>.
 Unit <cpu65xx> synthesized.
 
 Synthesizing Unit <A6532>.
-    Related source file is "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd".
     Found 8-bit register for signal <pa_ddr>.
     Found 8-bit register for signal <pb_reg>.
     Found 8-bit register for signal <pb_ddr>.
@@ -1131,20 +1131,20 @@ Synthesizing Unit <A6532>.
 Unit <A6532> synthesized.
 
 Synthesizing Unit <ram128x8>.
-    Related source file is "/home/ise/xilinx_share/2600new/A6532/src/A6532.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd".
     Found 128x8-bit single-port RAM <Mram_ram> for signal <ram>.
     Found 8-bit register for signal <d_out>.
     Summary:
 	inferred   1 RAM(s).
 	inferred   8 D-type flip-flop(s).
 Unit <ram128x8> synthesized.
-WARNING:Xst:2972 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" line 895. All outputs of instance <paddle0> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" line 896. All outputs of instance <paddle1> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" line 897. All outputs of instance <paddle2> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd" line 898. All outputs of instance <paddle3> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 895. All outputs of instance <paddle0> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 896. All outputs of instance <paddle1> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 897. All outputs of instance <paddle2> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 898. All outputs of instance <paddle3> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
 
 Synthesizing Unit <TIA>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
 WARNING:Xst:647 - Input <pal> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <cburst>.
     Found 1-bit register for signal <pf_cnt>.
@@ -1258,7 +1258,7 @@ WARNING:Xst:647 - Input <pal> is never used. This port will be preserved and lef
 Unit <TIA> synthesized.
 
 Synthesizing Unit <paddle>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 1-bit register for signal <cnt<7>>.
     Found 1-bit register for signal <cnt<6>>.
     Found 1-bit register for signal <cnt<5>>.
@@ -1272,7 +1272,7 @@ Synthesizing Unit <paddle>.
 Unit <paddle> synthesized.
 
 Synthesizing Unit <cntr2>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 2-bit register for signal <d>.
     Found finite state machine <FSM_5> for signal <d>.
     -----------------------------------------------------------------------
@@ -1293,7 +1293,7 @@ Synthesizing Unit <cntr2>.
 Unit <cntr2> synthesized.
 
 Synthesizing Unit <lfsr6>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 6-bit register for signal <d>.
     Found 1-bit register for signal <prst_l>.
     Summary:
@@ -1301,14 +1301,14 @@ Synthesizing Unit <lfsr6>.
 Unit <lfsr6> synthesized.
 
 Synthesizing Unit <mux20>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 1-bit 20-to-1 multiplexer for signal <o> created at line 606.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux20> synthesized.
 
 Synthesizing Unit <audio>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 5-bit register for signal <sr5>.
     Found 5-bit register for signal <dvdr>.
     Found 4-bit register for signal <sr4>.
@@ -1322,7 +1322,7 @@ Synthesizing Unit <audio>.
 Unit <audio> synthesized.
 
 Synthesizing Unit <player>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 1-bit register for signal <scan_en>.
     Found 1-bit register for signal <scan_clk>.
     Found 1-bit register for signal <start>.
@@ -1335,7 +1335,7 @@ Synthesizing Unit <player>.
 Unit <player> synthesized.
 
 Synthesizing Unit <cntr3>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 3-bit register for signal <d>.
     Found 3-bit adder for signal <d[2]_GND_118_o_add_1_OUT> created at line 1241.
     Summary:
@@ -1344,7 +1344,7 @@ Synthesizing Unit <cntr3>.
 Unit <cntr3> synthesized.
 
 Synthesizing Unit <missile>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 1-bit register for signal <start2>.
     Found 1-bit register for signal <start1>.
     Summary:
@@ -1352,7 +1352,7 @@ Synthesizing Unit <missile>.
 Unit <missile> synthesized.
 
 Synthesizing Unit <ball>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
     Found 1-bit register for signal <start2>.
     Found 1-bit register for signal <start1>.
     Summary:
@@ -1360,7 +1360,7 @@ Synthesizing Unit <ball>.
 Unit <ball> synthesized.
 
 Synthesizing Unit <dac>.
-    Related source file is "/home/ise/xilinx_share/2600new/A2601/src/DeltaSigma.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd".
         MSBI = 4
     Found 1-bit register for signal <DACout>.
     Found 7-bit register for signal <SigmaLatch>.
@@ -1372,7 +1372,7 @@ Synthesizing Unit <dac>.
 Unit <dac> synthesized.
 
 Synthesizing Unit <ram2048x8>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/ram2048x8.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/ram2048x8.vhd".
     Found 2048x8-bit single-port RAM <Mram_ram> for signal <ram>.
     Found 8-bit register for signal <d_out>.
     Summary:
@@ -1381,19 +1381,19 @@ Synthesizing Unit <ram2048x8>.
 Unit <ram2048x8> synthesized.
 
 Synthesizing Unit <pll>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/pll.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll.vhd".
     Summary:
 	no macro.
 Unit <pll> synthesized.
 
 Synthesizing Unit <pll_27M>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd".
     Summary:
 	no macro.
 Unit <pll_27M> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/vga.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd".
         h_input_offset = 48
 WARNING:Xst:647 - Input <I_CLK_VGA2X> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <I_VSYNC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1439,7 +1439,7 @@ WARNING:Xst:647 - Input <I_VSYNC> is never used. This port will be preserved and
 Unit <vga> synthesized.
 
 Synthesizing Unit <VGAColorTable>.
-    Related source file is "/home/ise/xilinx_share/2600new/TIA/src/VGAColorTable.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/VGAColorTable.vhd".
 WARNING:Xst:647 - Input <lum<3:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 24-bit register for signal <outColor>.
     Found 512x24-bit Read Only RAM for signal <GND_155_o_GND_155_o_select_385_OUT>
@@ -1449,7 +1449,7 @@ WARNING:Xst:647 - Input <lum<3:3>> is never used. This port will be preserved an
 Unit <VGAColorTable> synthesized.
 
 Synthesizing Unit <hdmi>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmi.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi.vhd".
         FREQ = 27000000
         FS = 48000
         CTS = 27000
@@ -1486,7 +1486,7 @@ Synthesizing Unit <hdmi>.
 Unit <hdmi> synthesized.
 
 Synthesizing Unit <hdmi_delay_line>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidelay.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidelay.vhd".
         G_WIDTH = 40
         G_DEPTH = 11
     Found 40-bit register for signal <q_pipe<1>>.
@@ -1505,7 +1505,7 @@ Synthesizing Unit <hdmi_delay_line>.
 Unit <hdmi_delay_line> synthesized.
 
 Synthesizing Unit <hdmidataencoder>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/HDMI/hdmidataencoder.v".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v".
         FREQ = 27000000
         FS = 48000
         CTS = 27000
@@ -1656,7 +1656,7 @@ Synthesizing Unit <div_26u_11u>.
 Unit <div_26u_11u> synthesized.
 
 Synthesizing Unit <encoder>.
-    Related source file is "/home/ise/xilinx_share/2600new/collectorvision/HDMI/encoder.vhd".
+    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/encoder.vhd".
     Found 4-bit register for signal <dc_bias>.
     Found 10-bit register for signal <ENCODED>.
     Found 4-bit adder for signal <n0163> created at line 54.
@@ -3274,7 +3274,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT0'
   Clock period: 88.122ns (frequency: 11.348MHz)
-  Total number of paths / destination ports: 3097506564524320717332274530140291072 / 1863
+  Total number of paths / destination ports: 3097506564524320127036464171434639360 / 1863
 -------------------------------------------------------------------------
 Delay:               88.122ns (Levels of Logic = 129)
   Source:            hdmi/dataenc/audioAvgCnt_1_1 (FF)
@@ -3813,13 +3813,13 @@ pll_hdmi_instance/pll_base_inst/CLKOUT3|    7.353|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 111.00 secs
-Total CPU time to Xst completion: 100.63 secs
+Total REAL time to Xst completion: 93.00 secs
+Total CPU time to Xst completion: 83.07 secs
  
 --> 
 
 
-Total memory usage is 600184 kilobytes
+Total memory usage is 580716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  521 (   0 filtered)

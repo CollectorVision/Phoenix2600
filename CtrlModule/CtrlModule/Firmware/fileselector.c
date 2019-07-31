@@ -87,7 +87,7 @@ static void scrollroms(int row)
 				--romindex;
 			break;
 		case ROW_PAGEUP:
-			romindex-=16;
+			romindex-=12;
 			if(romindex<0)
 				romindex=0;
 			break;
@@ -95,7 +95,7 @@ static void scrollroms(int row)
 			++romindex;
 			break;
 		case ROW_PAGEDOWN:
-			romindex+=16;
+			romindex+=12;
 			break;
 	}
 	listroms();
