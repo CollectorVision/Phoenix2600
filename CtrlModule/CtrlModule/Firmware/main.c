@@ -12,7 +12,7 @@
 #define MENUITEM_ROM  	0
 #define MENUITEM_BANK_E0  1
 #define MENUITEM_BANK_E7  1
-#define MENUITEM_DEBUG  1
+#define MENUITEM_DEBUG  0
 #define MENUITEM_VERIFY 0
 
 fileTYPE file;
@@ -384,7 +384,9 @@ static int LoadROM(const char *filename)
 	// is provided.
 	{
 		const char *p = filename+8;
+#if MENUITEM_DEBUG		
 		mystrcpy(debug_title, filename);
+#endif		
 
 		// Check file extension for a few different special characters
 		int flags = 0;
@@ -399,7 +401,7 @@ static int LoadROM(const char *filename)
 		if (flags) {
 			MENU_TOGGLE_VALUES &= ~0x320;
 			MENU_TOGGLE_VALUES |= flags;
-			// int dipsw = SetDIPSwitches();
+			int dipsw = SetDIPSwitches();
 			// HW_HOST(REG_HOST_SW)= (dipsw & ~0xE0) | flags;
 		}
 	}

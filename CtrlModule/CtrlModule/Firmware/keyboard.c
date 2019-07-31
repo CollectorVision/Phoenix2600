@@ -46,7 +46,7 @@ unsigned char coleco_map[NBUTTONS] = {
 //  6      7       8      9      *      0      #
 	KEY_A, KEY_F1, KEY_A, KEY_A, KEY_A, KEY_A, KEY_A,
 // Gamepad buttons - bits in hardware register in this order (MSB to LSB direction): Fire Left Right Up Down
-	KEY_DOWNARROW, KEY_UPARROW, KEY_LEFTARROW, KEY_RIGHTARROW, KEY_ENTER
+	KEY_DOWNARROW, KEY_UPARROW, KEY_PAGEDOWN, KEY_PAGEUP, KEY_ENTER
 };
 
 // We maintain a keytable which records which keys are currently pressed
