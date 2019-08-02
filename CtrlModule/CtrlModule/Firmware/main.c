@@ -398,12 +398,12 @@ static int LoadROM(const char *filename)
 			else if(p[1] == '7')
 				flags |= (1 << 9);	// E7 banking
 		}
-		if (flags) {
+//		if (flags) {
 			MENU_TOGGLE_VALUES &= ~0x320;
 			MENU_TOGGLE_VALUES |= flags;
 			int dipsw = SetDIPSwitches();
 			// HW_HOST(REG_HOST_SW)= (dipsw & ~0xE0) | flags;
-		}
+//		}
 	}
 
 	HW_HOST(REG_HOST_MUTECTRL) = 0; // Make sure mute is off and boot
