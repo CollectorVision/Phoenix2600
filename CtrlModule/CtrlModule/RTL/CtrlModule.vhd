@@ -55,7 +55,7 @@ entity CtrlModule is
 		host_select : out std_logic;
 		host_start : out std_logic;
 		
-		host_mux	  : out std_logic := '0';	-- data from internal ROM or ext sram
+		host_mute 	   : out std_logic := '0';	-- data from internal ROM or ext sram
 		host_debug_arm : out std_logic := '0';
 		-- Memory read port
 		host_bootread_data 	: in std_logic_vector(31 downto 0);
@@ -327,7 +327,7 @@ begin
 							spi_active<='1';
 							
 						when X"E0" => -- host mux
-							host_mux <= mem_write(0);
+							host_mute <= mem_write(0);
 							host_debug_arm <= mem_write(1);
 							mem_busy <= '0';
 							

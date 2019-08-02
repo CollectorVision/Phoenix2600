@@ -177,7 +177,7 @@ void Start(int row)
 void Boot(int row) {
 	// Switch databus to loaded ROM, Reset
 	// Value bit 1 below arms debug capture when reset is issued
-	HW_HOST(REG_HOST_MUXCTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0);
+	HW_HOST(REG_HOST_MUTECTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0);
 	Reset(0);
 	Delay();
 	// Return to pacman, no capture.
@@ -406,7 +406,7 @@ static int LoadROM(const char *filename)
 		}
 	}
 
-	HW_HOST(REG_HOST_MUXCTRL) = 1; // Make sure ROM is enabled and boot
+	HW_HOST(REG_HOST_MUTECTRL) = 0; // Make sure mute is off and boot
 	Reset(0);
 	Delay();
 	
@@ -507,6 +507,7 @@ int main(int argc,char **argv)
 //	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_RESET;
 
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_DIVERT_SDCARD;
+	HW_HOST(REG_HOST_MUTECTRL) = 1; // mute audio of the console first
 
 	PS2Init();
 	EnableInterrupts();

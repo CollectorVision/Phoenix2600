@@ -1,7 +1,7 @@
 Release 14.7 - par P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Jul 31 18:52:18 2019
+Fri Aug  2 18:35:53 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:

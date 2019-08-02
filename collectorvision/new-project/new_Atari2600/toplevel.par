@@ -1,7 +1,7 @@
 Release 14.7 par P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Wed Jul 31 18:51:07 2019
+localhost.localdomain::  Fri Aug 02 18:32:50 2019
 
 par -w -intstyle ise -ol high -mt off toplevel_map.ncd toplevel.ncd
 toplevel.pcf 
@@ -28,16 +28,16 @@ Device speed data version:  "PRODUCTION 1.23 2016-11-22".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,095 out of  18,224   11%
-    Number used as Flip Flops:               2,077
+  Number of Slice Registers:                 2,096 out of  18,224   11%
+    Number used as Flip Flops:               2,078
     Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               17
-  Number of Slice LUTs:                      4,178 out of   9,112   45%
-    Number used as logic:                    4,060 out of   9,112   44%
-      Number using O6 output only:           3,139
-      Number using O5 output only:             216
-      Number using O5 and O6:                  705
+  Number of Slice LUTs:                      4,179 out of   9,112   45%
+    Number used as logic:                    4,059 out of   9,112   44%
+      Number using O6 output only:           3,141
+      Number using O5 output only:             212
+      Number using O5 and O6:                  706
       Number used as ROM:                        0
     Number used as Memory:                      76 out of   2,176    3%
       Number used as Dual Port RAM:             24
@@ -52,18 +52,18 @@ Slice Logic Utilization:
         Number using O6 output only:            17
         Number using O5 output only:             0
         Number using O5 and O6:                 19
-    Number used exclusively as route-thrus:     42
+    Number used exclusively as route-thrus:     44
       Number with same-slice register load:     19
-      Number with same-slice carry load:        23
+      Number with same-slice carry load:        25
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,382 out of   2,278   60%
+  Number of occupied Slices:                 1,421 out of   2,278   62%
   Number of MUXCYs used:                     1,020 out of   4,556   22%
-  Number of LUT Flip Flop pairs used:        4,463
-    Number with an unused Flip Flop:         2,517 out of   4,463   56%
-    Number with an unused LUT:                 285 out of   4,463    6%
-    Number of fully used LUT-FF pairs:       1,661 out of   4,463   37%
+  Number of LUT Flip Flop pairs used:        4,478
+    Number with an unused Flip Flop:         2,532 out of   4,478   56%
+    Number with an unused LUT:                 299 out of   4,478    6%
+    Number of fully used LUT-FF pairs:       1,647 out of   4,478   36%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -139,34 +139,36 @@ WARNING:Par:288 - The signal cart_data_i<5>_IBUF has no load.  PAR will not atte
 WARNING:Par:288 - The signal cart_data_i<6>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal cart_data_i<7>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_debug_mem3_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal Mram_debug_mem5_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_debug_mem4_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_debug_mem2_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal Mram_debug_mem1_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal Mram_debug_mem5_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 27034 unrouted;      REAL time: 11 secs 
+Phase  1  : 27031 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 23035 unrouted;      REAL time: 14 secs 
+Phase  2  : 23044 unrouted;      REAL time: 14 secs 
 
-Phase  3  : 9478 unrouted;      REAL time: 32 secs 
+Phase  3  : 9375 unrouted;      REAL time: 33 secs 
 
-Phase  4  : 10892 unrouted; (Setup:3176646, Hold:86, Component Switching Limit:0)     REAL time: 45 secs 
-WARNING:Route:441 - The router has detected a very high timing score (3176646) for this design. It is extremely unlikely the router will be
-   able to meet your timing requirements. To prevent excessive run time the router will change strategy. The router will now work to
-   completely route this design but not to improve timing. This behavior will allow you to use the Static Timing Report and FPGA Editor to
-   isolate the paths with timing problems. The cause of this behavior is either overly difficult constraints, or issues with the
-   implementation or synthesis of logic in the critical timing path. If you would prefer the router continue trying to meet timing and you
-   are willing to accept a long run time set the option "-xe c" to override the present behavior.
+Phase  4  : 10197 unrouted; (Setup:2137152, Hold:106, Component Switching Limit:0)     REAL time: 44 secs 
 
 Updating file: toplevel.ncd with current fully routed design.
-WARNING:Route:562 - 
-    Par  has gone into non timing driven mode hence it will not fix hold errors.
-   To bypass this,  please run Par in -xe mode.
-Phase  5  : 0 unrouted; (Setup:5304741, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 7 secs 
-Total REAL time to Router completion: 1 mins 7 secs 
-Total CPU time to Router completion: 1 mins 5 secs 
+
+Phase  5  : 0 unrouted; (Setup:2452143, Hold:86, Component Switching Limit:0)     REAL time: 2 mins 5 secs 
+
+Phase  6  : 0 unrouted; (Setup:2452143, Hold:86, Component Switching Limit:0)     REAL time: 2 mins 55 secs 
+
+Phase  7  : 0 unrouted; (Setup:2452143, Hold:86, Component Switching Limit:0)     REAL time: 2 mins 55 secs 
+
+Phase  8  : 0 unrouted; (Setup:2452143, Hold:86, Component Switching Limit:0)     REAL time: 2 mins 55 secs 
+
+Phase  9  : 0 unrouted; (Setup:2452143, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 56 secs 
+
+Phase 10  : 0 unrouted; (Setup:2419028, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 58 secs 
+Total REAL time to Router completion: 2 mins 58 secs 
+Total CPU time to Router completion: 2 mins 54 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -184,29 +186,29 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             vid_clk |  BUFGMUX_X2Y4| No   |  237 |  0.068     |  1.141      |
+|             vid_clk |  BUFGMUX_X2Y4| No   |  239 |  0.061     |  1.134      |
 +---------------------+--------------+------+------+------------+-------------+
-|        hdmi_clk_25M | BUFGMUX_X2Y10| No   |  295 |  0.066     |  1.138      |
+|        hdmi_clk_25M | BUFGMUX_X2Y10| No   |  296 |  0.064     |  1.137      |
 +---------------------+--------------+------+------+------------+-------------+
 |a2601Instance/ms_A26 |              |      |      |            |             |
 |01/tia_inst/phi1_BUF |              |      |      |            |             |
-|                   G |  BUFGMUX_X2Y2| No   |   68 |  0.052     |  1.133      |
+|                   G |  BUFGMUX_X2Y2| No   |   70 |  0.063     |  1.135      |
 +---------------------+--------------+------+------+------------+-------------+
-|       hdmi_clk_2_5x |  BUFGMUX_X2Y1| No   |   34 |  0.055     |  1.129      |
+|       hdmi_clk_2_5x |  BUFGMUX_X2Y1| No   |   36 |  0.052     |  1.124      |
 +---------------------+--------------+------+------+------------+-------------+
-|     hdmi_clk_125M_p | BUFGMUX_X2Y12| No   |   15 |  0.605     |  1.690      |
+|     hdmi_clk_125M_p | BUFGMUX_X2Y12| No   |   15 |  0.608     |  1.690      |
 +---------------------+--------------+------+------+------------+-------------+
 |     hdmi_clk_125M_n |  BUFGMUX_X3Y8| No   |    4 |  0.031     |  1.751      |
 +---------------------+--------------+------+------+------------+-------------+
 |a2601Instance/ms_A26 |              |      |      |            |             |
-|    01/tia_inst/phi0 |         Local|      |   82 |  3.326     |  3.962      |
+|    01/tia_inst/phi0 |         Local|      |   82 |  2.161     |  2.877      |
 +---------------------+--------------+------+------+------------+-------------+
 |a2601Instance/ms_A26 |              |      |      |            |             |
 |01/tia_inst/vid_clk_ |              |      |      |            |             |
-|             dvdr<3> |         Local|      |   87 |  1.854     |  2.472      |
+|             dvdr<3> |         Local|      |   88 |  2.757     |  3.581      |
 +---------------------+--------------+------+------+------------+-------------+
 |host_reset_n_host_de |              |      |      |            |             |
-|  bug_arm_AND_1927_o |         Local|      |    1 |  0.000     |  0.586      |
+|  bug_arm_AND_1927_o |         Local|      |    1 |  0.000     |  0.602      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -217,7 +219,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 5304741 (Setup: 5304741, Hold: 0, Component Switching Limit: 0)
+Timing Score: 2419028 (Setup: 2419028, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -244,20 +246,20 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_pll_hdmi_instance_clkout0 = PERIOD TIM | SETUP       |   -59.294ns|   317.344ns|     243|     5130087
-  EGRP "pll_hdmi_instance_clkout0"          | HOLD        |     0.324ns|            |       0|           0
+* TS_pll_hdmi_instance_clkout0 = PERIOD TIM | SETUP       |   -32.223ns|   569.357ns|     256|     2257734
+  EGRP "pll_hdmi_instance_clkout0"          | HOLD        |     0.365ns|            |       0|           0
   TS_clock_50_i / 0.54 HIGH 50%             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-* TS_pll_575_instance_clkfx = PERIOD TIMEGR | SETUP       |    -4.754ns|   229.701ns|      46|       89320
-  P "pll_575_instance_clkfx"         TS_clo | HOLD        |     0.263ns|            |       0|           0
+* TS_pll_575_instance_clkfx = PERIOD TIMEGR | SETUP       |    -3.793ns|   222.248ns|      45|       79738
+  P "pll_575_instance_clkfx"         TS_clo | HOLD        |     0.302ns|            |       0|           0
   ck_50_i / 1.15 HIGH 50%                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-* TS_pll_hdmi_instance_clkout3 = PERIOD TIM | SETUP       |    -2.253ns|    66.639ns|     102|       85334
-  EGRP "pll_hdmi_instance_clkout3"          | HOLD        |     0.315ns|            |       0|           0
+* TS_pll_hdmi_instance_clkout3 = PERIOD TIM | SETUP       |    -2.697ns|    76.853ns|     102|       81556
+  EGRP "pll_hdmi_instance_clkout3"          | HOLD        |     0.327ns|            |       0|           0
   TS_clock_50_i / 1.35 HIGH 50%             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_pll_hdmi_instance_clkout1 = PERIOD TIM | SETUP       |     2.676ns|     4.731ns|       0|           0
-  EGRP "pll_hdmi_instance_clkout1"          | HOLD        |     0.013ns|            |       0|           0
+  TS_pll_hdmi_instance_clkout1 = PERIOD TIM | SETUP       |     2.782ns|     4.625ns|       0|           0
+  EGRP "pll_hdmi_instance_clkout1"          | HOLD        |     0.119ns|            |       0|           0
   TS_clock_50_i / 2.7 HIGH 50%              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_pll_hdmi_instance_clkout2 = PERIOD TIM | MINPERIOD   |     4.741ns|     2.666ns|       0|           0
@@ -280,12 +282,12 @@ Derived Constraints for TS_clock_50_i
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clock_50_i                  |     20.000ns|      8.000ns|    264.156ns|            0|          391|           
+|TS_clock_50_i                  |     20.000ns|      8.000ns|    307.453ns|            0|          403|           
 0|3097506564524317175557412377906380800|
-| TS_pll_575_instance_clkfx     |     17.391ns|    229.701ns|          N/A|           46|            0|      1439713|            0|
-| TS_pll_hdmi_instance_clkout3  |     14.815ns|     66.639ns|          N/A|          102|            0|         2555|            0|
-| TS_pll_hdmi_instance_clkout1  |      7.407ns|      4.731ns|          N/A|            0|            0|          236|            0|
-| TS_pll_hdmi_instance_clkout0  |     37.037ns|    317.344ns|          N/A|          243|           
+| TS_pll_575_instance_clkfx     |     17.391ns|    222.248ns|          N/A|           45|            0|      1439726|            0|
+| TS_pll_hdmi_instance_clkout3  |     14.815ns|     76.853ns|          N/A|          102|            0|         2555|            0|
+| TS_pll_hdmi_instance_clkout1  |      7.407ns|      4.625ns|          N/A|            0|            0|          236|            0|
+| TS_pll_hdmi_instance_clkout0  |     37.037ns|    569.357ns|          N/A|          256|           
 0|3097506564524317175557412377906380800|            0|
 | TS_pll_hdmi_instance_clkout2  |      7.407ns|      2.666ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -299,17 +301,17 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 23 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 12 secs 
-Total CPU time to PAR completion: 1 mins 9 secs 
+Total REAL time to PAR completion: 3 mins 3 secs 
+Total CPU time to PAR completion: 2 mins 58 secs 
 
-Peak Memory Usage:  712 MB
+Peak Memory Usage:  714 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 391 errors found.
+Timing: Completed - 403 errors found.
 
 Number of error messages: 0
-Number of warning messages: 28
+Number of warning messages: 26
 Number of info messages: 0
 
 Writing design to file toplevel.ncd

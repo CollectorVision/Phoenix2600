@@ -62,9 +62,6 @@
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem3_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem5_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
-</msg>
-
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem4_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
@@ -74,12 +71,8 @@
 <msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem1_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="Route" num="441" delta="old" >The router has detected a very high timing score (<arg fmt="%.0f" index="1">3176646</arg>) for this design. It is extremely unlikely the router will be able to meet your timing requirements. To prevent excessive run time the router will change strategy. The router will now work to completely route this design but not to improve timing. This behavior will allow you to use the Static Timing Report and FPGA Editor to isolate the paths with timing problems. The cause of this behavior is either overly difficult constraints, or issues with the implementation or synthesis of logic in the critical timing path. If you would prefer the router continue trying to meet timing and you are willing to accept a long run time set the option &quot;-xe c&quot; to override the present behavior.
+<msg type="warning" file="Par" num="288" delta="old" >The signal <arg fmt="%s" index="1">Mram_debug_mem5_RAMD_D1_O</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
-
-<msg type="warning" file="Route" num="562" delta="old" >
- Par  has gone into non timing driven mode hence it will not fix hold errors.
-To bypass this,  please run Par in -xe mode.</msg>
 
 <msg type="warning" file="Par" num="468" delta="old" >Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 

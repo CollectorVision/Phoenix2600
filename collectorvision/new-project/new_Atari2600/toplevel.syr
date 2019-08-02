@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: toplevel.prj
@@ -443,7 +443,6 @@ INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_mux> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 549: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
@@ -510,7 +509,7 @@ WARNING:Xst:2935 - Signal 'cart_oe_n_o', unconnected in block 'toplevel', is tie
 	inferred   5 Adder/Subtractor(s).
 	inferred  94 D-type flip-flop(s).
 	inferred   5 Comparator(s).
-	inferred  10 Multiplexer(s).
+	inferred  11 Multiplexer(s).
 Unit <toplevel> synthesized.
 
 Synthesizing Unit <hdmi_out_xilinx>.
@@ -606,7 +605,7 @@ INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlM
     Found 1-bit register for signal <spi_trigger>.
     Found 1-bit register for signal <spi_fast>.
     Found 8-bit register for signal <host_to_spi>.
-    Found 1-bit register for signal <host_mux>.
+    Found 1-bit register for signal <host_mute>.
     Found 1-bit register for signal <host_debug_arm>.
     Found 21-bit register for signal <host_bootread_addr>.
     Found 32-bit register for signal <host_bootdata>.
@@ -1807,7 +1806,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 2041
+# Multiplexers                                         : 2042
  1-bit 2-to-1 multiplexer                              : 1674
  1-bit 20-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 2
@@ -1818,7 +1817,7 @@ Macro Statistics
  11-bit 2-to-1 multiplexer                             : 13
  11-bit 7-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 51
- 16-bit 2-to-1 multiplexer                             : 16
+ 16-bit 2-to-1 multiplexer                             : 17
  17-bit 2-to-1 multiplexer                             : 4
  20-bit 2-to-1 multiplexer                             : 2
  21-bit 2-to-1 multiplexer                             : 3
@@ -2454,7 +2453,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 2403
+# Multiplexers                                         : 2404
  1-bit 2-to-1 multiplexer                              : 2052
  1-bit 20-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 2
@@ -2465,7 +2464,7 @@ Macro Statistics
  11-bit 2-to-1 multiplexer                             : 13
  11-bit 7-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 49
- 16-bit 2-to-1 multiplexer                             : 15
+ 16-bit 2-to-1 multiplexer                             : 16
  17-bit 2-to-1 multiplexer                             : 4
  20-bit 2-to-1 multiplexer                             : 2
  21-bit 2-to-1 multiplexer                             : 3
@@ -2743,15 +2742,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_26> h
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_29> has a constant value of 0 in block <sram_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_30> has a constant value of 0 in block <sram_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <packetHeader_23> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_0> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_1> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_2> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_3> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_4> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_5> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_6> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_7> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_8> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <audioTimer_0> of sequential type is unconnected in block <hdmidataencoder>.
 WARNING:Xst:2677 - Node <audioTimer_1> of sequential type is unconnected in block <hdmidataencoder>.
 WARNING:Xst:2677 - Node <audioTimer_2> of sequential type is unconnected in block <hdmidataencoder>.
@@ -2947,7 +2937,6 @@ WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_11> of sequential type is un
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_10> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_9> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_8> of sequential type is unconnected in block <toplevel>.
-WARNING:Xst:2677 - Node <MyCtrlModule/host_mux> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_hEnable> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_bEnable> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_addr_19> of sequential type is unconnected in block <toplevel>.
@@ -2997,6 +2986,15 @@ WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_4> of sequential typ
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_3> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_2> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_0> of sequential type is unconnected in block <toplevel>.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_8> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_7> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_6> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_5> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_4> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_3> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_2> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_1> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_0> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <MyCtrlModule/mykeyboard/ena> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_0> 
 INFO:Xst:2261 - The FF/Latch <overlay/hsync_r> in Unit <toplevel> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dataenc/prevHSync> <hdmi/delay_line/q_pipe_0_15> 
 INFO:Xst:2261 - The FF/Latch <hdmi/prevBlank> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <hdmi/dataenc/prevBlank> 
@@ -3103,8 +3101,8 @@ Unit <toplevel> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2001
- Flip-Flops                                            : 2001
+# Registers                                            : 2002
+ Flip-Flops                                            : 2002
 # Shift Registers                                      : 55
  10-bit shift register                                 : 15
  11-bit shift register                                 : 25
@@ -3136,25 +3134,25 @@ Top Level Output File Name         : toplevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6290
+# BELS                             : 6292
 #      GND                         : 3
 #      INV                         : 85
 #      LUT1                        : 232
 #      LUT2                        : 309
-#      LUT3                        : 452
-#      LUT4                        : 694
-#      LUT5                        : 993
-#      LUT6                        : 1862
+#      LUT3                        : 453
+#      LUT4                        : 696
+#      LUT5                        : 991
+#      LUT6                        : 1863
 #      MUXCY                       : 847
 #      MUXF7                       : 66
 #      VCC                         : 3
 #      XORCY                       : 744
-# FlipFlops/Latches                : 2082
-#      FD                          : 366
+# FlipFlops/Latches                : 2083
+#      FD                          : 365
 #      FD_1                        : 8
 #      FDC                         : 1
 #      FDCE                        : 19
-#      FDE                         : 1171
+#      FDE                         : 1173
 #      FDE_1                       : 144
 #      FDPE                        : 1
 #      FDR                         : 163
@@ -3193,19 +3191,19 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2082  out of  18224    11%  
- Number of Slice LUTs:                 4722  out of   9112    51%  
-    Number used as Logic:              4627  out of   9112    50%  
+ Number of Slice Registers:            2083  out of  18224    11%  
+ Number of Slice LUTs:                 4724  out of   9112    51%  
+    Number used as Logic:              4629  out of   9112    50%  
     Number used as Memory:               95  out of   2176     4%  
        Number used as RAM:               40
        Number used as SRL:               55
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   5313
-   Number with an unused Flip Flop:    3231  out of   5313    60%  
-   Number with an unused LUT:           591  out of   5313    11%  
-   Number of fully used LUT-FF pairs:  1491  out of   5313    28%  
-   Number of unique control sets:       163
+ Number of LUT Flip Flop pairs used:   5315
+   Number with an unused Flip Flop:    3232  out of   5315    60%  
+   Number with an unused LUT:           591  out of   5315    11%  
+   Number of fully used LUT-FF pairs:  1492  out of   5315    28%  
+   Number of unique control sets:       164
 
 IO Utilization: 
  Number of IOs:                         117
@@ -3241,7 +3239,7 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------+-----------------------------------------------+-------+
 pll_hdmi_instance/pll_base_inst/CLKOUT0                                          | BUFG                                          | 847   |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3                                   | NONE(last_hsync)                              | 190   |
-CLOCK_50_i                                                                       | DCM_SP:CLKFX                                  | 605   |
+CLOCK_50_i                                                                       | DCM_SP:CLKFX                                  | 606   |
 pll_hdmi_instance/pll_base_inst/CLKOUT3                                          | BUFG                                          | 120   |
 a2601Instance/ms_A2601/tia_inst/phi1                                             | BUFG                                          | 215   |
 a2601Instance/ms_A2601/tia_inst/phi0                                             | NONE(a2601Instance/ms_A2601/cpu_A6507/cpu/A_0)| 168   |
@@ -3449,7 +3447,7 @@ Delay:               8.656ns (Levels of Logic = 4)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK_50_i'
   Clock period: 20.216ns (frequency: 49.466MHz)
-  Total number of paths / destination ports: 1218973 / 1383
+  Total number of paths / destination ports: 1218986 / 1386
 -------------------------------------------------------------------------
 Delay:               17.579ns (Levels of Logic = 5)
   Source:            MyCtrlModule/myrom/Mram_ram2 (RAM)
@@ -3777,7 +3775,7 @@ Clock to Setup on destination clock pll_hdmi_instance/pll_base_inst/CLKOUT0
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
 CLOCK_50_i                                    |    4.288|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi1          |         |    5.363|         |         |
+a2601Instance/ms_A2601/tia_inst/phi1          |         |    5.037|         |         |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    9.072|         |         |         |
 pll_hdmi_instance/pll_base_inst/CLKOUT0       |   88.122|         |         |         |
 pll_hdmi_instance/pll_base_inst/CLKOUT3       |    4.099|         |         |         |
@@ -3813,15 +3811,15 @@ pll_hdmi_instance/pll_base_inst/CLKOUT3|    7.353|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 93.00 secs
-Total CPU time to Xst completion: 83.07 secs
+Total REAL time to Xst completion: 94.00 secs
+Total CPU time to Xst completion: 84.62 secs
  
 --> 
 
 
-Total memory usage is 580716 kilobytes
+Total memory usage is 581192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  521 (   0 filtered)
-Number of infos    :  149 (   0 filtered)
+Number of warnings :  520 (   0 filtered)
+Number of infos    :  148 (   0 filtered)
 

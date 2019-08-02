@@ -286,7 +286,7 @@ architecture rtl of toplevel is
 	signal extram_rom_byte  : std_logic_vector(7 downto 0);
 	signal rom_loaded			: std_logic;
 	
-	signal host_mux : std_logic;
+	signal host_mute : std_logic;
 	signal host_debug_arm : std_logic;
 	signal top_ph0 : std_logic;
 	
@@ -521,7 +521,7 @@ MyCtrlModule : entity work.CtrlModule
 		host_start => host_start,
       host_select => host_select,
 		
-		host_mux => host_mux,
+		host_mute => host_mute,
 		host_debug_arm => host_debug_arm,
 		
 		-- Boot data read signals (verification)
@@ -743,7 +743,7 @@ overlay : entity work.OSD_Overlay
 	-- end of debug stuff
 	
 	-- handle audio to HDMI
-	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00";
+	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00" when host_mute='0' else (others => '0');
 	
 	-- video clocking
 	process(vid_clk, tia_pixel_clock_ena, tia_pixel_clock)
