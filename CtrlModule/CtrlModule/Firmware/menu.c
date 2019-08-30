@@ -8,7 +8,7 @@ int joyb;
 
 static struct menu_entry *menu;
 static int menu_visible=0;
-int menu_toggle_bits=6;
+int menu_toggle_bits=4;	// Sync this value with main.c  (2=PAL, 4=COLOR)
 static int menurows;
 static int currentrow;
 static struct hotkey *hotkeys;

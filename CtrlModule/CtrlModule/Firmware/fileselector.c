@@ -11,6 +11,8 @@ int (*loadfunction)(const char *filename); // Callback function
 
 static char romfilenames[13][30];
 
+static char back_string[30] = "Back";
+
 static struct menu_entry rommenu[]=
 {
 	{MENU_ENTRY_CALLBACK,romfilenames[0],MENU_ACTION(&selectrom)},
@@ -26,7 +28,7 @@ static struct menu_entry rommenu[]=
 	{MENU_ENTRY_CALLBACK,romfilenames[10],MENU_ACTION(&selectrom)},
 	{MENU_ENTRY_CALLBACK,romfilenames[11],MENU_ACTION(&selectrom)},
 	{MENU_ENTRY_CALLBACK,romfilenames[12],MENU_ACTION(&selectrom)},
-	{MENU_ENTRY_SUBMENU,"Back",MENU_ACTION(0)},
+	{MENU_ENTRY_SUBMENU,back_string,MENU_ACTION(0)},
 	{MENU_ENTRY_NULL,0,MENU_ACTION(scrollroms)}
 };
 
@@ -77,6 +79,15 @@ static void selectdir(int row)
 	Menu_Draw();
 }
 
+extern char *hex;
+void mystrcpy(char *dst,const unsigned char *src);
+void to_hex_str( char *p, int k)
+{
+	p[0] = hex[(k >> 12) & 0xF];
+	p[1] = hex[(k >> 8) & 0xF];
+	p[2] = hex[(k >> 4) & 0xF];
+	p[3] = hex[k & 0xF];
+}
 
 static void scrollroms(int row)
 {
@@ -99,6 +110,10 @@ static void scrollroms(int row)
 			break;
 	}
 	listroms();
+	mystrcpy(back_string, "Back zzzz xxxx");
+	to_hex_str(back_string+5, romindex);
+	to_hex_str(back_string+10, dir_entries);
+
 	Menu_Draw();
 }
 

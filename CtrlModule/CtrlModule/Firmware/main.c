@@ -280,7 +280,7 @@ void HexDebugByte(unsigned int k) {
 }
 
 
-static void mystrcpy(char *dst,const unsigned char *src)
+void mystrcpy(char *dst,const unsigned char *src)
 {
 	while(*dst++ = *src++)
 		;
