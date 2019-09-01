@@ -1,3 +1,3 @@
-End of code:	00002f78 g       *ABS*	00000000 _romend
-Start of BSS:	00002f78 g       .bss	00000000 __bss_start__
-End of BSS:	000034b0 g       .bss	00000000 __bss_end__
+End of code:	00003088 g       *ABS*	00000000 _romend
+Start of BSS:	00003088 g       .bss	00000000 __bss_start__
+End of BSS:	000035c0 g       .bss	00000000 __bss_end__

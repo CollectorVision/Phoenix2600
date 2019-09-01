@@ -111,7 +111,7 @@ void ChangeDirectory(DIRENTRY *p);
 
 int LoadFile(const char *fn, unsigned char *buf);
 
-DIRENTRY *NextDirEntry(int prev); // Must be called in ascending sequence, starting with 0
+DIRENTRY *NextDirEntry(int prev, int *end); // Must be called in ascending sequence, starting with 0
 
 int IsFat32();
 

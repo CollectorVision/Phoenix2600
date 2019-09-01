@@ -70,6 +70,7 @@ static unsigned long fat_size;                 // size of fat
 
 static unsigned int current_directory_cluster;
 static unsigned int current_directory_start;
+unsigned int last_next_directory_cluster = 0;
 
 static int partitioncount;
 
@@ -233,7 +234,7 @@ int GetCluster(int cluster)
 }
 
 
-DIRENTRY *NextDirEntry(int prev)
+DIRENTRY *NextDirEntry(int prev, int *end)
 {
     unsigned long  iDirectory = 0;       // only root directory is supported
     DIRENTRY      *pEntry = NULL;        // pointer to current entry in sector buffer
@@ -241,16 +242,49 @@ DIRENTRY *NextDirEntry(int prev)
     unsigned long  iEntry;               // entry index in directory cluster or FAT16 root directory
 	static int prevlfn=0;
 
-	// FIXME traverse clusters if necessary
+	if(end) *end = 0;	// Not at the end
 
-    iDirectorySector = current_directory_start+(prev>>4);
+	// Our default is that the current cluster is sufficient for the directory.
+	iDirectorySector = current_directory_start+(prev>>4);
 
 	if ((prev & 0x0F) == 0) // first entry in sector, load the sector
 	{
+		// FIXME traverse clusters if necessary
+		// ------------------------------------------------------------------------------
+		// EP 2019-08-31 Let's do exactly that, and traverse clusters if needed.
+		// ------------------------------------------------------------------------------
+		// "prev" is an index into FAT directory entries, and with long file names
+		// and deleted files etc a directory entry does NOT correspond to an actual file
+		// necessarily. In those cases this function just returns zero.
+		// So here we need to check if prev fits into the current cluster and if not,
+		// just move to the next.
+
+		if (fat32) // subdirectory is a linked cluster chain
+		{
+			unsigned long iDirectoryCluster = current_directory_cluster;
+			int cluster_changed=0;
+			while (prev >= dir_entries) {
+				iDirectoryCluster = GetCluster(iDirectoryCluster); // get next cluster in chain			
+				if ((iDirectoryCluster & 0x0FFFFFF8) == 0x0FFFFFF8) // check if end of cluster chain
+					return((DIRENTRY *)0);
+				prev -= dir_entries;
+				cluster_changed++;
+			}
+			if (cluster_changed) {
+				iDirectorySector = data_start + cluster_size * (iDirectoryCluster - 2); // calculate first sector address of the new cluster
+				iDirectorySector += prev >> 4;
+				last_next_directory_cluster = iDirectoryCluster;
+			} else {
+				last_next_directory_cluster = current_directory_cluster; 
+			}
+		}
+
 		sd_read_sector(iDirectorySector, sector_buffer); // root directory is linear
 	}
 	pEntry = (DIRENTRY*)sector_buffer;
 	pEntry+=(prev&0xf);
+	if (pEntry->Name[0] == SLOT_EMPTY && end) 	// EP mark the end
+		*end = 1;
 	if (pEntry->Name[0] != SLOT_EMPTY && pEntry->Name[0] != SLOT_DELETED) // valid entry??
 	{
 		if (!(pEntry->Attributes & ATTR_VOLUME)) // not a volume

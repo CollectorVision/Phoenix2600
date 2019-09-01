@@ -4,14 +4,14 @@
 static int romindex=0;
 static int romcount;
 
-static void listroms();
+static int listroms();
 static void selectrom(int row);
 static void scrollroms(int row);
 int (*loadfunction)(const char *filename); // Callback function
 
 static char romfilenames[13][30];
 
-static char back_string[30] = "Back";
+static char back_string[40] = "Back";
 
 static struct menu_entry rommenu[]=
 {
@@ -48,7 +48,7 @@ static DIRENTRY *nthfile(int n)
 	DIRENTRY *p;
 	for(i=0;(j<=n) && (i<dir_entries);++i)
 	{
-		p=NextDirEntry(i);
+		p=NextDirEntry(i, 0);	// FIXME - EP need to deal with end handling, perhaps
 		if(p)
 			++j;
 	}
@@ -110,28 +110,27 @@ static void scrollroms(int row)
 			break;
 	}
 	listroms();
-	mystrcpy(back_string, "Back zzzz xxxx");
-	to_hex_str(back_string+5, romindex);
-	to_hex_str(back_string+10, dir_entries);
-
 	Menu_Draw();
 }
 
 
-static void listroms()
+static int listroms()	// EP 2019-08-31 now this returns (for debugging) the last dir entry processed
 {
 	int i,j;
+	int at_end = 0;
 	j=0;
-	for(i=0;(j<romindex) && (i<dir_entries);++i)
+	for(i=0;(j<romindex) && !at_end;++i)
 	{
-		DIRENTRY *p=NextDirEntry(i);
+		DIRENTRY *p=NextDirEntry(i, &at_end);
 		if(p)
 			++j;
 	}
 
-	for(j=0;(j<12) && (i<dir_entries);++i)
+	at_end = 0;
+
+	for(j=0;(j<12) && !at_end;++i)
 	{
-		DIRENTRY *p=NextDirEntry(i);
+		DIRENTRY *p=NextDirEntry(i, &at_end);
 		if(p)
 		{
 			// FIXME declare a global long file name buffer.
@@ -159,6 +158,16 @@ static void listroms()
 	}
 	for(;j<12;++j)
 		romfilenames[j][0]=0;
+
+	mystrcpy(back_string, "Back xxxx yyyy zzzz kkkkkkkk");
+	to_hex_str(back_string+5, romindex);
+	to_hex_str(back_string+10, dir_entries);
+	to_hex_str(back_string+15, i);
+	extern unsigned int last_next_directory_cluster;
+	to_hex_str(back_string+20, last_next_directory_cluster >> 16);
+	to_hex_str(back_string+24, last_next_directory_cluster & 0xFFFF);
+
+	return i;
 }
 
 

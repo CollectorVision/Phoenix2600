@@ -528,6 +528,7 @@ int main(int argc,char **argv)
 		return(0);
   // OSD_Puts("Loading initial ROM...\n");
   // LoadROM("SPCINVADBIN");
+	OSD_Puts("Done initialization\n");
 
 
 //	OSD_Puts("Loading initial ROM...\n");
