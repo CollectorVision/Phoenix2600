@@ -36,6 +36,8 @@ JB:
             - directory short names are displayed with extensions
 
 2012-07-24  - Major changes to fit the MiniSOC project - AMR
+
+2019-09-06  - Support for large FAT32 directories - EP
 */
 
 // #include <stdio.h>
@@ -77,6 +79,8 @@ static int partitioncount;
 unsigned int dir_entries;             // number of entry's in directory table
 
 unsigned char sector_buffer[512];       // sector buffer
+#define countof(X) (sizeof(X)/sizeof(X[0]))
+static unsigned int dir_cluster_cache[32];
 
 #ifndef DISABLE_LONG_FILENAMES
 char longfilename[260];
@@ -264,9 +268,17 @@ DIRENTRY *NextDirEntry(int prev, int *end)
 			unsigned long iDirectoryCluster = current_directory_cluster;
 			int cluster_changed=0;
 			while (prev >= dir_entries) {
-				iDirectoryCluster = GetCluster(iDirectoryCluster); // get next cluster in chain			
-				if ((iDirectoryCluster & 0x0FFFFFF8) == 0x0FFFFFF8) // check if end of cluster chain
-					return((DIRENTRY *)0);
+				// Check if the cluster entry is already in our cache.
+				if(cluster_changed < countof(dir_cluster_cache) && dir_cluster_cache[cluster_changed])
+					iDirectoryCluster = dir_cluster_cache[cluster_changed];
+				else {
+					iDirectoryCluster = GetCluster(iDirectoryCluster); // get next cluster in chain			
+					if ((iDirectoryCluster & 0x0FFFFFF8) == 0x0FFFFFF8) // check if end of cluster chain
+						return((DIRENTRY *)0);
+					// Add to cache if there is space.
+					if(cluster_changed < countof(dir_cluster_cache))
+						dir_cluster_cache[cluster_changed] = iDirectoryCluster;
+				}
 				prev -= dir_entries;
 				cluster_changed++;
 			}
@@ -425,6 +437,10 @@ int FileWrite(fileTYPE *file, unsigned char *pBuffer)
 
 void ChangeDirectory(DIRENTRY *p)
 {
+	int i;
+	for(i=0; i<countof(dir_cluster_cache); i++)
+		dir_cluster_cache[i] = 0;
+
 	if(p)
 	{
 		current_directory_cluster = SwapBB(p->StartCluster);
