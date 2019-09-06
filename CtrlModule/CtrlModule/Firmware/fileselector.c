@@ -46,9 +46,10 @@ static DIRENTRY *nthfile(int n)
 {
 	int i,j=0;
 	DIRENTRY *p;
-	for(i=0;(j<=n) && (i<dir_entries);++i)
+	int at_end = 0;
+	for(i=0;(j<=n) && !at_end;++i)
 	{
-		p=NextDirEntry(i, 0);	// FIXME - EP need to deal with end handling, perhaps
+		p=NextDirEntry(i, &at_end);	
 		if(p)
 			++j;
 	}
