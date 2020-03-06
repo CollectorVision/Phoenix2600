@@ -10,23 +10,23 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Aug  2 19:03:44 2019
+Mapped Date    : Wed Feb 26 17:19:34 2020
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   12
+Number of warnings:   11
 Slice Logic Utilization:
-  Number of Slice Registers:                 2,096 out of  18,224   11%
-    Number used as Flip Flops:               2,078
+  Number of Slice Registers:                 2,097 out of  18,224   11%
+    Number used as Flip Flops:               2,079
     Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               17
-  Number of Slice LUTs:                      4,179 out of   9,112   45%
-    Number used as logic:                    4,059 out of   9,112   44%
-      Number using O6 output only:           3,141
-      Number using O5 output only:             212
-      Number using O5 and O6:                  706
+  Number of Slice LUTs:                      4,209 out of   9,112   46%
+    Number used as logic:                    4,097 out of   9,112   44%
+      Number using O6 output only:           3,180
+      Number using O5 output only:             213
+      Number using O5 and O6:                  704
       Number used as ROM:                        0
     Number used as Memory:                      76 out of   2,176    3%
       Number used as Dual Port RAM:             24
@@ -41,21 +41,21 @@ Slice Logic Utilization:
         Number using O6 output only:            17
         Number using O5 output only:             0
         Number using O5 and O6:                 19
-    Number used exclusively as route-thrus:     44
-      Number with same-slice register load:     19
-      Number with same-slice carry load:        25
+    Number used exclusively as route-thrus:     36
+      Number with same-slice register load:     13
+      Number with same-slice carry load:        23
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,421 out of   2,278   62%
+  Number of occupied Slices:                 1,446 out of   2,278   63%
   Number of MUXCYs used:                     1,020 out of   4,556   22%
-  Number of LUT Flip Flop pairs used:        4,478
-    Number with an unused Flip Flop:         2,532 out of   4,478   56%
-    Number with an unused LUT:                 299 out of   4,478    6%
-    Number of fully used LUT-FF pairs:       1,647 out of   4,478   36%
+  Number of LUT Flip Flop pairs used:        4,545
+    Number with an unused Flip Flop:         2,589 out of   4,545   56%
+    Number with an unused LUT:                 336 out of   4,545    7%
+    Number of fully used LUT-FF pairs:       1,620 out of   4,545   35%
     Number of unique control sets:             163
     Number of slice register sites lost
-      to control set restrictions:             566 out of  18,224    3%
+      to control set restrictions:             565 out of  18,224    3%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -106,8 +106,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.31
 
 Peak Memory Usage:  871 MB
-Total REAL time to MAP completion:  1 mins 55 secs 
-Total CPU time to MAP completion:   1 mins 52 secs 
+Total REAL time to MAP completion:  2 mins 38 secs 
+Total CPU time to MAP completion:   2 mins 33 secs 
 
 Table of Contents
 -----------------
@@ -144,10 +144,6 @@ WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
    For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
    consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   a2601Instance/ms_A2601/tia_inst/phi0 is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr<3> is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
@@ -155,15 +151,15 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    host_reset_n_host_debug_arm_AND_1927_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem4_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem2_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
    joy2_p1_i_PULLUP is set but the tri state is not configured. 
@@ -177,14 +173,14 @@ WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
 Section 3 - Informational
 -------------------------
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
-INFO:LIT:243 - Logical network cart_data_i<7>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 20 more times for the
+INFO:LIT:243 - Logical network btn_reset_n_i_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 12 more times for the
    following (max. 5 shown):
-   cart_data_i<6>_IBUF,
-   cart_data_i<5>_IBUF,
-   cart_data_i<4>_IBUF,
-   cart_data_i<3>_IBUF,
-   cart_data_i<2>_IBUF
+   sd_cd_n_i_IBUF,
+   joy1_p7_i_IBUF,
+   joy1_p9_i_IBUF,
+   joy2_p2_i_IBUF,
+   joy2_p3_i_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -203,7 +199,7 @@ INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   6 block(s) removed
+   5 block(s) removed
    6 block(s) optimized away
    7 signal(s) removed
 
@@ -245,7 +241,6 @@ lid.cstr/ramloop[20].ram.ram_doutb" is sourceless and has been removed.
 The signal
 "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
 lid.cstr/ramloop[19].ram.ram_doutb" is sourceless and has been removed.
-Unused block "cart_dir_o_PULLUP" (PULLUP) removed.
 Unused block
 "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/va
 lid.cstr/ramloop[19].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram" (RAMB16BWER)
@@ -281,17 +276,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_pll_575_instance_clkfx = PERIOD TIMEGR | SETUP       |    -1.786ns|   113.851ns|      31|       36221
+* TS_pll_575_instance_clkfx = PERIOD TIMEGR | SETUP       |    -1.786ns|   113.851ns|      32|       36830
   P "pll_575_instance_clkfx" TS_clock_50_i  | HOLD        |    -0.097ns|            |      80|        7680
   / 1.15 HIGH 50%                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-* TS_pll_hdmi_instance_clkout0 = PERIOD TIM | SETUP       |    -1.152ns|   169.542ns|     125|      100023
-  EGRP "pll_hdmi_instance_clkout0" TS_clock | HOLD        |     0.098ns|            |       0|           0
-  _50_i / 0.54 HIGH 50%                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 * TS_pll_hdmi_instance_clkout3 = PERIOD TIM | SETUP       |    -0.826ns|    33.814ns|     102|       44652
   EGRP "pll_hdmi_instance_clkout3" TS_clock | HOLD        |     0.013ns|            |       0|           0
   _50_i / 1.35 HIGH 50%                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_pll_hdmi_instance_clkout0 = PERIOD TIM | SETUP       |    -0.794ns|   128.364ns|      86|       63880
+  EGRP "pll_hdmi_instance_clkout0" TS_clock | HOLD        |     0.098ns|            |       0|           0
+  _50_i / 0.54 HIGH 50%                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_pll_hdmi_instance_clkout1 = PERIOD TIM | SETUP       |     5.826ns|     1.581ns|       0|           0
   EGRP "pll_hdmi_instance_clkout1" TS_clock | HOLD        |     0.060ns|            |       0|           0
@@ -316,11 +311,11 @@ Derived Constraints for TS_clock_50_i
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clock_50_i                  |     20.000ns|      8.000ns|    130.929ns|            0|          338|            0|3097506564524317175557412377906380800|
-| TS_pll_575_instance_clkfx     |     17.391ns|    113.851ns|          N/A|          111|            0|      1439726|            0|
-| TS_pll_hdmi_instance_clkout3  |     14.815ns|     33.814ns|          N/A|          102|            0|         2555|            0|
+|TS_clock_50_i                  |     20.000ns|      8.000ns|    130.929ns|            0|          300|            0|3097506564524317175557412377906380800|
+| TS_pll_575_instance_clkfx     |     17.391ns|    113.851ns|          N/A|          112|            0|      1439783|            0|
+| TS_pll_hdmi_instance_clkout3  |     14.815ns|     33.814ns|          N/A|          102|            0|         2556|            0|
 | TS_pll_hdmi_instance_clkout1  |      7.407ns|      2.666ns|          N/A|            0|            0|          236|            0|
-| TS_pll_hdmi_instance_clkout0  |     37.037ns|    169.542ns|          N/A|          125|            0|3097506564524317175557412377906380800|            0|
+| TS_pll_hdmi_instance_clkout0  |     37.037ns|    128.364ns|          N/A|           86|            0|3097506564524317175557412377906380800|            0|
 | TS_pll_hdmi_instance_clkout2  |      7.407ns|      2.666ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 

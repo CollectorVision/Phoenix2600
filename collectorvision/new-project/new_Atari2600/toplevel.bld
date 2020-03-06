@@ -3,27 +3,25 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -sd ../../cvAtari2600/ipcore_dir -nt timestamp -uc
-/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/phoenix2600.ucf
--p xc6slx16-csg324-2 toplevel.ngc toplevel.ngd
+/home/ise/xilinx_share/2600cartmod2/collectorvision/phoenix2600.ucf -p
+xc6slx16-csg324-2 toplevel.ngc toplevel.ngd
 
 Reading NGO file
-"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_
-Atari2600/toplevel.ngc" ...
+"/home/ise/xilinx_share/2600cartmod2/collectorvision/new-project/new_Atari2600/t
+oplevel.ngc" ...
 Loading design module "../../cvAtari2600/ipcore_dir/DualPortRAM_Block.ngc"...
 Loading design module "../../cvAtari2600/ipcore_dir/simple_dualport_32k.ngc"...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file
-"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/phoenix2600.ucf"
-...
+"/home/ise/xilinx_share/2600cartmod2/collectorvision/phoenix2600.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clock_vid_clk = PERIOD
    "vid_clk" 17.3913 ns HIGH 50%;>
-   [/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/phoenix2600.u
-   cf(173)]: Unable to find an active 'TNM' or 'TimeGrp' constraint named
-   'vid_clk'.
+   [/home/ise/xilinx_share/2600cartmod2/collectorvision/phoenix2600.ucf(173)]:
+   Unable to find an active 'TNM' or 'TimeGrp' constraint named 'vid_clk'.
 
 INFO:ConstraintSystem:178 - TNM 'clock_50_i', used in period specification
    'TS_clock_50_i', was traced into DCM_SP instance
@@ -76,10 +74,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 522340 kilobytes
+Total memory usage is 522272 kilobytes
 
 Writing NGD file "toplevel.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   10 sec
+Total REAL time to NGDBUILD completion:  15 sec
+Total CPU time to NGDBUILD completion:   14 sec
 
 Writing NGDBUILD log file "toplevel.bld"...

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: toplevel.prj
@@ -111,31 +111,31 @@ Cores Search Directories           : {"../../cvAtari2600/ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" into library work
 Parsing module <hdmidataencoder>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/simple_dualport_32k.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/simple_dualport_32k.vhd" into library work
 Parsing entity <simple_dualport_32k>.
 Parsing architecture <simple_dualport_32k_a> of entity <simple_dualport_32k>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/DualPortRAM_Block.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/DualPortRAM_Block.vhd" into library work
 Parsing entity <DualPortRAM_Block>.
 Parsing architecture <DualPortRAM_Block_a> of entity <dualportram_block>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd" into library work
 Parsing entity <pll_27M>.
 Parsing architecture <xilinx> of entity <pll_27m>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/pll.vhd" into library work
 Parsing entity <pll>.
 Parsing architecture <xilinx> of entity <pll>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_e.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A6500/src/cpu65xx_e.vhd" into library work
 Parsing entity <cpu65xx>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/NTSCLookups.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/TIA/src/NTSCLookups.vhd" into library work
 Parsing package <TIA_NTSCLookups>.
 Parsing package body <TIA_NTSCLookups>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/Common.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/TIA/src/Common.vhd" into library work
 Parsing package <TIA_common>.
 Parsing package body <TIA_common>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_fast.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A6500/src/cpu65xx_fast.vhd" into library work
 Parsing architecture <fast> of entity <cpu65xx>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" into library work
 Parsing entity <lfsr6>.
 Parsing architecture <arch> of entity <lfsr6>.
 Parsing entity <cntr2>.
@@ -156,106 +156,106 @@ Parsing entity <mux20>.
 Parsing architecture <arch> of entity <mux20>.
 Parsing entity <TIA>.
 Parsing architecture <arch> of entity <tia>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpupkg.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpupkg.vhd" into library work
 Parsing package <zpupkg>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd" into library work
 Parsing entity <CharROM_ROM>.
 Parsing architecture <arch> of entity <charrom_rom>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" into library work
 Parsing package <snespad_pack>.
 Parsing package body <snespad_pack>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd" into library work
 Parsing entity <ram128x8>.
 Parsing architecture <arch> of entity <ram128x8>.
 Parsing entity <A6532>.
 Parsing architecture <arch> of entity <a6532>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" into library work
 Parsing entity <A6507>.
 Parsing architecture <arch> of entity <a6507>.
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" Line 69: Actual for formal port enable is neither a static name nor a globally static expression
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" Line 69: Actual for formal port enable is neither a static name nor a globally static expression
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" into library work
 Parsing entity <zpu_core_flex>.
 Parsing architecture <behave> of entity <zpu_core_flex>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/spi.vhd" into library work
 Parsing entity <spi_interface>.
-INFO:HDLCompiler:1676 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd" Line 22. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/spi.vhd" Line 22. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
 Parsing architecture <rtl> of entity <spi_interface>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd" into library work
 Parsing entity <OnScreenDisplay>.
 Parsing architecture <rtl> of entity <onscreendisplay>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd" into library work
 Parsing entity <io_ps2_com>.
 Parsing architecture <rtl> of entity <io_ps2_com>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" into library work
 Parsing entity <interrupt_controller>.
-INFO:HDLCompiler:1676 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" Line 20. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd" Line 20. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
 Parsing architecture <rtl> of entity <interrupt_controller>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd" into library work
 Parsing entity <CtrlROM_ROM>.
 Parsing architecture <arch> of entity <ctrlrom_rom>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pad.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pad.vhd" into library work
 Parsing entity <snespad_pad>.
 Parsing architecture <rtl> of entity <snespad_pad>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_ctrl.vhd" into library work
 Parsing entity <snespad_ctrl>.
 Parsing architecture <rtl> of entity <snespad_ctrl>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/ram2048x8.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/ram2048x8.vhd" into library work
 Parsing entity <ram2048x8>.
 Parsing architecture <arch> of entity <ram2048x8>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidelay.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidelay.vhd" into library work
 Parsing entity <hdmi_delay_line>.
 Parsing architecture <rtl> of entity <hdmi_delay_line>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/encoder.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/encoder.vhd" into library work
 Parsing entity <encoder>.
 Parsing architecture <rtl> of entity <encoder>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A2601/src/DeltaSigma.vhd" into library work
 Parsing entity <dac>.
 Parsing architecture <rtl> of entity <dac>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd" into library work
 Parsing entity <A2601>.
 Parsing architecture <arch> of entity <a2601>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/VGAColorTable.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/TIA/src/VGAColorTable.vhd" into library work
 Parsing entity <VGAColorTable>.
 Parsing architecture <rtl> of entity <vgacolortable>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd" into library work
 Parsing entity <OSD_Overlay>.
 Parsing architecture <RTL> of entity <osd_overlay>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" into library work
 Parsing entity <CtrlModule>.
 Parsing architecture <rtl> of entity <ctrlmodule>.
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 168: Actual for formal port reset is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 214: Actual for formal port reset is neither a static name nor a globally static expression
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 173: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 219: Actual for formal port reset is neither a static name nor a globally static expression
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd" into library work
 Parsing entity <vga>.
 Parsing architecture <rtl> of entity <vga>.
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 143: Actual for formal port dina is neither a static name nor a globally static expression
-WARNING:HDLCompiler:701 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 146: Partially associated formal doutb cannot have actual OPEN
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd" Line 143: Actual for formal port dina is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd" Line 146: Partially associated formal doutb cannot have actual OPEN
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad.vhd" into library work
 Parsing entity <snespad>.
 Parsing architecture <struct> of entity <snespad>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi_out_xilinx.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmi_out_xilinx.vhd" into library work
 Parsing entity <hdmi_out_xilinx>.
 Parsing architecture <Behavioral> of entity <hdmi_out_xilinx>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmi.vhd" into library work
 Parsing entity <hdmi>.
 Parsing architecture <rtl> of entity <hdmi>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/sram_controller.vhd" into library work
 Parsing entity <sram_controller>.
 Parsing architecture <Behavioral_sram_controller> of entity <sram_controller>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" into library work
 Parsing entity <A2601NoFlash>.
 Parsing architecture <arch> of entity <a2601noflash>.
-Parsing VHDL file "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" into library work
+Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" into library work
 Parsing entity <toplevel>.
 Parsing architecture <rtl> of entity <toplevel>.
-WARNING:HDLCompiler:701 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 501: Partially associated formal dipswitches cannot have actual OPEN
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 579: Actual for formal port reset_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 597: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 613: Actual for formal port res is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 631: Actual for formal port p_start is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 632: Actual for formal port p_select is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 819: Actual for formal port lum is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 821: Actual for formal port mode is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 505: Partially associated formal dipswitches cannot have actual OPEN
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 588: Actual for formal port reset_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 606: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 622: Actual for formal port res is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 640: Actual for formal port p_start is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 641: Actual for formal port p_select is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 830: Actual for formal port lum is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 832: Actual for formal port mode is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -268,30 +268,30 @@ Elaborating entity <hdmi_out_xilinx> (architecture <Behavioral>) from library <w
 Elaborating entity <snespad> (architecture <struct>) with generics from library <work>.
 
 Elaborating entity <snespad_ctrl> (architecture <rtl>) with generics from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd" Line 196. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_ctrl.vhd" Line 196. Case statement is complete. others clause is never selected
 
 Elaborating entity <snespad_pad> (architecture <rtl>) with generics from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pack-p.vhd" Line 105. Case statement is complete. others clause is never selected
 
 Elaborating entity <CtrlModule> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <CtrlROM_ROM> (architecture <arch>) with generics from library <work>.
 
 Elaborating entity <zpu_core_flex> (architecture <behave>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: cachedprogramword should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: cachedprogramword should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 326. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: comparison_sub_result should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: shift_count should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: membread should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to begin_inst ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: cachedprogramword should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: cachedprogramword should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 326. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: comparison_sub_result should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: shift_count should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: membread should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to begin_inst ignored, since the identifier is never used
 
 Elaborating entity <OnScreenDisplay> (architecture <rtl>) from library <work>.
 
@@ -308,10 +308,10 @@ Elaborating entity <interrupt_controller> (architecture <rtl>) with generics fro
 Elaborating entity <OSD_Overlay> (architecture <RTL>) from library <work>.
 
 Elaborating entity <sram_controller> (architecture <Behavioral_sram_controller>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to last_a2600_addr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to last_a2600_addr ignored, since the identifier is never used
 
 Elaborating entity <A2601NoFlash> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:871 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 224: Using initial value '0' for forcereset since it is never assigned
+WARNING:HDLCompiler:871 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 225: Using initial value '0' for forcereset since it is never assigned
 
 Elaborating entity <A2601> (architecture <arch>) from library <work>.
 
@@ -322,22 +322,22 @@ Elaborating entity <cpu65xx> (architecture <fast>) with generics from library <w
 Elaborating entity <A6532> (architecture <arch>) from library <work>.
 
 Elaborating entity <ram128x8> (architecture <arch>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 150. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 174. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 133: Assignment to pa_reg ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd" Line 150. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd" Line 174. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd" Line 133: Assignment to pa_reg ignored, since the identifier is never used
 
 Elaborating entity <TIA> (architecture <arch>) from library <work>.
 
 Elaborating entity <paddle> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 484: value should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 484: value should be on the sensitivity list of the process
 
 Elaborating entity <cntr2> (architecture <arch>) from library <work>.
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 102. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 102. Case statement is complete. others clause is never selected
 
 Elaborating entity <lfsr6> (architecture <arch>) from library <work>.
 
 Elaborating entity <mux20> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 907: Assignment to hh1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 907: Assignment to hh1 ignored, since the identifier is never used
 
 Elaborating entity <audio> (architecture <arch>) from library <work>.
 
@@ -348,30 +348,30 @@ Elaborating entity <cntr3> (architecture <arch>) from library <work>.
 Elaborating entity <missile> (architecture <arch>) from library <work>.
 
 Elaborating entity <ball> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1063: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1064: inpt0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1070: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1071: inpt1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1077: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1078: inpt2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1084: paddle_ena should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1085: inpt3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1039: Assignment to pf_score ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" Line 129: Net <riot_pa7> does not have a driver.
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1063: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1064: inpt0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1070: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1071: inpt1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1077: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1078: inpt2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1084: paddle_ena should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1085: inpt3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1039: Assignment to pf_score ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd" Line 129: Net <riot_pa7> does not have a driver.
 
 Elaborating entity <dac> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd" Line 42: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 267: Assignment to p_fn ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/DeltaSigma.vhd" Line 42: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 270: Assignment to p_fn ignored, since the identifier is never used
 
 Elaborating entity <ram2048x8> (architecture <arch>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 337: e7_access_ram_256 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 343: e7_access_ram_1k should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 340: e7_access_ram_256 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 346: e7_access_ram_1k should be on the sensitivity list of the process
 
 Elaborating entity <pll> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <pll_27M> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 710: host_debug_arm should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 737. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 720: host_debug_arm should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 747. Case statement is complete. others clause is never selected
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <work>.
 
@@ -385,31 +385,30 @@ Elaborating entity <hdmi_delay_line> (architecture <rtl>) with generics from lib
 Going to verilog side to elaborate module hdmidataencoder
 
 Elaborating module <hdmidataencoder(FREQ=27000000,FS=48000,CTS=27000,N=6144)>.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of 26-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of 26-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of 12-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of 32-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of 26-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of 26-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of 17-bit expression is truncated to fit in 16-bit target.
 Back to vhdl to continue elaboration
 
 Elaborating entity <encoder> (architecture <rtl>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 183: Net <joy_a_0[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 184: Net <joy_a_1[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 230: Net <host_bootread_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 183: Net <joy_a_0[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 184: Net <joy_a_1[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 230: Net <host_bootread_data[31]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <toplevel>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd".
-WARNING:Xst:647 - Input <cart_data_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd".
 WARNING:Xst:647 - Input <btn_reset_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <sd_cd_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy1_p7_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -420,42 +419,40 @@ WARNING:Xst:647 - Input <joy2_p6_i> is never used. This port will be preserved a
 WARNING:Xst:647 - Input <joy2_p7_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy2_p9_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <flash_miso_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 382: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 474: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 549: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 576: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 604: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" line 691: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
-WARNING:Xst:2935 - Signal 'cart_addr_o', unconnected in block 'toplevel', is tied to its initial value (0000000000000).
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_mute> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 554: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 585: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 585: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 613: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 701: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <joy_a_0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <joy_a_1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <host_bootread_data<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:2935 - Signal 'stnd_o', unconnected in block 'toplevel', is tied to its initial value (1).
 WARNING:Xst:2935 - Signal 'pal_clk_en_o', unconnected in block 'toplevel', is tied to its initial value (1).
-WARNING:Xst:2935 - Signal 'cart_dir_o', unconnected in block 'toplevel', is tied to its initial value (1).
-WARNING:Xst:2935 - Signal 'cart_oe_n_o', unconnected in block 'toplevel', is tied to its initial value (1).
     Found 16x32-bit dual-port RAM <Mram_debug_mem> for signal <debug_mem>.
     Found 1-bit register for signal <last_ph0>.
     Found 15-bit register for signal <last_6502_addr>.
@@ -486,34 +483,34 @@ WARNING:Xst:2935 - Signal 'cart_oe_n_o', unconnected in block 'toplevel', is tie
     Found 8-bit register for signal <scan_state>.
     Found 1-bit register for signal <armed>.
     Found 8-bit adder for signal <scan_state[7]_GND_5_o_add_1_OUT> created at line 1241.
-    Found 4-bit adder for signal <capt_i[3]_GND_5_o_add_14_OUT> created at line 720.
-    Found 8-bit adder for signal <tia_hcnt[7]_GND_5_o_add_33_OUT> created at line 1241.
-    Found 9-bit adder for signal <tia_vcnt[8]_GND_5_o_add_40_OUT> created at line 1241.
-    Found 9-bit adder for signal <total_vcnt[8]_GND_5_o_add_42_OUT> created at line 1241.
+    Found 4-bit adder for signal <capt_i[3]_GND_5_o_add_15_OUT> created at line 730.
+    Found 8-bit adder for signal <tia_hcnt[7]_GND_5_o_add_34_OUT> created at line 1241.
+    Found 9-bit adder for signal <tia_vcnt[8]_GND_5_o_add_41_OUT> created at line 1241.
+    Found 9-bit adder for signal <total_vcnt[8]_GND_5_o_add_43_OUT> created at line 1241.
     Found 16x12-bit Read Only RAM for signal <joy1_p1_i_PWR_5_o_wide_mux_3_OUT>
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0053_Mux_19_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0054_Mux_20_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0055_Mux_21_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0056_Mux_22_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0057_Mux_23_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0058_Mux_24_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0059_Mux_25_o> created at line 728.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0060_Mux_26_o> created at line 728.
-    Found 15-bit comparator equal for signal <n0062> created at line 718
-    Found 8-bit comparator greater for signal <tia_hcnt[7]_PWR_5_o_LessThan_33_o> created at line 760
-    Found 9-bit comparator greater for signal <last_vcnt[8]_PWR_5_o_LessThan_37_o> created at line 769
-    Found 9-bit comparator greater for signal <tia_vcnt[8]_PWR_5_o_LessThan_40_o> created at line 775
-    Found 9-bit comparator lessequal for signal <GND_5_o_total_vcnt[8]_LessThan_47_o> created at line 786
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0053_Mux_20_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0054_Mux_21_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0055_Mux_22_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0056_Mux_23_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0057_Mux_24_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0058_Mux_25_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0059_Mux_26_o> created at line 738.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0060_Mux_27_o> created at line 738.
+    Found 15-bit comparator equal for signal <n0066> created at line 728
+    Found 8-bit comparator greater for signal <tia_hcnt[7]_PWR_5_o_LessThan_34_o> created at line 771
+    Found 9-bit comparator greater for signal <last_vcnt[8]_PWR_5_o_LessThan_38_o> created at line 780
+    Found 9-bit comparator greater for signal <tia_vcnt[8]_PWR_5_o_LessThan_41_o> created at line 786
+    Found 9-bit comparator lessequal for signal <GND_5_o_total_vcnt[8]_LessThan_48_o> created at line 797
     Summary:
 	inferred   2 RAM(s).
 	inferred   5 Adder/Subtractor(s).
 	inferred  94 D-type flip-flop(s).
 	inferred   5 Comparator(s).
-	inferred  11 Multiplexer(s).
+	inferred  12 Multiplexer(s).
 Unit <toplevel> synthesized.
 
 Synthesizing Unit <hdmi_out_xilinx>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi_out_xilinx.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmi_out_xilinx.vhd".
 WARNING:Xst:647 - Input <clock_pixel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 10-bit register for signal <shift_r>.
     Found 10-bit register for signal <shift_g>.
@@ -528,7 +525,7 @@ WARNING:Xst:647 - Input <clock_pixel_i> is never used. This port will be preserv
 Unit <hdmi_out_xilinx> synthesized.
 
 Synthesizing Unit <snespad>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad.vhd".
         num_pads_g = 1
         reset_level_g = 0
         button_level_g = 0
@@ -538,7 +535,7 @@ Synthesizing Unit <snespad>.
 Unit <snespad> synthesized.
 
 Synthesizing Unit <snespad_ctrl>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_ctrl.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_ctrl.vhd".
         reset_level_g = 0
         clocks_per_6us_g = 128
     Found 1-bit register for signal <pad_clk_q>.
@@ -570,7 +567,7 @@ Synthesizing Unit <snespad_ctrl>.
 Unit <snespad_ctrl> synthesized.
 
 Synthesizing Unit <snespad_pad>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/snespad/snespad_pad.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/snespad/snespad_pad.vhd".
         reset_level_g = 0
         button_level_g = 0
     Found 32-bit register for signal <shift_buttons_q>.
@@ -581,23 +578,25 @@ Synthesizing Unit <snespad_pad>.
 Unit <snespad_pad> synthesized.
 
 Synthesizing Unit <CtrlModule>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd".
         sysclk_frequency = 575
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_bEnable> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <out_mem_hEnable> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 149: Output port <break> of the instance <zpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 185: Output port <enabled> of the instance <myosd> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_clk_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <ps2_dat_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <inIdle> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendBusy> of the instance <mykeyboard> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 207: Output port <sendDone> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+        cartridge_default = '1'
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 154: Output port <out_mem_bEnable> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 154: Output port <out_mem_hEnable> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 154: Output port <break> of the instance <zpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 190: Output port <enabled> of the instance <myosd> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 212: Output port <ps2_clk_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 212: Output port <ps2_dat_out> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 212: Output port <inIdle> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 212: Output port <sendBusy> of the instance <mykeyboard> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" line 212: Output port <sendDone> of the instance <mykeyboard> is unconnected or connected to loadless signal.
     Found 9-bit register for signal <spi_tick>.
     Found 1-bit register for signal <int_enabled>.
     Found 1-bit register for signal <kbdrecvreg>.
     Found 1-bit register for signal <host_reset_n>.
     Found 1-bit register for signal <host_bootdata_req>.
     Found 1-bit register for signal <spi_active>.
+    Found 1-bit register for signal <cartridge_mode>.
     Found 1-bit register for signal <mem_busy>.
     Found 1-bit register for signal <osd_charwr>.
     Found 1-bit register for signal <osd_wr>.
@@ -620,17 +619,17 @@ INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlM
     Found 1-bit register for signal <spiclk_in>.
     Found 1-bit register for signal <spi_cs>.
     Found 9-bit adder for signal <spi_tick[8]_GND_22_o_add_0_OUT> created at line 1241.
-    Found 16x1-bit Read Only RAM for signal <mem_addr[20]_GND_22_o_Mux_33_o>
-    Found 8x1-bit Read Only RAM for signal <mem_addr[20]_GND_22_o_Mux_35_o>
+    Found 16x1-bit Read Only RAM for signal <mem_addr[20]_GND_22_o_Mux_34_o>
+    Found 8x1-bit Read Only RAM for signal <mem_addr[20]_GND_22_o_Mux_36_o>
     Summary:
 	inferred   2 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred 154 D-type flip-flop(s).
+	inferred 155 D-type flip-flop(s).
 	inferred  13 Multiplexer(s).
 Unit <CtrlModule> synthesized.
 
 Synthesizing Unit <CtrlROM_ROM>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/Firmware/CtrlROM_ROM.vhd".
         maxAddrBitBRAM = 13
 WARNING:Xst:647 - Input <from_zpu_memAAddr<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <from_zpu_memBAddr<15:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -645,7 +644,7 @@ WARNING:Xst:647 - Input <areset> is never used. This port will be preserved and 
 Unit <CtrlROM_ROM> synthesized.
 
 Synthesizing Unit <zpu_core_flex>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd".
         IMPL_MULTIPLY = true
         IMPL_COMPARISON_SUB = true
         IMPL_EQBRANCH = true
@@ -754,7 +753,7 @@ INFO:Xst:1799 - State state_interrupt is never reached in FSM <state>.
 Unit <zpu_core_flex> synthesized.
 
 Synthesizing Unit <OnScreenDisplay>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/OnScreenDisplay.vhd".
     Found 16-bit register for signal <hcounter>.
     Found 1-bit register for signal <newline>.
     Found 16-bit register for signal <hframe>.
@@ -793,7 +792,7 @@ Synthesizing Unit <OnScreenDisplay>.
 Unit <OnScreenDisplay> synthesized.
 
 Synthesizing Unit <CharROM_ROM>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/CharROM/CharROM_ROM.vhd".
         addrbits = 13
 WARNING:Xst:2999 - Signal 'rom', unconnected in block 'CharROM_ROM', is tied to its initial value.
     Found 8192x1-bit single-port Read Only RAM <Mram_rom> for signal <rom>.
@@ -804,7 +803,7 @@ WARNING:Xst:2999 - Signal 'rom', unconnected in block 'CharROM_ROM', is tied to 
 Unit <CharROM_ROM> synthesized.
 
 Synthesizing Unit <io_ps2_com>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/io_ps2_com.vhd".
         clockFilter = 15
         ticksPerUsec = 10
     Found 1-bit register for signal <clkReg>.
@@ -847,7 +846,7 @@ Synthesizing Unit <io_ps2_com>.
 Unit <io_ps2_com> synthesized.
 
 Synthesizing Unit <spi_interface>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/spi.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/spi.vhd".
     Found 1-bit register for signal <shiftcnt<3>>.
     Found 1-bit register for signal <shiftcnt<2>>.
     Found 1-bit register for signal <shiftcnt<1>>.
@@ -863,7 +862,7 @@ Synthesizing Unit <spi_interface>.
 Unit <spi_interface> synthesized.
 
 Synthesizing Unit <interrupt_controller>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/interrupt_controller.vhd".
         max_int = 2
 WARNING:Xst:647 - Input <reset_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <status>.
@@ -875,7 +874,7 @@ WARNING:Xst:647 - Input <reset_n> is never used. This port will be preserved and
 Unit <interrupt_controller> synthesized.
 
 Synthesizing Unit <OSD_Overlay>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/OSD_Overlay.vhd".
     Found 1-bit register for signal <scanline>.
     Found 1-bit register for signal <hsync_r>.
     Summary:
@@ -884,7 +883,7 @@ Synthesizing Unit <OSD_Overlay>.
 Unit <OSD_Overlay> synthesized.
 
 Synthesizing Unit <sram_controller>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/sram_controller.vhd".
 WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <boot_state>.
     Found 8-bit register for signal <boot_state[3]_dff_41_OUT>.
@@ -896,7 +895,6 @@ WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be p
     Found 8-bit register for signal <a2600_databyte>.
     Found 4-bit register for signal <return_state>.
     Found 1-bit register for signal <rom_loaded>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_361>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_362>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_363>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_364>.
@@ -904,6 +902,7 @@ WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be p
     Found 1-bit register for signal <reset_i_clk_i_DFF_366>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_367>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_368>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_369>.
     Found 1-bit register for signal <host_bootdata_ack>.
     Found 16x2-bit Read Only RAM for signal <_n0416>
     Found 1-bit tristate buffer for signal <sram_data_io<7>> created at line 114
@@ -922,15 +921,15 @@ WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be p
 Unit <sram_controller> synthesized.
 
 Synthesizing Unit <A2601NoFlash>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd".
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <colu> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <rgbx2> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <cv> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <r> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <csyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <vsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <hsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" line 244: Output port <tia_pixel_clock_ena> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd".
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <colu> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <rgbx2> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <cv> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <r> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <csyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <vsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <hsyn> of the instance <ms_A2601> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" line 247: Output port <tia_pixel_clock_ena> of the instance <ms_A2601> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'tia_pixel_clock_ena', unconnected in block 'A2601NoFlash', is tied to its initial value (0).
     Found 4-bit register for signal <ctrl_cntr>.
     Found 1-bit register for signal <pb<1>>.
@@ -945,24 +944,24 @@ WARNING:Xst:2935 - Signal 'tia_pixel_clock_ena', unconnected in block 'A2601NoFl
     Found 3-bit register for signal <e7_rom_bank>.
     Found 2-bit register for signal <e7_ram_bank>.
     Found 1-bit register for signal <rst>.
-    Found 4-bit adder for signal <ctrl_cntr[3]_GND_63_o_add_2_OUT> created at line 1241.
-    Found 5-bit adder for signal <au> created at line 303.
-    Found 1-bit 7-to-1 multiplexer for signal <a<12>> created at line 370.
-    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<2>> created at line 370.
-    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<1>> created at line 370.
-    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<0>> created at line 370.
-    Found 1-bit tristate buffer for signal <cpu_d<7>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<6>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<5>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<4>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<3>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<2>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<1>> created at line 330
-    Found 1-bit tristate buffer for signal <cpu_d<0>> created at line 330
-    Found 16-bit comparator lessequal for signal <n0186> created at line 478
-    Found 16-bit comparator lessequal for signal <n0188> created at line 486
-    Found 16-bit comparator lessequal for signal <n0190> created at line 488
-    Found 16-bit comparator lessequal for signal <n0192> created at line 490
+    Found 4-bit adder for signal <ctrl_cntr[3]_GND_63_o_add_3_OUT> created at line 1241.
+    Found 5-bit adder for signal <au> created at line 306.
+    Found 1-bit 7-to-1 multiplexer for signal <a<12>> created at line 373.
+    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<2>> created at line 373.
+    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<1>> created at line 373.
+    Found 1-bit 4-to-1 multiplexer for signal <e0_bank<0>> created at line 373.
+    Found 1-bit tristate buffer for signal <cpu_d<7>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<6>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<5>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<4>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<3>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<2>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<1>> created at line 333
+    Found 1-bit tristate buffer for signal <cpu_d<0>> created at line 333
+    Found 16-bit comparator lessequal for signal <n0187> created at line 481
+    Found 16-bit comparator lessequal for signal <n0189> created at line 489
+    Found 16-bit comparator lessequal for signal <n0191> created at line 491
+    Found 16-bit comparator lessequal for signal <n0193> created at line 493
 INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal cpu_d<7> may hinder XST clustering optimizations.
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -973,9 +972,9 @@ INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal cpu_d<7> may hind
 Unit <A2601NoFlash> synthesized.
 
 Synthesizing Unit <A2601>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd".
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" line 145: Output port <irq> of the instance <riot_A6532> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" line 149: Output port <tia_pixel_clock_ena> of the instance <tia_inst> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd".
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd" line 145: Output port <irq> of the instance <riot_A6532> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd" line 149: Output port <tia_pixel_clock_ena> of the instance <tia_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <rgbx2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <vsyn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <hsyn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -986,13 +985,13 @@ WARNING:Xst:653 - Signal <riot_pa7> is used but never assigned. This sourceless 
 Unit <A2601> synthesized.
 
 Synthesizing Unit <A6507>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd".
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugOpcode> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugPc> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugA> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugX> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugY> of the instance <cpu> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" line 60: Output port <debugS> of the instance <cpu> is unconnected or connected to loadless signal.
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd".
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugOpcode> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugPc> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugA> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugX> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugY> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" line 60: Output port <debugS> of the instance <cpu> is unconnected or connected to loadless signal.
     Found 1-bit tristate buffer for signal <cpuDi<7>> created at line 57
     Found 1-bit tristate buffer for signal <cpuDi<6>> created at line 57
     Found 1-bit tristate buffer for signal <cpuDi<5>> created at line 57
@@ -1014,7 +1013,7 @@ INFO:Xst:3210 - "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.
 Unit <A6507> synthesized.
 
 Synthesizing Unit <cpu65xx>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/cpu65xx_e.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A6500/src/cpu65xx_e.vhd".
         pipelineOpcode = false
         pipelineAluMux = false
         pipelineAluOut = false
@@ -1081,7 +1080,7 @@ Synthesizing Unit <cpu65xx>.
     Found 256x44-bit Read Only RAM for signal <nextOpcInfo>
     Found 9-bit 14-to-1 multiplexer for signal <processAlu.rmwBits> created at line 722.
     Found 9-bit 8-to-1 multiplexer for signal <opcInfo[38]_opcInfo[34]_wide_mux_42_OUT> created at line 748.
-    Found 8-bit 4-to-1 multiplexer for signal <_n0733> created at line 1337.
+    Found 8-bit 4-to-1 multiplexer for signal <_n0723> created at line 1337.
     Found 5-bit comparator greater for signal <GND_82_o_opcInfo[38]_LessThan_46_o> created at line 779
     Found 5-bit comparator greater for signal <GND_82_o_opcInfo[38]_LessThan_55_o> created at line 807
     Found 5-bit comparator greater for signal <GND_82_o_GND_82_o_LessThan_61_o> created at line 826
@@ -1096,7 +1095,7 @@ Synthesizing Unit <cpu65xx>.
 Unit <cpu65xx> synthesized.
 
 Synthesizing Unit <A6532>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd".
     Found 8-bit register for signal <pa_ddr>.
     Found 8-bit register for signal <pb_reg>.
     Found 8-bit register for signal <pb_ddr>.
@@ -1130,20 +1129,20 @@ Synthesizing Unit <A6532>.
 Unit <A6532> synthesized.
 
 Synthesizing Unit <ram128x8>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd".
     Found 128x8-bit single-port RAM <Mram_ram> for signal <ram>.
     Found 8-bit register for signal <d_out>.
     Summary:
 	inferred   1 RAM(s).
 	inferred   8 D-type flip-flop(s).
 Unit <ram128x8> synthesized.
-WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 895. All outputs of instance <paddle0> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 896. All outputs of instance <paddle1> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 897. All outputs of instance <paddle2> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" line 898. All outputs of instance <paddle3> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" line 895. All outputs of instance <paddle0> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" line 896. All outputs of instance <paddle1> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" line 897. All outputs of instance <paddle2> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" line 898. All outputs of instance <paddle3> of block <paddle> are unconnected in block <TIA>. Underlying logic will be removed.
 
 Synthesizing Unit <TIA>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
 WARNING:Xst:647 - Input <pal> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <cburst>.
     Found 1-bit register for signal <pf_cnt>.
@@ -1257,7 +1256,7 @@ WARNING:Xst:647 - Input <pal> is never used. This port will be preserved and lef
 Unit <TIA> synthesized.
 
 Synthesizing Unit <paddle>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 1-bit register for signal <cnt<7>>.
     Found 1-bit register for signal <cnt<6>>.
     Found 1-bit register for signal <cnt<5>>.
@@ -1271,7 +1270,7 @@ Synthesizing Unit <paddle>.
 Unit <paddle> synthesized.
 
 Synthesizing Unit <cntr2>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 2-bit register for signal <d>.
     Found finite state machine <FSM_5> for signal <d>.
     -----------------------------------------------------------------------
@@ -1292,7 +1291,7 @@ Synthesizing Unit <cntr2>.
 Unit <cntr2> synthesized.
 
 Synthesizing Unit <lfsr6>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 6-bit register for signal <d>.
     Found 1-bit register for signal <prst_l>.
     Summary:
@@ -1300,14 +1299,14 @@ Synthesizing Unit <lfsr6>.
 Unit <lfsr6> synthesized.
 
 Synthesizing Unit <mux20>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 1-bit 20-to-1 multiplexer for signal <o> created at line 606.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux20> synthesized.
 
 Synthesizing Unit <audio>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 5-bit register for signal <sr5>.
     Found 5-bit register for signal <dvdr>.
     Found 4-bit register for signal <sr4>.
@@ -1321,7 +1320,7 @@ Synthesizing Unit <audio>.
 Unit <audio> synthesized.
 
 Synthesizing Unit <player>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 1-bit register for signal <scan_en>.
     Found 1-bit register for signal <scan_clk>.
     Found 1-bit register for signal <start>.
@@ -1334,7 +1333,7 @@ Synthesizing Unit <player>.
 Unit <player> synthesized.
 
 Synthesizing Unit <cntr3>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 3-bit register for signal <d>.
     Found 3-bit adder for signal <d[2]_GND_118_o_add_1_OUT> created at line 1241.
     Summary:
@@ -1343,7 +1342,7 @@ Synthesizing Unit <cntr3>.
 Unit <cntr3> synthesized.
 
 Synthesizing Unit <missile>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 1-bit register for signal <start2>.
     Found 1-bit register for signal <start1>.
     Summary:
@@ -1351,7 +1350,7 @@ Synthesizing Unit <missile>.
 Unit <missile> synthesized.
 
 Synthesizing Unit <ball>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd".
     Found 1-bit register for signal <start2>.
     Found 1-bit register for signal <start1>.
     Summary:
@@ -1359,7 +1358,7 @@ Synthesizing Unit <ball>.
 Unit <ball> synthesized.
 
 Synthesizing Unit <dac>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/A2601/src/DeltaSigma.vhd".
         MSBI = 4
     Found 1-bit register for signal <DACout>.
     Found 7-bit register for signal <SigmaLatch>.
@@ -1371,7 +1370,7 @@ Synthesizing Unit <dac>.
 Unit <dac> synthesized.
 
 Synthesizing Unit <ram2048x8>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/ram2048x8.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/ram2048x8.vhd".
     Found 2048x8-bit single-port RAM <Mram_ram> for signal <ram>.
     Found 8-bit register for signal <d_out>.
     Summary:
@@ -1380,19 +1379,19 @@ Synthesizing Unit <ram2048x8>.
 Unit <ram2048x8> synthesized.
 
 Synthesizing Unit <pll>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/pll.vhd".
     Summary:
 	no macro.
 Unit <pll> synthesized.
 
 Synthesizing Unit <pll_27M>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/ipcore_dir/pll_27M.vhd".
     Summary:
 	no macro.
 Unit <pll_27M> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd".
         h_input_offset = 48
 WARNING:Xst:647 - Input <I_CLK_VGA2X> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <I_VSYNC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1438,7 +1437,7 @@ WARNING:Xst:647 - Input <I_VSYNC> is never used. This port will be preserved and
 Unit <vga> synthesized.
 
 Synthesizing Unit <VGAColorTable>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/VGAColorTable.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/TIA/src/VGAColorTable.vhd".
 WARNING:Xst:647 - Input <lum<3:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 24-bit register for signal <outColor>.
     Found 512x24-bit Read Only RAM for signal <GND_155_o_GND_155_o_select_385_OUT>
@@ -1448,7 +1447,7 @@ WARNING:Xst:647 - Input <lum<3:3>> is never used. This port will be preserved an
 Unit <VGAColorTable> synthesized.
 
 Synthesizing Unit <hdmi>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmi.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmi.vhd".
         FREQ = 27000000
         FS = 48000
         CTS = 27000
@@ -1485,7 +1484,7 @@ Synthesizing Unit <hdmi>.
 Unit <hdmi> synthesized.
 
 Synthesizing Unit <hdmi_delay_line>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidelay.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidelay.vhd".
         G_WIDTH = 40
         G_DEPTH = 11
     Found 40-bit register for signal <q_pipe<1>>.
@@ -1504,7 +1503,7 @@ Synthesizing Unit <hdmi_delay_line>.
 Unit <hdmi_delay_line> synthesized.
 
 Synthesizing Unit <hdmidataencoder>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v".
         FREQ = 27000000
         FS = 48000
         CTS = 27000
@@ -1655,7 +1654,7 @@ Synthesizing Unit <div_26u_11u>.
 Unit <div_26u_11u> synthesized.
 
 Synthesizing Unit <encoder>.
-    Related source file is "/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/encoder.vhd".
+    Related source file is "/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/encoder.vhd".
     Found 4-bit register for signal <dc_bias>.
     Found 10-bit register for signal <ENCODED>.
     Found 4-bit adder for signal <n0163> created at line 54.
@@ -1750,8 +1749,8 @@ Macro Statistics
  8-bit subtractor                                      : 4
  9-bit adder                                           : 10
  9-bit subtractor                                      : 2
-# Registers                                            : 373
- 1-bit register                                        : 185
+# Registers                                            : 374
+ 1-bit register                                        : 186
  10-bit register                                       : 12
  11-bit register                                       : 5
  12-bit register                                       : 6
@@ -1806,7 +1805,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 2042
+# Multiplexers                                         : 2043
  1-bit 2-to-1 multiplexer                              : 1674
  1-bit 20-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 2
@@ -1817,7 +1816,8 @@ Macro Statistics
  11-bit 2-to-1 multiplexer                             : 13
  11-bit 7-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 51
- 16-bit 2-to-1 multiplexer                             : 17
+ 13-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 16
  17-bit 2-to-1 multiplexer                             : 4
  20-bit 2-to-1 multiplexer                             : 2
  21-bit 2-to-1 multiplexer                             : 3
@@ -1832,7 +1832,7 @@ Macro Statistics
  6-bit 2-to-1 multiplexer                              : 3
  7-bit 2-to-1 multiplexer                              : 8
  8-bit 12-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 35
+ 8-bit 2-to-1 multiplexer                              : 36
  8-bit 4-to-1 multiplexer                              : 2
  8-bit 8-to-1 multiplexer                              : 1
  9-bit 14-to-1 multiplexer                             : 1
@@ -1861,7 +1861,7 @@ Reading core <../../cvAtari2600/ipcore_dir/DualPortRAM_Block.ngc>.
 Reading core <../../cvAtari2600/ipcore_dir/simple_dualport_32k.ngc>.
 Loading core <DualPortRAM_Block> for timing and area information for instance <charram>.
 Loading core <simple_dualport_32k> for timing and area information for instance <frbuff>.
-INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_361> in Unit <extSRAM> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_362> <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_368> 
+INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_362> in Unit <extSRAM> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> 
 INFO:Xst:2261 - The FF/Latch <return_state_1> in Unit <extSRAM> is equivalent to the following 2 FFs/Latches, which will be removed : <return_state_2> <return_state_3> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_8> in Unit <hdmio> is equivalent to the following FF/Latch, which will be removed : <shift_clk_9> 
 INFO:Xst:2261 - The FF/Latch <subpacket_0_54> in Unit <dataenc> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_55> <subpacket_0_110> <subpacket_0_111> <subpacket_0_166> <subpacket_0_167> <subpacket_0_222> <subpacket_0_223> 
@@ -2049,7 +2049,7 @@ Unit <A6532> synthesized (advanced).
 
 Synthesizing (advanced) Unit <CtrlModule>.
 The following registers are absorbed into counter <spi_tick>: 1 register on signal <spi_tick>.
-INFO:Xst:3231 - The small RAM <Mram_mem_addr[20]_GND_22_o_Mux_35_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_mem_addr[20]_GND_22_o_Mux_36_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -2060,7 +2060,7 @@ INFO:Xst:3231 - The small RAM <Mram_mem_addr[20]_GND_22_o_Mux_35_o> will be impl
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_mem_addr[20]_GND_22_o_Mux_33_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_mem_addr[20]_GND_22_o_Mux_34_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -2268,10 +2268,10 @@ Unit <sram_controller> synthesized (advanced).
 
 Synthesizing (advanced) Unit <toplevel>.
 The following registers are absorbed into counter <capt_i>: 1 register on signal <capt_i>.
-The following registers are absorbed into counter <scan_state>: 1 register on signal <scan_state>.
 The following registers are absorbed into counter <tia_hcnt>: 1 register on signal <tia_hcnt>.
 The following registers are absorbed into counter <tia_vcnt>: 1 register on signal <tia_vcnt>.
 The following registers are absorbed into counter <total_vcnt>: 1 register on signal <total_vcnt>.
+The following registers are absorbed into counter <scan_state>: 1 register on signal <scan_state>.
 INFO:Xst:3231 - The small RAM <Mram_debug_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -2281,7 +2281,7 @@ INFO:Xst:3231 - The small RAM <Mram_debug_mem> will be implemented on LUTs in or
     |     clkA           | connected to signal <vid_clk>       | rise     |
     |     weA            | connected to internal node          | high     |
     |     addrA          | connected to signal <capt_i>        |          |
-    |     diA            | connected to signal <(extram_rom_byte,"000000000",a2600_addr)> |          |
+    |     diA            | connected to signal <(a2600_romdata,"000000000",a2600_addr)> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 16-word x 32-bit                    |          |
@@ -2422,8 +2422,8 @@ Macro Statistics
  4-bit updown loadable accumulator                     : 3
  7-bit up accumulator                                  : 1
  8-bit down loadable accumulator                       : 1
-# Registers                                            : 2489
- Flip-Flops                                            : 2489
+# Registers                                            : 2490
+ Flip-Flops                                            : 2490
 # Comparators                                          : 101
  1-bit comparator equal                                : 1
  10-bit comparator greater                             : 7
@@ -2453,7 +2453,7 @@ Macro Statistics
  8-bit comparator lessequal                            : 2
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 2404
+# Multiplexers                                         : 2405
  1-bit 2-to-1 multiplexer                              : 2052
  1-bit 20-to-1 multiplexer                             : 1
  1-bit 3-to-1 multiplexer                              : 2
@@ -2464,7 +2464,8 @@ Macro Statistics
  11-bit 2-to-1 multiplexer                             : 13
  11-bit 7-to-1 multiplexer                             : 1
  12-bit 2-to-1 multiplexer                             : 49
- 16-bit 2-to-1 multiplexer                             : 16
+ 13-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 15
  17-bit 2-to-1 multiplexer                             : 4
  20-bit 2-to-1 multiplexer                             : 2
  21-bit 2-to-1 multiplexer                             : 3
@@ -2478,7 +2479,7 @@ Macro Statistics
  6-bit 2-to-1 multiplexer                              : 3
  7-bit 2-to-1 multiplexer                              : 2
  8-bit 12-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 32
+ 8-bit 2-to-1 multiplexer                              : 33
  8-bit 8-to-1 multiplexer                              : 1
  9-bit 14-to-1 multiplexer                             : 1
  9-bit 2-to-1 multiplexer                              : 19
@@ -2556,7 +2557,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_108> ha
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_109> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_110> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_111> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_361> in Unit <sram_controller> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_362> <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_368> 
+INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_362> in Unit <sram_controller> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_3> in Unit <hdmi_out_xilinx> is equivalent to the following FF/Latch, which will be removed : <shift_clk_4> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_1> in Unit <hdmi_out_xilinx> is equivalent to the following FF/Latch, which will be removed : <shift_clk_2> 
 INFO:Xst:2261 - The FF/Latch <subpacket_0_43> in Unit <hdmidataencoder> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_44> <subpacket_0_99> <subpacket_0_100> <subpacket_0_155> <subpacket_0_156> <subpacket_0_211> <subpacket_0_212> 
@@ -2742,6 +2743,15 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_26> h
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_29> has a constant value of 0 in block <sram_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <host_read_buf_30> has a constant value of 0 in block <sram_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <packetHeader_23> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_0> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_1> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_2> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_3> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_4> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_5> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_6> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_7> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <audioLAvgSum_8> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <audioTimer_0> of sequential type is unconnected in block <hdmidataencoder>.
 WARNING:Xst:2677 - Node <audioTimer_1> of sequential type is unconnected in block <hdmidataencoder>.
 WARNING:Xst:2677 - Node <audioTimer_2> of sequential type is unconnected in block <hdmidataencoder>.
@@ -2838,13 +2848,11 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_27> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_28> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_29> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_30> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_31> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <mem_read_26> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_27> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_28> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_29> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_30> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mem_read_31> (without init value) has a constant value of 0 in block <CtrlModule>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <zpu_core_flex> ...
 
@@ -2877,9 +2885,9 @@ Optimizing unit <ball> ...
 
 Optimizing unit <OSD_Overlay> ...
 
-Optimizing unit <hdmi_out_xilinx> ...
-
 Optimizing unit <vga> ...
+
+Optimizing unit <hdmi_out_xilinx> ...
 
 Optimizing unit <hdmi> ...
 
@@ -2937,6 +2945,7 @@ WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_11> of sequential type is un
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_10> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_9> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/host_bootdata_8> of sequential type is unconnected in block <toplevel>.
+WARNING:Xst:2677 - Node <MyCtrlModule/host_mute> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_hEnable> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_bEnable> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <MyCtrlModule/zpu/out_mem_addr_19> of sequential type is unconnected in block <toplevel>.
@@ -2986,15 +2995,6 @@ WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_4> of sequential typ
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_3> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_2> of sequential type is unconnected in block <toplevel>.
 WARNING:Xst:2677 - Node <snespads_b/pads[0].pad_b/buttons_q_0> of sequential type is unconnected in block <toplevel>.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_8> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_7> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_6> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_5> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_4> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_3> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_2> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_1> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <hdmi/dataenc/audioLAvgSum_0> has a constant value of 0 in block <toplevel>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <MyCtrlModule/mykeyboard/ena> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_0> 
 INFO:Xst:2261 - The FF/Latch <overlay/hsync_r> in Unit <toplevel> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/dataenc/prevHSync> <hdmi/delay_line/q_pipe_0_15> 
 INFO:Xst:2261 - The FF/Latch <hdmi/prevBlank> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <hdmi/dataenc/prevBlank> 
@@ -3101,8 +3101,8 @@ Unit <toplevel> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2002
- Flip-Flops                                            : 2002
+# Registers                                            : 2003
+ Flip-Flops                                            : 2003
 # Shift Registers                                      : 55
  10-bit shift register                                 : 15
  11-bit shift register                                 : 25
@@ -3134,25 +3134,25 @@ Top Level Output File Name         : toplevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6292
+# BELS                             : 6368
 #      GND                         : 3
-#      INV                         : 85
+#      INV                         : 90
 #      LUT1                        : 232
-#      LUT2                        : 309
-#      LUT3                        : 453
-#      LUT4                        : 696
-#      LUT5                        : 991
-#      LUT6                        : 1863
+#      LUT2                        : 354
+#      LUT3                        : 473
+#      LUT4                        : 700
+#      LUT5                        : 1002
+#      LUT6                        : 1855
 #      MUXCY                       : 847
-#      MUXF7                       : 66
+#      MUXF7                       : 65
 #      VCC                         : 3
 #      XORCY                       : 744
-# FlipFlops/Latches                : 2083
+# FlipFlops/Latches                : 2084
 #      FD                          : 365
 #      FD_1                        : 8
 #      FDC                         : 1
 #      FDCE                        : 19
-#      FDE                         : 1173
+#      FDE                         : 1174
 #      FDE_1                       : 144
 #      FDPE                        : 1
 #      FDR                         : 163
@@ -3171,8 +3171,8 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 55
 # Clock Buffers                    : 8
 #      BUFG                        : 8
-# IO Buffers                       : 95
-#      IBUF                        : 9
+# IO Buffers                       : 103
+#      IBUF                        : 17
 #      IBUFG                       : 1
 #      IOBUF                       : 8
 #      OBUF                        : 73
@@ -3191,23 +3191,23 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2083  out of  18224    11%  
- Number of Slice LUTs:                 4724  out of   9112    51%  
-    Number used as Logic:              4629  out of   9112    50%  
+ Number of Slice Registers:            2084  out of  18224    11%  
+ Number of Slice LUTs:                 4801  out of   9112    52%  
+    Number used as Logic:              4706  out of   9112    51%  
     Number used as Memory:               95  out of   2176     4%  
        Number used as RAM:               40
        Number used as SRL:               55
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   5315
-   Number with an unused Flip Flop:    3232  out of   5315    60%  
-   Number with an unused LUT:           591  out of   5315    11%  
-   Number of fully used LUT-FF pairs:  1492  out of   5315    28%  
+ Number of LUT Flip Flop pairs used:   5375
+   Number with an unused Flip Flop:    3291  out of   5375    61%  
+   Number with an unused LUT:           574  out of   5375    10%  
+   Number of fully used LUT-FF pairs:  1510  out of   5375    28%  
    Number of unique control sets:       164
 
 IO Utilization: 
  Number of IOs:                         117
- Number of bonded IOBs:                  99  out of    232    42%  
+ Number of bonded IOBs:                 107  out of    232    46%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               32  out of     32   100%  
@@ -3239,7 +3239,7 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------+-----------------------------------------------+-------+
 pll_hdmi_instance/pll_base_inst/CLKOUT0                                          | BUFG                                          | 847   |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3                                   | NONE(last_hsync)                              | 190   |
-CLOCK_50_i                                                                       | DCM_SP:CLKFX                                  | 606   |
+CLOCK_50_i                                                                       | DCM_SP:CLKFX                                  | 607   |
 pll_hdmi_instance/pll_base_inst/CLKOUT3                                          | BUFG                                          | 120   |
 a2601Instance/ms_A2601/tia_inst/phi1                                             | BUFG                                          | 215   |
 a2601Instance/ms_A2601/tia_inst/phi0                                             | NONE(a2601Instance/ms_A2601/cpu_A6507/cpu/A_0)| 168   |
@@ -3261,7 +3261,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 88.122ns (Maximum Frequency: 11.348MHz)
-   Minimum input arrival time before clock: 3.030ns
+   Minimum input arrival time before clock: 9.666ns
    Maximum output required time after clock: 8.184ns
    Maximum combinational path delay: No path found
 
@@ -3286,62 +3286,62 @@ Delay:               88.122ns (Levels of Logic = 129)
     ----------------------------------------  ------------
      FD:C->Q               6   0.525   1.306  hdmi/dataenc/audioAvgCnt_1_1 (hdmi/dataenc/audioAvgCnt_1_1)
      LUT6:I1->O            5   0.254   0.841  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<25>12_SW2 (N435)
-     LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1872_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1847_o)
+     LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1874_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1849_o)
      LUT6:I5->O           10   0.254   1.008  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<23>2 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<23>)
-     LUT3:I2->O            3   0.254   0.766  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1940_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_1917_o)
+     LUT3:I2->O            3   0.254   0.766  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1942_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_1919_o)
      LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Madd_GND_162_o_b[10]_add_9_OUT_Madd_Madd_cy<24>11 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Madd_GND_162_o_b[10]_add_9_OUT_Madd_Madd_cy<24>)
-     LUT5:I4->O           12   0.254   1.069  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2006_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1981_o)
+     LUT5:I4->O           12   0.254   1.069  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2008_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1983_o)
      LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<21>2 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<21>)
      LUT5:I4->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>24_SW0 (N378)
      LUT6:I3->O           16   0.235   1.182  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>24 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>)
-     LUT3:I2->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2132_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_2109_o)
+     LUT3:I2->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2134_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_2111_o)
      LUT4:I1->O            1   0.235   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_lut<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_lut<2>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<3>)
      MUXCY:CI->O          22   0.235   1.334  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<19>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2192_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_GND_162_o_MUX_2171_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2194_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_GND_162_o_MUX_2173_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<3>)
      MUXCY:CI->O          26   0.235   1.420  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<18>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2250_o1121 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[20]_GND_162_o_MUX_2230_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2252_o1121 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[20]_GND_162_o_MUX_2232_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<3>)
      MUXCY:CI->O          28   0.235   1.453  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<17>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2306_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_GND_162_o_MUX_2287_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2308_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_GND_162_o_MUX_2289_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<3>)
      MUXCY:CI->O          32   0.235   1.520  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<16>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2360_o191 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[18]_GND_162_o_MUX_2342_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2362_o191 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[18]_GND_162_o_MUX_2344_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<4>)
      MUXCY:CI->O          36   0.262   1.587  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<5> (hdmi/dataenc/n0317<15>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2412_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2395_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2414_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2397_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<4>)
      MUXCY:CI->O          41   0.262   1.671  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<5> (hdmi/dataenc/n0317<14>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2438_o171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[16]_a[25]_MUX_2422_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2440_o171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[16]_a[25]_MUX_2424_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<4>)
      MUXCY:CI->O          43   0.262   1.704  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<5> (hdmi/dataenc/n0317<13>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2464_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_a[25]_MUX_2441_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2466_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_a[25]_MUX_2443_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_lut<5>)
      MUXCY:S->O           50   0.454   1.821  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_cy<5> (hdmi/dataenc/n0317<12>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2490_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2476_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2492_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2478_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<2>)
@@ -3349,11 +3349,11 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<5>)
      MUXCY:CI->O          48   0.262   1.788  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<6> (hdmi/dataenc/n0317<11>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2516_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_a[25]_MUX_2495_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2518_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_a[25]_MUX_2497_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<5>)
      MUXCY:CI->O          55   0.262   1.860  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<6> (hdmi/dataenc/n0317<10>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2542_o131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[12]_a[25]_MUX_2530_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2544_o131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[12]_a[25]_MUX_2532_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<2>)
@@ -3361,11 +3361,11 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<5>)
      MUXCY:CI->O          56   0.262   1.868  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<6> (hdmi/dataenc/n0317<9>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2568_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_a[25]_MUX_2549_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2570_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_a[25]_MUX_2551_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<5>)
      MUXCY:CI->O          63   0.023   1.922  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<6> (hdmi/dataenc/n0317<8>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2594_o111 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[10]_a[25]_MUX_2584_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2596_o111 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[10]_a[25]_MUX_2586_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<2>)
@@ -3373,12 +3373,12 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<5>)
      MUXCY:CI->O          66   0.023   1.945  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<6> (hdmi/dataenc/n0317<7>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2620_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2603_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2622_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2605_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<6>)
      MUXCY:CI->O          69   0.023   1.968  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<7> (hdmi/dataenc/n0317<6>)
-     LUT6:I5->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2646_o1241 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[8]_a[25]_MUX_2638_o)
+     LUT6:I5->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2648_o1241 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[8]_a[25]_MUX_2640_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<2>)
@@ -3387,12 +3387,12 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<6>)
      MUXCY:CI->O          73   0.023   1.999  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<7> (hdmi/dataenc/n0317<5>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2672_o161 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[15]_a[25]_MUX_2657_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2674_o161 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[15]_a[25]_MUX_2659_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<6>)
      MUXCY:CI->O          75   0.023   2.015  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<7> (hdmi/dataenc/n0317<4>)
-     LUT5:I4->O            4   0.254   1.234  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2698_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2684_o)
+     LUT5:I4->O            4   0.254   1.234  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2700_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2686_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<6>)
@@ -3421,10 +3421,10 @@ Delay:               88.122ns (Levels of Logic = 129)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3'
-  Clock period: 8.656ns (frequency: 115.533MHz)
-  Total number of paths / destination ports: 2638 / 409
+  Clock period: 8.672ns (frequency: 115.310MHz)
+  Total number of paths / destination ports: 2654 / 409
 -------------------------------------------------------------------------
-Delay:               8.656ns (Levels of Logic = 4)
+Delay:               8.672ns (Levels of Logic = 4)
   Source:            a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (FF)
   Destination:       a2601Instance/ms_A2601/tia_inst/aud0/sr4_3 (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3 rising
@@ -3434,20 +3434,20 @@ Delay:               8.656ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             41   0.525   1.899  a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2)
+     FDR:C->Q             42   0.525   1.915  a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2)
      LUT3:I0->O            1   0.235   1.112  a2601Instance/ms_A2601/tia_inst/au_cnt_SW0 (N175)
      LUT6:I1->O           12   0.254   1.524  a2601Instance/ms_A2601/tia_inst/au_cnt (a2601Instance/ms_A2601/tia_inst/au_cnt)
      LUT6:I0->O           11   0.254   1.494  a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv2 (a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv2)
      LUT6:I0->O            4   0.254   0.803  a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv (a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv)
      FDE:CE                    0.302          a2601Instance/ms_A2601/tia_inst/aud0/sr4_0
     ----------------------------------------
-    Total                      8.656ns (1.824ns logic, 6.832ns route)
-                                       (21.1% logic, 78.9% route)
+    Total                      8.672ns (1.824ns logic, 6.848ns route)
+                                       (21.0% logic, 79.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK_50_i'
   Clock period: 20.216ns (frequency: 49.466MHz)
-  Total number of paths / destination ports: 1218986 / 1386
+  Total number of paths / destination ports: 1219043 / 1388
 -------------------------------------------------------------------------
 Delay:               17.579ns (Levels of Logic = 5)
   Source:            MyCtrlModule/myrom/Mram_ram2 (RAM)
@@ -3463,8 +3463,8 @@ Delay:               17.579ns (Levels of Logic = 5)
      DSP48A1:A5->P47      18   5.220   1.234  MyCtrlModule/zpu/Mmult_n0372 (MyCtrlModule/zpu/Mmult_n0372_P47_to_Mmult_n03721)
      DSP48A1:C30->PCOUT47    1   3.149   0.000  MyCtrlModule/zpu/Mmult_n03721 (MyCtrlModule/zpu/Mmult_n03721_PCOUT_to_Mmult_n03722_PCIN_47)
      DSP48A1:PCIN47->P14    1   2.645   0.790  MyCtrlModule/zpu/Mmult_n03722 (MyCtrlModule/zpu/n0372<31>)
-     LUT6:I4->O            1   0.250   0.682  MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT1308 (MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT1307)
-     LUT2:I1->O            1   0.254   0.000  MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT1309 (MyCtrlModule/zpu/state[4]_X_16_o_wide_mux_221_OUT<31>)
+     LUT6:I4->O            1   0.250   0.682  MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT1309 (MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT1308)
+     LUT2:I1->O            1   0.254   0.000  MyCtrlModule/zpu/Mmux_state[4]_X_16_o_wide_mux_221_OUT13010 (MyCtrlModule/zpu/state[4]_X_16_o_wide_mux_221_OUT<31>)
      FD:D                      0.074          MyCtrlModule/zpu/memAWrite_31
     ----------------------------------------
     Total                     17.579ns (13.692ns logic, 3.887ns route)
@@ -3473,7 +3473,7 @@ Delay:               17.579ns (Levels of Logic = 5)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT3'
   Clock period: 7.353ns (frequency: 136.006MHz)
-  Total number of paths / destination ports: 1615 / 234
+  Total number of paths / destination ports: 1616 / 234
 -------------------------------------------------------------------------
 Delay:               7.353ns (Levels of Logic = 5)
   Source:            MyCtrlModule/myosd/charrom_addr_2 (FF)
@@ -3498,10 +3498,10 @@ Delay:               7.353ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/phi1'
-  Clock period: 16.985ns (frequency: 58.874MHz)
-  Total number of paths / destination ports: 1918 / 228
+  Clock period: 16.091ns (frequency: 62.147MHz)
+  Total number of paths / destination ports: 1932 / 228
 -------------------------------------------------------------------------
-Delay:               8.493ns (Levels of Logic = 6)
+Delay:               8.045ns (Levels of Logic = 6)
   Source:            a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 (FF)
   Destination:       a2601Instance/ms_A2601/tia_inst/vsync (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/phi1 rising
@@ -3514,21 +3514,21 @@ Delay:               8.493ns (Levels of Logic = 6)
      FDE:C->Q              1   0.525   1.112  a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 (a2601Instance/ms_A2601/riot_A6532/pb_ddr_1)
      LUT6:I1->O            1   0.254   0.910  a2601Instance/cpu_d<1>LogicTrst1 (a2601Instance/cpu_d<1>LogicTrst)
      LUT4:I1->O            1   0.235   0.682  a2601Instance/cpu_d<1>LogicTrst2 (a2601Instance/cpu_d<1>LogicTrst1)
-     LUT6:I5->O            1   0.254   1.112  a2601Instance/cpu_d<1>LogicTrst3 (a2601Instance/cpu_d<1>LogicTrst2)
-     LUT6:I1->O            8   0.254   1.172  a2601Instance/cpu_d<1>LogicTrst4 (a2601Instance/cpu_d<1>LogicTrst3)
-     LUT3:I0->O           26   0.235   1.420  a2601Instance/cpu_d<1>LogicTrst5 (a2601Instance/cpu_d<1>)
-     LUT6:I5->O            1   0.254   0.000  a2601Instance/ms_A2601/tia_inst/vsync_rstpot (a2601Instance/ms_A2601/tia_inst/vsync_rstpot)
+     LUT6:I5->O            1   0.254   0.682  a2601Instance/cpu_d<1>LogicTrst3 (a2601Instance/cpu_d<1>LogicTrst2)
+     LUT6:I5->O            7   0.254   1.138  a2601Instance/cpu_d<1>LogicTrst4 (a2601Instance/cpu_d<1>LogicTrst3)
+     LUT3:I0->O           27   0.235   1.436  a2601Instance/cpu_d<1>LogicTrst5 (a2601Instance/cpu_d<1>)
+     LUT3:I2->O            1   0.254   0.000  a2601Instance/ms_A2601/tia_inst/vsync_rstpot (a2601Instance/ms_A2601/tia_inst/vsync_rstpot)
      FD_1:D                    0.074          a2601Instance/ms_A2601/tia_inst/vsync
     ----------------------------------------
-    Total                      8.493ns (2.085ns logic, 6.408ns route)
-                                       (24.6% logic, 75.4% route)
+    Total                      8.045ns (2.085ns logic, 5.960ns route)
+                                       (25.9% logic, 74.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
-  Clock period: 22.178ns (frequency: 45.089MHz)
-  Total number of paths / destination ports: 3334228 / 333
+  Clock period: 21.748ns (frequency: 45.981MHz)
+  Total number of paths / destination ports: 3316625 / 333
 -------------------------------------------------------------------------
-Delay:               22.178ns (Levels of Logic = 20)
+Delay:               21.748ns (Levels of Logic = 20)
   Source:            a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_29 (FF)
   Destination:       a2601Instance/ms_A2601/cpu_A6507/cpu/S_7 (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/phi0 rising
@@ -3544,8 +3544,8 @@ Delay:               22.178ns (Levels of Logic = 20)
      LUT5:I1->O            2   0.254   1.181  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_aluInput[7]_GND_82_o_add_24_OUT_cy<5>121 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_aluInput[7]_GND_82_o_add_24_OUT_cy<5>12)
      LUT6:I0->O            3   0.254   0.874  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_59_OUT_cy<3>1 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_59_OUT_cy<3>)
      LUT6:I4->O            1   0.250   1.112  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits103 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits102)
-     LUT5:I0->O            1   0.254   1.112  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits103)
-     LUT6:I1->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits105 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104)
+     LUT5:I0->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits103)
+     LUT6:I5->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits105 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104)
      LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits107 (a2601Instance/ms_A2601/cpu_A6507/cpu/processAlu.rmwBits<5>)
      LUT2:I1->O            1   0.254   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<5> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<5>)
      MUXCY:S->O            1   0.215   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<5> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<5>)
@@ -3553,16 +3553,16 @@ Delay:               22.178ns (Levels of Logic = 20)
      XORCY:CI->O           1   0.206   0.958  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_xor<7> (a2601Instance/ms_A2601/cpu_A6507/cpu/GND_82_o_GND_82_o_add_29_OUT<7>)
      LUT6:I2->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT81 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT8)
      LUT6:I5->O            8   0.254   1.399  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT82 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_opcInfo[38]_GND_82_o_add_47_OUT_lut<3>)
-     LUT6:I0->O            3   0.254   0.766  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_274_o42 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_274_o41)
-     LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_274_o44 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_274_o_mmx_out4)
+     LUT6:I0->O            3   0.254   0.766  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o42 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o41)
+     LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o44 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o_mmx_out4)
      LUT4:I3->O            2   0.254   1.002  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT12831 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1283)
      LUT6:I2->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1281 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT128)
      LUT6:I5->O            4   0.254   0.804  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1282 (a2601Instance/ms_A2601/cpu_A6507/cpu/processAlu.nineBits<7>)
      LUT6:I5->O            1   0.254   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT24 (a2601Instance/ms_A2601/cpu_A6507/cpu/S[7]_S[7]_mux_151_OUT<7>)
      FDE:D                     0.074          a2601Instance/ms_A2601/cpu_A6507/cpu/S_7
     ----------------------------------------
-    Total                     22.178ns (5.357ns logic, 16.821ns route)
-                                       (24.2% logic, 75.8% route)
+    Total                     21.748ns (5.357ns logic, 16.391ns route)
+                                       (24.6% logic, 75.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT1'
@@ -3608,23 +3608,72 @@ Offset:              3.030ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_50_i'
-  Total number of paths / destination ports: 23 / 23
+  Total number of paths / destination ports: 31 / 31
 -------------------------------------------------------------------------
-Offset:              2.927ns (Levels of Logic = 2)
-  Source:            ps2_clk_io (PAD)
-  Destination:       MyCtrlModule/mykeyboard/clkFilterCnt_3 (FF)
+Offset:              3.383ns (Levels of Logic = 2)
+  Source:            cart_data_i<0> (PAD)
+  Destination:       Mram_debug_mem5 (RAM)
   Destination Clock: CLOCK_50_i rising 1.1X
 
-  Data Path: ps2_clk_io to MyCtrlModule/mykeyboard/clkFilterCnt_3
+  Data Path: cart_data_i<0> to Mram_debug_mem5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.328   1.271  ps2_clk_io_IBUF (ps2_clk_io_IBUF)
-     LUT5:I0->O            1   0.254   0.000  MyCtrlModule/mykeyboard/clkFilterCnt_3_glue_set (MyCtrlModule/mykeyboard/clkFilterCnt_3_glue_set)
-     FD:D                      0.074          MyCtrlModule/mykeyboard/clkFilterCnt_3
+     IBUF:I->O             1   1.328   0.682  cart_data_i_0_IBUF (cart_data_i_0_IBUF)
+     LUT3:I2->O            2   0.254   0.725  Mmux_a2600_romdata11 (a2600_romdata<0>)
+     RAM32M:DIA0               0.394          Mram_debug_mem5
     ----------------------------------------
-    Total                      2.927ns (1.656ns logic, 1.271ns route)
-                                       (56.6% logic, 43.4% route)
+    Total                      3.383ns (1.976ns logic, 1.407ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'a2601Instance/ms_A2601/tia_inst/phi1'
+  Total number of paths / destination ports: 211 / 183
+-------------------------------------------------------------------------
+Offset:              6.847ns (Levels of Logic = 6)
+  Source:            cart_data_i<7> (PAD)
+  Destination:       a2601Instance/ms_A2601/riot_A6532/timer_7 (FF)
+  Destination Clock: a2601Instance/ms_A2601/tia_inst/phi1 rising
+
+  Data Path: cart_data_i<7> to a2601Instance/ms_A2601/riot_A6532/timer_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  cart_data_i_7_IBUF (cart_data_i_7_IBUF)
+     LUT3:I2->O            2   0.254   1.156  Mmux_a2600_romdata81 (a2600_romdata<7>)
+     LUT5:I0->O            2   0.254   1.181  a2601Instance/cpu_d<7>LogicTrst1 (a2601Instance/cpu_d<7>LogicTrst)
+     LUT6:I0->O           19   0.254   1.261  a2601Instance/cpu_d<7>LogicTrst8 (a2601Instance/cpu_d<7>)
+     LUT3:I2->O            0   0.254   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<7> (a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<7>)
+     XORCY:LI->O           1   0.149   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_xor<7> (a2601Instance/ms_A2601/Result<7>)
+     FDE:D                     0.074          a2601Instance/ms_A2601/riot_A6532/timer_7
+    ----------------------------------------
+    Total                      6.847ns (2.567ns logic, 4.280ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
+  Total number of paths / destination ports: 512 / 81
+-------------------------------------------------------------------------
+Offset:              9.666ns (Levels of Logic = 7)
+  Source:            cart_data_i<7> (PAD)
+  Destination:       a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2 (FF)
+  Destination Clock: a2601Instance/ms_A2601/tia_inst/phi0 rising
+
+  Data Path: cart_data_i<7> to a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  cart_data_i_7_IBUF (cart_data_i_7_IBUF)
+     LUT3:I2->O            2   0.254   1.156  Mmux_a2600_romdata81 (a2600_romdata<7>)
+     LUT5:I0->O            2   0.254   1.181  a2601Instance/cpu_d<7>LogicTrst1 (a2601Instance/cpu_d<7>LogicTrst)
+     LUT6:I0->O            2   0.254   0.834  a2601Instance/ms_A2601/cpu_A6507/cpuDi<7>LogicTrst1 (a2601Instance/ms_A2601/cpu_A6507/cpuDi<7>)
+     LUT2:I0->O           46   0.250   1.754  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_calcNextOpcode.myNextOpcode81 (a2601Instance/ms_A2601/cpu_A6507/cpu/calcNextOpcode.myNextOpcode<7>)
+     LUT3:I2->O            1   0.254   1.137  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo8911_SW0 (a2601Instance/ms_A2601_N42)
+     LUT6:I0->O            1   0.254   0.000  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo8911 (a2601Instance/ms_A2601/cpu_A6507/cpu/nextOpcInfo<2>)
+     FDE:D                     0.074          a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2
+    ----------------------------------------
+    Total                      9.666ns (2.922ns logic, 6.744ns route)
+                                       (30.2% logic, 69.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT0'
@@ -3640,7 +3689,7 @@ Offset:              8.184ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              8   0.525   1.220  vga_timing_gen/hcnt_4 (vga_timing_gen/hcnt_4)
-     LUT4:I0->O            1   0.254   0.790  vga_timing_gen/O_HSYNC_SW0 (N264)
+     LUT4:I0->O            1   0.254   0.790  vga_timing_gen/O_HSYNC_SW0 (N244)
      LUT6:I4->O          108   0.250   2.233  vga_timing_gen/O_HSYNC (vga_hsync_n_o_OBUF)
      OBUF:I->O                 2.912          vga_hsync_n_o_OBUF (vga_hsync_n_o)
     ----------------------------------------
@@ -3649,7 +3698,7 @@ Offset:              8.184ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_50_i'
-  Total number of paths / destination ports: 68 / 48
+  Total number of paths / destination ports: 82 / 62
 -------------------------------------------------------------------------
 Offset:              7.343ns (Levels of Logic = 3)
   Source:            MyCtrlModule/myosd/osd_enable (FF)
@@ -3672,29 +3721,49 @@ Offset:              7.343ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT3'
   Total number of paths / destination ports: 74 / 12
 -------------------------------------------------------------------------
-Offset:              7.736ns (Levels of Logic = 4)
-  Source:            MyCtrlModule/myosd/xpixelpos_10 (FF)
+Offset:              7.963ns (Levels of Logic = 4)
+  Source:            MyCtrlModule/myosd/ypixelpos_10 (FF)
   Destination:       vga_r_o<3> (PAD)
   Source Clock:      pll_hdmi_instance/pll_base_inst/CLKOUT3 rising
 
-  Data Path: MyCtrlModule/myosd/xpixelpos_10 to vga_r_o<3>
+  Data Path: MyCtrlModule/myosd/ypixelpos_10 to vga_r_o<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.525   1.032  MyCtrlModule/myosd/xpixelpos_10 (MyCtrlModule/myosd/xpixelpos_10)
-     LUT3:I0->O            1   0.235   0.958  MyCtrlModule/myosd/_n025521 (MyCtrlModule/myosd/_n02552)
-     LUT5:I1->O            5   0.254   0.841  MyCtrlModule/myosd/pixel2 (osd_pixel)
+     FDE:C->Q              3   0.525   1.042  MyCtrlModule/myosd/ypixelpos_10 (MyCtrlModule/myosd/ypixelpos_10)
+     LUT4:I0->O            2   0.254   1.156  MyCtrlModule/myosd/pixel11 (MyCtrlModule/myosd/pixel1)
+     LUT5:I0->O            5   0.254   0.841  MyCtrlModule/myosd/pixel2 (osd_pixel)
      LUT6:I5->O            2   0.254   0.725  overlay/Mmux_red_out71 (vga_r_o_2_OBUF)
      OBUF:I->O                 2.912          vga_r_o_2_OBUF (vga_r_o<2>)
     ----------------------------------------
-    Total                      7.736ns (4.180ns logic, 3.556ns route)
-                                       (54.0% logic, 46.0% route)
+    Total                      7.963ns (4.199ns logic, 3.764ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              6.615ns (Levels of Logic = 2)
+  Source:            a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 (FF)
+  Destination:       cart_addr_o<1> (PAD)
+  Source Clock:      a2601Instance/ms_A2601/tia_inst/phi0 rising
+
+  Data Path: a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 to cart_addr_o<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            111   0.525   2.243  a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 (a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1)
+     LUT2:I1->O            1   0.254   0.681  Mmux_cart_addr_o51 (cart_addr_o_1_OBUF)
+     OBUF:I->O                 2.912          cart_addr_o_1_OBUF (cart_addr_o<1>)
+    ----------------------------------------
+    Total                      6.615ns (3.691ns logic, 2.924ns route)
+                                       (55.8% logic, 44.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.277ns (Levels of Logic = 1)
+Offset:              4.240ns (Levels of Logic = 1)
   Source:            a2601Instance/ms_A2601/tia_inst/hsync (FF)
   Destination:       joy2_p1_i (PAD)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3 rising
@@ -3703,11 +3772,11 @@ Offset:              4.277ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               5   0.525   0.840  a2601Instance/ms_A2601/tia_inst/hsync (a2601Instance/ms_A2601/tia_inst/hsync)
+     FD:C->Q               4   0.525   0.803  a2601Instance/ms_A2601/tia_inst/hsync (a2601Instance/ms_A2601/tia_inst/hsync)
      OBUF:I->O                 2.912          joy2_p1_i_OBUF (joy2_p1_i)
     ----------------------------------------
-    Total                      4.277ns (3.437ns logic, 0.840ns route)
-                                       (80.4% logic, 19.6% route)
+    Total                      4.240ns (3.437ns logic, 0.803ns route)
+                                       (81.1% logic, 18.9% route)
 
 =========================================================================
 
@@ -3720,12 +3789,12 @@ Clock to Setup on destination clock CLOCK_50_i
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
 CLOCK_50_i                                    |   17.579|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi0          |    8.581|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi0          |    8.493|         |         |         |
 a2601Instance/ms_A2601/tia_inst/phi1          |         |    5.130|         |         |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    5.653|         |         |         |
 host_reset_n_host_debug_arm_AND_1927_o        |         |    4.043|         |         |
-pll_hdmi_instance/pll_base_inst/CLKOUT0       |    4.981|         |         |         |
-pll_hdmi_instance/pll_base_inst/CLKOUT3       |    4.699|         |         |         |
+pll_hdmi_instance/pll_base_inst/CLKOUT0       |    5.006|         |         |         |
+pll_hdmi_instance/pll_base_inst/CLKOUT3       |    4.595|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/phi0
@@ -3734,8 +3803,8 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/phi0
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
 CLOCK_50_i                                    |   15.948|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi0          |   22.178|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi1          |   11.119|    9.536|         |         |
+a2601Instance/ms_A2601/tia_inst/phi0          |   21.748|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi1          |   10.689|    9.047|         |         |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|   10.074|         |         |         |
 pll_hdmi_instance/pll_base_inst/CLKOUT0       |    1.324|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
@@ -3745,9 +3814,9 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/phi1
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLOCK_50_i                                    |   12.655|         |   13.209|         |
-a2601Instance/ms_A2601/tia_inst/phi0          |   10.960|         |   11.514|         |
-a2601Instance/ms_A2601/tia_inst/phi1          |    8.110|    6.468|    8.493|         |
+CLOCK_50_i                                    |   12.920|         |   13.456|         |
+a2601Instance/ms_A2601/tia_inst/phi0          |   11.242|         |   11.778|         |
+a2601Instance/ms_A2601/tia_inst/phi1          |    7.680|    6.038|    8.045|         |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    6.678|         |    7.263|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
@@ -3756,9 +3825,9 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-a2601Instance/ms_A2601/tia_inst/phi0          |    6.930|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi0          |    6.925|         |         |         |
 a2601Instance/ms_A2601/tia_inst/phi1          |         |    7.736|         |         |
-a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    8.656|         |         |         |
+a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    8.672|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock host_reset_n_host_debug_arm_AND_1927_o
@@ -3775,10 +3844,10 @@ Clock to Setup on destination clock pll_hdmi_instance/pll_base_inst/CLKOUT0
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
 CLOCK_50_i                                    |    4.288|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi1          |         |    5.037|         |         |
+a2601Instance/ms_A2601/tia_inst/phi1          |         |    5.363|         |         |
 a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    9.072|         |         |         |
 pll_hdmi_instance/pll_base_inst/CLKOUT0       |   88.122|         |         |         |
-pll_hdmi_instance/pll_base_inst/CLKOUT3       |    4.099|         |         |         |
+pll_hdmi_instance/pll_base_inst/CLKOUT3       |    4.326|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock pll_hdmi_instance/pll_base_inst/CLKOUT1
@@ -3811,15 +3880,15 @@ pll_hdmi_instance/pll_base_inst/CLKOUT3|    7.353|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 94.00 secs
-Total CPU time to Xst completion: 84.28 secs
+Total REAL time to Xst completion: 121.00 secs
+Total CPU time to Xst completion: 110.34 secs
  
 --> 
 
 
-Total memory usage is 584220 kilobytes
+Total memory usage is 585148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  520 (   0 filtered)
-Number of infos    :  148 (   0 filtered)
+Number of warnings :  515 (   0 filtered)
+Number of infos    :  149 (   0 filtered)
 

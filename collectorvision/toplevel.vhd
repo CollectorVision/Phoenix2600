@@ -128,7 +128,7 @@ entity toplevel is
 		-- Cartridge
 		cart_addr_o			: out   std_logic_vector(12 downto 0)	:= (others => '0');
 		cart_data_i			: in    std_logic_vector( 7 downto 0);
-		cart_dir_o			: out   std_logic								:= '1';
+		cart_dir_o			: out   std_logic								:= '0';
 		cart_oe_n_o			: out   std_logic								:= '1';
 --		cart_en_80_n_o		: out   std_logic								:= '1';
 --		cart_en_A0_n_o		: out   std_logic								:= '1';
@@ -285,6 +285,7 @@ architecture rtl of toplevel is
 	signal pacman_rom_byte  : std_logic_vector(7 downto 0);
 	signal extram_rom_byte  : std_logic_vector(7 downto 0);
 	signal rom_loaded			: std_logic;
+	signal cpu_a				: std_logic_vector(12 downto 0);
 	
 	signal host_mute : std_logic;
 	signal host_debug_arm : std_logic;
@@ -296,6 +297,8 @@ architecture rtl of toplevel is
 	signal last_6502_addr : std_logic_vector(14 downto 0);
 	signal armed : boolean := true;
 	signal last_ph0 : std_logic;
+	
+	signal physical_cartridge_used : std_logic := '0';
 	
 	signal last_hsync : std_logic := '0';
 	signal last_vsync : std_logic := '0';
@@ -472,6 +475,7 @@ begin
 -- Control module
 
 MyCtrlModule : entity work.CtrlModule
+	generic map ( cartridge_default => '1' )
 	port map (
 		clk 			=> vid_clk,
 		clk_video 	=> hdmi_clk_2_5x, -- hdmi_clk_25M, -- used to be the 2x pixel clock
@@ -523,6 +527,7 @@ MyCtrlModule : entity work.CtrlModule
 		
 		host_mute => host_mute,
 		host_debug_arm => host_debug_arm,
+		host_cart_ena => physical_cartridge_used,
 		
 		-- Boot data read signals (verification)
 		host_bootread_data =>  host_bootread_data,
@@ -566,9 +571,13 @@ overlay : entity work.OSD_Overlay
 
 
 	-----------------------------------------------------------------------
-	-- ROM data always coming from external memory
+	-- ROM data always coming from external SRAM memory  - except when
+	-- a cartridge is present.
 	-----------------------------------------------------------------------
-   a2600_romdata <= extram_rom_byte;
+   a2600_romdata <= extram_rom_byte when physical_cartridge_used = '0' else cart_data_i;
+	cart_addr_o <= cpu_a when physical_cartridge_used = '1' else (others => '0');
+	cart_dir_o 	<= '0'; -- not physical_cartridge_used; -- state zero = read from cart.
+	cart_oe_n_o	<= '0'; -- not physical_cartridge_used;
 
 -- -----------------------------------------------------------------------
 -- External SRAM controller
@@ -638,6 +647,7 @@ overlay : entity work.OSD_Overlay
 		banking_scheme_e7 => banking_scheme_e7,
 		a2600_cpu_addr_o => a2600_addr,
 		a2600_cpu_data_i => a2600_romdata,
+		cpu_a_o => cpu_a, 
 --      bootdata => host_bootdata,
 --      bootdata_req => host_bootdata_req,
 --      bootdata_ack => host_bootdata_ack,
@@ -655,7 +665,7 @@ overlay : entity work.OSD_Overlay
 
   dac_l_o <= audio;
   dac_r_o <= audio;
-  RLED <= '0';
+  RLED <= physical_cartridge_used; -- '0';
   GLED <= '0';
   BLED <= '0';
 
@@ -743,7 +753,8 @@ overlay : entity work.OSD_Overlay
 	-- end of debug stuff
 	
 	-- handle audio to HDMI
-	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00" when host_mute='0' else (others => '0');
+	--sound_hdmi_s <= "00" & a2600_audio & "0" & x"00" when host_mute='0' else (others => '0');
+	sound_hdmi_s <= "00" & a2600_audio & "0" & x"00";
 	
 	-- video clocking
 	process(vid_clk, tia_pixel_clock_ena, tia_pixel_clock)

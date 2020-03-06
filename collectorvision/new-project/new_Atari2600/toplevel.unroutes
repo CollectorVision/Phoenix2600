@@ -1,11 +1,11 @@
 Release 14.7 - par P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Aug  2 19:08:44 2019
+Wed Feb 26 17:26:29 2020
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 23 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 15 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    Mram_debug_mem1_RAMD_D1_O
@@ -14,14 +14,6 @@ WARNING:ParHelpers:361 - There are 23 loadless signals in this design. This desi
    Mram_debug_mem4_RAMD_D1_O
    Mram_debug_mem5_RAMD_D1_O
    btn_reset_n_i_IBUF
-   cart_data_i<0>_IBUF
-   cart_data_i<1>_IBUF
-   cart_data_i<2>_IBUF
-   cart_data_i<3>_IBUF
-   cart_data_i<4>_IBUF
-   cart_data_i<5>_IBUF
-   cart_data_i<6>_IBUF
-   cart_data_i<7>_IBUF
    flash_miso_i_IBUF
    joy1_p7_i_IBUF
    joy1_p9_i_IBUF

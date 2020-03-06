@@ -1,5 +1,6 @@
 #include "keyboard.h"
 #include "ps2.h"
+#include "host.h"	// register definitions
 
 
 #define NBUTTONS 17
@@ -12,7 +13,6 @@ unsigned sample = HIGHMASK;	// Current sample as read from hw. Think about is as
 unsigned short sample_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 };
 unsigned short numpad_counts[NBUTTONS] = { 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0,0 }; // for debugging only
 #define COLECO_DEBOUNCE_COUNT 100
-#define HOST_READ_NUMPAD    0xFFFFFFB4
 
 int SampleColecoNumpad() {
 	// Debounce by reading at least 100 times the same value.

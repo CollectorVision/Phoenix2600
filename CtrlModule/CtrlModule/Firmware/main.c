@@ -174,15 +174,30 @@ void Start(int row)
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_DIVERT_KEYBOARD;
 }
 
+unsigned GetCartEnabled() {
+	unsigned u = *(volatile unsigned *)HOST_READ_NUMPAD;
+	return 1 & (u >> 31);
+}
+
 void Boot(int row) {
-	// Switch databus to loaded ROM, Reset
+	// Switch databus to loaded ROM, Reset.
+	// Preserve value of Cartridge selection.
+	unsigned cart_enabled = GetCartEnabled();
 	// Value bit 1 below arms debug capture when reset is issued
-	HW_HOST(REG_HOST_MUTECTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0);
+	HW_HOST(REG_HOST_MUTECTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0) | (cart_enabled << 2);
 	Reset(0);
 	Delay();
-	// Return to pacman, no capture.
-//	HW_HOST(REG_HOST_MUXCTRL) = 0;
-//	Reset(0);
+}
+
+void Cartridge(int row) {
+	// EP: toggle external cartridge. 
+	// REG_HOST_MUTECTRL: bit 0: 1=mute
+	//					  bit 1: 1=debug arm
+	//                    bit 2: 1=use external cartridge ROM
+	unsigned cart_enabled = 1 ^ GetCartEnabled();
+	HW_HOST(REG_HOST_MUTECTRL) = 2 | (MENU_TOGGLE_VALUES & (1 << 6) ? 1 : 0) 
+		| (cart_enabled << 2);
+	Reset(0);
 }
 
 static struct menu_entry topmenu[]; // Forward declaration.
@@ -249,6 +264,7 @@ static struct menu_entry topmenu[]=
 //	{MENU_ENTRY_CALLBACK,"Animate",MENU_ACTION(&TriggerEffect)},
 	{MENU_ENTRY_CALLBACK,"Load ROM \x10",MENU_ACTION(&FileSelector_Show)},
 	{MENU_ENTRY_CALLBACK,"Exit",MENU_ACTION(&Menu_Hide)},
+	{MENU_ENTRY_CALLBACK,"Cartridge",MENU_ACTION(&Cartridge)},
 	{MENU_ENTRY_NULL,0,0}
 };
 
@@ -406,7 +422,8 @@ static int LoadROM(const char *filename)
 //		}
 	}
 
-	HW_HOST(REG_HOST_MUTECTRL) = 0; // Make sure mute is off and boot
+	HW_HOST(REG_HOST_MUTECTRL) = 0; // Make sure mute is off and boot.
+	// Note: setting to zero will also turn of external cartidge.
 	Reset(0);
 	Delay();
 	
@@ -416,9 +433,6 @@ static int LoadROM(const char *filename)
 		Menu_Set(loadfailed);
 	return(result);
 }
-
-#define HOST_READ_NUMPAD    0xFFFFFFB4
-#define HOST_READ_SCANLINES 0xFFFFFFB8
 
 #if MENUITEM_DEBUG
 extern unsigned numpad_counts[];
@@ -507,7 +521,7 @@ int main(int argc,char **argv)
 //	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_RESET;
 
 	HW_HOST(REG_HOST_CONTROL)=HOST_CONTROL_DIVERT_SDCARD;
-	HW_HOST(REG_HOST_MUTECTRL) = 1; // mute audio of the console first
+	HW_HOST(REG_HOST_MUTECTRL) = 1 | (GetCartEnabled() << 2); // mute audio of the console first
 
 	PS2Init();
 	EnableInterrupts();

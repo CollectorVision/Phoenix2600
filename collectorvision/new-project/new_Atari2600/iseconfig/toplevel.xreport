@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-08-06T18:26:21</DateModified>
+  <DateModified>2020-02-25T05:53:24</DateModified>
   <ModuleName>toplevel</ModuleName>
   <SummaryTimeStamp>2019-05-04T18:33:35</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/iseconfig/toplevel.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/new-project/new_Atari2600/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/xilinx_share/2600cartmod2/collectorvision/new-project/new_Atari2600/iseconfig/toplevel.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/xilinx_share/2600cartmod2/collectorvision/new-project/new_Atari2600/</ImplementationReportsDirectory>
   <DateInitialized>2019-05-04T11:56:13</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

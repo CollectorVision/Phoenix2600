@@ -121,31 +121,31 @@ NET "joy2_p7_i"         LOC="B9"  | IOSTANDARD = LVCMOS33 | PULLUP;
 NET "joy2_p9_i"         LOC="A8"  | IOSTANDARD = LVCMOS33 | PULLUP;
 
 # Cartridge board
-NET "cart_addr_o<0>"    LOC="F1"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<1>"    LOC="H2"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<2>"    LOC="H3"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<3>"    LOC="J1"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<4>"    LOC="K2"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<5>"    LOC="L3"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<6>"    LOC="L1"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<7>"    LOC="N3"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<8>"    LOC="M3"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<9>"    LOC="L2"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<10>"   LOC="H1"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<11>"   LOC="K3"  | IOSTANDARD = LVCMOS33;
-NET "cart_addr_o<12>"   LOC="G1"  | IOSTANDARD = LVCMOS33;
+NET "cart_addr_o<0>"    LOC="F1"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<1>"    LOC="H2"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<2>"    LOC="H3"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<3>"    LOC="J1"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<4>"    LOC="K2"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<5>"    LOC="L3"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<6>"    LOC="L1"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<7>"    LOC="N3"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<8>"    LOC="M3"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<9>"    LOC="L2"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<10>"   LOC="H1"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<11>"   LOC="K3"  | IOSTANDARD = LVCMOS33; # ok
+NET "cart_addr_o<12>"   LOC="G1"  | IOSTANDARD = LVCMOS33; # ok
 //NET "cart_addr_o<13>"   LOC="J1"  | IOSTANDARD = LVCMOS33;
 //NET "cart_addr_o<14>"   LOC="K3"  | IOSTANDARD = LVCMOS33;
-NET "cart_data_i<0>"    LOC="F2"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<1>"    LOC="D2"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<2>"    LOC="C2"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<3>"    LOC="E4"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<4>"    LOC="C1"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<5>"    LOC="D1"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<6>"    LOC="E1"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_data_i<7>"    LOC="G3"  | IOSTANDARD = LVCMOS33 | PULLUP;
-NET "cart_dir_o"        LOC="N1"  | IOSTANDARD = LVCMOS33 | PULLUP; #rev4 PCB
-//NET "cart_dir_o"        LOC="N1"  | IOSTANDARD = LVCMOS33; #Rev6 PCB
+NET "cart_data_i<0>"    LOC="F2"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<1>"    LOC="D2"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<2>"    LOC="C2"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<3>"    LOC="E4"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<4>"    LOC="C1"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<5>"    LOC="D1"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<6>"    LOC="E1"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+NET "cart_data_i<7>"    LOC="G3"  | IOSTANDARD = LVCMOS33 | PULLUP; # ok
+//NET "cart_dir_o"        LOC="N1"  | IOSTANDARD = LVCMOS33 | PULLUP; #rev4 PCB
+NET "cart_dir_o"        LOC="N1"  | IOSTANDARD = LVCMOS33; #Rev6 PCB
 NET "cart_oe_n_o"       LOC="N2"  | IOSTANDARD = LVCMOS33;
 //NET "cart_en_80_n_o"    LOC="J3"  | IOSTANDARD = LVCMOS33;
 //NET "cart_en_A0_n_o"    LOC="K1"  | IOSTANDARD = LVCMOS33;

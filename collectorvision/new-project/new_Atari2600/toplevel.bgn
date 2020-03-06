@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '6slx16.nph' in environment
    "toplevel" is an NCD, version 3.2, device xc6slx16, package csg324, speed -2
 Opened constraints file toplevel.pcf.
 
-Fri Aug  2 19:09:15 2019
+Wed Feb 26 17:27:10 2020
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 toplevel.ncd 
 
@@ -133,10 +133,6 @@ There were 0 CONFIG constraint(s) processed from toplevel.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   a2601Instance/ms_A2601/tia_inst/phi0 is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr<3> is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
@@ -144,15 +140,15 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    host_reset_n_host_debug_arm_AND_1927_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem4_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem2_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
    joy2_p1_i_PULLUP is set but the tri state is not configured. 
@@ -165,7 +161,7 @@ WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
    (RAMB8BWER).  9K Block RAM initialization data, both user defined and
    default, may be incorrect and should not be used.  For more information,
    please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+DRC detected 0 errors and 10 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 INFO:Security:54 - 'xc6slx16' is a WebPack part.
 WARNING:Security:42 - Your software subscription period has lapsed. Your current

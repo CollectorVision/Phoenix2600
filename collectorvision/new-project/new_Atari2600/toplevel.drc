@@ -1,14 +1,10 @@
 Release 14.7 Drc P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Aug  2 19:09:15 2019
+Wed Feb 26 17:27:10 2020
 
 drc -z toplevel.ncd toplevel.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   a2601Instance/ms_A2601/tia_inst/phi0 is sourced by a combinatorial pin. This
-   is not good design practice. Use the CE pin to control the loading of data
-   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr<3> is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
@@ -17,15 +13,15 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    host_reset_n_host_debug_arm_AND_1927_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem4_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem2_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem5_RAMD_D1_O> is
+WARNING:PhysDesignRules:367 - The signal <Mram_debug_mem3_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
    joy2_p1_i_PULLUP is set but the tri state is not configured. 
@@ -38,5 +34,5 @@ WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
    (RAMB8BWER).  9K Block RAM initialization data, both user defined and
    default, may be incorrect and should not be used.  For more information,
    please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+DRC detected 0 errors and 10 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

@@ -5,172 +5,169 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd" Line 69: Actual for formal port <arg fmt="%s" index="1">enable</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd" Line 69: Actual for formal port <arg fmt="%s" index="1">enable</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 168: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 173: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 214: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd" Line 219: Actual for formal port <arg fmt="%s" index="1">reset</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 143: Actual for formal port <arg fmt="%s" index="1">dina</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd" Line 143: Actual for formal port <arg fmt="%s" index="1">dina</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/vga.vhd" Line 146: Partially associated formal <arg fmt="%s" index="1">doutb</arg> cannot have actual OPEN
+<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/vga.vhd" Line 146: Partially associated formal <arg fmt="%s" index="1">doutb</arg> cannot have actual OPEN
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 501: Partially associated formal <arg fmt="%s" index="1">dipswitches</arg> cannot have actual OPEN
+<msg type="warning" file="HDLCompiler" num="701" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 505: Partially associated formal <arg fmt="%s" index="1">dipswitches</arg> cannot have actual OPEN
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 579: Actual for formal port <arg fmt="%s" index="1">reset_i</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 588: Actual for formal port <arg fmt="%s" index="1">reset_i</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 597: Actual for formal port <arg fmt="%s" index="1">a2600_addr_i</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 606: Actual for formal port <arg fmt="%s" index="1">a2600_addr_i</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 613: Actual for formal port <arg fmt="%s" index="1">res</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 622: Actual for formal port <arg fmt="%s" index="1">res</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 631: Actual for formal port <arg fmt="%s" index="1">p_start</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 640: Actual for formal port <arg fmt="%s" index="1">p_start</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 632: Actual for formal port <arg fmt="%s" index="1">p_select</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 641: Actual for formal port <arg fmt="%s" index="1">p_select</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 819: Actual for formal port <arg fmt="%s" index="1">lum</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 830: Actual for formal port <arg fmt="%s" index="1">lum</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 821: Actual for formal port <arg fmt="%s" index="1">mode</arg> is neither a static name nor a globally static expression
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 832: Actual for formal port <arg fmt="%s" index="1">mode</arg> is neither a static name nor a globally static expression
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 318: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 320: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 322: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 324: <arg fmt="%s" index="1">cachedprogramword</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: <arg fmt="%s" index="1">comparison_sub_result</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 429: <arg fmt="%s" index="1">comparison_sub_result</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: <arg fmt="%s" index="1">shift_count</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 435: <arg fmt="%s" index="1">shift_count</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: <arg fmt="%s" index="1">membread</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 444: <arg fmt="%s" index="1">membread</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to <arg fmt="%s" index="1">begin_inst</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/CtrlModule/ZPUFlex/RTL/zpu_core_flex.vhd" Line 423: Assignment to <arg fmt="%s" index="1">begin_inst</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to <arg fmt="%s" index="1">last_a2600_addr</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/cvAtari2600/sram_controller.vhd" Line 114: Assignment to <arg fmt="%s" index="1">last_a2600_addr</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 224: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">forcereset</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 225: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">forcereset</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A6532/src/A6532.vhd" Line 133: Assignment to <arg fmt="%s" index="1">pa_reg</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A6532/src/A6532.vhd" Line 133: Assignment to <arg fmt="%s" index="1">pa_reg</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 484: <arg fmt="%s" index="1">value</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 484: <arg fmt="%s" index="1">value</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 907: Assignment to <arg fmt="%s" index="1">hh1</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 907: Assignment to <arg fmt="%s" index="1">hh1</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1063: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1063: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1064: <arg fmt="%s" index="1">inpt0</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1064: <arg fmt="%s" index="1">inpt0</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1070: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1070: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1071: <arg fmt="%s" index="1">inpt1</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1071: <arg fmt="%s" index="1">inpt1</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1077: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1077: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1078: <arg fmt="%s" index="1">inpt2</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1078: <arg fmt="%s" index="1">inpt2</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1084: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1084: <arg fmt="%s" index="1">paddle_ena</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1085: <arg fmt="%s" index="1">inpt3</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1085: <arg fmt="%s" index="1">inpt3</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd" Line 1039: Assignment to <arg fmt="%s" index="1">pf_score</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd" Line 1039: Assignment to <arg fmt="%s" index="1">pf_score</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd" Line 129: Net &lt;<arg fmt="%s" index="1">riot_pa7</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd" Line 129: Net &lt;<arg fmt="%s" index="1">riot_pa7</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/DeltaSigma.vhd" Line 42: <arg fmt="%s" index="1">reset</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/DeltaSigma.vhd" Line 42: <arg fmt="%s" index="1">reset</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 267: Assignment to <arg fmt="%s" index="1">p_fn</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 270: Assignment to <arg fmt="%s" index="1">p_fn</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 337: <arg fmt="%s" index="1">e7_access_ram_256</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 340: <arg fmt="%s" index="1">e7_access_ram_256</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd" Line 343: <arg fmt="%s" index="1">e7_access_ram_1k</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd" Line 346: <arg fmt="%s" index="1">e7_access_ram_1k</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 710: <arg fmt="%s" index="1">host_debug_arm</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 720: <arg fmt="%s" index="1">host_debug_arm</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 209: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 224: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 197: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 198: Result of <arg fmt="%d" index="1">26</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of <arg fmt="%d" index="1">12</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 199: Result of <arg fmt="%d" index="1">12</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 228: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 102: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 263: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 165: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 278: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/HDMI/hdmidataencoder.v" Line 282: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 183: Net &lt;<arg fmt="%s" index="1">joy_a_0[15]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 183: Net &lt;<arg fmt="%s" index="1">joy_a_0[15]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 184: Net &lt;<arg fmt="%s" index="1">joy_a_1[15]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 184: Net &lt;<arg fmt="%s" index="1">joy_a_1[15]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd" Line 230: Net &lt;<arg fmt="%s" index="1">host_bootread_data[31]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cart_data_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 230: Net &lt;<arg fmt="%s" index="1">host_bootread_data[31]</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btn_reset_n_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -203,91 +200,91 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">flash_miso_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_a_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_a_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_x_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_x_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_y_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_y_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_start_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_start_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_sel_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_tl_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_tl_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_tr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_tr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_0_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_0_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_2_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_2_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_3_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_3_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_4_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_4_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_5_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_5_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_6_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_6_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_7_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_7_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_8_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_8_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_9_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_9_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_star_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_star_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_num_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_num_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_dot_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_dot_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_clear_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_clear_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">382</arg>: Output port &lt;<arg fmt="%s" index="3">but_equal_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">385</arg>: Output port &lt;<arg fmt="%s" index="3">but_equal_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">snespads_b</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">474</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_sdcard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_sdcard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">474</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_keyboard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">host_divert_keyboard</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">549</arg>: Output port &lt;<arg fmt="%s" index="3">window_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">overlay</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">477</arg>: Output port &lt;<arg fmt="%s" index="3">host_mute</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MyCtrlModule</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">576</arg>: Output port &lt;<arg fmt="%s" index="3">host_bootread_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">554</arg>: Output port &lt;<arg fmt="%s" index="3">window_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">overlay</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">576</arg>: Output port &lt;<arg fmt="%s" index="3">rom_loaded_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">585</arg>: Output port &lt;<arg fmt="%s" index="3">host_bootread_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">604</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">a2601Instance</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">585</arg>: Output port &lt;<arg fmt="%s" index="3">rom_loaded_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">extSRAM</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">691</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_hdmi_instance</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">a2601Instance</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_addr_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000000000000</arg>).
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd</arg>&quot; line <arg fmt="%s" index="2">701</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_hdmi_instance</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">joy_a_0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -305,40 +302,34 @@
 <msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">pal_clk_en_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
 </msg>
 
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_dir_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
-</msg>
-
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">cart_oe_n_o</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">toplevel</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">1</arg>).
-</msg>
-
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clock_pixel_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_bEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_bEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_hEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">out_mem_hEnable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">break</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">break</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">zpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">185</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myosd</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">190</arg>: Output port &lt;<arg fmt="%s" index="3">enabled</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myosd</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_clk_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_dat_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">ps2_dat_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">inIdle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">inIdle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">sendBusy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">sendBusy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">207</arg>: Output port &lt;<arg fmt="%s" index="3">sendDone</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/CtrlModule/CtrlModule/RTL/CtrlModule.vhd</arg>&quot; line <arg fmt="%s" index="2">212</arg>: Output port &lt;<arg fmt="%s" index="3">sendDone</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mykeyboard</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">from_zpu_memAAddr&lt;15:14&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -392,28 +383,28 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">host_bootdata&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">colu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">colu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">rgbx2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">rgbx2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">cv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">cv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">r</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">csyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">csyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">vsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">vsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">hsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">hsyn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">244</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoFlash.vhd</arg>&quot; line <arg fmt="%s" index="2">247</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ms_A2601</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">tia_pixel_clock_ena</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">A2601NoFlash</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0</arg>).
@@ -422,10 +413,10 @@
 <msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">cpu_d&lt;7&gt;</arg> may hinder XST clustering optimizations.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">145</arg>: Output port &lt;<arg fmt="%s" index="3">irq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">riot_A6532</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">145</arg>: Output port &lt;<arg fmt="%s" index="3">irq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">riot_A6532</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tia_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601Core.vhd</arg>&quot; line <arg fmt="%s" index="2">149</arg>: Output port &lt;<arg fmt="%s" index="3">tia_pixel_clock_ena</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tia_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rgbx2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -443,34 +434,34 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">riot_pa7</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugOpcode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugOpcode</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugPc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugPc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugX</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugX</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/A6500/src/A6507.vhd</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">debugS</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">895</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle0</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">895</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle0</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">896</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle1</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">896</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle1</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">897</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle2</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">897</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle2</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/vmshare/collectorvision-phoenix-2600/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">898</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle3</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/xilinx_share/2600cartmod2/TIA/src/TIA.vhd</arg>&quot; line <arg fmt="%d" index="2">898</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">paddle3</arg>&gt; of block &lt;<arg fmt="%s" index="4">paddle</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TIA</arg>&gt;. Underlying logic will be removed.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">pal</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -488,7 +479,7 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_361</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">extSRAM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_362&gt; &lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_368&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_362</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">extSRAM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_368&gt; &lt;reset_i_clk_i_DFF_369&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">return_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">extSRAM</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;return_state_2&gt; &lt;return_state_3&gt; </arg>
@@ -975,10 +966,10 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">riot_A6532/ram/Mram_ram</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
 </msg>
 
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_35_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_36_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_33_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+<msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_addr[20]_GND_22_o_Mux_34_o</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
@@ -1273,7 +1264,7 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">subpacket_0_111</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_361</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">sram_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_362&gt; &lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_368&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_i_clk_i_DFF_362</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">sram_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_i_clk_i_DFF_365&gt; &lt;reset_i_clk_i_DFF_363&gt; &lt;reset_i_clk_i_DFF_364&gt; &lt;reset_i_clk_i_DFF_366&gt; &lt;reset_i_clk_i_DFF_367&gt; &lt;reset_i_clk_i_DFF_368&gt; &lt;reset_i_clk_i_DFF_369&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">shift_clk_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">hdmi_out_xilinx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;shift_clk_4&gt; </arg>
@@ -1384,6 +1375,33 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">packetHeader_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">audioLAvgSum_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">hdmidataencoder</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audioTimer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">hdmidataencoder</arg>&gt;.
@@ -1598,9 +1616,6 @@ Xilinx highly recommends one of the following:
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mem_read_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -1614,9 +1629,6 @@ Xilinx highly recommends one of the following:
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mem_read_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CtrlModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">waitCount_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">io_ps2_com</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1775,6 +1787,9 @@ Xilinx highly recommends one of the following:
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_bootdata_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/host_mute</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MyCtrlModule/zpu/out_mem_hEnable</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
 </msg>
 
@@ -1920,33 +1935,6 @@ Xilinx highly recommends one of the following:
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">snespads_b/pads[0].pad_b/buttons_q_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">toplevel</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">hdmi/dataenc/audioLAvgSum_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">toplevel</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MyCtrlModule/mykeyboard/ena</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">toplevel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_0&gt; </arg>

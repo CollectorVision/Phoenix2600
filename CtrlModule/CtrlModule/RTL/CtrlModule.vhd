@@ -13,7 +13,8 @@ use work.zpupkg.ALL;
 
 entity CtrlModule is
 	generic (
-		sysclk_frequency : integer := 575  -- Sysclk frequency * 10 
+		sysclk_frequency : integer := 575;  -- Sysclk frequency * 10 
+		cartridge_default: std_logic := '1'
 	);
 	port (
 		clk 			: in std_logic;	-- clock synchronous to A2600
@@ -57,6 +58,7 @@ entity CtrlModule is
 		
 		host_mute 	   : out std_logic := '0';	-- data from internal ROM or ext sram
 		host_debug_arm : out std_logic := '0';
+		host_cart_ena  : out std_logic := '0';	-- data from external physical cart or SRAM
 		-- Memory read port
 		host_bootread_data 	: in std_logic_vector(31 downto 0);
 		host_bootread_addr 	: out std_logic_vector(20 downto 0);
@@ -126,6 +128,9 @@ signal spi_to_host : std_logic_vector(7 downto 0);
 signal spi_trigger : std_logic;
 signal spi_busy : std_logic;
 signal spi_active : std_logic;
+
+-- cartidge enabled
+signal cartridge_mode : std_logic := cartridge_default; 
 
 begin
 
@@ -279,6 +284,8 @@ port map (
 int_triggers<=(0=>kbdrecv,
 					1=>vblank,
 					others => '0');
+					
+host_cart_ena <= cartridge_mode;
 	
 process(clk,reset_n)
 begin
@@ -289,6 +296,9 @@ begin
 		host_bootdata_req<='0';
 		spi_active<='0';
 		spi_cs<='1';
+		
+		cartridge_mode <= cartridge_default;
+		
 	elsif rising_edge(clk) then
 		mem_busy<='1';
 		osd_charwr<='0';
@@ -327,8 +337,9 @@ begin
 							spi_active<='1';
 							
 						when X"E0" => -- host mux
-							host_mute <= mem_write(0);
+							host_mute 		<= mem_write(0);
 							host_debug_arm <= mem_write(1);
+							cartridge_mode <= mem_write(2);	-- EP control external cart selection
 							mem_busy <= '0';
 							
 						when X"E4" => -- host boot address register.
@@ -402,6 +413,7 @@ begin
 							mem_read(numpad_keys'length-1 downto 0) <= numpad_keys;
 							mem_read(gamepad_in'length+numpad_keys'length-1 downto numpad_keys'length) <= gamepad_in;
 							mem_read(last_vcnt'length+numpad_keys'length+gamepad_in'length-1 downto gamepad_in'length+numpad_keys'length) <= std_logic_vector(last_vcnt);
+							mem_read(31) <= cartridge_mode;
 
 --							mem_read(last_vcnt'length-1+numpad_keys'length downto numpad_keys'length) <= std_logic_vector(last_vcnt);
 --							mem_read(last_vcnt'length+numpad_keys'length+gamepad_in'length-1 downto last_vcnt'length+numpad_keys'length) <= gamepad_in;

@@ -71,8 +71,9 @@ entity A2601NoFlash is
 			banking_scheme_e0 : in std_logic; -- alternate banking scheme for cartridges > 4K
 			banking_scheme_e7 : in std_logic; -- alternate banking scheme for cartridges > 4K
 
-			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);
+			a2600_cpu_addr_o : out std_logic_vector(14 downto 0);	-- mapped address good for SRAM
 			a2600_cpu_data_i : in std_logic_vector(7 downto 0);
+			cpu_a_o 			  : out std_logic_vector(12 downto 0);	-- CPU address bus
 			
 			show_ph0 : out std_logic;
 
@@ -238,6 +239,8 @@ begin
 
 	a2600_cpu_addr_o <= a;
 	d <= a2600_cpu_data_i ;
+	
+	cpu_a_o <= cpu_a;
 	
 	show_ph0 <= ph0;
 	  
