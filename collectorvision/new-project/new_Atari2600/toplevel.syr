@@ -248,14 +248,14 @@ Parsing architecture <arch> of entity <a2601noflash>.
 Parsing VHDL file "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" into library work
 Parsing entity <toplevel>.
 Parsing architecture <rtl> of entity <toplevel>.
-WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 505: Partially associated formal dipswitches cannot have actual OPEN
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 588: Actual for formal port reset_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 606: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 622: Actual for formal port res is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 640: Actual for formal port p_start is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 641: Actual for formal port p_select is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 830: Actual for formal port lum is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 832: Actual for formal port mode is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 516: Partially associated formal dipswitches cannot have actual OPEN
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 599: Actual for formal port reset_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 617: Actual for formal port a2600_addr_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 633: Actual for formal port res is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 651: Actual for formal port p_start is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 652: Actual for formal port p_select is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 841: Actual for formal port lum is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 843: Actual for formal port mode is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -370,8 +370,8 @@ WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/A2601/src/A2601NoF
 Elaborating entity <pll> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <pll_27M> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 720: host_debug_arm should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 747. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 731: host_debug_arm should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" Line 758. Case statement is complete. others clause is never selected
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <work>.
 
@@ -413,41 +413,38 @@ WARNING:Xst:647 - Input <btn_reset_n_i> is never used. This port will be preserv
 WARNING:Xst:647 - Input <sd_cd_n_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy1_p7_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy1_p9_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <joy2_p2_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <joy2_p3_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <joy2_p6_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy2_p7_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <joy2_p9_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <flash_miso_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 385: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 477: Output port <host_mute> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 554: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 585: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 585: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 613: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 701: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_a_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_x_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_y_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_start_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_sel_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_tl_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_tr_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_0_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_2_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_3_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_4_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_5_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_6_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_7_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_8_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_9_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_star_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_num_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_dot_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_clear_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 391: Output port <but_equal_o> of the instance <snespads_b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 488: Output port <host_divert_sdcard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 488: Output port <host_divert_keyboard> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 488: Output port <host_mute> of the instance <MyCtrlModule> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 565: Output port <window_out> of the instance <overlay> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 596: Output port <host_bootread_data> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 596: Output port <rom_loaded_o> of the instance <extSRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 624: Output port <tia_pixel_clock_ena> of the instance <a2601Instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinx_share/2600cartmod2/collectorvision/toplevel.vhd" line 712: Output port <LOCKED> of the instance <pll_hdmi_instance> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <joy_a_0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <joy_a_1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <host_bootread_data<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -464,6 +461,11 @@ WARNING:Xst:2935 - Signal 'pal_clk_en_o', unconnected in block 'toplevel', is ti
     Found 1-bit register for signal <P_A>.
     Found 1-bit register for signal <P_U>.
     Found 1-bit register for signal <P_D>.
+    Found 1-bit register for signal <P2_L>.
+    Found 1-bit register for signal <P2_R>.
+    Found 1-bit register for signal <P2_A>.
+    Found 1-bit register for signal <P2_U>.
+    Found 1-bit register for signal <P2_D>.
     Found 12-bit register for signal <numpad_0>.
     Found 1-bit register for signal <host_bootread_data<7>>.
     Found 1-bit register for signal <host_bootread_data<6>>.
@@ -483,28 +485,28 @@ WARNING:Xst:2935 - Signal 'pal_clk_en_o', unconnected in block 'toplevel', is ti
     Found 8-bit register for signal <scan_state>.
     Found 1-bit register for signal <armed>.
     Found 8-bit adder for signal <scan_state[7]_GND_5_o_add_1_OUT> created at line 1241.
-    Found 4-bit adder for signal <capt_i[3]_GND_5_o_add_15_OUT> created at line 730.
+    Found 4-bit adder for signal <capt_i[3]_GND_5_o_add_15_OUT> created at line 741.
     Found 8-bit adder for signal <tia_hcnt[7]_GND_5_o_add_34_OUT> created at line 1241.
     Found 9-bit adder for signal <tia_vcnt[8]_GND_5_o_add_41_OUT> created at line 1241.
     Found 9-bit adder for signal <total_vcnt[8]_GND_5_o_add_43_OUT> created at line 1241.
     Found 16x12-bit Read Only RAM for signal <joy1_p1_i_PWR_5_o_wide_mux_3_OUT>
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0053_Mux_20_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0054_Mux_21_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0055_Mux_22_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0056_Mux_23_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0057_Mux_24_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0058_Mux_25_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0059_Mux_26_o> created at line 738.
-    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0060_Mux_27_o> created at line 738.
-    Found 15-bit comparator equal for signal <n0066> created at line 728
-    Found 8-bit comparator greater for signal <tia_hcnt[7]_PWR_5_o_LessThan_34_o> created at line 771
-    Found 9-bit comparator greater for signal <last_vcnt[8]_PWR_5_o_LessThan_38_o> created at line 780
-    Found 9-bit comparator greater for signal <tia_vcnt[8]_PWR_5_o_LessThan_41_o> created at line 786
-    Found 9-bit comparator lessequal for signal <GND_5_o_total_vcnt[8]_LessThan_48_o> created at line 797
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0053_Mux_20_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0054_Mux_21_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0055_Mux_22_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0056_Mux_23_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0057_Mux_24_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0058_Mux_25_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0059_Mux_26_o> created at line 749.
+    Found 1-bit 4-to-1 multiplexer for signal <host_bootread_addr[1]_BUS_0060_Mux_27_o> created at line 749.
+    Found 15-bit comparator equal for signal <n0074> created at line 739
+    Found 8-bit comparator greater for signal <tia_hcnt[7]_PWR_5_o_LessThan_34_o> created at line 782
+    Found 9-bit comparator greater for signal <last_vcnt[8]_PWR_5_o_LessThan_38_o> created at line 791
+    Found 9-bit comparator greater for signal <tia_vcnt[8]_PWR_5_o_LessThan_41_o> created at line 797
+    Found 9-bit comparator lessequal for signal <GND_5_o_total_vcnt[8]_LessThan_48_o> created at line 808
     Summary:
 	inferred   2 RAM(s).
 	inferred   5 Adder/Subtractor(s).
-	inferred  94 D-type flip-flop(s).
+	inferred  99 D-type flip-flop(s).
 	inferred   5 Comparator(s).
 	inferred  12 Multiplexer(s).
 Unit <toplevel> synthesized.
@@ -895,14 +897,14 @@ WARNING:Xst:647 - Input <host_bootdata<31:8>> is never used. This port will be p
     Found 8-bit register for signal <a2600_databyte>.
     Found 4-bit register for signal <return_state>.
     Found 1-bit register for signal <rom_loaded>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_362>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_363>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_364>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_365>.
-    Found 1-bit register for signal <reset_i_clk_i_DFF_366>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_367>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_368>.
     Found 1-bit register for signal <reset_i_clk_i_DFF_369>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_370>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_371>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_372>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_373>.
+    Found 1-bit register for signal <reset_i_clk_i_DFF_374>.
     Found 1-bit register for signal <host_bootdata_ack>.
     Found 16x2-bit Read Only RAM for signal <_n0416>
     Found 1-bit tristate buffer for signal <sram_data_io<7>> created at line 114
@@ -1411,20 +1413,20 @@ WARNING:Xst:647 - Input <I_VSYNC> is never used. This port will be preserved and
     Found 8-bit subtractor for signal <GND_151_o_GND_151_o_sub_28_OUT<7:0>> created at line 1308.
     Found 9-bit subtractor for signal <GND_151_o_GND_151_o_sub_43_OUT<8:0>> created at line 1308.
     Found 9-bit subtractor for signal <GND_151_o_GND_151_o_sub_51_OUT<8:0>> created at line 1308.
-    Found 9x8-bit multiplier for signal <I_VCNT[8]_PWR_92_o_MuLt_26_OUT> created at line 1399.
-    Found 9x8-bit multiplier for signal <window_vcnt[9]_PWR_92_o_MuLt_29_OUT> created at line 1399.
+    Found 9x8-bit multiplier for signal <I_VCNT[8]_PWR_93_o_MuLt_26_OUT> created at line 1399.
+    Found 9x8-bit multiplier for signal <window_vcnt[9]_PWR_93_o_MuLt_29_OUT> created at line 1399.
     Found 8-bit comparator lessequal for signal <n0034> created at line 204
-    Found 8-bit comparator greater for signal <I_HCNT[7]_PWR_92_o_LessThan_36_o> created at line 204
-    Found 9-bit comparator greater for signal <I_VCNT[8]_PWR_92_o_LessThan_37_o> created at line 205
-    Found 10-bit comparator greater for signal <PWR_92_o_hcnt[9]_LessThan_38_o> created at line 207
+    Found 8-bit comparator greater for signal <I_HCNT[7]_PWR_93_o_LessThan_36_o> created at line 204
+    Found 9-bit comparator greater for signal <I_VCNT[8]_PWR_93_o_LessThan_37_o> created at line 205
+    Found 10-bit comparator greater for signal <PWR_93_o_hcnt[9]_LessThan_38_o> created at line 207
     Found 10-bit comparator greater for signal <GND_151_o_vcnt[9]_LessThan_39_o> created at line 207
     Found 10-bit comparator greater for signal <GND_151_o_hcnt[9]_LessThan_40_o> created at line 208
-    Found 10-bit comparator greater for signal <hcnt[9]_PWR_92_o_LessThan_41_o> created at line 208
-    Found 10-bit comparator greater for signal <vcnt[9]_PWR_92_o_LessThan_42_o> created at line 209
+    Found 10-bit comparator greater for signal <hcnt[9]_PWR_93_o_LessThan_41_o> created at line 208
+    Found 10-bit comparator greater for signal <vcnt[9]_PWR_93_o_LessThan_42_o> created at line 209
     Found 9-bit comparator greater for signal <window_vcnt[9]_GND_151_o_LessThan_44_o> created at line 211
-    Found 9-bit comparator greater for signal <window_vcnt[9]_PWR_92_o_LessThan_45_o> created at line 211
+    Found 9-bit comparator greater for signal <window_vcnt[9]_PWR_93_o_LessThan_45_o> created at line 211
     Found 10-bit comparator lessequal for signal <n0059> created at line 214
-    Found 10-bit comparator greater for signal <PWR_92_o_hcnt[9]_LessThan_47_o> created at line 214
+    Found 10-bit comparator greater for signal <PWR_93_o_hcnt[9]_LessThan_47_o> created at line 214
     Found 10-bit comparator lessequal for signal <n0063> created at line 215
     Found 10-bit comparator greater for signal <GND_151_o_vcnt[9]_LessThan_49_o> created at line 215
     Found 9-bit comparator greater for signal <downscale_y> created at line 221
@@ -1552,9 +1554,9 @@ Synthesizing Unit <hdmidataencoder>.
     Found 16-bit comparator greater for signal <n0000> created at line 207
     Found 16-bit comparator greater for signal <counterX[15]_GND_161_o_LessThan_89_o> created at line 207
     Found 17-bit comparator greater for signal <n0006> created at line 208
-    Found 8-bit comparator lessequal for signal <channelStatusIdx[7]_PWR_99_o_LessThan_27_o> created at line 215
-    Found 5-bit comparator greater for signal <dataOffset[4]_PWR_99_o_LessThan_91_o> created at line 142
-    Found 5-bit comparator greater for signal <dataOffset[4]_PWR_99_o_LessThan_109_o> created at line 146
+    Found 8-bit comparator lessequal for signal <channelStatusIdx[7]_PWR_100_o_LessThan_27_o> created at line 215
+    Found 5-bit comparator greater for signal <dataOffset[4]_PWR_100_o_LessThan_91_o> created at line 142
+    Found 5-bit comparator greater for signal <dataOffset[4]_PWR_100_o_LessThan_109_o> created at line 146
     Found 1-bit comparator equal for signal <n0202> created at line 271
     Found 17-bit comparator greater for signal <n0204> created at line 159
     Summary:
@@ -1749,8 +1751,8 @@ Macro Statistics
  8-bit subtractor                                      : 4
  9-bit adder                                           : 10
  9-bit subtractor                                      : 2
-# Registers                                            : 374
- 1-bit register                                        : 186
+# Registers                                            : 379
+ 1-bit register                                        : 191
  10-bit register                                       : 12
  11-bit register                                       : 5
  12-bit register                                       : 6
@@ -1861,15 +1863,12 @@ Reading core <../../cvAtari2600/ipcore_dir/DualPortRAM_Block.ngc>.
 Reading core <../../cvAtari2600/ipcore_dir/simple_dualport_32k.ngc>.
 Loading core <DualPortRAM_Block> for timing and area information for instance <charram>.
 Loading core <simple_dualport_32k> for timing and area information for instance <frbuff>.
-INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_362> in Unit <extSRAM> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> 
+INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_367> in Unit <extSRAM> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> <reset_i_clk_i_DFF_372> <reset_i_clk_i_DFF_370> <reset_i_clk_i_DFF_371> <reset_i_clk_i_DFF_373> <reset_i_clk_i_DFF_374> 
 INFO:Xst:2261 - The FF/Latch <return_state_1> in Unit <extSRAM> is equivalent to the following 2 FFs/Latches, which will be removed : <return_state_2> <return_state_3> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_8> in Unit <hdmio> is equivalent to the following FF/Latch, which will be removed : <shift_clk_9> 
 INFO:Xst:2261 - The FF/Latch <subpacket_0_54> in Unit <dataenc> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_55> <subpacket_0_110> <subpacket_0_111> <subpacket_0_166> <subpacket_0_167> <subpacket_0_222> <subpacket_0_223> 
 WARNING:Xst:1426 - The value init of the FF/Latch return_state_0 hinder the constant cleaning in the block extSRAM.
    You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <subpacket_0_102> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <subpacket_0_103> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <subpacket_0_104> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_105> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_106> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_107> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
@@ -1895,13 +1894,7 @@ WARNING:Xst:1293 - FF/Latch <subpacket_0_220> has a constant value of 0 in block
 WARNING:Xst:1293 - FF/Latch <subpacket_0_221> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <edge_intr_lo> has a constant value of 0 in block <riot_A6532>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <edge_intr_hi> has a constant value of 0 in block <riot_A6532>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <inpt5_l> has a constant value of 1 in block <tia_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <processIrq> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <inpt5> (without init value) has a constant value of 1 in block <a2601Instance>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <pa_0> (without init value) has a constant value of 1 in block <a2601Instance>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <pa_1> (without init value) has a constant value of 1 in block <a2601Instance>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <pa_2> (without init value) has a constant value of 1 in block <a2601Instance>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <pa_3> (without init value) has a constant value of 1 in block <a2601Instance>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <return_state_1> has a constant value of 0 in block <extSRAM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <shift_clk_8> (without init value) has a constant value of 0 in block <hdmio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_45> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
@@ -1915,6 +1908,9 @@ WARNING:Xst:1293 - FF/Latch <subpacket_0_52> has a constant value of 0 in block 
 WARNING:Xst:1293 - FF/Latch <subpacket_0_53> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_54> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <subpacket_0_101> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <subpacket_0_102> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <subpacket_0_103> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <subpacket_0_104> has a constant value of 0 in block <dataenc>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_clk_7> (without init value) has a constant value of 0 in block <hdmio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_clk_6> (without init value) has a constant value of 0 in block <hdmio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <irqActive> (without init value) has a constant value of 0 in block <cpu>. This FF/Latch will be trimmed during the optimization process.
@@ -2306,8 +2302,8 @@ The following registers are absorbed into accumulator <window_vcnt>: 1 register 
 The following registers are absorbed into counter <hcnt>: 1 register on signal <hcnt>.
 The following registers are absorbed into counter <window_hcnt>: 1 register on signal <window_hcnt>.
 The following registers are absorbed into counter <vcnt>: 1 register on signal <vcnt>.
-	Multiplier <Mmult_window_vcnt[9]_PWR_92_o_MuLt_29_OUT> in block <vga> and adder/subtractor <Madd_rd_result_v_Madd> in block <vga> are combined into a MAC<Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT>.
-	Multiplier <Mmult_I_VCNT[8]_PWR_92_o_MuLt_26_OUT> in block <vga> and adder/subtractor <Madd_wr_result_v_Madd> in block <vga> are combined into a MAC<Maddsub_I_VCNT[8]_PWR_92_o_MuLt_26_OUT>.
+	Multiplier <Mmult_window_vcnt[9]_PWR_93_o_MuLt_29_OUT> in block <vga> and adder/subtractor <Madd_rd_result_v_Madd> in block <vga> are combined into a MAC<Maddsub_window_vcnt[9]_PWR_93_o_MuLt_29_OUT>.
+	Multiplier <Mmult_I_VCNT[8]_PWR_93_o_MuLt_26_OUT> in block <vga> and adder/subtractor <Madd_wr_result_v_Madd> in block <vga> are combined into a MAC<Maddsub_I_VCNT[8]_PWR_93_o_MuLt_26_OUT>.
 Unit <vga> synthesized (advanced).
 
 Synthesizing (advanced) Unit <zpu_core_flex>.
@@ -2422,8 +2418,8 @@ Macro Statistics
  4-bit updown loadable accumulator                     : 3
  7-bit up accumulator                                  : 1
  8-bit down loadable accumulator                       : 1
-# Registers                                            : 2490
- Flip-Flops                                            : 2490
+# Registers                                            : 2495
+ Flip-Flops                                            : 2495
 # Comparators                                          : 101
  1-bit comparator equal                                : 1
  10-bit comparator greater                             : 7
@@ -2557,13 +2553,11 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_108> ha
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_109> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_110> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <subpacket_0_111> has a constant value of 0 in block <hdmidataencoder>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_362> in Unit <sram_controller> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_365> <reset_i_clk_i_DFF_363> <reset_i_clk_i_DFF_364> <reset_i_clk_i_DFF_366> <reset_i_clk_i_DFF_367> <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> 
+INFO:Xst:2261 - The FF/Latch <reset_i_clk_i_DFF_367> in Unit <sram_controller> is equivalent to the following 7 FFs/Latches, which will be removed : <reset_i_clk_i_DFF_370> <reset_i_clk_i_DFF_368> <reset_i_clk_i_DFF_369> <reset_i_clk_i_DFF_371> <reset_i_clk_i_DFF_372> <reset_i_clk_i_DFF_373> <reset_i_clk_i_DFF_374> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_3> in Unit <hdmi_out_xilinx> is equivalent to the following FF/Latch, which will be removed : <shift_clk_4> 
 INFO:Xst:2261 - The FF/Latch <shift_clk_1> in Unit <hdmi_out_xilinx> is equivalent to the following FF/Latch, which will be removed : <shift_clk_2> 
 INFO:Xst:2261 - The FF/Latch <subpacket_0_43> in Unit <hdmidataencoder> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_44> <subpacket_0_99> <subpacket_0_100> <subpacket_0_155> <subpacket_0_156> <subpacket_0_211> <subpacket_0_212> 
-INFO:Xst:2261 - The FF/Latch <inpt5> in Unit <A2601NoFlash> is equivalent to the following 4 FFs/Latches, which will be removed : <pa_0> <pa_1> <pa_2> <pa_3> 
 WARNING:Xst:1710 - FF/Latch <break> (without init value) has a constant value of 1 in block <zpu_core_flex>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <inpt5> (without init value) has a constant value of 1 in block <A2601NoFlash>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <subpacket_0_41> in Unit <hdmidataencoder> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_42> <subpacket_0_97> <subpacket_0_98> <subpacket_0_153> <subpacket_0_154> <subpacket_0_209> <subpacket_0_210> 
 INFO:Xst:2261 - The FF/Latch <subpacket_0_39> in Unit <hdmidataencoder> is equivalent to the following 7 FFs/Latches, which will be removed : <subpacket_0_40> <subpacket_0_95> <subpacket_0_96> <subpacket_0_151> <subpacket_0_152> <subpacket_0_207> <subpacket_0_208> 
 Analyzing FSM <MFsm> for best encoding.
@@ -2827,7 +2821,6 @@ WARNING:Xst:2040 - Unit A2601NoFlash: 8 multi-source signals are replaced by log
 WARNING:Xst:2042 - Unit A2601: 8 internal tristates are replaced by logic (pull-up yes): cpu_A6507/cpuDi<0>, cpu_A6507/cpuDi<1>, cpu_A6507/cpuDi<2>, cpu_A6507/cpuDi<3>, cpu_A6507/cpuDi<4>, cpu_A6507/cpuDi<5>, cpu_A6507/cpuDi<6>, cpu_A6507/cpuDi<7>.
 WARNING:Xst:2040 - Unit A2601: 8 multi-source signals are replaced by logic (pull-up yes): d<0>, d<1>, d<2>, d<3>, d<4>, d<5>, d<6>, d<7>.
 WARNING:Xst:2042 - Unit TIA: 8 internal tristates are replaced by logic (pull-up yes): d<0>, d<1>, d<2>, d<3>, d<4>, d<5>, d<6>, d<7>.
-WARNING:Xst:1293 - FF/Latch <ms_A2601/tia_inst/inpt5_l> has a constant value of 1 in block <A2601NoFlash>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <ms_A2601/tia_inst/cv_7> of sequential type is unconnected in block <A2601NoFlash>.
 WARNING:Xst:2677 - Node <ms_A2601/tia_inst/cv_6> of sequential type is unconnected in block <A2601NoFlash>.
 WARNING:Xst:2677 - Node <ms_A2601/tia_inst/cv_5> of sequential type is unconnected in block <A2601NoFlash>.
@@ -3021,7 +3014,7 @@ INFO:Xst:2261 - The FF/Latch <hdmi/dataenc/subpacket_0_186> in Unit <toplevel> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 65.
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 66.
 FlipFlop hdmi/dataenc/audioAvgCnt_0 has been replicated 6 time(s)
 FlipFlop hdmi/dataenc/audioAvgCnt_1 has been replicated 6 time(s)
 FlipFlop hdmi/dataenc/audioAvgCnt_10 has been replicated 4 time(s)
@@ -3101,8 +3094,8 @@ Unit <toplevel> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2003
- Flip-Flops                                            : 2003
+# Registers                                            : 2014
+ Flip-Flops                                            : 2014
 # Shift Registers                                      : 55
  10-bit shift register                                 : 15
  11-bit shift register                                 : 25
@@ -3134,30 +3127,30 @@ Top Level Output File Name         : toplevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6368
+# BELS                             : 6312
 #      GND                         : 3
-#      INV                         : 90
+#      INV                         : 85
 #      LUT1                        : 232
-#      LUT2                        : 354
-#      LUT3                        : 473
-#      LUT4                        : 700
-#      LUT5                        : 1002
-#      LUT6                        : 1855
+#      LUT2                        : 311
+#      LUT3                        : 464
+#      LUT4                        : 705
+#      LUT5                        : 999
+#      LUT6                        : 1852
 #      MUXCY                       : 847
-#      MUXF7                       : 65
+#      MUXF7                       : 67
 #      VCC                         : 3
 #      XORCY                       : 744
-# FlipFlops/Latches                : 2084
-#      FD                          : 365
+# FlipFlops/Latches                : 2095
+#      FD                          : 364
 #      FD_1                        : 8
 #      FDC                         : 1
 #      FDCE                        : 19
-#      FDE                         : 1174
+#      FDE                         : 1184
 #      FDE_1                       : 144
 #      FDPE                        : 1
 #      FDR                         : 163
 #      FDRE                        : 158
-#      FDS                         : 6
+#      FDS                         : 8
 #      FDSE                        : 40
 #      LDP                         : 1
 #      ODDR2                       : 4
@@ -3171,11 +3164,11 @@ Primitive and Black Box Usage:
 #      SRLC16E                     : 55
 # Clock Buffers                    : 8
 #      BUFG                        : 8
-# IO Buffers                       : 103
-#      IBUF                        : 17
+# IO Buffers                       : 106
+#      IBUF                        : 22
 #      IBUFG                       : 1
 #      IOBUF                       : 8
-#      OBUF                        : 73
+#      OBUF                        : 71
 #      OBUFDS                      : 4
 # DCMs                             : 1
 #      DCM_SP                      : 1
@@ -3191,23 +3184,23 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2084  out of  18224    11%  
- Number of Slice LUTs:                 4801  out of   9112    52%  
-    Number used as Logic:              4706  out of   9112    51%  
+ Number of Slice Registers:            2095  out of  18224    11%  
+ Number of Slice LUTs:                 4743  out of   9112    52%  
+    Number used as Logic:              4648  out of   9112    51%  
     Number used as Memory:               95  out of   2176     4%  
        Number used as RAM:               40
        Number used as SRL:               55
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   5375
-   Number with an unused Flip Flop:    3291  out of   5375    61%  
-   Number with an unused LUT:           574  out of   5375    10%  
-   Number of fully used LUT-FF pairs:  1510  out of   5375    28%  
-   Number of unique control sets:       164
+ Number of LUT Flip Flop pairs used:   5332
+   Number with an unused Flip Flop:    3237  out of   5332    60%  
+   Number with an unused LUT:           589  out of   5332    11%  
+   Number of fully used LUT-FF pairs:  1506  out of   5332    28%  
+   Number of unique control sets:       165
 
 IO Utilization: 
  Number of IOs:                         117
- Number of bonded IOBs:                 107  out of    232    46%  
+ Number of bonded IOBs:                 110  out of    232    47%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               32  out of     32   100%  
@@ -3237,12 +3230,12 @@ Clock Information:
 ---------------------------------------------------------------------------------+-----------------------------------------------+-------+
 Clock Signal                                                                     | Clock buffer(FF name)                         | Load  |
 ---------------------------------------------------------------------------------+-----------------------------------------------+-------+
-pll_hdmi_instance/pll_base_inst/CLKOUT0                                          | BUFG                                          | 847   |
-a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3                                   | NONE(last_hsync)                              | 190   |
+pll_hdmi_instance/pll_base_inst/CLKOUT0                                          | BUFG                                          | 852   |
+a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3                                   | NONE(last_hsync)                              | 191   |
 CLOCK_50_i                                                                       | DCM_SP:CLKFX                                  | 607   |
 pll_hdmi_instance/pll_base_inst/CLKOUT3                                          | BUFG                                          | 120   |
 a2601Instance/ms_A2601/tia_inst/phi1                                             | BUFG                                          | 215   |
-a2601Instance/ms_A2601/tia_inst/phi0                                             | NONE(a2601Instance/ms_A2601/cpu_A6507/cpu/A_0)| 168   |
+a2601Instance/ms_A2601/tia_inst/phi0                                             | NONE(a2601Instance/ms_A2601/cpu_A6507/cpu/A_0)| 173   |
 pll_hdmi_instance/pll_base_inst/CLKOUT1                                          | BUFG                                          | 40    |
 pll_hdmi_instance/pll_base_inst/CLKOUT2                                          | BUFG                                          | 4     |
 host_reset_n_host_debug_arm_AND_1927_o(host_reset_n_host_debug_arm_AND_1927_o1:O)| NONE(*)(armed_LDC1)                           | 1     |
@@ -3261,7 +3254,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 88.122ns (Maximum Frequency: 11.348MHz)
-   Minimum input arrival time before clock: 9.666ns
+   Minimum input arrival time before clock: 10.071ns
    Maximum output required time after clock: 8.184ns
    Maximum combinational path delay: No path found
 
@@ -3272,7 +3265,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT0'
   Clock period: 88.122ns (frequency: 11.348MHz)
-  Total number of paths / destination ports: 3097506564524320127036464171434639360 / 1863
+  Total number of paths / destination ports: 3097506564524320717332274530140291072 / 1868
 -------------------------------------------------------------------------
 Delay:               88.122ns (Levels of Logic = 129)
   Source:            hdmi/dataenc/audioAvgCnt_1_1 (FF)
@@ -3285,63 +3278,63 @@ Delay:               88.122ns (Levels of Logic = 129)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               6   0.525   1.306  hdmi/dataenc/audioAvgCnt_1_1 (hdmi/dataenc/audioAvgCnt_1_1)
-     LUT6:I1->O            5   0.254   0.841  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<25>12_SW2 (N435)
-     LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1874_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1849_o)
+     LUT6:I1->O            5   0.254   0.841  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<25>12_SW2 (N434)
+     LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1884_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1859_o)
      LUT6:I5->O           10   0.254   1.008  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<23>2 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<23>)
-     LUT3:I2->O            3   0.254   0.766  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1942_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_1919_o)
+     LUT3:I2->O            3   0.254   0.766  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_1952_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_1929_o)
      LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Madd_GND_162_o_b[10]_add_9_OUT_Madd_Madd_cy<24>11 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Madd_GND_162_o_b[10]_add_9_OUT_Madd_Madd_cy<24>)
-     LUT5:I4->O           12   0.254   1.069  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2008_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1983_o)
+     LUT5:I4->O           12   0.254   1.069  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2018_o1171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[25]_GND_162_o_MUX_1993_o)
      LUT6:I5->O            8   0.254   0.944  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<21>2 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<21>)
-     LUT5:I4->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>24_SW0 (N378)
+     LUT5:I4->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>24_SW0 (N377)
      LUT6:I3->O           16   0.235   1.182  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>24 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<20>)
-     LUT3:I2->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2134_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_2111_o)
+     LUT3:I2->O            2   0.254   0.954  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2144_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_GND_162_o_MUX_2121_o)
      LUT4:I1->O            1   0.235   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_lut<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_lut<2>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<3>)
      MUXCY:CI->O          22   0.235   1.334  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<19>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<19>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2194_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_GND_162_o_MUX_2173_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2204_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_GND_162_o_MUX_2183_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<3>)
      MUXCY:CI->O          26   0.235   1.420  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<18>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<18>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2252_o1121 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[20]_GND_162_o_MUX_2232_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2262_o1121 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[20]_GND_162_o_MUX_2242_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<3>)
      MUXCY:CI->O          28   0.235   1.453  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<17>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<17>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2308_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_GND_162_o_MUX_2289_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2318_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_GND_162_o_MUX_2299_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<3>)
      MUXCY:CI->O          32   0.235   1.520  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<16>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/o<16>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2362_o191 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[18]_GND_162_o_MUX_2344_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_GND_162_o_MUX_2372_o191 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[18]_GND_162_o_MUX_2354_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<4>)
      MUXCY:CI->O          36   0.262   1.587  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<15>_cy<5> (hdmi/dataenc/n0317<15>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2414_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2397_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2424_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2407_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<4>)
      MUXCY:CI->O          41   0.262   1.671  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<14>_cy<5> (hdmi/dataenc/n0317<14>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2440_o171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[16]_a[25]_MUX_2424_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2450_o171 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[16]_a[25]_MUX_2434_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<3> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<4>)
      MUXCY:CI->O          43   0.262   1.704  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<13>_cy<5> (hdmi/dataenc/n0317<13>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2466_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_a[25]_MUX_2443_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2476_o1151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[23]_a[25]_MUX_2453_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_lut<5>)
      MUXCY:S->O           50   0.454   1.821  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<12>_cy<5> (hdmi/dataenc/n0317<12>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2492_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2478_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2502_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2488_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<2>)
@@ -3349,11 +3342,11 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<5>)
      MUXCY:CI->O          48   0.262   1.788  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<11>_cy<6> (hdmi/dataenc/n0317<11>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2518_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_a[25]_MUX_2497_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2528_o1131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[21]_a[25]_MUX_2507_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<5>)
      MUXCY:CI->O          55   0.262   1.860  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<10>_cy<6> (hdmi/dataenc/n0317<10>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2544_o131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[12]_a[25]_MUX_2532_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2554_o131 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[12]_a[25]_MUX_2542_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<2>)
@@ -3361,11 +3354,11 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<5>)
      MUXCY:CI->O          56   0.262   1.868  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<9>_cy<6> (hdmi/dataenc/n0317<9>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2570_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_a[25]_MUX_2551_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2580_o1101 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[19]_a[25]_MUX_2561_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<5>)
      MUXCY:CI->O          63   0.023   1.922  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<8>_cy<6> (hdmi/dataenc/n0317<8>)
-     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2596_o111 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[10]_a[25]_MUX_2586_o)
+     LUT5:I4->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2606_o111 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[10]_a[25]_MUX_2596_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<2>)
@@ -3373,12 +3366,12 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<4> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<5>)
      MUXCY:CI->O          66   0.023   1.945  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<7>_cy<6> (hdmi/dataenc/n0317<7>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2622_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2605_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2632_o181 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[17]_a[25]_MUX_2615_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<6>)
      MUXCY:CI->O          69   0.023   1.968  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<6>_cy<7> (hdmi/dataenc/n0317<6>)
-     LUT6:I5->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2648_o1241 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[8]_a[25]_MUX_2640_o)
+     LUT6:I5->O            6   0.254   1.152  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2658_o1241 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[8]_a[25]_MUX_2650_o)
      LUT4:I0->O            0   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_lutdi1 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_lutdi1)
      MUXCY:DI->O           1   0.181   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<1> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<2> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<2>)
@@ -3387,12 +3380,12 @@ Delay:               88.122ns (Levels of Logic = 129)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<6>)
      MUXCY:CI->O          73   0.023   1.999  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<5>_cy<7> (hdmi/dataenc/n0317<5>)
-     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2674_o161 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[15]_a[25]_MUX_2659_o)
+     LUT5:I4->O            5   0.254   1.271  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2684_o161 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[15]_a[25]_MUX_2669_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<6>)
      MUXCY:CI->O          75   0.023   2.015  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<4>_cy<7> (hdmi/dataenc/n0317<4>)
-     LUT5:I4->O            4   0.254   1.234  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2700_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2686_o)
+     LUT5:I4->O            4   0.254   1.234  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mmux_a[0]_a[25]_MUX_2710_o151 (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/a[14]_a[25]_MUX_2696_o)
      LUT5:I0->O            1   0.254   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_lut<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_lut<5>)
      MUXCY:S->O            1   0.215   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<5> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<5>)
      MUXCY:CI->O           1   0.023   0.000  hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<6> (hdmi/dataenc/audioLAvgSum[25]_audioAvgCnt[10]_div_49/Mcompar_o<3>_cy<6>)
@@ -3421,10 +3414,10 @@ Delay:               88.122ns (Levels of Logic = 129)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3'
-  Clock period: 8.672ns (frequency: 115.310MHz)
-  Total number of paths / destination ports: 2654 / 409
+  Clock period: 8.656ns (frequency: 115.533MHz)
+  Total number of paths / destination ports: 2639 / 410
 -------------------------------------------------------------------------
-Delay:               8.672ns (Levels of Logic = 4)
+Delay:               8.656ns (Levels of Logic = 4)
   Source:            a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (FF)
   Destination:       a2601Instance/ms_A2601/tia_inst/aud0/sr4_3 (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3 rising
@@ -3434,20 +3427,20 @@ Delay:               8.672ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             42   0.525   1.915  a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2)
-     LUT3:I0->O            1   0.235   1.112  a2601Instance/ms_A2601/tia_inst/au_cnt_SW0 (N175)
+     FDR:C->Q             41   0.525   1.899  a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2 (a2601Instance/ms_A2601/tia_inst/h_cntr/d_FSM_FFd2)
+     LUT3:I0->O            1   0.235   1.112  a2601Instance/ms_A2601/tia_inst/au_cnt_SW0 (N177)
      LUT6:I1->O           12   0.254   1.524  a2601Instance/ms_A2601/tia_inst/au_cnt (a2601Instance/ms_A2601/tia_inst/au_cnt)
      LUT6:I0->O           11   0.254   1.494  a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv2 (a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv2)
      LUT6:I0->O            4   0.254   0.803  a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv (a2601Instance/ms_A2601/tia_inst/aud0/_n0095_inv)
      FDE:CE                    0.302          a2601Instance/ms_A2601/tia_inst/aud0/sr4_0
     ----------------------------------------
-    Total                      8.672ns (1.824ns logic, 6.848ns route)
-                                       (21.0% logic, 79.0% route)
+    Total                      8.656ns (1.824ns logic, 6.832ns route)
+                                       (21.1% logic, 78.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK_50_i'
   Clock period: 20.216ns (frequency: 49.466MHz)
-  Total number of paths / destination ports: 1219043 / 1388
+  Total number of paths / destination ports: 1219040 / 1388
 -------------------------------------------------------------------------
 Delay:               17.579ns (Levels of Logic = 5)
   Source:            MyCtrlModule/myrom/Mram_ram2 (RAM)
@@ -3473,7 +3466,7 @@ Delay:               17.579ns (Levels of Logic = 5)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT3'
   Clock period: 7.353ns (frequency: 136.006MHz)
-  Total number of paths / destination ports: 1616 / 234
+  Total number of paths / destination ports: 1615 / 234
 -------------------------------------------------------------------------
 Delay:               7.353ns (Levels of Logic = 5)
   Source:            MyCtrlModule/myosd/charrom_addr_2 (FF)
@@ -3498,71 +3491,70 @@ Delay:               7.353ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/phi1'
-  Clock period: 16.091ns (frequency: 62.147MHz)
-  Total number of paths / destination ports: 1932 / 228
+  Clock period: 13.976ns (frequency: 71.554MHz)
+  Total number of paths / destination ports: 2033 / 228
 -------------------------------------------------------------------------
-Delay:               8.045ns (Levels of Logic = 6)
+Delay:               6.988ns (Levels of Logic = 5)
   Source:            a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 (FF)
-  Destination:       a2601Instance/ms_A2601/tia_inst/vsync (FF)
+  Destination:       a2601Instance/ms_A2601/tia_inst/pf_gr_5 (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/phi1 rising
   Destination Clock: a2601Instance/ms_A2601/tia_inst/phi1 falling
 
-  Data Path: a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 to a2601Instance/ms_A2601/tia_inst/vsync
+  Data Path: a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 to a2601Instance/ms_A2601/tia_inst/pf_gr_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.525   1.112  a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 (a2601Instance/ms_A2601/riot_A6532/pb_ddr_1)
-     LUT6:I1->O            1   0.254   0.910  a2601Instance/cpu_d<1>LogicTrst1 (a2601Instance/cpu_d<1>LogicTrst)
-     LUT4:I1->O            1   0.235   0.682  a2601Instance/cpu_d<1>LogicTrst2 (a2601Instance/cpu_d<1>LogicTrst1)
-     LUT6:I5->O            1   0.254   0.682  a2601Instance/cpu_d<1>LogicTrst3 (a2601Instance/cpu_d<1>LogicTrst2)
-     LUT6:I5->O            7   0.254   1.138  a2601Instance/cpu_d<1>LogicTrst4 (a2601Instance/cpu_d<1>LogicTrst3)
-     LUT3:I0->O           27   0.235   1.436  a2601Instance/cpu_d<1>LogicTrst5 (a2601Instance/cpu_d<1>)
-     LUT3:I2->O            1   0.254   0.000  a2601Instance/ms_A2601/tia_inst/vsync_rstpot (a2601Instance/ms_A2601/tia_inst/vsync_rstpot)
-     FD_1:D                    0.074          a2601Instance/ms_A2601/tia_inst/vsync
+     FDE:C->Q              2   0.525   1.156  a2601Instance/ms_A2601/riot_A6532/pb_ddr_1 (a2601Instance/ms_A2601/riot_A6532/pb_ddr_1)
+     LUT5:I0->O            1   0.254   0.790  a2601Instance/cpu_d<1>LogicTrst3 (a2601Instance/cpu_d<1>LogicTrst2)
+     LUT6:I4->O            1   0.250   0.958  a2601Instance/cpu_d<1>LogicTrst4 (a2601Instance/cpu_d<1>LogicTrst3)
+     LUT6:I2->O            1   0.254   0.682  a2601Instance/cpu_d<1>LogicTrst5 (a2601Instance/cpu_d<1>LogicTrst4)
+     LUT6:I5->O           33   0.254   1.537  a2601Instance/cpu_d<1>LogicTrst6 (a2601Instance/cpu_d<1>)
+     LUT4:I3->O            1   0.254   0.000  a2601Instance/ms_A2601/tia_inst/Mmux__n105651 (a2601Instance/ms_A2601/tia_inst/_n1056<13>)
+     FDE_1:D                   0.074          a2601Instance/ms_A2601/tia_inst/pf_gr_13
     ----------------------------------------
-    Total                      8.045ns (2.085ns logic, 5.960ns route)
-                                       (25.9% logic, 74.1% route)
+    Total                      6.988ns (1.865ns logic, 5.123ns route)
+                                       (26.7% logic, 73.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
-  Clock period: 21.748ns (frequency: 45.981MHz)
-  Total number of paths / destination ports: 3316625 / 333
+  Clock period: 22.323ns (frequency: 44.797MHz)
+  Total number of paths / destination ports: 3332751 / 338
 -------------------------------------------------------------------------
-Delay:               21.748ns (Levels of Logic = 20)
-  Source:            a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_29 (FF)
+Delay:               22.323ns (Levels of Logic = 20)
+  Source:            a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_28 (FF)
   Destination:       a2601Instance/ms_A2601/cpu_A6507/cpu/S_7 (FF)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/phi0 rising
   Destination Clock: a2601Instance/ms_A2601/tia_inst/phi0 rising
 
-  Data Path: a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_29 to a2601Instance/ms_A2601/cpu_A6507/cpu/S_7
+  Data Path: a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_28 to a2601Instance/ms_A2601/cpu_A6507/cpu/S_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              8   0.525   1.220  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_29 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_29)
-     LUT4:I0->O            1   0.254   1.137  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_PWR_66_o_PWR_66_o_mux_10_OUT1_SW0 (N198)
-     LUT6:I0->O           16   0.254   1.458  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_PWR_66_o_PWR_66_o_mux_10_OUT1 (a2601Instance/ms_A2601/cpu_A6507/cpu/PWR_66_o_PWR_66_o_mux_10_OUT<0>)
-     LUT5:I1->O            2   0.254   1.181  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_aluInput[7]_GND_82_o_add_24_OUT_cy<5>121 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_aluInput[7]_GND_82_o_add_24_OUT_cy<5>12)
-     LUT6:I0->O            3   0.254   0.874  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_59_OUT_cy<3>1 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_59_OUT_cy<3>)
-     LUT6:I4->O            1   0.250   1.112  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits103 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits102)
-     LUT5:I0->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits103)
-     LUT6:I5->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits105 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits104)
-     LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits107 (a2601Instance/ms_A2601/cpu_A6507/cpu/processAlu.rmwBits<5>)
-     LUT2:I1->O            1   0.254   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<5> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<5>)
-     MUXCY:S->O            1   0.215   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<5> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<6> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<6>)
-     XORCY:CI->O           1   0.206   0.958  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_xor<7> (a2601Instance/ms_A2601/cpu_A6507/cpu/GND_82_o_GND_82_o_add_29_OUT<7>)
-     LUT6:I2->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT81 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT8)
-     LUT6:I5->O            8   0.254   1.399  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT82 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_opcInfo[38]_GND_82_o_add_47_OUT_lut<3>)
-     LUT6:I0->O            3   0.254   0.766  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o42 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o41)
-     LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o44 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o_mmx_out4)
+     FDE:C->Q              8   0.525   1.220  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_28 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_28)
+     LUT4:I0->O            1   0.254   1.112  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_PWR_66_o_PWR_66_o_mux_10_OUT3_SW0 (N193)
+     LUT5:I0->O           14   0.254   1.355  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_PWR_66_o_PWR_66_o_mux_10_OUT3 (a2601Instance/ms_A2601/cpu_A6507/cpu/PWR_66_o_PWR_66_o_mux_10_OUT<2>)
+     LUT3:I0->O            1   0.235   0.790  a2601Instance/ms_A2601/cpu_A6507/cpu/Msub_GND_82_o_GND_82_o_sub_26_OUT<7:0>_cy<2>11_SW1 (N803)
+     LUT6:I4->O            3   0.250   0.766  a2601Instance/ms_A2601/cpu_A6507/cpu/Msub_GND_82_o_GND_82_o_sub_26_OUT<7:0>_cy<2>11 (a2601Instance/ms_A2601/cpu_A6507/cpu/Msub_GND_82_o_GND_82_o_sub_26_OUT<7:0>_cy<2>11)
+     LUT5:I4->O            5   0.254   1.069  a2601Instance/ms_A2601/cpu_A6507/cpu/Msub_GND_82_o_GND_82_o_sub_26_OUT<7:0>_cy<3>11 (a2601Instance/ms_A2601/cpu_A6507/cpu/Msub_GND_82_o_GND_82_o_sub_26_OUT<7:0>_cy<3>)
+     LUT5:I2->O            1   0.235   0.958  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits92 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits91)
+     LUT5:I1->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits93 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits92)
+     LUT6:I5->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits96_SW0 (N791)
+     LUT6:I5->O            6   0.254   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_processAlu.rmwBits96 (a2601Instance/ms_A2601/cpu_A6507/cpu/processAlu.rmwBits<4>)
+     LUT2:I1->O            1   0.254   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<4> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_lut<4>)
+     MUXCY:S->O            1   0.215   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<4> (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_cy<4>)
+     XORCY:CI->O           3   0.206   1.042  a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_GND_82_o_GND_82_o_add_29_OUT_Madd_xor<5> (a2601Instance/ms_A2601/cpu_A6507/cpu/GND_82_o_GND_82_o_add_29_OUT<5>)
+     LUT6:I2->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT61 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT6)
+     LUT6:I5->O           10   0.254   1.284  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_opcInfo[38]_opcInfo[34]_wide_mux_42_OUT62 (a2601Instance/ms_A2601/cpu_A6507/cpu/Madd_opcInfo[38]_GND_82_o_add_47_OUT_lut<1>)
+     LUT6:I2->O            1   0.254   0.910  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o43 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o43)
+     LUT6:I3->O            6   0.235   0.876  a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o44 (a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo[38]_INV_275_o_mmx_out4)
      LUT4:I3->O            2   0.254   1.002  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT12831 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1283)
      LUT6:I2->O            1   0.254   0.682  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1281 (a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT128)
      LUT6:I5->O            4   0.254   0.804  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT1282 (a2601Instance/ms_A2601/cpu_A6507/cpu/processAlu.nineBits<7>)
      LUT6:I5->O            1   0.254   0.000  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_S[7]_S[7]_mux_151_OUT24 (a2601Instance/ms_A2601/cpu_A6507/cpu/S[7]_S[7]_mux_151_OUT<7>)
      FDE:D                     0.074          a2601Instance/ms_A2601/cpu_A6507/cpu/S_7
     ----------------------------------------
-    Total                     21.748ns (5.357ns logic, 16.391ns route)
-                                       (24.6% logic, 75.4% route)
+    Total                     22.323ns (5.531ns logic, 16.792ns route)
+                                       (24.8% logic, 75.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT1'
@@ -3588,7 +3580,7 @@ Delay:               2.912ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 54 / 18
+  Total number of paths / destination ports: 59 / 23
 -------------------------------------------------------------------------
 Offset:              3.030ns (Levels of Logic = 2)
   Source:            joy1_p1_i (PAD)
@@ -3630,50 +3622,52 @@ Offset:              3.383ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'a2601Instance/ms_A2601/tia_inst/phi1'
   Total number of paths / destination ports: 211 / 183
 -------------------------------------------------------------------------
-Offset:              6.847ns (Levels of Logic = 6)
-  Source:            cart_data_i<7> (PAD)
+Offset:              6.596ns (Levels of Logic = 7)
+  Source:            cart_data_i<6> (PAD)
   Destination:       a2601Instance/ms_A2601/riot_A6532/timer_7 (FF)
   Destination Clock: a2601Instance/ms_A2601/tia_inst/phi1 rising
 
-  Data Path: cart_data_i<7> to a2601Instance/ms_A2601/riot_A6532/timer_7
+  Data Path: cart_data_i<6> to a2601Instance/ms_A2601/riot_A6532/timer_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.682  cart_data_i_7_IBUF (cart_data_i_7_IBUF)
-     LUT3:I2->O            2   0.254   1.156  Mmux_a2600_romdata81 (a2600_romdata<7>)
-     LUT5:I0->O            2   0.254   1.181  a2601Instance/cpu_d<7>LogicTrst1 (a2601Instance/cpu_d<7>LogicTrst)
-     LUT6:I0->O           19   0.254   1.261  a2601Instance/cpu_d<7>LogicTrst8 (a2601Instance/cpu_d<7>)
-     LUT3:I2->O            0   0.254   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<7> (a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<7>)
-     XORCY:LI->O           1   0.149   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_xor<7> (a2601Instance/ms_A2601/Result<7>)
+     IBUF:I->O             1   1.328   0.682  cart_data_i_6_IBUF (cart_data_i_6_IBUF)
+     LUT3:I2->O            2   0.254   0.834  Mmux_a2600_romdata71 (a2600_romdata<6>)
+     LUT6:I4->O            2   0.250   0.954  a2601Instance/cpu_d<6>LogicTrst1 (a2601Instance/cpu_d<6>LogicTrst)
+     LUT6:I3->O           21   0.235   1.310  a2601Instance/cpu_d<6>LogicTrst13 (a2601Instance/cpu_d<6>)
+     LUT3:I2->O            1   0.254   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<6> (a2601Instance/ms_A2601/riot_A6532/Maccum_timer_lut<6>)
+     MUXCY:S->O            0   0.215   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_cy<6> (a2601Instance/ms_A2601/riot_A6532/Maccum_timer_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  a2601Instance/ms_A2601/riot_A6532/Maccum_timer_xor<7> (a2601Instance/ms_A2601/Result<7>)
      FDE:D                     0.074          a2601Instance/ms_A2601/riot_A6532/timer_7
     ----------------------------------------
-    Total                      6.847ns (2.567ns logic, 4.280ns route)
-                                       (37.5% logic, 62.5% route)
+    Total                      6.596ns (2.816ns logic, 3.780ns route)
+                                       (42.7% logic, 57.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
-  Total number of paths / destination ports: 512 / 81
+  Total number of paths / destination ports: 514 / 81
 -------------------------------------------------------------------------
-Offset:              9.666ns (Levels of Logic = 7)
-  Source:            cart_data_i<7> (PAD)
-  Destination:       a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2 (FF)
+Offset:              10.071ns (Levels of Logic = 8)
+  Source:            cart_data_i<6> (PAD)
+  Destination:       a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_35 (FF)
   Destination Clock: a2601Instance/ms_A2601/tia_inst/phi0 rising
 
-  Data Path: cart_data_i<7> to a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2
+  Data Path: cart_data_i<6> to a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_35
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.682  cart_data_i_7_IBUF (cart_data_i_7_IBUF)
-     LUT3:I2->O            2   0.254   1.156  Mmux_a2600_romdata81 (a2600_romdata<7>)
-     LUT5:I0->O            2   0.254   1.181  a2601Instance/cpu_d<7>LogicTrst1 (a2601Instance/cpu_d<7>LogicTrst)
-     LUT6:I0->O            2   0.254   0.834  a2601Instance/ms_A2601/cpu_A6507/cpuDi<7>LogicTrst1 (a2601Instance/ms_A2601/cpu_A6507/cpuDi<7>)
-     LUT2:I0->O           46   0.250   1.754  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_calcNextOpcode.myNextOpcode81 (a2601Instance/ms_A2601/cpu_A6507/cpu/calcNextOpcode.myNextOpcode<7>)
-     LUT3:I2->O            1   0.254   1.137  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo8911_SW0 (a2601Instance/ms_A2601_N42)
-     LUT6:I0->O            1   0.254   0.000  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo8911 (a2601Instance/ms_A2601/cpu_A6507/cpu/nextOpcInfo<2>)
-     FDE:D                     0.074          a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_2
+     IBUF:I->O             1   1.328   0.682  cart_data_i_6_IBUF (cart_data_i_6_IBUF)
+     LUT3:I2->O            2   0.254   0.834  Mmux_a2600_romdata71 (a2600_romdata<6>)
+     LUT6:I4->O            2   0.250   0.954  a2601Instance/cpu_d<6>LogicTrst1 (a2601Instance/cpu_d<6>LogicTrst)
+     LUT6:I3->O           21   0.235   1.418  a2601Instance/cpu_d<6>LogicTrst13 (a2601Instance/cpu_d<6>)
+     LUT3:I1->O           56   0.250   2.323  a2601Instance/ms_A2601/cpu_A6507/cpu/Mmux_calcNextOpcode.myNextOpcode71 (a2601Instance/ms_A2601/cpu_A6507/cpu/calcNextOpcode.myNextOpcode<6>)
+     LUT6:I0->O            1   0.254   0.000  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo181 (a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo181)
+     MUXF7:I1->O           1   0.175   0.790  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo18_f7 (a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo18_f7)
+     LUT3:I1->O            1   0.250   0.000  a2601Instance/ms_A2601_cpu_A6507/cpu/Mram_nextOpcInfo18_f8 (a2601Instance/ms_A2601/cpu_A6507/cpu/nextOpcInfo<35>)
+     FDE:D                     0.074          a2601Instance/ms_A2601/cpu_A6507/cpu/opcInfo_35
     ----------------------------------------
-    Total                      9.666ns (2.922ns logic, 6.744ns route)
-                                       (30.2% logic, 69.8% route)
+    Total                     10.071ns (3.070ns logic, 7.001ns route)
+                                       (30.5% logic, 69.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_hdmi_instance/pll_base_inst/CLKOUT0'
@@ -3689,7 +3683,7 @@ Offset:              8.184ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              8   0.525   1.220  vga_timing_gen/hcnt_4 (vga_timing_gen/hcnt_4)
-     LUT4:I0->O            1   0.254   0.790  vga_timing_gen/O_HSYNC_SW0 (N244)
+     LUT4:I0->O            1   0.254   0.790  vga_timing_gen/O_HSYNC_SW0 (N243)
      LUT6:I4->O          108   0.250   2.233  vga_timing_gen/O_HSYNC (vga_hsync_n_o_OBUF)
      OBUF:I->O                 2.912          vga_hsync_n_o_OBUF (vga_hsync_n_o)
     ----------------------------------------
@@ -3743,7 +3737,7 @@ Offset:              7.963ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'a2601Instance/ms_A2601/tia_inst/phi0'
   Total number of paths / destination ports: 13 / 13
 -------------------------------------------------------------------------
-Offset:              6.615ns (Levels of Logic = 2)
+Offset:              6.609ns (Levels of Logic = 2)
   Source:            a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 (FF)
   Destination:       cart_addr_o<1> (PAD)
   Source Clock:      a2601Instance/ms_A2601/tia_inst/phi0 rising
@@ -3752,31 +3746,12 @@ Offset:              6.615ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q            111   0.525   2.243  a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 (a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1)
+     FDE:C->Q            109   0.525   2.237  a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1 (a2601Instance/ms_A2601/cpu_A6507/cpu/myAddr_1)
      LUT2:I1->O            1   0.254   0.681  Mmux_cart_addr_o51 (cart_addr_o_1_OBUF)
      OBUF:I->O                 2.912          cart_addr_o_1_OBUF (cart_addr_o<1>)
     ----------------------------------------
-    Total                      6.615ns (3.691ns logic, 2.924ns route)
-                                       (55.8% logic, 44.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              4.240ns (Levels of Logic = 1)
-  Source:            a2601Instance/ms_A2601/tia_inst/hsync (FF)
-  Destination:       joy2_p1_i (PAD)
-  Source Clock:      a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3 rising
-
-  Data Path: a2601Instance/ms_A2601/tia_inst/hsync to joy2_p1_i
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               4   0.525   0.803  a2601Instance/ms_A2601/tia_inst/hsync (a2601Instance/ms_A2601/tia_inst/hsync)
-     OBUF:I->O                 2.912          joy2_p1_i_OBUF (joy2_p1_i)
-    ----------------------------------------
-    Total                      4.240ns (3.437ns logic, 0.803ns route)
-                                       (81.1% logic, 18.9% route)
+    Total                      6.609ns (3.691ns logic, 2.918ns route)
+                                       (55.9% logic, 44.1% route)
 
 =========================================================================
 
@@ -3802,10 +3777,10 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/phi0
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLOCK_50_i                                    |   15.948|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi0          |   21.748|         |         |         |
-a2601Instance/ms_A2601/tia_inst/phi1          |   10.689|    9.047|         |         |
-a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|   10.074|         |         |         |
+CLOCK_50_i                                    |   16.909|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi0          |   22.323|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi1          |   10.802|   10.168|         |         |
+a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|   11.035|         |         |         |
 pll_hdmi_instance/pll_base_inst/CLKOUT0       |    1.324|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
@@ -3814,10 +3789,10 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/phi1
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-CLOCK_50_i                                    |   12.920|         |   13.456|         |
-a2601Instance/ms_A2601/tia_inst/phi0          |   11.242|         |   11.778|         |
-a2601Instance/ms_A2601/tia_inst/phi1          |    7.680|    6.038|    8.045|         |
-a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    6.678|         |    7.263|         |
+CLOCK_50_i                                    |   13.434|         |   13.117|         |
+a2601Instance/ms_A2601/tia_inst/phi0          |   11.823|         |   11.506|         |
+a2601Instance/ms_A2601/tia_inst/phi1          |    7.741|    6.918|    6.988|         |
+a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    7.560|         |    7.243|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3
@@ -3825,9 +3800,9 @@ Clock to Setup on destination clock a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-a2601Instance/ms_A2601/tia_inst/phi0          |    6.925|         |         |         |
+a2601Instance/ms_A2601/tia_inst/phi0          |    6.987|         |         |         |
 a2601Instance/ms_A2601/tia_inst/phi1          |         |    7.736|         |         |
-a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    8.672|         |         |         |
+a2601Instance/ms_A2601/tia_inst/vid_clk_dvdr_3|    8.656|         |         |         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock host_reset_n_host_debug_arm_AND_1927_o
@@ -3880,15 +3855,15 @@ pll_hdmi_instance/pll_base_inst/CLKOUT3|    7.353|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 121.00 secs
-Total CPU time to Xst completion: 110.34 secs
+Total REAL time to Xst completion: 111.00 secs
+Total CPU time to Xst completion: 101.51 secs
  
 --> 
 
 
-Total memory usage is 585148 kilobytes
+Total memory usage is 600256 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  515 (   0 filtered)
-Number of infos    :  149 (   0 filtered)
+Number of warnings :  504 (   0 filtered)
+Number of infos    :  148 (   0 filtered)
 

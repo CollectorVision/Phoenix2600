@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20160913 on Wed Feb 26 17:22:09 2020
+// Written by: Map P.20160913 on Wed Feb 26 19:09:40 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -120,8 +120,8 @@ COMP "cart_data_i<4>" LOCATE = SITE "C1" LEVEL 1;
 COMP "cart_data_i<5>" LOCATE = SITE "D1" LEVEL 1;
 COMP "cart_data_i<6>" LOCATE = SITE "E1" LEVEL 1;
 COMP "cart_data_i<7>" LOCATE = SITE "G3" LEVEL 1;
-PIN vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT_pins<92> = BEL
-        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT" PINNAME
+PIN vga_timing_gen/Maddsub_window_vcnt[9]_PWR_93_o_MuLt_29_OUT_pins<92> = BEL
+        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_93_o_MuLt_29_OUT" PINNAME
         CLK;
 PIN Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT_pins<9> = BEL
         "Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT" PINNAME
@@ -316,14 +316,15 @@ PIN
         = BEL
         "vga_timing_gen/frbuff/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram"
         PINNAME CLKB;
-TIMEGRP pll_hdmi_instance_clkout0 = BEL "joy_p5_o" BEL "numpad_0_0" BEL
-        "numpad_0_1" BEL "numpad_0_2" BEL "numpad_0_3" BEL "numpad_0_4" BEL
-        "numpad_0_5" BEL "numpad_0_6" BEL "numpad_0_7" BEL "numpad_0_8" BEL
-        "numpad_0_9" BEL "numpad_0_10" BEL "numpad_0_11" BEL "P_D" BEL "P_U"
-        BEL "P_R" BEL "P_L" BEL "P_A" BEL "joy_p8_o" BEL "scan_state_0" BEL
-        "scan_state_1" BEL "scan_state_2" BEL "scan_state_3" BEL
-        "scan_state_4" BEL "scan_state_5" BEL "scan_state_6" BEL
-        "scan_state_7" BEL "pll_hdmi_instance/clkout1_buf" BEL
+TIMEGRP pll_hdmi_instance_clkout0 = BEL "P2_U" BEL "P2_D" BEL "P2_L" BEL
+        "P2_R" BEL "P2_A" BEL "joy_p5_o" BEL "numpad_0_0" BEL "numpad_0_1" BEL
+        "numpad_0_2" BEL "numpad_0_3" BEL "numpad_0_4" BEL "numpad_0_5" BEL
+        "numpad_0_6" BEL "numpad_0_7" BEL "numpad_0_8" BEL "numpad_0_9" BEL
+        "numpad_0_10" BEL "numpad_0_11" BEL "P_D" BEL "P_U" BEL "P_R" BEL
+        "P_L" BEL "P_A" BEL "joy_p8_o" BEL "scan_state_0" BEL "scan_state_1"
+        BEL "scan_state_2" BEL "scan_state_3" BEL "scan_state_4" BEL
+        "scan_state_5" BEL "scan_state_6" BEL "scan_state_7" BEL
+        "pll_hdmi_instance/clkout1_buf" BEL
         "snespads_b/pads[0].pad_b/buttons_q_31" BEL
         "snespads_b/pads[0].pad_b/buttons_q_27" BEL
         "snespads_b/pads[0].pad_b/buttons_q_26" BEL
@@ -375,7 +376,7 @@ TIMEGRP pll_hdmi_instance_clkout0 = BEL "joy_p5_o" BEL "numpad_0_0" BEL
         "vga_timing_gen/window_hcnt_4" BEL "vga_timing_gen/window_hcnt_3" BEL
         "vga_timing_gen/window_hcnt_2" BEL "vga_timing_gen/window_hcnt_1" BEL
         "vga_timing_gen/window_hcnt_0" PIN
-        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_92_o_MuLt_29_OUT_pins<92>"
+        "vga_timing_gen/Maddsub_window_vcnt[9]_PWR_93_o_MuLt_29_OUT_pins<92>"
         BEL "vga_timing_gen/buf_pixel_out_6" BEL
         "vga_timing_gen/buf_pixel_out_5" BEL "vga_timing_gen/buf_pixel_out_4"
         BEL "vga_timing_gen/buf_pixel_out_3" BEL
@@ -772,20 +773,22 @@ TIMEGRP pll_hdmi_instance_clkout0 = BEL "joy_p5_o" BEL "numpad_0_0" BEL
         "hdmi/enc0/ENCODED_1" BEL "hdmi/enc0/ENCODED_0" BEL
         "hdmi/state_FSM_FFd2" BEL "hdmi/state_FSM_FFd3" BEL
         "hdmi/state_FSM_FFd1" BEL "hdmi/dataenc/firstHSyncChange" BEL
-        "hdmi/dataenc/allowGeneration" BEL "hdmi/dataenc/audioAvgCnt_0_1" BEL
-        "hdmi/dataenc/audioAvgCnt_2_1" BEL "hdmi/dataenc/audioAvgCnt_1_1" BEL
-        "hdmi/dataenc/audioAvgCnt_3_1" BEL "hdmi/dataenc/audioAvgCnt_4_1" BEL
-        "hdmi/dataenc/audioAvgCnt_9_1" BEL "hdmi/dataenc/audioAvgCnt_5_1" BEL
-        "hdmi/dataenc/audioAvgCnt_8_1" BEL "hdmi/dataenc/audioAvgCnt_6_1" BEL
-        "hdmi/dataenc/audioAvgCnt_7_1" BEL "hdmi/dataenc/audioAvgCnt_10_1" BEL
-        "hdmi/dataenc/audioLAvgSum_23_1" BEL "hdmi/dataenc/audioLAvgSum_22_1"
-        BEL "hdmi/dataenc/audioLAvgSum_21_1" BEL
-        "hdmi/dataenc/audioAvgCnt_3_2" BEL "hdmi/dataenc/audioAvgCnt_4_2" BEL
-        "hdmi/dataenc/audioAvgCnt_2_2" BEL "hdmi/dataenc/audioAvgCnt_9_2" BEL
-        "hdmi/dataenc/audioAvgCnt_6_2" BEL "hdmi/dataenc/audioAvgCnt_8_2" BEL
-        "hdmi/dataenc/audioAvgCnt_5_2" BEL "hdmi/dataenc/audioAvgCnt_10_2" BEL
-        "hdmi/dataenc/audioAvgCnt_0_2" BEL "hdmi/dataenc/audioAvgCnt_0_3" BEL
-        "hdmi/dataenc/audioAvgCnt_1_2" BEL "hdmi/dataenc/audioAvgCnt_7_2" BEL
+        "hdmi/dataenc/allowGeneration" BEL "overlay/scanline" BEL
+        "hdmi/dataenc/oddLine" BEL "hdmi/dataenc/tercData" BEL
+        "hdmi/dataenc/audioAvgCnt_0_1" BEL "hdmi/dataenc/audioAvgCnt_2_1" BEL
+        "hdmi/dataenc/audioAvgCnt_1_1" BEL "hdmi/dataenc/audioAvgCnt_3_1" BEL
+        "hdmi/dataenc/audioAvgCnt_4_1" BEL "hdmi/dataenc/audioAvgCnt_9_1" BEL
+        "hdmi/dataenc/audioAvgCnt_5_1" BEL "hdmi/dataenc/audioAvgCnt_8_1" BEL
+        "hdmi/dataenc/audioAvgCnt_6_1" BEL "hdmi/dataenc/audioAvgCnt_7_1" BEL
+        "hdmi/dataenc/audioAvgCnt_10_1" BEL "hdmi/dataenc/audioLAvgSum_23_1"
+        BEL "hdmi/dataenc/audioLAvgSum_22_1" BEL
+        "hdmi/dataenc/audioLAvgSum_21_1" BEL "hdmi/dataenc/audioAvgCnt_3_2"
+        BEL "hdmi/dataenc/audioAvgCnt_4_2" BEL "hdmi/dataenc/audioAvgCnt_2_2"
+        BEL "hdmi/dataenc/audioAvgCnt_9_2" BEL "hdmi/dataenc/audioAvgCnt_6_2"
+        BEL "hdmi/dataenc/audioAvgCnt_8_2" BEL "hdmi/dataenc/audioAvgCnt_5_2"
+        BEL "hdmi/dataenc/audioAvgCnt_10_2" BEL "hdmi/dataenc/audioAvgCnt_0_2"
+        BEL "hdmi/dataenc/audioAvgCnt_0_3" BEL "hdmi/dataenc/audioAvgCnt_1_2"
+        BEL "hdmi/dataenc/audioAvgCnt_7_2" BEL
         "hdmi/dataenc/audioLAvgSum_21_2" BEL "hdmi/dataenc/audioLAvgSum_22_2"
         BEL "hdmi/dataenc/audioLAvgSum_23_2" BEL
         "hdmi/dataenc/audioAvgCnt_2_3" BEL "hdmi/dataenc/audioAvgCnt_5_3" BEL
@@ -804,8 +807,7 @@ TIMEGRP pll_hdmi_instance_clkout0 = BEL "joy_p5_o" BEL "numpad_0_0" BEL
         "hdmi/dataenc/audioLAvgSum_23_5" BEL "hdmi/dataenc/audioAvgCnt_5_4"
         BEL "hdmi/dataenc/audioAvgCnt_6_4" BEL "hdmi/dataenc/audioAvgCnt_1_6"
         BEL "hdmi/dataenc/audioAvgCnt_8_5" BEL "hdmi/dataenc/audioAvgCnt_7_4"
-        BEL "overlay/scanline" BEL "hdmi/dataenc/oddLine" BEL
-        "hdmi/dataenc/tercData" PIN
+        PIN
         "Inst_HDMI_ColorTable/Mram_GND_155_o_GND_155_o_select_385_OUT_pins<9>"
         BEL "snespads_b/pads[0].pad_b/Mshreg_shift_buttons_q_31" BEL
         "hdmi/dataenc/Mshreg_bchCode_0_29" BEL "hdmi/dataenc/bchCode_0_29" BEL
@@ -1026,10 +1028,10 @@ PIN
         = BEL
         "MyCtrlModule/myosd/charram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/TRUE_DP.PRIM9.ram"
         PINNAME CLKBRDCLK;
-TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_4"
-        BEL "host_bootread_data_6" BEL "host_bootread_data_5" BEL
-        "host_bootread_data_1" BEL "host_bootread_data_3" BEL
-        "host_bootread_data_2" BEL "host_bootread_data_0" BEL "last_ph0" BEL
+TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_6"
+        BEL "host_bootread_data_3" BEL "host_bootread_data_5" BEL
+        "host_bootread_data_4" BEL "host_bootread_data_2" BEL
+        "host_bootread_data_1" BEL "host_bootread_data_0" BEL "last_ph0" BEL
         "last_6502_addr_0" BEL "last_6502_addr_1" BEL "last_6502_addr_2" BEL
         "last_6502_addr_3" BEL "last_6502_addr_4" BEL "last_6502_addr_5" BEL
         "last_6502_addr_6" BEL "last_6502_addr_7" BEL "last_6502_addr_8" BEL
@@ -1334,8 +1336,15 @@ TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_4"
         "MyCtrlModule/mykeyboard/clkFilterCnt_3" BEL
         "MyCtrlModule/mykeyboard/clkFilterCnt_2" BEL
         "MyCtrlModule/mykeyboard/clkFilterCnt_1" BEL
-        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "armed_P" BEL
-        "MyCtrlModule/zpu/state_FSM_FFd2" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "MyCtrlModule/spi_active"
+        BEL "extSRAM/sram_we_n_o" BEL "extSRAM/sram_oe_n_o" BEL
+        "extSRAM/reset_i_clk_i_DFF_367" BEL "extSRAM/return_state_0" BEL
+        "MyCtrlModule/int_ack" BEL "MyCtrlModule/int_enabled" BEL
+        "MyCtrlModule/mykeyboard/recvTrigger" BEL
+        "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
+        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
+        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/intcontroller/int" BEL
+        "armed_P" BEL "MyCtrlModule/zpu/state_FSM_FFd2" BEL
         "MyCtrlModule/zpu/state_FSM_FFd3" BEL
         "MyCtrlModule/zpu/state_FSM_FFd1" BEL
         "MyCtrlModule/zpu/state_FSM_FFd4" BEL
@@ -1406,14 +1415,7 @@ TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_4"
         BEL "MyCtrlModule/zpu/memBWrite_5" BEL "MyCtrlModule/zpu/memBWrite_4"
         BEL "MyCtrlModule/zpu/memBWrite_3" BEL "MyCtrlModule/zpu/memBWrite_2"
         BEL "MyCtrlModule/zpu/memBWrite_1" BEL "MyCtrlModule/zpu/memBWrite_0"
-        BEL "MyCtrlModule/spi_active" BEL "extSRAM/sram_we_n_o" BEL
-        "extSRAM/sram_oe_n_o" BEL "extSRAM/reset_i_clk_i_DFF_362" BEL
-        "extSRAM/return_state_0" BEL "MyCtrlModule/int_ack" BEL
-        "MyCtrlModule/int_enabled" BEL "MyCtrlModule/mykeyboard/recvTrigger"
-        BEL "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
-        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
-        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/zpu/fetchneeded" BEL
-        "MyCtrlModule/zpu/inInterrupt" BEL "MyCtrlModule/intcontroller/int"
+        BEL "MyCtrlModule/zpu/fetchneeded" BEL "MyCtrlModule/zpu/inInterrupt"
         PIN "MyCtrlModule/myrom/Mram_ram7_pins<24>" PIN
         "MyCtrlModule/myrom/Mram_ram7_pins<25>" PIN
         "MyCtrlModule/myrom/Mram_ram6_pins<24>" PIN
@@ -1454,9 +1456,9 @@ TIMEGRP clock_vid_clk = BEL "host_bootread_data_7" BEL "host_bootread_data_4"
         "Mram_debug_mem5_RAMC_D1" BEL "Mram_debug_mem5_RAMC" BEL
         "Mram_debug_mem5_RAMD_D1" BEL "Mram_debug_mem5_RAMD";
 TIMEGRP pll_575_instance_clkfx = BEL "host_bootread_data_7" BEL
-        "host_bootread_data_4" BEL "host_bootread_data_6" BEL
-        "host_bootread_data_5" BEL "host_bootread_data_1" BEL
-        "host_bootread_data_3" BEL "host_bootread_data_2" BEL
+        "host_bootread_data_6" BEL "host_bootread_data_3" BEL
+        "host_bootread_data_5" BEL "host_bootread_data_4" BEL
+        "host_bootread_data_2" BEL "host_bootread_data_1" BEL
         "host_bootread_data_0" BEL "last_ph0" BEL "last_6502_addr_0" BEL
         "last_6502_addr_1" BEL "last_6502_addr_2" BEL "last_6502_addr_3" BEL
         "last_6502_addr_4" BEL "last_6502_addr_5" BEL "last_6502_addr_6" BEL
@@ -1762,8 +1764,15 @@ TIMEGRP pll_575_instance_clkfx = BEL "host_bootread_data_7" BEL
         "MyCtrlModule/mykeyboard/clkFilterCnt_3" BEL
         "MyCtrlModule/mykeyboard/clkFilterCnt_2" BEL
         "MyCtrlModule/mykeyboard/clkFilterCnt_1" BEL
-        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "armed_P" BEL
-        "MyCtrlModule/zpu/state_FSM_FFd2" BEL
+        "MyCtrlModule/mykeyboard/clkFilterCnt_0" BEL "MyCtrlModule/spi_active"
+        BEL "extSRAM/sram_we_n_o" BEL "extSRAM/sram_oe_n_o" BEL
+        "extSRAM/reset_i_clk_i_DFF_367" BEL "extSRAM/return_state_0" BEL
+        "MyCtrlModule/int_ack" BEL "MyCtrlModule/int_enabled" BEL
+        "MyCtrlModule/mykeyboard/recvTrigger" BEL
+        "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
+        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
+        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/intcontroller/int" BEL
+        "armed_P" BEL "MyCtrlModule/zpu/state_FSM_FFd2" BEL
         "MyCtrlModule/zpu/state_FSM_FFd3" BEL
         "MyCtrlModule/zpu/state_FSM_FFd1" BEL
         "MyCtrlModule/zpu/state_FSM_FFd4" BEL
@@ -1834,14 +1843,7 @@ TIMEGRP pll_575_instance_clkfx = BEL "host_bootread_data_7" BEL
         BEL "MyCtrlModule/zpu/memBWrite_5" BEL "MyCtrlModule/zpu/memBWrite_4"
         BEL "MyCtrlModule/zpu/memBWrite_3" BEL "MyCtrlModule/zpu/memBWrite_2"
         BEL "MyCtrlModule/zpu/memBWrite_1" BEL "MyCtrlModule/zpu/memBWrite_0"
-        BEL "MyCtrlModule/spi_active" BEL "extSRAM/sram_we_n_o" BEL
-        "extSRAM/sram_oe_n_o" BEL "extSRAM/reset_i_clk_i_DFF_362" BEL
-        "extSRAM/return_state_0" BEL "MyCtrlModule/int_ack" BEL
-        "MyCtrlModule/int_enabled" BEL "MyCtrlModule/mykeyboard/recvTrigger"
-        BEL "MyCtrlModule/mykeyboard/ena" BEL "MyCtrlModule/spi/mosi" BEL
-        "MyCtrlModule/host_bootdata_req" BEL "MyCtrlModule/host_bootread_req"
-        BEL "MyCtrlModule/kbdrecvreg" BEL "MyCtrlModule/zpu/fetchneeded" BEL
-        "MyCtrlModule/zpu/inInterrupt" BEL "MyCtrlModule/intcontroller/int"
+        BEL "MyCtrlModule/zpu/fetchneeded" BEL "MyCtrlModule/zpu/inInterrupt"
         PIN "MyCtrlModule/myrom/Mram_ram7_pins<24>" PIN
         "MyCtrlModule/myrom/Mram_ram7_pins<25>" PIN
         "MyCtrlModule/myrom/Mram_ram6_pins<24>" PIN

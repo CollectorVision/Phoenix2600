@@ -1,11 +1,11 @@
 Release 14.7 - par P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Feb 26 17:26:29 2020
+Wed Feb 26 19:11:20 2020
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 15 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 12 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    Mram_debug_mem1_RAMD_D1_O
@@ -17,9 +17,6 @@ WARNING:ParHelpers:361 - There are 15 loadless signals in this design. This desi
    flash_miso_i_IBUF
    joy1_p7_i_IBUF
    joy1_p9_i_IBUF
-   joy2_p2_i_IBUF
-   joy2_p3_i_IBUF
-   joy2_p6_i_IBUF
    joy2_p7_i_IBUF
    joy2_p9_i_IBUF
    sd_cd_n_i_IBUF
